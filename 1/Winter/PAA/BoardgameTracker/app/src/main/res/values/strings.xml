@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Boardgame Tracker</string>
+    <string name="played_games_button">Played Games</string>
+    <string name="players_button">Players</string>
+    <string name="button_add_player">Add Player</string>
+</resources>

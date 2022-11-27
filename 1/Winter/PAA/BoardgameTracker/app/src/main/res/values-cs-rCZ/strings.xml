@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boardgame Tracker</string>
+    <string name="played_games_button">Odehrané hry</string>
+    <string name="players_button">Hráči</string>
+    <string name="button_add_player">Přidat hráče</string>
+</resources>
