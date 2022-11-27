@@ -1,0 +1,3 @@
+grep [0-9]:550: passwd.txt
+sed 's/:.*//' passwd.txt
+sed 's/:x[0-9]*/ - /;s/:.*//' passwd.txt

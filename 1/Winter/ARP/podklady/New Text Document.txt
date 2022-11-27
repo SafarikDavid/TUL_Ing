@@ -1,0 +1,18 @@
+; Test stisku tlacitka INCR
+BLoop	call	Set_7s
+	clrf    cnt1		;citac osetreni zakmitu tlacitek
+BT2L	btfsc   BT2
+        goto    Main		;skok na zacatek - reset
+        btfss   BT1		;preskok pri stisku tlacitka (H)
+        goto    BLoop		;pri urovni L test od zacatku
+        decfsz  cnt1,F
+        goto    BT2L
+        incf    cntr,F		;zvyseni cntr
+
+; Test uvolneni tlacitka INCR
+        clrf    cnt1
+BT2H	btfsc   BT1
+        goto    $-2
+        decfsz  cnt1,F
+        goto    BT2H
+        goto    BLoop

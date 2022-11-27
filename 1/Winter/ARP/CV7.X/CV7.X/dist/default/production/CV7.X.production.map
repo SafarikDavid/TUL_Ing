@@ -1,0 +1,73 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Thu Nov 10 12:15:34 2022
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x00017e
+.config_8007_BUILD/DEFAULT/PRODUCTION/ZAKLAD.       code   0x008007    program   0x000002
+.config_8008_BUILD/DEFAULT/PRODUCTION/ZAKLAD.       code   0x008008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x0000c2      
+                            0x008007    0x008008      
+            196 out of 4103 program addresses used, program memory utilization is 4%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   BT2Int   0x000010    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                  Bin2Bcd   0x000087    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                 Byte2Seg   0x0000a6    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+               Config_IOs   0x00005a    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Config_IOs.inc
+               Config_SPI   0x00006d    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                 Delay100   0x000050    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                 Delay_ms   0x000051    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                     Loop   0x000039    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                     Main   0x00002d    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                    OutLp   0x000052    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+               SendByte7S   0x0000b8    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                   ShLoop   0x000092    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                    Start   0x000019    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+             _.org_1_003C   0x00003c    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+             _.org_1_0056   0x000056    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+             _.org_1_0077   0x000077    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_007C   0x00007c    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_0081   0x000081    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_00BD   0x0000bd    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   BT2Int   0x000010    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                    Start   0x000019    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                     Main   0x00002d    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                     Loop   0x000039    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+             _.org_1_003C   0x00003c    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                 Delay100   0x000050    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                 Delay_ms   0x000051    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+                    OutLp   0x000052    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+             _.org_1_0056   0x000056    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Zaklad.asm
+               Config_IOs   0x00005a    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Config_IOs.inc
+               Config_SPI   0x00006d    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_0077   0x000077    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_007C   0x00007c    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_0081   0x000081    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                  Bin2Bcd   0x000087    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                   ShLoop   0x000092    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+                 Byte2Seg   0x0000a6    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+               SendByte7S   0x0000b8    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+             _.org_1_00BD   0x0000bd    program     static C:\School\Ing\1\ARP\CV7.X\CV7.X\Display.inc
+
+

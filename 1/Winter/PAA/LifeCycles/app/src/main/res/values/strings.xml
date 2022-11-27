@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LifeCycles</string>
+    <string name="button">Press me</string>
+    <string name="textView">I am text</string>
+    <string name="button_click_reset">Reset Clicks</string>
+</resources>
