@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:attribute name="id" type="xsd:string"/>
+
+    <xsd:attribute name="system">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="bw|rgb"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:attribute>
+
+    <xsd:element name="x" type="xsd:int"></xsd:element>
+    
+    <xsd:element name="y" type="xsd:int"></xsd:element>
+    
+    <xsd:element name="bod">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="x"></xsd:element>
+                <xsd:element ref="y"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="kotva">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="bod"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:element name="barva">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute ref="system"></xsd:attribute>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="cara" type="xsd:double"></xsd:element>
+
+    <xsd:element name="sirka" type="xsd:int"></xsd:element>
+
+    <xsd:element name="vyska" type="xsd:int"></xsd:element>
+
+    <xsd:element name="pruhlednost">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:pattern value="([0-9]|[1-9][0-9]|100)%"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <xsd:element name="polomer" type="xsd:int"></xsd:element>
+
+    <xsd:group name="commonElements">
+        <xsd:sequence>
+            <xsd:element ref="barva"></xsd:element>
+            <xsd:element ref="cara"></xsd:element>
+            <xsd:element ref="kotva"></xsd:element>
+        </xsd:sequence>
+    </xsd:group>
+
+    <xsd:element name="obdelnik">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="commonElements"></xsd:group>
+                <xsd:element ref="sirka"></xsd:element>
+                <xsd:element ref="vyska"></xsd:element>
+                <xsd:element ref="pruhlednost" minOccurs="0" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+            <xsd:attribute ref="id"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>    
+
+    <xsd:element name="kruh">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="commonElements"></xsd:group>
+                <xsd:element ref="pruhlednost" minOccurs="0" maxOccurs="1"></xsd:element>
+                <xsd:element ref="polomer"></xsd:element>
+            </xsd:sequence>
+            <xsd:attribute ref="id"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="usecka">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:group ref="commonElements"></xsd:group>
+                <xsd:element ref="bod"></xsd:element>
+                <xsd:element ref="pruhlednost" minOccurs="0" maxOccurs="1"></xsd:element>
+            </xsd:sequence>
+            <xsd:attribute ref="id"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="obrazek">
+        <xsd:complexType>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                <xsd:element ref="obdelnik"/>
+                <xsd:element ref="kruh"/>
+                <xsd:element ref="usecka"/>
+            </xsd:choice>
+        </xsd:complexType>
+        <xsd:unique name="uniqueId">
+            <xsd:selector xpath="obdelnik | kruh | usecka" />
+            <xsd:field xpath="@id" />
+        </xsd:unique>
+    </xsd:element>
+
+</xsd:schema>

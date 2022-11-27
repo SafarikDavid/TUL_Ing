@@ -1,0 +1,26 @@
+namespace a = "http://uxt.examples/annotations"
+datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+element knihovna{
+    element kniha{
+        attribute isbn { 
+            xs:string { 
+                pattern = "[0-9]{9}[0-9X]{1}"
+            }
+        },
+        element autor{
+            [a:defaultValue = "hlavni"]
+            attribute hlavni { xs:string { pattern = "hlavni" }}?,
+            text
+        }+,
+        element nazev{
+            text
+        },
+        element vydavatel{
+            text
+        }?,
+        element rok{
+            text
+        }?
+    }*
+}

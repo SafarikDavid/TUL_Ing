@@ -1,0 +1,14 @@
+//kniha[@isbn[starts-with(.,'0')]]/nazev[text()]
+
+//kniha[rok<2005]/nazev[text()]
+
+//kniha[autor[starts-with(.,'E')]]/nazev | //kniha[autor[starts-with(.,'E')]]/autor
+
+//kniha[vydavatel]/concat(nazev, ' - ', count(autor), ' autoru')
+Nebo takhle Ondreji >:)
+for $kniha in
+//kniha/child::nazev[string-length(../vydavatel) > 0]
+return
+concat($kniha, " - ",count($kniha/../autor), " autoru")
+
+//kniha[count(autor)>1]/*

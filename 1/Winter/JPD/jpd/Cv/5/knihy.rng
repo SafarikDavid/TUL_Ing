@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element name="knihovna" xmlns:a="http://uxt.examples/annotations" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <zeroOrMore>
+    <element name="kniha">
+      <attribute name="isbn">
+        <data type="string">
+          <param name="pattern">[0-9]{9}[0-9X]{1}</param>
+        </data>
+      </attribute>
+      <oneOrMore>
+        <element name="autor">
+          <optional>
+            <attribute name="hlavni" a:defaultValue="hlavni">
+              <data type="string">
+                <param name="pattern">hlavni</param>
+              </data>
+            </attribute>
+          </optional>
+          <text/>
+        </element>
+      </oneOrMore>
+      <element name="nazev">
+        <text/>
+      </element>
+      <optional>
+        <element name="vydavatel">
+          <text/>
+        </element>
+      </optional>
+      <optional>
+        <element name="rok">
+          <text/>
+        </element>
+      </optional>
+    </element>
+  </zeroOrMore>
+</element>

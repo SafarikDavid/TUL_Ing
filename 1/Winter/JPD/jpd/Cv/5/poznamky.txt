@@ -1,0 +1,1 @@
+ISBN 10 udelat, leda bych chtel navic ISBN 13. Nejakej regex kterej je rozpozna

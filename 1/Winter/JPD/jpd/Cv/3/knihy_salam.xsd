@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="autor">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:string">
+                    <xsd:attribute name="hlavni" type="xsd:string" fixed="hlavni" use="optional"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="nazev" type="xsd:string"></xsd:element>
+    <xsd:element name="vydavatel" type="xsd:string"></xsd:element>
+    <xsd:element name="rok" type="xsd:integer"></xsd:element>
+
+    <xsd:element name="kniha">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="autor" minOccurs="1" maxOccurs="unbounded"></xsd:element>
+                <xsd:element ref="nazev" minOccurs="1"/>
+                <xsd:element ref="vydavatel" minOccurs="0"/>
+                <xsd:element ref="rok" minOccurs="0"/>
+            </xsd:sequence>
+            <xsd:attribute name="isbn" type="xsd:string"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="knihovna">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="kniha" minOccurs="1" maxOccurs="unbounded">
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
