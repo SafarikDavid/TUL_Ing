@@ -11,16 +11,17 @@
         android:layout_width="387dp"
         android:layout_height="310dp"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_player"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <Button
         android:id="@+id/button_add_player"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:onClick="addPlayerButtonClick"
         android:text="@string/button_add_player"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
