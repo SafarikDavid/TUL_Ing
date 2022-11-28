@@ -8,4 +8,6 @@
     <string name="id_delete_player_hint">5</string>
     <string name="toast_enter_player_name">Please enter a name for the player.</string>
     <string name="toast_entered_player_name">Player was added.</string>
+    <string name="DB_NAME" translatable="false">BoardgamesTrackerDB</string>
+    <string name="toast_entered_player_name_not_valid">Player was not added. Enter a different name.</string>
 </resources>

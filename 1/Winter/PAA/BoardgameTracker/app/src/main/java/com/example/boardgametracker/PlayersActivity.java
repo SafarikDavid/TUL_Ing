@@ -17,6 +17,8 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
     PlayersRecyclerViewAdapter adapter;
     private DBHandlerPlayers dbHandlerPlayers;
     private EditText editTextNewPlayerName;
+    private EditText editTextPlayerId_delete;
+    private ArrayList<Player> players;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,58 +26,31 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
         setContentView(R.layout.activity_players);
 
         editTextNewPlayerName = findViewById(R.id.editTextNewPlayerName);
+        editTextPlayerId_delete = findViewById(R.id.editTextPlayerId_delete);
 
         dbHandlerPlayers = new DBHandlerPlayers(PlayersActivity.this);
 
-        // data to populate the RecyclerView with
-        ArrayList<Player> players = new ArrayList<>();
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
-        players.add(new Player("Filip", 0));
-        players.add(new Player("Dom", 1));
-        players.add(new Player("Kirin", 2));
-        players.add(new Player("Lul", 3));
+        players = new ArrayList<>();
+
         // set up the RecyclerView
         RecyclerView recyclerView = findViewById(R.id.view_players);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new PlayersRecyclerViewAdapter(this, players);
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
+
+        updateListFromDB();
+    }
+
+    public void updateListFromDB(){
+        players.clear();
+        players.addAll(dbHandlerPlayers.readPlayers());
+        adapter.notifyDataSetChanged();
     }
 
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(this, "You clicked" + adapter.getItem(position) + "or row" + position, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row " + position, Toast.LENGTH_SHORT).show();
     }
 
     public void addPlayerButtonClick(View view){
@@ -86,11 +61,30 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
             return;
         }
 
-        dbHandlerPlayers.addNewPlayer(name);
+        if (dbHandlerPlayers.addNewPlayer(name)){
+            Toast.makeText(this, R.string.toast_entered_player_name, Toast.LENGTH_SHORT).show();
+        }
+        Toast.makeText(this, R.string.toast_entered_player_name_not_valid, Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(this, R.string.toast_entered_player_name, Toast.LENGTH_SHORT).show();
         editTextNewPlayerName.setText("");
+
+        updateListFromDB();
     }
 
+    public void deletePlayerButtonClick(View view){
+        try {
+            int id = Integer.parseInt(editTextPlayerId_delete.getText().toString());
+            if (dbHandlerPlayers.deletePlayer(id)) {
+                Toast.makeText(this, "Deleted " + id, Toast.LENGTH_SHORT).show();
+            }else {
+                Toast.makeText(this, "Deletion not successful.", Toast.LENGTH_SHORT).show();
+            }
+        } catch (Exception e){
+            Toast.makeText(this, "Invalid id.", Toast.LENGTH_SHORT).show();
+        }
+        editTextPlayerId_delete.setText("");
+
+        updateListFromDB();
+    }
 
 }

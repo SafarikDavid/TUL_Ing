@@ -1,0 +1,3 @@
+Udělat počítač skóre pro jednu hru. Případně pro vícero najednou.
+
+Zadávat jenom počty čeho co mám. Carcassone - počet měst, cest atd. Případně následně ukládat do nějaký db, kdo kdy vyhrál s jakym skore.

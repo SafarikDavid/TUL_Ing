@@ -50,6 +50,7 @@
         android:id="@+id/button_delete_player"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:onClick="deletePlayerButtonClick"
         android:text="@string/button_delete_player"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
