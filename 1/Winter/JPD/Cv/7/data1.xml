@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<seznam>
+<jmeno id="usr8">mail</jmeno>
+<jmeno id="usr10">uucp</jmeno>
+<jmeno id="usr11">operator</jmeno>
+<jmeno id="usr12">games</jmeno>
+<jmeno id="usr13">gopher</jmeno>
+<jmeno id="usr14">ftp</jmeno>
+<jmeno id="usr99">nobody</jmeno>
+<jmeno id="usr81">dbus</jmeno>
+<jmeno id="usr69">vcsa</jmeno>
+<jmeno id="usr37">rpm</jmeno>
+<jmeno id="usr68">haldaemon</jmeno>
+</seznam>
