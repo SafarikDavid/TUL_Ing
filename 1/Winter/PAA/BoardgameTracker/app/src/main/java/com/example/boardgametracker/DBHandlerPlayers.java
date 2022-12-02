@@ -4,6 +4,7 @@ import static androidx.core.content.res.TypedArrayUtils.getText;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
@@ -44,7 +45,6 @@ public class DBHandlerPlayers extends SQLiteOpenHelper {
         return success > 0;
     }
 
-
     public ArrayList<Player> readPlayers(){
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -63,10 +63,41 @@ public class DBHandlerPlayers extends SQLiteOpenHelper {
         return playersArrayList;
     }
 
+    public Player readPlayer(int id){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+
+        if (cursor.moveToFirst()){
+            do{
+                Player player = new Player(cursor.getString(1), cursor.getInt(0));
+                if (player.get_id() == id) {
+                    cursor.close();
+                    return player;
+                }
+            }while (cursor.moveToNext());
+        }
+
+        cursor.close();
+
+        return null;
+    }
+
     public boolean deletePlayer(int id){
         SQLiteDatabase db = this.getWritableDatabase();
+        int success = db.delete(TABLE_NAME, String.format("%s = ?", ID_COL), new String[]{String.valueOf(id)});
+        db.close();
+        return success > 0;
+    }
 
-        return db.delete(TABLE_NAME, ID_COL + "=" + id, null) > 0;
+    public void updatePlayer(int id, String new_name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+
+        values.put(NAME_COL, new_name);
+
+        db.update(TABLE_NAME, values, String.format("%s = ?", ID_COL), new String[]{String.valueOf(id)});
+        db.close();
     }
 
     @Override

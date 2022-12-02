@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -51,6 +52,10 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
     @Override
     public void onItemClick(View view, int position) {
         Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row " + position, Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PlayerDetailActivity.class);
+        Player player = adapter.getPlayers().get(position);
+        intent.putExtra("player_id", player.get_id());
+        startActivity(intent);
     }
 
     public void addPlayerButtonClick(View view){
@@ -63,8 +68,9 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
 
         if (dbHandlerPlayers.addNewPlayer(name)){
             Toast.makeText(this, R.string.toast_entered_player_name, Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this, R.string.toast_entered_player_name_not_valid, Toast.LENGTH_SHORT).show();
         }
-        Toast.makeText(this, R.string.toast_entered_player_name_not_valid, Toast.LENGTH_SHORT).show();
 
         editTextNewPlayerName.setText("");
 
