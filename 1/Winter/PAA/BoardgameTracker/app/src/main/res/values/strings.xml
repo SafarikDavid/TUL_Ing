@@ -14,4 +14,5 @@
     <string name="hint_update_player_name">New player name</string>
     <string name="button_update_player">Update</string>
     <string name="toast_invalid_update_name">Field cannot be empty.</string>
+    <string name="button_add_game">Add game</string>
 </resources>

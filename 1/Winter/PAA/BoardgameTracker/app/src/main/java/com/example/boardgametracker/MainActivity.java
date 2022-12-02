@@ -19,4 +19,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void gamesButtonClick(View view){
+        Intent intent = new Intent(this, PlayedGamesTrackerActivity.class);
+        startActivity(intent);
+    }
+
 }

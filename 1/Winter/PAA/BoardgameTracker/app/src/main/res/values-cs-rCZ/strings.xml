@@ -14,4 +14,5 @@
     <string name="hint_update_player_name">Nové jméno</string>
     <string name="button_update_player">Aktualizovat</string>
     <string name="toast_invalid_update_name">Pole nemůže být prázdné.</string>
+    <string name="button_add_game">Přidat hru</string>
 </resources>
