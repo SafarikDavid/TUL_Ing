@@ -20,4 +20,6 @@
     <string name="button_date_picker">Select date</string>
     <string name="Winners_text">Winners</string>
     <string name="Players_text">Players</string>
+    <string name="button_eng_lang">English</string>
+    <string name="button_cz_lang">Čeština</string>
 </resources>

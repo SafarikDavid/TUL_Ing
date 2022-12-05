@@ -8,8 +8,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/view_players"
-        android:layout_width="387dp"
-        android:layout_height="310dp"
+        android:layout_width="382dp"
+        android:layout_height="446dp"
         android:scrollbars="vertical"
         app:layout_constraintBottom_toTopOf="@+id/button_add_player"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,20 +19,19 @@
 
     <Button
         android:id="@+id/button_add_player"
-        android:layout_width="150dp"
+        android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:onClick="addPlayerButtonClick"
         android:text="@string/button_add_player"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <EditText
         android:id="@+id/editTextNewPlayerName"
-        android:layout_width="wrap_content"
+        android:layout_width="391dp"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
@@ -40,37 +39,11 @@
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#78909C"
-        app:layout_constraintBottom_toBottomOf="@+id/button_add_player"
-        app:layout_constraintEnd_toStartOf="@+id/button_add_player"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_add_player"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button_delete_player"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:onClick="deletePlayerButtonClick"
-        android:text="@string/button_delete_player"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_player"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
-
-    <EditText
-        android:id="@+id/editTextPlayerId_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/id_delete_player_hint"
-        android:inputType="numberSigned"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button_delete_player"
-        app:layout_constraintEnd_toStartOf="@+id/button_delete_player"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_delete_player"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/view_players"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

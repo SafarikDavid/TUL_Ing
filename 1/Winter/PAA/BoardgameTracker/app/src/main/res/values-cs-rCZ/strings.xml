@@ -19,4 +19,6 @@
     <string name="hint_new_game_name">Např.: Anachrony</string>
     <string name="Winners_text">Výherci</string>
     <string name="Players_text">Hráči</string>
+    <string name="button_eng_lang">English</string>
+    <string name="button_cz_lang">Čeština</string>
 </resources>

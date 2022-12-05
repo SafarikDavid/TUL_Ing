@@ -17,7 +17,6 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
     PlayersRecyclerViewAdapter adapter;
     private DBHandler dbHandler;
     private EditText editTextNewPlayerName;
-    private EditText editTextPlayerId_delete;
     private ArrayList<Player> players;
 
     @Override
@@ -26,7 +25,6 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
         setContentView(R.layout.activity_players);
 
         editTextNewPlayerName = findViewById(R.id.editTextNewPlayerName);
-        editTextPlayerId_delete = findViewById(R.id.editTextPlayerId_delete);
 
         dbHandler = new DBHandler(PlayersActivity.this);
 
@@ -81,21 +79,4 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
 
         updateListFromDB();
     }
-
-    public void deletePlayerButtonClick(View view){
-        try {
-            int id = Integer.parseInt(editTextPlayerId_delete.getText().toString());
-            if (dbHandler.deletePlayer(id)) {
-                Toast.makeText(this, "Deleted " + id, Toast.LENGTH_SHORT).show();
-            }else {
-                Toast.makeText(this, "Deletion not successful.", Toast.LENGTH_SHORT).show();
-            }
-        } catch (Exception e){
-            Toast.makeText(this, "Invalid id.", Toast.LENGTH_SHORT).show();
-        }
-        editTextPlayerId_delete.setText("");
-
-        updateListFromDB();
-    }
-
 }
