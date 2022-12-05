@@ -8,8 +8,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewGames"
-        android:layout_width="391dp"
-        android:layout_height="625dp"
+        android:layout_width="323dp"
+        android:layout_height="336dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -19,7 +19,7 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="391dp"
+        android:layout_width="318dp"
         android:layout_height="wrap_content"
         android:onClick="addGameButtonClick"
         android:text="@string/button_add_game"

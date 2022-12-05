@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,7 +15,7 @@ import java.util.ArrayList;
 public class PlayedGamesTrackerActivity extends AppCompatActivity implements GamesRecyclerViewAdapter.ItemClickListener {
 
     GamesRecyclerViewAdapter adapter;
-//    private DBHandlerGames dbHandlerGames;
+    private DBHandlerGames dbHandlerGames;
     private ArrayList<Game> games;
 
     @Override
@@ -21,10 +23,9 @@ public class PlayedGamesTrackerActivity extends AppCompatActivity implements Gam
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_played_games_tracker);
 
-//        dbHandlerGames = new DBHandlerGames(PlayedGamesTrackerActivity.this);
+        dbHandlerGames = new DBHandlerGames(PlayedGamesTrackerActivity.this);
 
         games = new ArrayList<>();
-        games.add(new Game(1, "Anachrony", LocalDate.now()));
 
         RecyclerView recyclerView = findViewById(R.id.recyclerViewGames);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -32,14 +33,14 @@ public class PlayedGamesTrackerActivity extends AppCompatActivity implements Gam
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
 
-//        updateListFromDB();
+        updateListFromDB();
     }
 
-//    private void updateListFromDB() {
-//        games.clear();
-//        games.addAll(dbHandlerGames.readGames());
-//        adapter.notifyDataSetChanged();
-//    }
+    private void updateListFromDB() {
+        games.clear();
+        games.addAll(dbHandlerGames.readGames());
+        adapter.notifyDataSetChanged();
+    }
 
     @Override
     public void onItemClick(View view, int position) {
@@ -47,6 +48,7 @@ public class PlayedGamesTrackerActivity extends AppCompatActivity implements Gam
     }
 
     public void addGameButtonClick(View view){
-
+        Intent intent = new Intent(this, AddGameFormActivity.class);
+        startActivity(intent);
     }
 }

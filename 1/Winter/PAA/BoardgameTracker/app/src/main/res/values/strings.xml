@@ -15,4 +15,7 @@
     <string name="button_update_player">Update</string>
     <string name="toast_invalid_update_name">Field cannot be empty.</string>
     <string name="button_add_game">Add game</string>
+    <string name="hint_new_game_name" translatable="false">Anachrony</string>
+    <string name="hint_new_game_date" translatable="false">\?</string>
+    <string name="button_date_picker">Select date</string>
 </resources>

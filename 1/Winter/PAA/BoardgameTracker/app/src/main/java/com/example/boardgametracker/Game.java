@@ -1,6 +1,7 @@
 package com.example.boardgametracker;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Game {
     private int _id;
@@ -11,6 +12,14 @@ public class Game {
         this._id = _id;
         this.name = name;
         this.localDate = localDate;
+    }
+
+    public Game(int _id, String name, String localDate) {
+        this._id = _id;
+        this.name = name;
+        this.localDate = LocalDate.from(
+                DateTimeFormatter.ISO_LOCAL_DATE.parse(localDate)
+        );
     }
 
     @Override
@@ -41,6 +50,8 @@ public class Game {
     public LocalDate getLocalDate() {
         return localDate;
     }
+
+    public String getLocalDateString() {return localDate.toString();}
 
     public void setLocalDate(LocalDate localDate) {
         this.localDate = localDate;
