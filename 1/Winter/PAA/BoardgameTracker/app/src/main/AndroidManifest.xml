@@ -15,10 +15,21 @@
         android:theme="@style/Theme.BoardgameTracker"
         tools:targetApi="31">
         <activity
+            android:name=".GameDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".PlayedGamesTrackerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AddGameFormActivity"
             android:exported="false"
             android:parentActivityName=".PlayedGamesTrackerActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -27,7 +38,8 @@
             android:name=".PlayedGamesTrackerActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

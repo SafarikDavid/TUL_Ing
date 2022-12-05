@@ -4,8 +4,8 @@
     <string name="players_button">Players</string>
     <string name="button_add_player">Add Player</string>
     <string name="button_delete_player">Delete Player</string>
-    <string name="new_player_name_hint">Charles Xavier</string>
-    <string name="id_delete_player_hint">Id (5)</string>
+    <string name="new_player_name_hint">Name (eg. Charles)</string>
+    <string name="id_delete_player_hint">Id (eg. 5)</string>
     <string name="toast_enter_player_name">Please enter a name for the player.</string>
     <string name="toast_entered_player_name">Player was added.</string>
     <string name="DB_NAME" translatable="false">BoardgamesTrackerDB</string>
@@ -15,7 +15,9 @@
     <string name="button_update_player">Update</string>
     <string name="toast_invalid_update_name">Field cannot be empty.</string>
     <string name="button_add_game">Add game</string>
-    <string name="hint_new_game_name" translatable="false">Anachrony</string>
+    <string name="hint_new_game_name">Hint: Anachrony</string>
     <string name="hint_new_game_date" translatable="false">\?</string>
     <string name="button_date_picker">Select date</string>
+    <string name="Winners_text">Winners</string>
+    <string name="Players_text">Players</string>
 </resources>

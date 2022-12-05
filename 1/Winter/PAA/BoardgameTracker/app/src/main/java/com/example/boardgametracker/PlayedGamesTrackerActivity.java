@@ -7,15 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class PlayedGamesTrackerActivity extends AppCompatActivity implements GamesRecyclerViewAdapter.ItemClickListener {
 
     GamesRecyclerViewAdapter adapter;
-    private DBHandlerGames dbHandlerGames;
+    private DBHandler dbHandler;
     private ArrayList<Game> games;
 
     @Override
@@ -23,7 +21,7 @@ public class PlayedGamesTrackerActivity extends AppCompatActivity implements Gam
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_played_games_tracker);
 
-        dbHandlerGames = new DBHandlerGames(PlayedGamesTrackerActivity.this);
+        dbHandler = new DBHandler(PlayedGamesTrackerActivity.this);
 
         games = new ArrayList<>();
 
@@ -36,15 +34,24 @@ public class PlayedGamesTrackerActivity extends AppCompatActivity implements Gam
         updateListFromDB();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateListFromDB();
+    }
+
     private void updateListFromDB() {
         games.clear();
-        games.addAll(dbHandlerGames.readGames());
+        games.addAll(dbHandler.readGames());
         adapter.notifyDataSetChanged();
     }
 
     @Override
     public void onItemClick(View view, int position) {
-
+        Intent intent = new Intent(this, GameDetailActivity.class);
+        Game game = adapter.getGames().get(position);
+        intent.putExtra("game_id", game.get_id());
+        startActivity(intent);
     }
 
     public void addGameButtonClick(View view){

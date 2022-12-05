@@ -13,7 +13,7 @@ public class PlayerDetailActivity extends AppCompatActivity {
     private Player player;
     private TextView textView_id;
     private TextView textView_name;
-    private DBHandlerPlayers dbHandlerPlayers;
+    private DBHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class PlayerDetailActivity extends AppCompatActivity {
         textView_id = findViewById(R.id.textViewPlayerId);
         textView_name = findViewById(R.id.textViewPlayerName);
 
-        dbHandlerPlayers = new DBHandlerPlayers(PlayerDetailActivity.this);
+        dbHandler = new DBHandler(PlayerDetailActivity.this);
 
         updateActivityText();
     }
@@ -39,7 +39,7 @@ public class PlayerDetailActivity extends AppCompatActivity {
     }
 
     private void readPlayerFromDB(){
-        player = dbHandlerPlayers.readPlayer(player_id);
+        player = dbHandler.readPlayer(player_id);
     }
 
     private void updateTextViews(){
@@ -53,11 +53,16 @@ public class PlayerDetailActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.editTextUpdatePlayerName);
         String newName = String.valueOf(editText.getText());
         if (newName.length() > 0) {
-            dbHandlerPlayers.updatePlayer(player_id, newName);
+            dbHandler.updatePlayer(player_id, newName);
         } else {
             Toast.makeText(this, R.string.toast_invalid_update_name, Toast.LENGTH_SHORT).show();
         }
         editText.setText("");
         updateActivityText();
+    }
+
+    public void deletePlayerButtonClick(View view){
+        dbHandler.deletePlayer(player_id);
+        finish();
     }
 }

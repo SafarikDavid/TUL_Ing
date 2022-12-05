@@ -5,7 +5,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 public class PlayersActivity extends AppCompatActivity implements PlayersRecyclerViewAdapter.ItemClickListener {
 
     PlayersRecyclerViewAdapter adapter;
-    private DBHandlerPlayers dbHandlerPlayers;
+    private DBHandler dbHandler;
     private EditText editTextNewPlayerName;
     private EditText editTextPlayerId_delete;
     private ArrayList<Player> players;
@@ -29,7 +28,7 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
         editTextNewPlayerName = findViewById(R.id.editTextNewPlayerName);
         editTextPlayerId_delete = findViewById(R.id.editTextPlayerId_delete);
 
-        dbHandlerPlayers = new DBHandlerPlayers(PlayersActivity.this);
+        dbHandler = new DBHandler(PlayersActivity.this);
 
         players = new ArrayList<>();
 
@@ -43,9 +42,15 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
         updateListFromDB();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        updateListFromDB();
+    }
+
     public void updateListFromDB(){
         players.clear();
-        players.addAll(dbHandlerPlayers.readPlayers());
+        players.addAll(dbHandler.readPlayers());
         adapter.notifyDataSetChanged();
     }
 
@@ -66,7 +71,7 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
             return;
         }
 
-        if (dbHandlerPlayers.addNewPlayer(name)){
+        if (dbHandler.addNewPlayer(name)){
             Toast.makeText(this, R.string.toast_entered_player_name, Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(this, R.string.toast_entered_player_name_not_valid, Toast.LENGTH_SHORT).show();
@@ -80,7 +85,7 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
     public void deletePlayerButtonClick(View view){
         try {
             int id = Integer.parseInt(editTextPlayerId_delete.getText().toString());
-            if (dbHandlerPlayers.deletePlayer(id)) {
+            if (dbHandler.deletePlayer(id)) {
                 Toast.makeText(this, "Deleted " + id, Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "Deletion not successful.", Toast.LENGTH_SHORT).show();

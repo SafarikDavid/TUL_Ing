@@ -24,14 +24,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/hint_new_game_name"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/button_add_game"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/buttonDatePicker"
@@ -41,9 +41,10 @@
         android:text="@string/button_date_picker"
         app:layout_constraintBottom_toTopOf="@+id/button_add_game"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDate"
-        app:layout_constraintVertical_bias="0.381" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/textViewDate"
@@ -51,9 +52,55 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/button_add_game"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextGameName"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.071" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewWinners"
+        android:layout_width="158dp"
+        android:layout_height="281dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlayers"
+        android:layout_width="158dp"
+        android:layout_height="281dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewWinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recyclerViewWinners"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewWinners"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewWinners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Winners_text"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewWinners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Players_text"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewPlayers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

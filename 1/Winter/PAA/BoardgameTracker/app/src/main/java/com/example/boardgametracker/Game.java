@@ -24,11 +24,9 @@ public class Game {
 
     @Override
     public String toString() {
-        return "Game{" +
-                "_id=" + _id +
-                ", name='" + name + '\'' +
-                ", localDate=" + localDate +
-                '}';
+        return "ID=" + _id +
+                ", " + name +
+                ", " + localDate;
     }
 
     public int get_id() {

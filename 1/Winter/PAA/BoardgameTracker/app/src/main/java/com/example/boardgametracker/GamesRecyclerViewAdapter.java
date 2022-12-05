@@ -34,8 +34,8 @@ public class GamesRecyclerViewAdapter extends RecyclerView.Adapter<GamesRecycler
 
     @Override
     public void onBindViewHolder(@NonNull GamesRecyclerViewAdapter.ViewHolder holder, int position) {
-        String game = games.get(position).toString();
-        holder.myTextView.setText(game);
+        Game game = games.get(position);
+        holder.myTextView.setText(game.toString());
     }
 
     @Override
