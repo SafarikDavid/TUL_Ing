@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -88,10 +89,11 @@ public class AddGameFormActivity extends AppCompatActivity implements PlayersSel
         }
         String date = localDate.toString();
         if (name.length() <= 0 || date.length() <= 0) {
-            Toast.makeText(this, "Is empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.toast_game_name_empty, Toast.LENGTH_SHORT).show();
         }else{
             int line = (int) dbHandler.addNewGame(name, date);
-            int game_id = dbHandler.readGames().get(line - 1).get_id();
+            ArrayList<Game> games = dbHandler.readGames();
+            int game_id = games.get(games.size()-1).get_id();
             boolean success = true;
             for (PlayerSelect playerSelect:
                  winners) {
@@ -113,7 +115,7 @@ public class AddGameFormActivity extends AppCompatActivity implements PlayersSel
     }
 
     public void setTextDate(){
-        textViewDate.setText(localDate.toString());
+        textViewDate.setText(localDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
     }
 
     public void showDatePickerDialog(View v) {

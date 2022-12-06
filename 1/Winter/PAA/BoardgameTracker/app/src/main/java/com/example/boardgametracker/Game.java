@@ -24,9 +24,7 @@ public class Game {
 
     @Override
     public String toString() {
-        return "ID=" + _id +
-                ", " + name +
-                ", " + localDate;
+        return name + ", " + localDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
     }
 
     public int get_id() {

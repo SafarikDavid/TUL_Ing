@@ -16,10 +16,17 @@
     <string name="toast_invalid_update_name">Pole nemůže být prázdné.</string>
     <string name="button_add_game">Přidat hru</string>
     <string name="button_date_picker">Vybrat datum</string>
-    <string name="hint_new_game_name">Např.: Anachrony</string>
+    <string name="hint_new_game_name">Název hry</string>
     <string name="Winners_text">Výherci</string>
     <string name="Players_text">Hráči</string>
     <string name="button_eng_lang">English</string>
     <string name="button_cz_lang">Čeština</string>
     <string name="button_delete_game">Smazat záznam</string>
+    <string name="toast_game_name_empty">Pole pro název hry nemůže být prázdné.</string>
+    <string name="label_activity_game_detail">Detail hry</string>
+    <string name="label_activity_games_list">Seznam her</string>
+    <string name="label_activity_add_game_form">Přidat hru</string>
+    <string name="label_activity_player_detail">Detail hráče</string>
+    <string name="label_activity_players_list">Seznam hráčů</string>
+    <string name="label_activity_main">Menu</string>
 </resources>

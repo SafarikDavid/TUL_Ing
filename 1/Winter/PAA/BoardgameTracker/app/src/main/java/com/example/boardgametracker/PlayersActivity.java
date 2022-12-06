@@ -54,7 +54,6 @@ public class PlayersActivity extends AppCompatActivity implements PlayersRecycle
 
     @Override
     public void onItemClick(View view, int position) {
-        Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row " + position, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, PlayerDetailActivity.class);
         Player player = adapter.getPlayers().get(position);
         intent.putExtra("player_id", player.get_id());

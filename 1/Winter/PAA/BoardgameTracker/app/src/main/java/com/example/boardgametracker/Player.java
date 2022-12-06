@@ -32,7 +32,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return name +
-                ", ID=" + _id;
+        return name;
     }
 }

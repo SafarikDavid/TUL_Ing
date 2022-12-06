@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class GameDetailActivity extends AppCompatActivity {
@@ -49,7 +50,12 @@ public class GameDetailActivity extends AppCompatActivity {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append(game.toString());
+        sb.append(game.getName());
+        sb.append("\n");
+        sb.append(game.getLocalDate().format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+        sb.append("\n");
+        sb.append("ID: ");
+        sb.append(game.get_id());
         sb.append("\n");
         sb.append(getText(R.string.Winners_text));
         sb.append(": ");

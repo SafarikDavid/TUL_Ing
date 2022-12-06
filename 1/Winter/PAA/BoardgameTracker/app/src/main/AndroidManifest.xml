@@ -15,6 +15,7 @@
         android:theme="@style/Theme.BoardgameTracker"
         tools:targetApi="31">
         <activity
+            android:label="@string/label_activity_game_detail"
             android:name=".GameDetailActivity"
             android:exported="false"
             android:parentActivityName=".PlayedGamesTrackerActivity"
@@ -25,6 +26,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:label="@string/label_activity_add_game_form"
             android:name=".AddGameFormActivity"
             android:exported="false"
             android:parentActivityName=".PlayedGamesTrackerActivity"
@@ -35,6 +37,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:label="@string/label_activity_games_list"
             android:name=".PlayedGamesTrackerActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
@@ -45,6 +48,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:label="@string/label_activity_player_detail"
             android:name=".PlayerDetailActivity"
             android:exported="false"
             android:parentActivityName=".PlayersActivity"
@@ -55,6 +59,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:label="@string/label_activity_players_list"
             android:name=".PlayersActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity"
@@ -65,6 +70,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:label="@string/label_activity_main"
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">

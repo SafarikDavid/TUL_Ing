@@ -15,7 +15,7 @@
     <string name="button_update_player">Update</string>
     <string name="toast_invalid_update_name">Field cannot be empty.</string>
     <string name="button_add_game">Add game</string>
-    <string name="hint_new_game_name">Hint: Anachrony</string>
+    <string name="hint_new_game_name">Game name</string>
     <string name="hint_new_game_date" translatable="false">\?</string>
     <string name="button_date_picker">Select date</string>
     <string name="Winners_text">Winners</string>
@@ -23,4 +23,11 @@
     <string name="button_eng_lang">English</string>
     <string name="button_cz_lang">Čeština</string>
     <string name="button_delete_game">Delete game</string>
+    <string name="toast_game_name_empty">Game name cannot be empty.</string>
+    <string name="label_activity_game_detail">Game detail</string>
+    <string name="label_activity_games_list">List of games</string>
+    <string name="label_activity_add_game_form">Add game</string>
+    <string name="label_activity_player_detail">Player detail</string>
+    <string name="label_activity_players_list">List of players</string>
+    <string name="label_activity_main">Menu</string>
 </resources>

@@ -11,8 +11,7 @@ import android.widget.Toast;
 public class PlayerDetailActivity extends AppCompatActivity {
     private int player_id;
     private Player player;
-    private TextView textView_id;
-    private TextView textView_name;
+    private TextView textViewPlayerDetails;
     private DBHandler dbHandler;
 
     @Override
@@ -25,8 +24,7 @@ public class PlayerDetailActivity extends AppCompatActivity {
             player_id = extras.getInt("player_id");
         }
 
-        textView_id = findViewById(R.id.textViewPlayerId);
-        textView_name = findViewById(R.id.textViewPlayerName);
+        textViewPlayerDetails = findViewById(R.id.textViewPlayerDetails);
 
         dbHandler = new DBHandler(PlayerDetailActivity.this);
 
@@ -44,8 +42,10 @@ public class PlayerDetailActivity extends AppCompatActivity {
 
     private void updateTextViews(){
         if (player != null) {
-            textView_id.setText(String.format("ID: %s", String.valueOf(player.get_id())));
-            textView_name.setText(String.format("%s: %s", getString(R.string.player_name), player.getName()));
+            textViewPlayerDetails.setText(String.format("ID: %s\n%s: %s",
+                    String.valueOf(player.get_id()),
+                    getString(R.string.player_name),
+                    player.getName()));
         }
     }
 
