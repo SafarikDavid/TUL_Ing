@@ -22,4 +22,5 @@
     <string name="Players_text">Players</string>
     <string name="button_eng_lang">English</string>
     <string name="button_cz_lang">Čeština</string>
+    <string name="button_delete_game">Delete game</string>
 </resources>

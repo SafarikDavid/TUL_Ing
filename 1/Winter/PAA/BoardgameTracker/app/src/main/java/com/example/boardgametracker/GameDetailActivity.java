@@ -3,6 +3,7 @@ package com.example.boardgametracker;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -71,5 +72,10 @@ public class GameDetailActivity extends AppCompatActivity {
         sb.deleteCharAt(sb.length()-1);
 
         textViewGameDetail.setText(sb.toString());
+    }
+
+    public void deleteButtonClick(View view){
+        dbHandler.deleteGame(game_id);
+        finish();
     }
 }
