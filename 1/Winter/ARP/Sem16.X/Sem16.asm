@@ -41,8 +41,18 @@ Start	movlb	.1		;Bank1
 	;config TMR2
 	movlb	.0		;Banka0 s TMR2
 	clrf	T2CON		;1:1 pre, 1:1 post
+	;preddelicka pr.: 01 - PS0 je 1, PS1 je 0
+	;00 - 1, 01 - 4, 10 - 16, 11 / 64
+	bcf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	;postdelicka - na nulach
+	bcf	T2CON,T2OUTPS0
+	bcf	T2CON,T2OUTPS1
+	bcf	T2CON,T2OUTPS2
+	bcf	T2CON,T2OUTPS3
 	clrf	TMR2		;vynulovat citac
-	movlw	0xFF		;(4000000/4)/256 = 3906.25 Hz
+	;freq je (4000000/4)/(PR2*preddelicka)
+	movlw	0xFF	;(4000000/4)/256 = 3906.25 Hz
 	movwf	PR2		;nastavit na max. hodnotu
 	bsf	T2CON,TMR2ON	;po nastaveni vseho zapnout TMR2
 	
@@ -57,17 +67,19 @@ Start	movlb	.1		;Bank1
 	movwf	FSR0H
 	;movlw	0x12		
 	movlw	0x1B
-	movwf	FSR0L		;PWM1DCH pomoci nepr. addresovani
+	movwf	FSR0L		;PWM4DCH pomoci nepr. addresovani
 	
 	movlb	.0		;Banka0 s PORT
 		
 	clrf	state
 	incf	state,F
 	clrw
-	addlw	.0
+	addlw	.127
 	movwf	INDF0
 
 	;takhle menim duty cycle, potrebuju menit frekvenci, ktera je jinde
+	
+	;nastavit nejak lip ty frekvence.. jestli to teda bude fungovat
 	
 Main	btfss	BT1		;je to jedna?
 	goto	BT2Int		;je to tedy BT2?
@@ -76,26 +88,35 @@ Main	btfss	BT1		;je to jedna?
 	movlw	.1
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.127
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.2
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.190
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'11111001'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.3
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.255
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'01111100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.4
 	subwf	state,W
@@ -111,26 +132,35 @@ BT2Int	btfss	BT2		;je to dvojka?
 	movlw	.4
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.190
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'01111100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.3
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.127
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.2
 	subwf	state,W
 	btfss	STATUS,Z
-	goto	$+4
-	clrw
-	addlw	.0
-	movwf	INDF0
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11111111'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
 	movlw	.1
 	subwf	state,W
