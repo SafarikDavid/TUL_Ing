@@ -16,3 +16,75 @@ BT2H	btfsc   BT1
         decfsz  cnt1,F
         goto    BT2H
         goto    BLoop
+
+
+
+movlb	.7		;Banka7 s IOC
+	btfss	IOCAF,4		;preruseni od BT1(RA4)?
+	goto	BT2Int		;je to tedy od BT2...
+	bcf	IOCAF,4		;vynulovat priznak od BT1(RA4)
+	movlb	.0		;Banka0 s PORT
+	
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.127
+	movwf	INDF0
+	
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.190
+	movwf	INDF0
+	
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.255
+	movwf	INDF0
+	
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	incf	state,F
+	call	Delay100
+  	retfie
+	
+BT2Int	bcf	IOCAF,5		;vynulovat priznak od BT2(RA5)
+	movlb	.0		;Banka0 s PORT
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.190
+	movwf	INDF0
+	
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.127
+	movwf	INDF0
+	
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+4
+	clrw
+	addlw	.0
+	movwf	INDF0
+	
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	decf	state,F
+	call	Delay100
+	retfie
