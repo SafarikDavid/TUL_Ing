@@ -132,7 +132,7 @@ public class AddGameFormActivity extends AppCompatActivity implements PlayersSel
                     public void onDateSet(DatePicker view, int year,
                                           int monthOfYear, int dayOfMonth) {
                         // on below line we are setting date to our text view.
-                        localDate = LocalDate.of(year, month+1, day);
+                        localDate = LocalDate.of(year, monthOfYear+1, dayOfMonth);
                         setTextDate();
                     }
                 },
