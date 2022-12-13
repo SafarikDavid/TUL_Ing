@@ -1,0 +1,5 @@
+usr8 mail
+usr10 uucp
+usr13 gopher
+usr14 ftp
+usr68 haldaemon
