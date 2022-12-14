@@ -71,108 +71,90 @@ Start	movlb	.1		;Bank1
 	
 	movlb	.0		;Banka0 s PORT
 		
+	;duty cycle nastaven na 50% asi 
 	clrf	state
 	incf	state,F
 	clrw
 	addlw	.127
 	movwf	INDF0
 
-	;takhle menim duty cycle, potrebuju menit frekvenci, ktera je jinde
 	
-	;nastavit nejak lip ty frekvence.. jestli to teda bude fungovat
+Main	movlb	.0		;Banka0 s PORT
+	btfsc	BT1		;je to jedna?
+	goto	IncSt
+	btfsc	BT2		;je to dva?
+	goto	DecSt
+	goto	Main		;neni nic, jdi na zacatek
 	
-Main	btfss	BT1		;je to jedna?
-	goto	BT2Int		;je to tedy BT2?
-	movlb	.0		;Banka0 s PORT
-	
-	movlw	.1
+IncSt	movlw	.4
 	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
-	bcf	T2CON,T2CKPS0
-	bsf	T2CON,T2CKPS1
-	movlw	b'10010100'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	movlw	.2
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
-	bsf	T2CON,T2CKPS0
-	bcf	T2CON,T2CKPS1
-	movlw	b'11111001'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	movlw	.3
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
-	bsf	T2CON,T2CKPS0
-	bcf	T2CON,T2CKPS1
-	movlw	b'01111100'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	movlw	.4
-	subwf	state,W
-	btfss	STATUS,Z
-	incf	state,F
-	call	Delay100
-	
-  	goto	Main
-	
-BT2Int	btfss	BT2		;je to dvojka?
+	btfsc	STATUS,Z
 	goto	Main
-	movlb	.0		;Banka0 s PORT
-	movlw	.4
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
-	bsf	T2CON,T2CKPS0
-	bcf	T2CON,T2CKPS1
-	movlw	b'01111100'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
+	incf	state,F
+	goto	FrChng
 	
-	movlw	.3
+DecSt	movlw	.1
+	subwf	state,W
+	btfsc	STATUS,Z
+	goto	Main
+	decf	state,F
+	goto	FrChng
+	
+FrChng	
+	;419.46 Hz
+	movlw	.1
 	subwf	state,W
 	btfss	STATUS,Z
 	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
+	clrf	T2CON
 	bcf	T2CON,T2CKPS0
 	bsf	T2CON,T2CKPS1
 	movlw	b'10010100'
 	movwf	PR2
 	bsf	T2CON,TMR2ON
 	
+	;856.16	Hz
 	movlw	.2
 	subwf	state,W
 	btfss	STATUS,Z
 	goto	$+7
-	clrf	T2CON		;1:1 pre, 1:1 post
-	bsf	T2CON,T2CKPS0
+	clrf	T2CON
+	bcf	T2CON,T2CKPS0
 	bsf	T2CON,T2CKPS1
-	movlw	b'11111111'
+	movlw	b'01001000'
 	movwf	PR2
 	bsf	T2CON,TMR2ON
 	
-	movlw	.1
+	;1225.49 Hz
+	movlw	.3
 	subwf	state,W
 	btfss	STATUS,Z
-	decf	state,F
-	call	Delay100
+	goto	$+7
+	clrf	T2CON
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'00110010'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	
-	goto	Main		;zacykleni
+	;1644.74 Hz
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'00100101'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	call	Delay100
+	goto	Main
 	
 	
 Delay100			;zpozdeni 100 ms
-        movlw   .500
+        movlw   .100
 Delay_ms
         movwf	cnt2		
 OutLp	movlw	.249		

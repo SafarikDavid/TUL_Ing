@@ -88,3 +88,102 @@ BT2Int	bcf	IOCAF,5		;vynulovat priznak od BT2(RA5)
 	decf	state,F
 	call	Delay100
 	retfie
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	btfss	BT1		;je to jedna?
+	goto	BT2Int		;je to tedy BT2?
+	movlb	.0		;Banka0 s PORT
+	
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'11111001'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'01111100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	incf	state,F
+	call	Delay100
+	
+  	goto	Main
+	
+BT2Int	btfss	BT2		;je to dvojka?
+	goto	Main
+	movlb	.0		;Banka0 s PORT
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'01111100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	$+7
+	clrf	T2CON		;1:1 pre, 1:1 post
+	bsf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11111111'
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	decf	state,F
+	call	Delay100
+	
+	goto	Main		;zacykleni

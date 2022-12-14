@@ -1,5 +1,5 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Thu Dec 08 14:11:10 2022
+Linker Map File - Created Wed Dec 14 13:41:58 2022
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
@@ -25,19 +25,19 @@ Linker Map File - Created Thu Dec 08 14:11:10 2022
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                   BT2Int   0x000044    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                Config_IOs   0x00006c    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Config_IOs.inc
+                    DecSt   0x000032    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                  Delay100   0x000062    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                  Delay_ms   0x000063    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+                   FrChng   0x000038    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+                    IncSt   0x00002c    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                      Main   0x000026    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                     OutLp   0x000064    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                     Start   0x000006    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_002C   0x00002c    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0033   0x000033    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_003A   0x00003a    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_004A   0x00004a    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0051   0x000051    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0058   0x000058    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_003B   0x00003b    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_0045   0x000045    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_004F   0x00004f    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_0059   0x000059    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
              _.org_1_0068   0x000068    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
 
 
@@ -47,13 +47,13 @@ Linker Map File - Created Thu Dec 08 14:11:10 2022
                 ---------  ---------  ---------  --------- ---------                
                     Start   0x000006    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                      Main   0x000026    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_002C   0x00002c    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0033   0x000033    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_003A   0x00003a    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-                   BT2Int   0x000044    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_004A   0x00004a    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0051   0x000051    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
-             _.org_1_0058   0x000058    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+                    IncSt   0x00002c    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+                    DecSt   0x000032    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+                   FrChng   0x000038    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_003B   0x00003b    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_0045   0x000045    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_004F   0x00004f    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
+             _.org_1_0059   0x000059    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                  Delay100   0x000062    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                  Delay_ms   0x000063    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
                     OutLp   0x000064    program     static C:\School\Ing\TUL_Ing\1\Winter\ARP\Sem16.X\Sem16.asm
