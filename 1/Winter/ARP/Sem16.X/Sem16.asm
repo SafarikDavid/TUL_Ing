@@ -101,6 +101,10 @@ St4	movlb	.0		;Banka0 s TMR2
 MainEnd
 	movwf	PR2
 	bsf	T2CON,TMR2ON
+	call	Delay100
+	movlb	.7		;Banka7 s IOC
+	clrf	IOCAF		;smazat priznak doted detekovanych hran
+	movlb	.0		;Banka7 s IOC
 	retfie
 	
 	
@@ -167,6 +171,19 @@ Start	movlb	.1		;Bank1
 Main	movlb	.0		;Banka0 s PORT
 	goto	Main
 	
+	
+Delay100			;zpozdeni 100 ms
+        movlw   .100
+Delay_ms
+        movwf	cnt2		
+OutLp	movlw	.249		
+	movwf	cnt1		
+	nop			
+	decfsz	cnt1,F
+        goto	$-2		
+	decfsz	cnt2,F
+	goto	OutLp
+	return	
 	
     #include	"Config_IOs.inc"	;zde "#include" funguje tak, ze proste jen vlozi svuj obsah tam kam ho napisete
 		
