@@ -187,3 +187,84 @@ BT2Int	btfss	BT2		;je to dvojka?
 	call	Delay100
 	
 	goto	Main		;zacykleni
+
+
+
+
+
+
+
+
+btfsc	BT1		;je to jedna?
+	goto	IncSt
+	btfsc	BT2		;je to dva?
+	goto	DecSt
+	goto	Main		;neni nic, jdi na zacatek
+	
+IncSt	movlw	.4
+	subwf	state,W
+	btfsc	STATUS,Z
+	goto	Main
+	incf	state,F
+	goto	FrChng
+	
+DecSt	movlw	.1
+	subwf	state,W
+	btfsc	STATUS,Z
+	goto	Main
+	decf	state,F
+	goto	FrChng
+	
+FrChng	movlb	.0
+	clrf	TMR2
+	clrf	T2CON
+	
+	;244.14	 Hz
+St1	movlb	.0		;Banka0 s TMR2
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St2
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11111111'
+	goto	MainEnd
+	
+	;318.88 Hz
+St2	movlb	.0		;Banka0 s TMR2
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St3
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11000011'
+	goto	MainEnd
+	;419.46 Hz
+St3	movlb	.0		;Banka0 s TMR2
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St4
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	goto	MainEnd
+	
+	;988.14	Hz
+St4	movlb	.0		;Banka0 s TMR2
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	MainEnd
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'11111100'
+	goto	MainEnd
+	
+MainEnd
+	movwf	PR2
+	bsf	T2CON,TMR2ON
+	
+	call	Delay100
+	goto	Main

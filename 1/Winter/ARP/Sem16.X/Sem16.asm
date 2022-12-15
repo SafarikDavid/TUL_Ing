@@ -26,7 +26,81 @@
   	goto    Start
 	
 	ORG     0x04
-	nop
+	movlb	.7		;Banka7 s IOC
+	btfss	IOCAF,4		;preruseni od BT1(RA4)?
+	goto	BT2Int		;je to tedy od BT2...
+	bcf	IOCAF,4		;vynulovat priznak od BT1(RA4)
+	goto	IncSt
+	
+BT2Int	bcf	IOCAF,5		;vynulovat priznak od BT2(RA5)
+	goto	DecSt
+	
+IncSt	movlb	.0
+	movlw	.4
+	subwf	state,W
+	btfsc	STATUS,Z
+	retfie
+	incf	state,F
+	goto	FrChng
+	
+DecSt	movlb	.0
+	movlw	.1
+	subwf	state,W
+	btfsc	STATUS,Z
+	retfie
+	decf	state,F
+	goto	FrChng
+	
+FrChng	movlb	.0
+	clrf	TMR2
+	clrf	T2CON
+	
+	;244.14	 Hz
+St1	movlb	.0		;Banka0 s TMR2
+	movlw	.1
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St2
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11111111'
+	goto	MainEnd
+	
+	;318.88 Hz
+St2	movlb	.0		;Banka0 s TMR2
+	movlw	.2
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St3
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'11000011'
+	goto	MainEnd
+	;419.46 Hz
+St3	movlb	.0		;Banka0 s TMR2
+	movlw	.3
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	St4
+	bcf	T2CON,T2CKPS0
+	bsf	T2CON,T2CKPS1
+	movlw	b'10010100'
+	goto	MainEnd
+	
+	;988.14	Hz
+St4	movlb	.0		;Banka0 s TMR2
+	movlw	.4
+	subwf	state,W
+	btfss	STATUS,Z
+	goto	MainEnd
+	bsf	T2CON,T2CKPS0
+	bcf	T2CON,T2CKPS1
+	movlw	b'11111100'
+	goto	MainEnd
+	
+MainEnd
+	movwf	PR2
+	bsf	T2CON,TMR2ON
 	retfie
 	
 	
@@ -38,21 +112,30 @@ Start	movlb	.1		;Bank1
 	call	Config_IOs	;vola nastaveni pinu
 	movlb	.0		;Bank0
 	
+	;nastaveni preruseni
+	movlb	.7		;Banka7 s IOC
+	bsf	IOCAP,4		;BT1(RA4) nastavena detekce pozitivni hrany
+	bsf	IOCAP,5		;BT2(RA5) nastavena detekce pozitivni hrany
+	clrf	IOCAF		;smazat priznak doted detekovanych hran
+	
+	bsf	INTCON,IOCIE	;povolit preruseni od IOC
+	bsf	INTCON,GIE	;povolit preruseni jako takove	
+	
 	;config TMR2
 	movlb	.0		;Banka0 s TMR2
 	clrf	T2CON		;1:1 pre, 1:1 post
 	;preddelicka pr.: 01 - PS0 je 1, PS1 je 0
 	;00 - 1, 01 - 4, 10 - 16, 11 / 64
 	bcf	T2CON,T2CKPS0
-	bcf	T2CON,T2CKPS1
+	bsf	T2CON,T2CKPS1
 	;postdelicka - na nulach
-	bcf	T2CON,T2OUTPS0
-	bcf	T2CON,T2OUTPS1
-	bcf	T2CON,T2OUTPS2
-	bcf	T2CON,T2OUTPS3
+	;bcf	T2CON,T2OUTPS0
+	;bcf	T2CON,T2OUTPS1
+	;bcf	T2CON,T2OUTPS2
+	;bcf	T2CON,T2OUTPS3
 	clrf	TMR2		;vynulovat citac
 	;freq je (4000000/4)/(PR2*preddelicka)
-	movlw	0xFF	;(4000000/4)/256 = 3906.25 Hz
+	movlw	b'11111111'	;(4000000/4)/256 = 3906.25 Hz
 	movwf	PR2		;nastavit na max. hodnotu
 	bsf	T2CON,TMR2ON	;po nastaveni vseho zapnout TMR2
 	
@@ -72,99 +155,18 @@ Start	movlb	.1		;Bank1
 	movlb	.0		;Banka0 s PORT
 		
 	;duty cycle nastaven na 50% asi 
-	clrf	state
-	incf	state,F
 	clrw
 	addlw	.127
 	movwf	INDF0
+	
+	;nastaveni state na 1
+	clrf	state
+	incf	state,F
 
 	
 Main	movlb	.0		;Banka0 s PORT
-	btfsc	BT1		;je to jedna?
-	goto	IncSt
-	btfsc	BT2		;je to dva?
-	goto	DecSt
-	goto	Main		;neni nic, jdi na zacatek
-	
-IncSt	movlw	.4
-	subwf	state,W
-	btfsc	STATUS,Z
-	goto	Main
-	incf	state,F
-	goto	FrChng
-	
-DecSt	movlw	.1
-	subwf	state,W
-	btfsc	STATUS,Z
-	goto	Main
-	decf	state,F
-	goto	FrChng
-	
-FrChng	
-	;419.46 Hz
-	movlw	.1
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON
-	bcf	T2CON,T2CKPS0
-	bsf	T2CON,T2CKPS1
-	movlw	b'10010100'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	;856.16	Hz
-	movlw	.2
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON
-	bcf	T2CON,T2CKPS0
-	bsf	T2CON,T2CKPS1
-	movlw	b'01001000'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	;1225.49 Hz
-	movlw	.3
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON
-	bcf	T2CON,T2CKPS0
-	bsf	T2CON,T2CKPS1
-	movlw	b'00110010'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	;1644.74 Hz
-	movlw	.4
-	subwf	state,W
-	btfss	STATUS,Z
-	goto	$+7
-	clrf	T2CON
-	bcf	T2CON,T2CKPS0
-	bsf	T2CON,T2CKPS1
-	movlw	b'00100101'
-	movwf	PR2
-	bsf	T2CON,TMR2ON
-	
-	call	Delay100
 	goto	Main
 	
-	
-Delay100			;zpozdeni 100 ms
-        movlw   .100
-Delay_ms
-        movwf	cnt2		
-OutLp	movlw	.249		
-	movwf	cnt1		
-	nop			
-	decfsz	cnt1,F
-        goto	$-2		
-	decfsz	cnt2,F
-	goto	OutLp
-	return	
 	
     #include	"Config_IOs.inc"	;zde "#include" funguje tak, ze proste jen vlozi svuj obsah tam kam ho napisete
 		
