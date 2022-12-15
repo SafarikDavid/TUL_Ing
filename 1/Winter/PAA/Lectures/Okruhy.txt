@@ -1,0 +1,23 @@
+1. Platforma Android, verze, architektura, nástroje pro vývoj
+2. Základní komponenty aplikace, manifest, oprávnění
+3. Aktivita, životní cyklus, důležité metody k překrytí
+4. Android resources - co to je, význam jednotlivých resources, modifikátory, jednotky, displeje atd.
+5. UI - View, ViewGroup, zachyvcení události UI
+6. UI - Layouty, co to je, navázání na resources, typy layoutů
+7. Intenty - co to je, typy intentů, použití s jednotlivými komponenty aplikace
+8. UI - Fragmenty, co to je, použití, asociace s Activity
+9. Persistentní ukládání dat, SharedPreference
+10. Persistentní ukládání dat, práce se soubory
+11. Persistentní ukládání dat, SQLite
+12. Práce na pozadí, Handlery
+13. Práce na pozadí, vlákna
+14. Práce na pozadí, AsyncTask
+15. Výměna dat, XML
+16. Výměna dat, JSON
+17. Content Provider / Resolver, UriMatcher
+18. Content Provider / Resolver, integrace s SQLite, Cursor
+19. Service - co to je, rozdíl oproti ostatním komponentám aplikace, životní cyklus, integrace do manifestu
+20. Service - důležité metody, spouštění, návratové hodnoty , flags, provázání s Activity
+21. Notifikace - co to je, vytvoření, PendingIntent, priority
+22. Broadcast - co to je, vazba na manifest, princip činnosti
+23. BroadcastReceiver - oč jde, jak se předávají / zachycují data, oprávnění
