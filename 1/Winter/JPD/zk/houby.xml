@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<atlas>
+
+<seznam>
+
+    <houba celed="hb">
+        <nazev>Hřib smrkový</nazev>
+        <jedlost>jedlá</jedlost>
+        <vyskyt>Evropa, Severní Amerika</vyskyt>
+    </houba>
+
+    <houba celed="pe">
+        <nazev>Bedla vysoká</nazev>
+        <jedlost>jedlá</jedlost>
+        <vyskyt>Evropa</vyskyt>
+    </houba>
+
+    <houba celed="ho">
+        <nazev>Holubinka zlatá</nazev>
+        <jedlost>jedlá</jedlost>
+        <vyskyt>Evropa</vyskyt>
+    </houba>
+
+    <houba celed="ho">
+        <nazev>Holubinka smrdutá</nazev>
+        <jedlost>nejedlá</jedlost>
+        <vyskyt>Evropa</vyskyt>
+    </houba>
+
+    <houba celed="hb">
+        <nazev>Hřib satan</nazev>
+        <jedlost>jedovatá</jedlost>
+        <vyskyt>Evropa, Severní Amerika</vyskyt>
+    </houba>
+
+    <houba celed="mu">
+        <nazev>Muchomůrka červená</nazev>
+        <jedlost>jedovatá</jedlost>
+        <vyskyt>Asie, Evropa, Severní Amerika</vyskyt>
+    </houba>
+
+    <houba celed="mu">
+        <nazev>Muchomůrka ryšavá</nazev>
+        <jedlost>jedlá</jedlost>
+        <vyskyt>Evropa, Severní Amerika</vyskyt>
+    </houba>
+
+    <houba celed="hb">
+        <nazev>Hřib kovář</nazev>
+        <jedlost>jedlá</jedlost>
+        <vyskyt>Asie, Evropa</vyskyt>
+    </houba>
+
+    <houba celed="pe">
+        <nazev>Bedla červenající</nazev>
+        <jedlost>nejedlá</jedlost>
+        <vyskyt>Afrika, Evropa, Severní Amerika</vyskyt>
+    </houba>
+
+</seznam>
+
+<system>
+
+    <celed id="hb">
+        <nazev>Hřibovité</nazev>
+    </celed>
+
+    <celed id="ho">
+        <nazev>Holubinkovité</nazev>
+    </celed>
+
+    <celed id="pe">
+        <nazev>Pečárkovité</nazev>
+    </celed>
+
+    <celed id="mu">
+        <nazev>Muchomůrkovité</nazev>
+    </celed>
+
+</system>
+
+</atlas>

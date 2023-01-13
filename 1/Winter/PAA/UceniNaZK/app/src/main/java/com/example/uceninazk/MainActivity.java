@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = new JSONArray();
         for (int i = 0; i < 5; i++){
