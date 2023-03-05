@@ -1,6 +1,7 @@
 .zip
 .rar
 .asv
+*.asv
 
 # Gradle files
 .gradle/
