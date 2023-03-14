@@ -59,7 +59,7 @@ for i = 1:pocet_nahravek
         for j = 2:length(segment)
             zcr_temp = zcr_temp + abs(sign(segment(j)) - sign(segment(j-1)));
         end
-        zcr = [zcr zcr_temp/2];
+        zcr = [zcr zcr_temp/(2*(pocet_vzorku_v_segmentu-1))];
     end
 
 %     hledani prumeru energie
