@@ -1,17 +1,28 @@
 clc; clear all; close all;
 
-file_list = readlines("file_list.txt");
+file_list = readlines("FileList_p2201.txt", "EmptyLineRule", "skip");
 pocet_nahravek = length(file_list);
+
+% coefficient selection
+% 1 - ene
+% 2 - ene + zcr
+% 3 - spectrum
+coefficient_select = 3;
+
+% word boundary search parameters
+bound_k_extremas = 10;
+bound_threshold_percentage = 0.4;
+
+% plot signal
+plot_data = true;
+% if plot_data false - sound_cutout won't activate
+sound_cutout = true;
 
 test_indexes = [];
 train_indexes = [];
 
 pocet_vzorku_v_segmentu = 400;
 frame_len = 160;
-
-% word boundary search parameters
-bound_k_extremas = 5;
-bound_threshold_percentage = 0.9;
 
 for i = 1:pocet_nahravek
 %     rozdeleni nahravek na trenovaci sadu a testovaci sadu
@@ -31,7 +42,7 @@ for i = 1:pocet_nahravek
 
     [frames, energy] = ComputeFramesAndEnergy(x, pocet_vzorku_v_segmentu, frame_len);
 
-    [word_start, word_end] = FindWordBoundary(energy, bound_k_extremas, bound_threshold_percentage);
+    [word_start, word_end, word_threshold] = FindWordBoundary(energy, bound_k_extremas, bound_threshold_percentage);
 
     cutout = x(frame_len*(word_start-1)+1:frame_len*word_end);
     cutout_frames = frames(:, word_start:word_end);
@@ -45,12 +56,42 @@ for i = 1:pocet_nahravek
     energy_coeff{i} = cutout_energy;
     energy_and_zcr_coeff{i} = [cutout_energy; zcr];
     spectral_coeff{i} = spectrum;
+    
+    if (abs(word_end - word_start) > 100)
+        fprintf("Extreme boundary diff found %d: %s\n", abs(word_end - word_start), file_list(i))
+    end
 
-%     pozdrzeni programu
-%     w = waitforbuttonpress;
+    if (plot_data == true)
+        fprintf("Viewing: %s\n", file_list(i))
+        close('all')
+        subplot(2,1,1)
+        t = 0:1/Fs:x_len/Fs - 1/Fs;
+        plot(t, x)
+        title("Signal after filter")
+    
+        subplot(2,1,2)
+        plot(energy)
+        title(strcat('energie: ', string(word_threshold)))
+        hold on
+        xline(word_start)
+        xline(word_end)
+        
+        if (sound_cutout == true)
+            soundsc(cutout, Fs)
+        end
+
+        %     pozdrzeni programu
+        w = waitforbuttonpress;
+    end
 end
 
-coeff = spectral_coeff;
+if (coefficient_select == 1)
+    coeff = energy_coeff;
+elseif (coefficient_select == 2)
+    coeff = energy_and_zcr_coeff;
+elseif (coefficient_select == 3)
+    coeff = spectral_coeff;
+end
 predictions = zeros(length(test_indexes), 1);
 ground_truth = zeros(length(test_indexes), 1);
 for i = 1:length(test_indexes)
@@ -76,4 +117,6 @@ for i = 1:length(test_indexes)
     ground_truth(i) = str2num(truth(end-14));
 end
 
-accuracy = sum(predictions == ground_truth)/length(predictions) * 100;
+accurracy = sum(predictions == ground_truth)/length(predictions) * 100;
+
+fprintf("Accurracy: %.2f\n", accurracy)

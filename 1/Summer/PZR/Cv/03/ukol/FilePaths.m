@@ -13,7 +13,11 @@ for f = 1:numel(folder_list)
     out = fopen(txt_name, 'w');
     for i = 1 : size(wav_list,1)
         wav_path = sprintf("%s\\%s",wav_list(i).folder,wav_list(i).name);
-        fprintf(out, "%s\n", wav_path);
+        if (i >= size(wav_list,1))
+            fprintf(out, "%s", wav_path);
+        else
+            fprintf(out, "%s\n", wav_path);
+        end
     end
     fclose('all');
 end
