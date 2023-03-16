@@ -9,5 +9,27 @@ function res = ComputeLTW(X,I,R,J,P)
     end
     Yltw = R(:,f);
     res = ComputeEuclidDist(X,Yltw,P);
+
+%     subplot(4,1,1)
+%     plot(X)
+%     title("X")
+%     xlim([1 max(I, J)])
+%     subplot(4,1,2)
+%     plot(R)
+%     title("R")
+%     xlim([1 max(I, J)])
+%     subplot(4,1,3)
+%     plot(X)
+%     hold on
+%     plot(Yltw)
+%     legend("X", "R")
+%     title("Diff")
+%     xlim([1 max(I, J)])
+%     subplot(4,1,4)
+%     plot(f)
+%     grid()
+%     yticks(1:J)
+%     xticks(1:I)
+%     title("Path")
 end
 

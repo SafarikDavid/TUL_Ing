@@ -7,6 +7,7 @@ for i = 1:size(frames, 2)
         zcr_temp = zcr_temp + abs(sign(segment(j)) - sign(segment(j-1)));
     end
     zcr = [zcr zcr_temp/(2*(size(frames, 1)-1))];
+%     zcr = [zcr zcr_temp/2];
 end
 end
 
