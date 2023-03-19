@@ -1,10 +1,37 @@
 clc; clear all; close all;
 
-% ↓---------------------------nastaveni----------------------------------↓
+% kazdy soubor je jeden clovek, lze zadat pouze jeden txt soubor
+% identifikace cloveka je brana z nazvu wav souboru
+list_of_file_lists = [
+    "FileList_p2101.txt";
+    "FileList_p2102.txt";
+    "FileList_p2103.txt";
+    "FileList_p2104.txt";
+    "FileList_p2105.txt";
+    "FileList_p2106.txt";
+    "FileList_p2109.txt";
+    "FileList_p2110.txt";
+    "FileList_p2111.txt";
+    "FileList_p2112.txt";
+    "FileList_p2201.txt";
+    "FileList_p2202.txt";
+    "FileList_p2203.txt";
+    "FileList_p2204.txt";
+    "FileList_p2206.txt";
+    "FileList_p2207.txt";
+    "FileList_p2301.txt";
+    "FileList_p2303.txt";
+    "FileList_p2304.txt";
+    "FileList_p2305.txt";
+    "FileList_p2306.txt";
+    "FileList_p2307.txt";
+    "FileList_p2308.txt";
+    ];
 
-% nacteni cest pro nahravky
-file_list = readlines("FileList.txt", "EmptyLineRule", "skip");
-n_recordings = length(file_list);
+% pocet osob
+n_persons = length(list_of_file_lists);
+
+% ↓---------------------------nastaveni----------------------------------↓
 
 % coefficient selection
 % 1 - ene
@@ -18,7 +45,7 @@ plot_data = false;
 play_cutout = true;
 
 % nastaveni vypisu do konzole
-write_results_to_console = true;
+write_results_to_console = false;
 write_suspicious_data_to_console = false;
 
 % export settings
@@ -45,25 +72,36 @@ frame_len = 160;
 
 % ↑---------------------------nastaveni----------------------------------↑
 
+% prealokace poli pro vysledky
+results_spectrum = zeros(1, n_persons);
+results_ene_zcr = zeros(1, n_persons);
+results_ene = zeros(1, n_persons);
+
+for i_lists = 1:n_persons
+
+% nacteni cest pro nahravky
+file_list_name = list_of_file_lists(i_lists);
+file_list = readlines(file_list_name, "EmptyLineRule", "skip");
+n_recordings = length(file_list);
+
+% nacteni cisla osoby
+person = file_list(1);
+person = convertStringsToChars(person);
+person = convertCharsToStrings(person(end-12:end-8));
+
+% vypis cisla osoby
+if write_results_to_console
+fprintf("-----------------------------------------\nPerson: %s\n", person)
+end
+
 test_indexes = [];
 train_indexes = [];
-persons_train = [];
-persons_test = [];
-persons_unique = [];
 
 for i = 1:n_recordings
-%     nacteni cisla osoby
-    person = file_list(i);
-    person = convertStringsToChars(person);
-    person = convertCharsToStrings(person(end-12:end-8));
-    persons_unique = unique([persons_unique person]);
-
 %     rozdeleni nahravek na trenovaci sadu a testovaci sadu
     if(contains(file_list(i), 's01.wav'))
-        persons_train = [persons_train person];
         train_indexes = [train_indexes i];
     else
-        persons_test = [persons_test person];
         test_indexes = [test_indexes i];
     end
 
@@ -90,6 +128,7 @@ for i = 1:n_recordings
     energy_coeff{i} = cutout_energy;
 %     normalizace energie + zcr
     energy_and_zcr_coeff{i} = [(cutout_energy-mean(cutout_energy))./max(cutout_energy); (zcr-mean(zcr))./max(zcr)];
+%     energy_and_zcr_coeff{i} = [cutout_energy; zcr];
     spectral_coeff{i} = spectrum;
     
     if (abs(word_end - word_start) > 100) && write_suspicious_data_to_console
@@ -120,17 +159,8 @@ for i = 1:n_recordings
     end
 end
 
-n_persons = length(persons_unique);
-
-len_test = length(test_indexes);
-
-% prealokace poli pro vysledky
-results_spectrum = zeros(1, n_persons);
-results_ene_zcr = zeros(1, n_persons);
-results_ene = zeros(1, n_persons);
-
-for coeff_sel_idx = 1:length(coefficient_select)
-    select = coefficient_select(coeff_sel_idx);
+for coeff_sel_index = 1:length(coefficient_select)
+    select = coefficient_select(coeff_sel_index);
     coeff_name = "";
     switch select
         case 1
@@ -144,9 +174,9 @@ for coeff_sel_idx = 1:length(coefficient_select)
             coeff_name = "Spectrum";
     end
     
-    predictions = zeros(len_test, 1);
-    ground_truth = zeros(len_test, 1);
-    for i = 1:len_test
+    predictions = zeros(length(test_indexes), 1);
+    ground_truth = zeros(length(test_indexes), 1);
+    for i = 1:length(test_indexes)
         test_index = test_indexes(i);
         test_coeff = coeff{test_index};
     
@@ -156,7 +186,7 @@ for coeff_sel_idx = 1:length(coefficient_select)
     
         P = size(test_coeff, 1);
         I = size(test_coeff, 2);
-        min_dist_idx = 1;
+        min_dist_index = 1;
         min_dist = 1e100;
         for j = 1:length(train_indexes)
             train_index = train_indexes(j);
@@ -165,57 +195,44 @@ for coeff_sel_idx = 1:length(coefficient_select)
             dist = ComputeLTW(test_coeff, I, train_coeff, J, P);
             if (dist < min_dist)
                 min_dist = dist;
-                min_dist_idx = j;
+                min_dist_index = j;
             end
         end
     
-        prediction_idx = train_indexes(min_dist_idx);
-        prediction = file_list(prediction_idx);
+        prediction_index = train_indexes(min_dist_index);
+        prediction = file_list(prediction_index);
         prediction = convertStringsToChars(prediction);
         predictions(i) = str2num(prediction(end-14));
     end
     
-    acc_all = sum(predictions == ground_truth)/length(predictions) * 100;
+    accurracy(coeff_sel_index) = sum(predictions == ground_truth)/length(predictions) * 100;
+    
+    if write_results_to_console
+    fprintf("Coeff: %s, Accurracy: %.2f\n", coeff_name, accurracy(coeff_sel_index))
+    end
+
     switch select
         case 1
-            result_ene_all = acc_all;
+            results_ene(i_lists) = accurracy(coeff_sel_index);
         case 2
-            result_ene_zcr_all = acc_all;
+            results_ene_zcr(i_lists) = accurracy(coeff_sel_index);
         case 3
-            result_spectrum_all = acc_all;
+            results_spectrum(i_lists) = accurracy(coeff_sel_index);
     end
-
-    for i = 1:n_persons
-        person_unique = persons_unique(i);
-        predictions_unique = predictions(persons_test == person_unique);
-        ground_truth_unique = ground_truth(persons_test == person_unique);
-        acc_unique = sum(predictions_unique == ground_truth_unique)/length(predictions_unique) * 100;
-            
-        if write_results_to_console
-            fprintf("Person: %s, Coeff: %s, Accurracy: %.2f\n", person_unique, coeff_name, acc_unique)
-        end
-
-        switch select
-            case 1
-                results_ene(i) = acc_unique;
-            case 2
-                results_ene_zcr(i) = acc_unique;
-            case 3
-                results_spectrum(i) = acc_unique;
-        end
-    end
+end
+persons(i_lists) = person;
 end
 
 % vypis prumeru do konzole
 if write_results_to_console
-    fprintf("-----------------------------------------\n")
-    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', result_ene_all, result_ene_zcr_all, result_spectrum_all);
-    fprintf("-----------------------------------------\n")
+fprintf("-----------------------------------------\n")
+fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
+fprintf("-----------------------------------------\n")
 end
 
 % ulozeni do .mat souboru
 if (export_to_mat == true)
-    save('results.mat', "persons_unique", "results_spectrum", "results_ene_zcr", "results_ene")
+    save('results.mat', "persons", "results_spectrum", "results_ene_zcr", "results_ene")
 end
 
 % export do csv souboru
@@ -223,12 +240,12 @@ if (export_to_csv == true)
     fid = fopen( 'Results.csv', 'w' );
     fprintf( fid, '%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "Spectrum");
     for jj = 1 : n_persons
-        fprintf( fid, '%s,%.2f,%.2f,%.2f\n', persons_unique(jj), results_ene(jj), results_ene_zcr(jj), results_spectrum(jj));
+        fprintf( fid, '%s,%.2f,%.2f,%.2f\n', persons(jj), results_ene(jj), results_ene_zcr(jj), results_spectrum(jj));
     end
-    fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", result_ene_all, result_ene_zcr_all, result_spectrum_all);
+    fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
     fclose( fid );
 end
 
 if beep_at_end
-    beep
+beep
 end
