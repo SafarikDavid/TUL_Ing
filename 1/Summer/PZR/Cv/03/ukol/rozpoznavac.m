@@ -1,6 +1,7 @@
 clc; clear all; close all;
 
-% kazdy soubor je jeden clovek, lze zadat pouze jednu cestu
+% kazdy soubor je jeden clovek, lze zadat pouze jeden txt soubor
+% identifikace cloveka je brana z nazvu wav souboru
 list_of_file_lists = [
     "FileList_p2101.txt";
     "FileList_p2102.txt";
@@ -44,20 +45,26 @@ plot_data = false;
 play_cutout = true;
 
 % nastaveni vypisu do konzole
-write_to_console = false;
+write_results_to_console = true;
 write_suspicious_data_to_console = false;
 
 % export settings
 export_to_csv = true;
 export_to_mat = false;
 
+% beep at end of script
+beep_at_end = true;
+
 % spectrum settings
 window_length = 512;
 K_value = 16;
 
+% seed setting
+rng(42);
+
 % word boundary search settings
 bound_k_extremas = 10;
-bound_threshold_percentage = 0.4;
+bound_threshold_percentage = 0.4; %0.4/0.5 best
 
 % nastaveni segmentace
 pocet_vzorku_v_segmentu = 400;
@@ -83,7 +90,7 @@ person = convertStringsToChars(person);
 person = convertCharsToStrings(person(end-12:end-8));
 
 % vypis cisla osoby
-if write_to_console
+if write_results_to_console
 fprintf("-----------------------------------------\nPerson: %s\n", person)
 end
 
@@ -120,7 +127,8 @@ for i = 1:n_recordings
 
     energy_coeff{i} = cutout_energy;
 %     normalizace energie + zcr
-    energy_and_zcr_coeff{i} = [cutout_energy./max(cutout_energy); zcr./max(zcr)];
+    energy_and_zcr_coeff{i} = [(cutout_energy-mean(cutout_energy))./max(cutout_energy); (zcr-mean(zcr))./max(zcr)];
+%     energy_and_zcr_coeff{i} = [cutout_energy; zcr];
     spectral_coeff{i} = spectrum;
     
     if (abs(word_end - word_start) > 100) && write_suspicious_data_to_console
@@ -199,7 +207,7 @@ for coeff_sel_index = 1:length(coefficient_select)
     
     accurracy(coeff_sel_index) = sum(predictions == ground_truth)/length(predictions) * 100;
     
-    if write_to_console
+    if write_results_to_console
     fprintf("Coeff: %s, Accurracy: %.2f\n", coeff_name, accurracy(coeff_sel_index))
     end
 
@@ -214,10 +222,20 @@ for coeff_sel_index = 1:length(coefficient_select)
 end
 persons(i_lists) = person;
 end
+
+% vypis prumeru do konzole
+if write_results_to_console
+fprintf("-----------------------------------------\n")
+fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
+fprintf("-----------------------------------------\n")
+end
+
+% ulozeni do .mat souboru
 if (export_to_mat == true)
     save('results.mat', "persons", "results_spectrum", "results_ene_zcr", "results_ene")
 end
 
+% export do csv souboru
 if (export_to_csv == true)
     fid = fopen( 'Results.csv', 'w' );
     fprintf( fid, '%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "Spectrum");
@@ -226,4 +244,8 @@ if (export_to_csv == true)
     end
     fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
     fclose( fid );
+end
+
+if beep_at_end
+beep
 end
