@@ -1,4 +1,4 @@
-function res = ComputeDTW(X,I,R,J,P)
+function [res, A, B] = ComputeDTW(X,I,R,J,P)
     % Funkce vytvori transformacni cestu a vraci vzdalenost mezi ni a vstupem X
     % X - hledany signal, I - delka X
     % R - referencni signal, J - delka R

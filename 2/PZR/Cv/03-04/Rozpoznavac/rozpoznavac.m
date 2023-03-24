@@ -10,7 +10,7 @@ n_recordings = length(file_list);
 % 1 - ene
 % 2 - ene + zcr
 % 3 - spectrum
-coefficient_select = [1 2 3];
+coefficient_select = [1 2];
 
 % plot signal settings
 % sound_cutout will be reached only if plot_data is true
@@ -83,14 +83,23 @@ for i = 1:n_recordings
     cutout_frames = frames(:, word_start:word_end);
     cutout_energy = energy(word_start:word_end);
 
-    zcr = ComputeZCR(cutout_frames);
+    if ismember(2, coefficient_select)
+        zcr = ComputeZCR(cutout_frames);
+    end
+    if ismember(3, coefficient_select)
+        spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
+    end
 
-    spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
-
-    energy_coeff{i} = cutout_energy;
+    if ismember(1, coefficient_select)
+        energy_coeff{i} = cutout_energy;
+    end
 %     normalizace energie + zcr
-    energy_and_zcr_coeff{i} = [(cutout_energy-mean(cutout_energy))./max(cutout_energy); (zcr-mean(zcr))./max(zcr)];
-    spectral_coeff{i} = spectrum;
+    if ismember(2, coefficient_select)
+        energy_and_zcr_coeff{i} = [(cutout_energy-mean(cutout_energy))./max(cutout_energy); (zcr-mean(zcr))./max(zcr)];
+    end
+    if ismember(3, coefficient_select)
+        spectral_coeff{i} = spectrum;
+    end
     
     if (abs(word_end - word_start) > 100) && write_suspicious_data_to_console
         fprintf("Extreme boundary diff found %d: %s\n", abs(word_end - word_start), file_list(i))
@@ -147,6 +156,9 @@ for coeff_sel_idx = 1:length(coefficient_select)
     predictions = zeros(len_test, 1);
     ground_truth = zeros(len_test, 1);
     for i = 1:len_test
+        person_id = persons_test(i);
+        person_train_idxs = train_indexes(persons_train == person_id);
+
         test_index = test_indexes(i);
         test_coeff = coeff{test_index};
     
@@ -158,11 +170,11 @@ for coeff_sel_idx = 1:length(coefficient_select)
         I = size(test_coeff, 2);
         min_dist_idx = 1;
         min_dist = 1e100;
-        for j = 1:length(train_indexes)
-            train_index = train_indexes(j);
+        for j = 1:length(person_train_idxs)
+            train_index = person_train_idxs(j);
             train_coeff = coeff{train_index};
             J = size(train_coeff, 2);
-            dist = ComputeLTW(test_coeff, I, train_coeff, J, P);
+            dist = ComputeDTW(test_coeff, I, train_coeff, J, P);
             if (dist < min_dist)
                 min_dist = dist;
                 min_dist_idx = j;
@@ -209,7 +221,7 @@ end
 % vypis prumeru do konzole
 if write_results_to_console
     fprintf("-----------------------------------------\n")
-    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', result_ene_all, result_ene_zcr_all, result_spectrum_all);
+    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
     fprintf("-----------------------------------------\n")
 end
 
@@ -225,7 +237,7 @@ if (export_to_csv == true)
     for jj = 1 : n_persons
         fprintf( fid, '%s,%.2f,%.2f,%.2f\n', persons_unique(jj), results_ene(jj), results_ene_zcr(jj), results_spectrum(jj));
     end
-    fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", result_ene_all, result_ene_zcr_all, result_spectrum_all);
+    fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
     fclose( fid );
 end
 
