@@ -10,7 +10,12 @@ n_recordings = length(file_list);
 % 1 - ene
 % 2 - ene + zcr
 % 3 - spectrum
-coefficient_select = [1 2];
+coefficient_select = [1 2 3];
+
+% distance method select
+% 1 - LTW
+% 2 - DTW
+distance_method = 2;
 
 % plot signal settings
 % sound_cutout will be reached only if plot_data is true
@@ -44,6 +49,7 @@ pocet_vzorku_v_segmentu = 400;
 frame_len = 160;
 
 % ↑---------------------------nastaveni----------------------------------↑
+tic
 
 test_indexes = [];
 train_indexes = [];
@@ -66,7 +72,8 @@ for i = 1:n_recordings
         persons_test = [persons_test person];
         test_indexes = [test_indexes i];
     end
-
+end
+parfor i = 1:n_recordings
     [x, Fs] = audioread(file_list(i), "native");
     x_len = length(x);
 
@@ -83,28 +90,28 @@ for i = 1:n_recordings
     cutout_frames = frames(:, word_start:word_end);
     cutout_energy = energy(word_start:word_end);
 
-    if ismember(2, coefficient_select)
-        zcr = ComputeZCR(cutout_frames);
-    end
-    if ismember(3, coefficient_select)
-        spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
-    end
-
+%     uložení energie
     if ismember(1, coefficient_select)
         energy_coeff{i} = cutout_energy;
     end
-%     normalizace energie + zcr
+%     uložení ene+zcr
     if ismember(2, coefficient_select)
+        %     normalizace energie + zcr
+        zcr = ComputeZCR(cutout_frames);
         energy_and_zcr_coeff{i} = [(cutout_energy-mean(cutout_energy))./max(cutout_energy); (zcr-mean(zcr))./max(zcr)];
     end
+%     uložení spektrálních příznaků
     if ismember(3, coefficient_select)
+        spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
         spectral_coeff{i} = spectrum;
     end
     
+%     kontrola délky výstřižků
     if (abs(word_end - word_start) > 100) && write_suspicious_data_to_console
         fprintf("Extreme boundary diff found %d: %s\n", abs(word_end - word_start), file_list(i))
     end
 
+%     zobrazení jednotlivých slov
     if (plot_data == true)
         fprintf("Viewing: %s\n", file_list(i))
         close('all')
@@ -155,7 +162,7 @@ for coeff_sel_idx = 1:length(coefficient_select)
     
     predictions = zeros(len_test, 1);
     ground_truth = zeros(len_test, 1);
-    for i = 1:len_test
+    parfor i = 1:len_test
         person_id = persons_test(i);
         person_train_idxs = train_indexes(persons_train == person_id);
 
@@ -168,25 +175,25 @@ for coeff_sel_idx = 1:length(coefficient_select)
     
         P = size(test_coeff, 1);
         I = size(test_coeff, 2);
-        min_dist_idx = 1;
-        min_dist = 1e100;
+        distances = zeros(size(person_train_idxs));
         for j = 1:length(person_train_idxs)
             train_index = person_train_idxs(j);
             train_coeff = coeff{train_index};
             J = size(train_coeff, 2);
-            dist = ComputeDTW(test_coeff, I, train_coeff, J, P);
-            if (dist < min_dist)
-                min_dist = dist;
-                min_dist_idx = j;
+            switch distance_method
+                case 1
+                    distances(j) = ComputeLTW(test_coeff, I, train_coeff, J, P);
+                case 2
+                    distances(j) = ComputeDTW(test_coeff, I, train_coeff, J, P);
             end
         end
+        [min_dist, min_dist_idx] = min(distances);
     
         prediction_idx = train_indexes(min_dist_idx);
         prediction = file_list(prediction_idx);
         prediction = convertStringsToChars(prediction);
         predictions(i) = str2num(prediction(end-14));
     end
-    
     acc_all = sum(predictions == ground_truth)/length(predictions) * 100;
     switch select
         case 1
@@ -217,6 +224,7 @@ for coeff_sel_idx = 1:length(coefficient_select)
         end
     end
 end
+toc
 
 % vypis prumeru do konzole
 if write_results_to_console

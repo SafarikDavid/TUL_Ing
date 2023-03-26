@@ -3,6 +3,13 @@ function res = ComputeDTW(X,I,R,J,P)
     % X - hledany signal, I - delka X
     % R - referencni signal, J - delka R
     % P - pocet priznaku
+
+%     prilis velky rozdil delek vraci Inf
+    if (J == ceil(I/2)-1) || (J == 2*I)
+        res = Inf;
+        return
+    end
+
     A = zeros(I, J+2);
 %     flip(A')
     A(1, :) = Inf;
@@ -26,7 +33,9 @@ function res = ComputeDTW(X,I,R,J,P)
         end
     end
 
-    D = A(I, J+2);
+    res = A(I, J+2);
+
+    return
 
     w = zeros(I, 1);
     w(I) = J;
@@ -37,31 +46,28 @@ function res = ComputeDTW(X,I,R,J,P)
         w(i) = B_cut(i+1, w(i+1));
     end
 
-    Ydtw = R(:,w);
-    
-    res = D;
-%     res = ComputeEuclidDist(X,Ydtw,P);
+    Y = R(:,w);
 
-%     subplot(4,1,1)
-%     plot(X)
-%     title("X")
-%     xlim([1 max(I, J)])
-%     subplot(4,1,2)
-%     plot(R)
-%     title("R")
-%     xlim([1 max(I, J)])
-%     subplot(4,1,3)
-%     plot(X)
-%     hold on
-%     plot(Ydtw)
-%     legend("X", "R")
-%     title("Diff")
-%     xlim([1 max(I, J)])
-%     subplot(4,1,4)
-%     plot(w)
-%     grid()
-%     yticks(1:J)
-%     xticks(1:I)
-%     title("Path")
+    subplot(4,1,1)
+    plot(X)
+    title("X")
+    xlim([1 max(I, J)])
+    subplot(4,1,2)
+    plot(R)
+    title("R")
+    xlim([1 max(I, J)])
+    subplot(4,1,3)
+    plot(X)
+    hold on
+    plot(Y)
+    legend("X", "R")
+    title("Diff")
+    xlim([1 max(I, J)])
+    subplot(4,1,4)
+    plot(w)
+    grid()
+    yticks(1:J)
+    xticks(1:I)
+    title("Path")
 end
 
