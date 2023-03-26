@@ -1,9 +1,9 @@
 clc; clear all; close all;
 
-plot_power = false;
+plot_power = true;
 
 % read signal from wav
-[x, fs] = audioread("DSVowels.wav");
+[x, fs] = audioread("MyVowels.wav");
 t = 0:1/fs:length(x)/fs - 1/fs;
 
 % magnitude shift substraction
@@ -20,8 +20,8 @@ A = 1;
 x_p = filter(B, A, x_p);
 
 % search for speech threshold
-k = 10;
-t_ratio = 0.1;
+k = 10000;
+t_ratio = 0.05;
 mean_maxk = mean(maxk(x_p, k));
 mean_mink = mean(mink(x_p, k));
 threshold = mean_mink + t_ratio*(mean_maxk - mean_mink);
@@ -35,6 +35,8 @@ end
 % selection of active speech samples
 x_active = zeros(size(x));
 x_active(x_p >= threshold) = max(x_m);
+% x_active = filter(ones(1, 1000)/1000, 1, x_active);
+% x_active(x_active > 0) = max(x_m);
 
 % plot signal and active speech segments
 figure
