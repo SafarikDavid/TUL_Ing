@@ -35,8 +35,6 @@ end
 % selection of active speech samples
 x_active = zeros(size(x));
 x_active(x_p >= threshold) = max(x_m);
-% x_active = filter(ones(1, 1000)/1000, 1, x_active);
-% x_active(x_active > 0) = max(x_m);
 
 % plot signal and active speech segments
 figure
