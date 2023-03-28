@@ -19,7 +19,7 @@ figure;stem(B);title('impulzni odezva');
 % filtr jedna ma propustne pasmo 0.2pi
 N = 1000;
 n = 0:N-1;
-x = zeros(size(N));
+x = zeros(size(n));
 w_b = 0.02*pi;
 frm = 1:200;
 % cim vic k, tim vic sinusovek
