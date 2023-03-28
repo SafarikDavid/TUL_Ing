@@ -17,11 +17,11 @@ x_p = x_m.^2;
 N = 1000;
 B = ones(1,N)./N;
 A = 1;
-x_p = filter(B, A, x_p);
+x_p = log(filter(B, A, x_p));
 
 % search for speech threshold
-k = 10000;
-t_ratio = 0.05;
+k = 1000;
+t_ratio = 0.5;
 mean_maxk = mean(maxk(x_p, k));
 mean_mink = mean(mink(x_p, k));
 threshold = mean_mink + t_ratio*(mean_maxk - mean_mink);
@@ -30,6 +30,12 @@ threshold = mean_mink + t_ratio*(mean_maxk - mean_mink);
 if plot_power
     figure
     plot(t, x_p)
+    hold on
+    const = @(x)(threshold).*x.^(0);
+    plot(t, const(t))
+    legend('Power', 'Threshold')
+    xlabel('t[s]')
+    ylabel('x[n]^2')
 end
 
 % selection of active speech samples
