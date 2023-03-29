@@ -42,7 +42,7 @@ rng(42);
 
 % word boundary search settings
 bound_k_extremas = 10;
-bound_threshold_percentage = 0.4; %0.4/0.5 best
+bound_threshold_percentage = 0.35; %0.4/0.35 best
 
 % nastaveni segmentace
 pocet_vzorku_v_segmentu = 400;
@@ -135,7 +135,12 @@ parfor i = 1:n_recordings
         w = waitforbuttonpress;
     end
 end
+toc
 
+% vypis, ze je hotovy vypocet koeficientu
+fprintf("Done Calculating Coefficients\n");
+
+tic
 n_persons = length(persons_unique);
 
 len_test = length(test_indexes);
