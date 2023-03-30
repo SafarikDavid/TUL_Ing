@@ -10,7 +10,9 @@ n_recordings = length(file_list);
 % 1 - ene
 % 2 - ene + zcr
 % 3 - spectrum
-coefficient_select = [1 2 3];
+% 4 - fbank
+% 5 - MFCC
+coefficient_select = [3 4 5];
 
 % distance method select
 % 1 - LTW
@@ -42,7 +44,7 @@ rng(42);
 
 % word boundary search settings
 bound_k_extremas = 10;
-bound_threshold_percentage = 0.35; %0.4/0.35 best
+bound_threshold_percentage = 0.5; %0.4/0.35 best
 
 % nastaveni segmentace
 pocet_vzorku_v_segmentu = 400;
@@ -105,6 +107,11 @@ parfor i = 1:n_recordings
         spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
         spectral_coeff{i} = spectrum;
     end
+    if ismember(4, coefficient_select) || ismember(5, coefficient_select)
+        [cepstrum, mel_fbank] = ComputeFramesMFCC(cutout_frames, 26, 12, Fs);
+        fbank_coeff{i} = mel_fbank;
+        cepstrum_coeff{i} = cepstrum;
+    end
     
 %     kontrola délky výstřižků
     if (abs(word_end - word_start) > 100) && write_suspicious_data_to_console
@@ -140,7 +147,6 @@ toc
 % vypis, ze je hotovy vypocet koeficientu
 fprintf("Done Calculating Coefficients\n");
 
-tic
 n_persons = length(persons_unique);
 
 len_test = length(test_indexes);
@@ -162,9 +168,23 @@ for coeff_sel_idx = 1:length(coefficient_select)
             coeff_name = "Ene+ZCR";
         case 3
             coeff = spectral_coeff;
-            coeff_name = "Spectrum";
+            coeff_name = "Spec16";
+        case 4
+            coeff = fbank_coeff;
+            coeff_name = "fbank12";
+        case 5
+            coeff = cepstrum_coeff;
+            coeff_name = "MFCC26";
     end
     
+%     vypis rozpoznavanych priznaku do konzole
+    if write_results_to_console
+        fprintf("\nCurrent coefficient set: %s\n", coeff_name)
+    end
+    
+%     tic start
+    tic
+
     predictions = zeros(len_test, 1);
     ground_truth = zeros(len_test, 1);
     parfor i = 1:len_test
@@ -199,15 +219,9 @@ for coeff_sel_idx = 1:length(coefficient_select)
         prediction = convertStringsToChars(prediction);
         predictions(i) = str2num(prediction(end-14));
     end
-    acc_all = sum(predictions == ground_truth)/length(predictions) * 100;
-    switch select
-        case 1
-            result_ene_all = acc_all;
-        case 2
-            result_ene_zcr_all = acc_all;
-        case 3
-            result_spectrum_all = acc_all;
-    end
+
+%     toc end
+    toc
 
     for i = 1:n_persons
         person_unique = persons_unique(i);
@@ -216,7 +230,7 @@ for coeff_sel_idx = 1:length(coefficient_select)
         acc_unique = sum(predictions_unique == ground_truth_unique)/length(predictions_unique) * 100;
             
         if write_results_to_console
-            fprintf("Person: %s, Coeff: %s, Accurracy: %.2f\n", person_unique, coeff_name, acc_unique)
+            fprintf("Person: %s, Acc: %.2f\n", person_unique, acc_unique)
         end
 
         switch select
@@ -226,31 +240,51 @@ for coeff_sel_idx = 1:length(coefficient_select)
                 results_ene_zcr(i) = acc_unique;
             case 3
                 results_spectrum(i) = acc_unique;
+            case 4
+                results_fbank(i) = acc_unique;
+            case 5
+                results_cepstrum(i) = acc_unique;
         end
     end
 end
-toc
+
 
 % vypis prumeru do konzole
 if write_results_to_console
     fprintf("-----------------------------------------\n")
-    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f\n', mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
+    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f, fbank:%.2f, mfcc:%.2f\n', ...
+        mean(results_ene), ...
+        mean(results_ene_zcr), ...
+        mean(results_spectrum), ...
+        mean(results_fbank), ...
+        mean(results_cepstrum));
     fprintf("-----------------------------------------\n")
 end
 
 % ulozeni do .mat souboru
 if (export_to_mat == true)
-    save('results.mat', "persons_unique", "results_spectrum", "results_ene_zcr", "results_ene")
+    save('results.mat', "persons_unique", "results_spectrum", "results_ene_zcr", "results_ene", "results_fbank", "results_cepstrum")
 end
 
 % export do csv souboru
 if (export_to_csv == true)
     fid = fopen( 'Results.csv', 'w' );
-    fprintf( fid, '%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "Spectrum");
+    fprintf( fid, '%s,%s,%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "spec16", "fbank12", "mfcc26");
     for jj = 1 : n_persons
-        fprintf( fid, '%s,%.2f,%.2f,%.2f\n', persons_unique(jj), results_ene(jj), results_ene_zcr(jj), results_spectrum(jj));
+        fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f\n', ...
+            persons_unique(jj), ...
+            results_ene(jj), ...
+            results_ene_zcr(jj), ...
+            results_spectrum(jj), ...
+            results_fbank(jj), ...
+            results_cepstrum(jj));
     end
-    fprintf( fid, '%s,%.2f,%.2f,%.2f\n', "PRUMER", mean(results_ene), mean(results_ene_zcr), mean(results_spectrum));
+    fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f\n', "PRUMER", ...
+        mean(results_ene), ...
+        mean(results_ene_zcr), ...
+        mean(results_spectrum), ...
+        mean(results_fbank), ...
+        mean(results_cepstrum));
     fclose( fid );
 end
 
