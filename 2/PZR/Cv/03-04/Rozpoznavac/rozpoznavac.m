@@ -51,6 +51,9 @@ pocet_vzorku_v_segmentu = 400;
 frame_len = 160;
 
 % ↑---------------------------nastaveni----------------------------------↑
+% vypis zacatku pocitani koeficientu
+fprintf("Starting coefficient calculation\n");
+
 tic
 
 test_indexes = [];
