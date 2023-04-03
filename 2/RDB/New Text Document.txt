@@ -1,1 +1,6 @@
 edit -> intellisense -> refresh local cache
+
+.\mongosh.exe "mongodb+srv://rdbcluster.4j2toba.mongodb.net/CommunityWeb" --apiVersion 1 --username student
+student
+
+udelat do 17. soucastky a filmy

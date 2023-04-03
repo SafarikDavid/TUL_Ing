@@ -68,3 +68,7 @@ INSERT INTO Prihlaseni (id_tema, id_uziv, datum)
 	VALUES (2, 3, '2022-02-22')
 
 UPDATE Prihlaseni SET id_uziv = 4 WHERE id_tema = 2 AND id_uziv = 3
+
+DELETE FROM Tema WHERE id_tema = 5
+
+DELETE FROM Uzivatel WHERE login = 'Hagrid'
