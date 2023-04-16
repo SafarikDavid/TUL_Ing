@@ -6,18 +6,25 @@ clc; clear all; close all;
 file_list = readlines("FileList.txt", "EmptyLineRule", "skip");
 n_recordings = length(file_list);
 
+% select if speaker dependent
+speaker_dependent = true;
+
 % coefficient selection
 % 1 - ene
 % 2 - ene + zcr
 % 3 - spectrum
 % 4 - fbank
 % 5 - MFCC
-coefficient_select = [3 4 5];
+coefficient_select = [5];
 
 % distance method select
 % 1 - LTW
 % 2 - DTW
 distance_method = 2;
+
+% select train and test sets
+train_sets = '[1-3]';
+test_sets = '[4-5]';
 
 % plot signal settings
 % sound_cutout will be reached only if plot_data is true
@@ -45,6 +52,7 @@ rng(42);
 % word boundary search settings
 bound_k_extremas = 10;
 bound_threshold_percentage = 0.5; %0.4/0.35 best
+boundary_shift = 20;
 
 % nastaveni segmentace
 pocet_vzorku_v_segmentu = 400;
@@ -63,23 +71,41 @@ persons_test = [];
 persons_unique = [];
 
 for i = 1:n_recordings
-%     nacteni cisla osoby
-    person = file_list(i);
-    person = convertStringsToChars(person);
-    person = convertCharsToStrings(person(end-12:end-8));
-    persons_unique = unique([persons_unique person]);
-
 %     rozdeleni nahravek na trenovaci sadu a testovaci sadu
-    if(contains(file_list(i), 's01.wav'))
-        persons_train = [persons_train person];
-        train_indexes = [train_indexes i];
+    if(speaker_dependent)
+        %     nacteni cisla osoby
+        person = file_list(i);
+        person = convertStringsToChars(person);
+        person = convertCharsToStrings(person(end-12:end-8));
+        persons_unique = unique([persons_unique person]);
+        if(regexp(file_list(i), strcat(['s0', train_sets, '.wav'])))
+            persons_train = [persons_train person];
+            train_indexes = [train_indexes i];
+        end
+        if(regexp(file_list(i), strcat(['s0', test_sets, '.wav'])))
+            persons_test = [persons_test person];
+            test_indexes = [test_indexes i];
+        end
     else
-        persons_test = [persons_test person];
-        test_indexes = [test_indexes i];
+        %     nacteni cisla osoby
+        person = file_list(i);
+        person = convertStringsToChars(person);
+        person = convertCharsToStrings(person(end-12:end-8));
+        if(regexp(file_list(i), strcat(['p00[0-9][0-9]_s0', train_sets, '.wav'])))
+            persons_train = [persons_train person];
+            train_indexes = [train_indexes i];
+        end
+        if(regexp(file_list(i), strcat(['p[1-9][1-9][0-9][0-9]_s0', test_sets, '.wav'])))
+            persons_test = [persons_test person];
+            test_indexes = [test_indexes i];
+            % ulozeni unikatni testovane osoby
+            persons_unique = unique([persons_unique person]);
+        end
     end
 end
 parfor i = 1:n_recordings
     [x, Fs] = audioread(file_list(i), "native");
+    x = x(1:32000);
     x_len = length(x);
 
 %     add noise
@@ -89,7 +115,7 @@ parfor i = 1:n_recordings
 
     [frames, energy] = ComputeFramesAndEnergy(x, pocet_vzorku_v_segmentu, frame_len);
 
-    [word_start, word_end, word_threshold] = FindWordBoundary(energy, bound_k_extremas, bound_threshold_percentage);
+    [word_start, word_end, word_threshold] = FindWordBoundary(energy, bound_k_extremas, bound_threshold_percentage, boundary_shift);
 
     cutout = x(frame_len*(word_start-1)+1:frame_len*word_end);
     cutout_frames = frames(:, word_start:word_end);
@@ -158,6 +184,8 @@ len_test = length(test_indexes);
 results_spectrum = zeros(1, n_persons);
 results_ene_zcr = zeros(1, n_persons);
 results_ene = zeros(1, n_persons);
+results_fbank = zeros(1, n_persons);
+results_cepstrum = zeros(1, n_persons);
 
 for coeff_sel_idx = 1:length(coefficient_select)
     select = coefficient_select(coeff_sel_idx);
@@ -171,13 +199,13 @@ for coeff_sel_idx = 1:length(coefficient_select)
             coeff_name = "Ene+ZCR";
         case 3
             coeff = spectral_coeff;
-            coeff_name = "Spec16";
+            coeff_name = "Spectral";
         case 4
             coeff = fbank_coeff;
-            coeff_name = "fbank12";
+            coeff_name = "fbank";
         case 5
             coeff = cepstrum_coeff;
-            coeff_name = "MFCC26";
+            coeff_name = "MFCC";
     end
     
 %     vypis rozpoznavanych priznaku do konzole
@@ -192,7 +220,11 @@ for coeff_sel_idx = 1:length(coefficient_select)
     ground_truth = zeros(len_test, 1);
     parfor i = 1:len_test
         person_id = persons_test(i);
-        person_train_idxs = train_indexes(persons_train == person_id);
+        if (speaker_dependent)
+            person_train_idxs = train_indexes(persons_train == person_id);
+        else
+            person_train_idxs = train_indexes;
+        end
 
         test_index = test_indexes(i);
         test_coeff = coeff{test_index};

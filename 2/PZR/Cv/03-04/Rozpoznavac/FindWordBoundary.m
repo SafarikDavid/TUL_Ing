@@ -1,4 +1,4 @@
-function [word_start,word_end,word_threshold] = FindWordBoundary(energy, k_extremas, boundary_percentage)
+function [word_start,word_end,word_threshold] = FindWordBoundary(energy, k_extremas, boundary_percentage, boundary_shift)
 %     hledani prumeru energie
 min_energy_frames = mink(energy, k_extremas);
 mean_min_energy = mean(min_energy_frames);
@@ -17,5 +17,8 @@ end
 while (energy(word_end)) < word_threshold
     word_end = word_end - 1;
 end
+% posunuti zacatku a konce
+word_start = max(word_start - boundary_shift, 1);
+word_end = min(word_end + boundary_shift, length(energy));
 end
 
