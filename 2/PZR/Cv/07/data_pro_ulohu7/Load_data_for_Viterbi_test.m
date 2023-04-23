@@ -1,4 +1,4 @@
-clear all;
+clear all; close all;
 
 load ('word_features-ENE.mat', 'word_features', 'word_frames', 'word_class', 'train_set', 'test_set', 'num_HMM_states', 'hmmTrans','hmmMeans', 'hmmVars', 'hmmConst','hmmClass','scores_to_check', 'accuracy');
 
@@ -40,10 +40,10 @@ for i = 1:length(test_set)
     max_idx = 0;
     max_val = -Inf;
     for j = 1:length(hmmClass)
-        P_temp = ComputeViterbi(x, length(x), hmmTrans(j, :, 1), hmmTrans(j, :, 2), hmmConst(j, :), hmmMeans(j, :), hmmVars(j, :), num_HMM_states);
-        if P_temp > max_val
+        P = ComputeViterbi(x, length(x), hmmTrans(j, :, 1), hmmTrans(j, :, 2), hmmConst(j, :), hmmMeans(j, :), hmmVars(j, :), num_HMM_states);
+        if P > max_val
             max_idx = j;
-            max_val = P_temp;
+            max_val = P;
         end
     end
     predictions(i) = hmmClass(max_idx);
