@@ -47,6 +47,7 @@ function [score, path] = computeHMMViterbi_fast (word_feat, word_frames, model_i
     for i = word_frames-1:-1:1
         path(i) = back_matrix(i, path(i+1));
     end
+    path(1) = 1;
 
 end
         

@@ -87,6 +87,7 @@ function ret = trainHMM (class_id, train_set, num_train, max_frames, max_iter)
                 end
             end
             total_score = sum(scr); % toto skore by melo s kazdou iteraci rust (nechte si vypisovat)
+            fprintf("%e\n", total_score)
         end
         iter = iter + 1;
     end
