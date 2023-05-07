@@ -116,6 +116,7 @@ for sp = 1:1 % v tomto pripade pouze jedna osoba
     display ("Now recognizing");
     num_correct = 0;
     j = 0;
+    num_test = length(test_set);
     for te = 1:num_test
         tested = test_set (te);
         word_features_tested = reshape (word_features (tested,:,:),[num_frames_in_record,num_features]);
@@ -140,5 +141,5 @@ for sp = 1:1 % v tomto pripade pouze jedna osoba
     display_text = ['Accuracy for person ',num2str(speaker_set(sp)),' is: ',  num2str(accuracy)]; disp(display_text)
 end
 
-save ('word_features-MFCC.mat', 'word_features', 'word_frames', 'word_class', 'train_set', 'test_set', 'num_HMM_states', 'hmmTrans','hmmMeans', 'hmmVars', 'hmmConst','hmmClass','scores_to_check', 'accuracy');
+save ('word_features-MFCC_mine.mat', 'word_features', 'word_frames', 'word_class', 'train_set', 'test_set', 'num_HMM_states', 'hmmTrans','hmmMeans', 'hmmVars', 'hmmConst','hmmClass','scores_to_check', 'accuracy');
 
