@@ -2,6 +2,8 @@ clc; clear all; close all;
 
 load("Tones.mat")
 
+
+
 % 1 = C5
 % 2 cis
 % 3 d
@@ -25,7 +27,7 @@ tempo = 60;
 melody = [];
 samples = noteFlute;
 
-base_dur = 16000;
+whole_note_dur = fsNew;
 
 for i = 1:length(notes)
     note_idx = notes(i);
@@ -37,7 +39,7 @@ for i = 1:length(notes)
         tone = resample(tone, 1, 2);
     end
     tone_len = length(tone);
-    dur_samples = floor((base_dur/(tempo/60))*durations(i));
+    dur_samples = floor((whole_note_dur/(tempo/60))*durations(i));
     if dur_samples > tone_len
         temp = [];
         window = tukeywin(length(tone), 0.1)';
@@ -50,12 +52,18 @@ for i = 1:length(notes)
             
         end
         tone = temp;
+        tone = filter(ones(1, 2)/2, 1, temp);
     end
     tone = tone(1:dur_samples);
     tone = tone.*tukeywin(length(tone), 0.1)';
     melody = [melody tone];
 end
 
+[h1, fs] = audioread("W25x20y.wav");
+h1 = resample(h1, 1, fs/fsNew);
+[h2, fs] = audioread("W35x20y.wav");
+h2 = resample(h2, 1, fs/fsNew);
 
-% melody = filter(ones(1, 5)./5, 1, melody);
-soundsc(melody, fsNew)
+stereoMelody = [filter(h1, 1, melody); filter(h2, 1, melody)];
+
+soundsc(stereoMelody, fsNew)
