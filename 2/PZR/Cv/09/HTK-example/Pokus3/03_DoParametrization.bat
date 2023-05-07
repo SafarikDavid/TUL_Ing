@@ -1,0 +1,1 @@
+HCopy -T 1 -C ParamConfig-FBANK -S param.list

@@ -1,0 +1,1 @@
+HVite -H hmm6/hmmdefsFBANK16 -S testFBANK16.scp -i recout.mlf -w wordnet -p -70.0 -s 0 dict models0
