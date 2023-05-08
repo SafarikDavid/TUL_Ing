@@ -1,13 +1,25 @@
 clc; clear all; close all;
 
+global num_HMM_states
+global hmmTrans
+global hmmMeans
+global hmmVars
+global hmmConst
+global hmmClass
+
 % ↓---------------------------nastaveni----------------------------------↓
 
+num_classes = 10;
+max_iter = 8;
+num_HMM_states = 10;
+max_frames = 201;
+
 % nacteni cest pro nahravky
-file_list = readlines("FileList.txt", "EmptyLineRule", "skip");
+file_list = readlines("FileListSI.txt", "EmptyLineRule", "skip");
 n_recordings = length(file_list);
 
 % select if speaker dependent
-speaker_dependent = true;
+speaker_dependent = false;
 
 % coefficient selection
 % 1 - ene
@@ -15,15 +27,18 @@ speaker_dependent = true;
 % 3 - spectrum
 % 4 - fbank
 % 5 - MFCC
-coefficient_select = [5];
+% 6 - MFCC + Delta
+coefficient_select = [5, 6];
 
 % distance method select
 % 1 - LTW
 % 2 - DTW
-distance_method = 2;
+% 3 - HMM
+distance_method = 3;
 
 % select train and test sets
-train_sets = '[1-3]';
+train_sets = '[1-5]'; %SI
+% train_sets = '[1-3]'; %SD
 test_sets = '[4-5]';
 
 % plot signal settings
@@ -36,7 +51,7 @@ write_results_to_console = true;
 write_suspicious_data_to_console = false;
 
 % export settings
-export_to_csv = true;
+export_to_csv = false;
 export_to_mat = false;
 
 % beep at end of script
@@ -51,12 +66,12 @@ rng(42);
 
 % word boundary search settings
 bound_k_extremas = 10;
-bound_threshold_percentage = 0.5; %0.4/0.35 best
+bound_threshold_percentage = 0.4; %0.4/0.35 best
 boundary_shift = 20;
 
 % nastaveni segmentace
-pocet_vzorku_v_segmentu = 400;
-frame_len = 160;
+segment_len = 400;
+frame_overlap = 160;
 
 % ↑---------------------------nastaveni----------------------------------↑
 % vypis zacatku pocitani koeficientu
@@ -69,8 +84,12 @@ train_indexes = [];
 persons_train = [];
 persons_test = [];
 persons_unique = [];
+word_class = zeros(1, n_recordings);
 
 for i = 1:n_recordings
+    class = file_list(i);
+    class = convertStringsToChars(class);
+    word_class(i) = str2num(class(end-14));
 %     rozdeleni nahravek na trenovaci sadu a testovaci sadu
     if(speaker_dependent)
         %     nacteni cisla osoby
@@ -103,7 +122,7 @@ for i = 1:n_recordings
         end
     end
 end
-parfor i = 1:n_recordings
+for i = 1:n_recordings
     [x, Fs] = audioread(file_list(i), "native");
     x = x(1:32000);
     x_len = length(x);
@@ -113,11 +132,11 @@ parfor i = 1:n_recordings
 %     filter
     x = filter([1 -0.97], 1, x);
 
-    [frames, energy] = ComputeFramesAndEnergy(x, pocet_vzorku_v_segmentu, frame_len);
+    [frames, energy] = ComputeFramesAndEnergy(x, segment_len, frame_overlap);
 
     [word_start, word_end, word_threshold] = FindWordBoundary(energy, bound_k_extremas, bound_threshold_percentage, boundary_shift);
 
-    cutout = x(frame_len*(word_start-1)+1:frame_len*word_end);
+    cutout = x(frame_overlap*(word_start-1)+1:frame_overlap*word_end);
     cutout_frames = frames(:, word_start:word_end);
     cutout_energy = energy(word_start:word_end);
 
@@ -136,10 +155,15 @@ parfor i = 1:n_recordings
         spectrum = ComputeSpectrum(cutout_frames, window_length, K_value);
         spectral_coeff{i} = spectrum;
     end
-    if ismember(4, coefficient_select) || ismember(5, coefficient_select)
+    if ismember(4, coefficient_select) || ismember(5, coefficient_select) || ismember(6, coefficient_select)
         [cepstrum, mel_fbank] = ComputeFramesMFCC(cutout_frames, 26, 12, Fs);
+        if ismember(-Inf, cepstrum) || ismember(Inf, cepstrum)
+            cepstrum(cepstrum <= -Inf) = 0;
+            cepstrum(cepstrum >= Inf) = 0;
+        end
         fbank_coeff{i} = mel_fbank;
         cepstrum_coeff{i} = cepstrum;
+        cepstrum_delta_coeff{i} = [cepstrum; ComputeDeltaCoeff(cepstrum)];
     end
     
 %     kontrola délky výstřižků
@@ -186,6 +210,7 @@ results_ene_zcr = zeros(1, n_persons);
 results_ene = zeros(1, n_persons);
 results_fbank = zeros(1, n_persons);
 results_cepstrum = zeros(1, n_persons);
+results_cepstrum_delta = zeros(1, n_persons);
 
 for coeff_sel_idx = 1:length(coefficient_select)
     select = coefficient_select(coeff_sel_idx);
@@ -206,33 +231,73 @@ for coeff_sel_idx = 1:length(coefficient_select)
         case 5
             coeff = cepstrum_coeff;
             coeff_name = "MFCC";
+        case 6
+            coeff = cepstrum_delta_coeff;
+            coeff_name = "MFCC_Delta";
     end
+
+    % priprava hmm modelu
+    num_features = size(coeff{1}, 1);
+    hmmTrans = zeros (num_classes, num_HMM_states, 2);
+    hmmMeans = zeros (num_classes, num_HMM_states, num_features);
+    hmmVars = zeros (num_classes, num_HMM_states, num_features);
+    hmmConst = zeros (num_classes, num_HMM_states);
+    hmmClass = [0:num_classes-1];
     
 %     vypis rozpoznavanych priznaku do konzole
     if write_results_to_console
         fprintf("\nCurrent coefficient set: %s\n", coeff_name)
     end
     
-%     tic start
     tic
 
+    if distance_method == 3 && speaker_dependent == false
+        train_set = train_indexes;
+        disp("Now training");
+        for c = 1:num_classes
+            ret =  trainHMM (c, train_set, coeff, num_features, word_class, max_iter, max_frames);
+        end
+        disp("Done training");
+    end
+
+    last_person = '';
     predictions = zeros(len_test, 1);
     ground_truth = zeros(len_test, 1);
-    parfor i = 1:len_test
+    for i = 1:len_test
         person_id = persons_test(i);
         if (speaker_dependent)
             person_train_idxs = train_indexes(persons_train == person_id);
+            if distance_method == 3 && ~strcmp(person_id, last_person)
+                last_person = person_id;
+                train_set = person_train_idxs;
+                disp("Now training");
+                for c = 1:num_classes
+                    ret =  trainHMM (c, train_set, coeff, num_features, word_class, max_iter, max_frames);
+                end
+                disp("Done training");
+            end
         else
             person_train_idxs = train_indexes;
         end
 
         test_index = test_indexes(i);
         test_coeff = coeff{test_index};
-    
-        truth = file_list(test_index);
-        truth = convertStringsToChars(truth);
-        ground_truth(i) = str2num(truth(end-14));
-    
+        
+        % select ground truth
+        ground_truth(i) = word_class(test_index);
+        
+        score = zeros(1, num_classes);
+        if distance_method == 3
+            for model_id = 1:num_classes
+                scr = computeHMMViterbi_fast (test_coeff', size(test_coeff, 2), model_id); % vypocet skore kazdeho modelu
+                score (model_id) = scr; % ulozeni skore do pole pro nalezeni maxima
+            end
+            [max_score, best] = max(score);
+            predictions(i) = hmmClass(best);
+            fprintf("Pred: %d, Truth: %d\n", hmmClass(best), word_class(test_index))
+            continue
+        end
+
         P = size(test_coeff, 1);
         I = size(test_coeff, 2);
         distances = zeros(size(person_train_idxs));
@@ -247,15 +312,14 @@ for coeff_sel_idx = 1:length(coefficient_select)
                     distances(j) = ComputeDTW(test_coeff, I, train_coeff, J, P);
             end
         end
-        [min_dist, min_dist_idx] = min(distances);
-    
-        prediction_idx = train_indexes(min_dist_idx);
-        prediction = file_list(prediction_idx);
-        prediction = convertStringsToChars(prediction);
-        predictions(i) = str2num(prediction(end-14));
+        [best_dist, best_dist_idx] = min(distances);
+
+        % select word prediction
+        prediction_idx = train_indexes(best_dist_idx);
+        predictions(i) = word_class(prediction_idx);
+        fprintf("Pred: %d, Truth: %d\n", word_class(prediction_idx), word_class(test_index))
     end
 
-%     toc end
     toc
 
     for i = 1:n_persons
@@ -279,6 +343,8 @@ for coeff_sel_idx = 1:length(coefficient_select)
                 results_fbank(i) = acc_unique;
             case 5
                 results_cepstrum(i) = acc_unique;
+            case 6
+                results_cepstrum_delta(i) = acc_unique;
         end
     end
 end
@@ -287,39 +353,42 @@ end
 % vypis prumeru do konzole
 if write_results_to_console
     fprintf("-----------------------------------------\n")
-    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f, fbank:%.2f, mfcc:%.2f\n', ...
+    fprintf('MEAN: ene: %.2f, ene+zcr:%.2f, spectrum:%.2f, fbank:%.2f, mfcc:%.2f, mfcc24:%.2f\n', ...
         mean(results_ene), ...
         mean(results_ene_zcr), ...
         mean(results_spectrum), ...
         mean(results_fbank), ...
-        mean(results_cepstrum));
+        mean(results_cepstrum), ...
+        mean(results_cepstrum_delta));
     fprintf("-----------------------------------------\n")
 end
 
 % ulozeni do .mat souboru
 if (export_to_mat == true)
-    save('results.mat', "persons_unique", "results_spectrum", "results_ene_zcr", "results_ene", "results_fbank", "results_cepstrum")
+    save('results.mat', "persons_unique", "results_spectrum", "results_ene_zcr", "results_ene", "results_fbank", "results_cepstrum", "results_cepstrum_delta")
 end
 
 % export do csv souboru
 if (export_to_csv == true)
     fid = fopen( 'Results.csv', 'w' );
-    fprintf( fid, '%s,%s,%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "spec16", "fbank12", "mfcc26");
+    fprintf( fid, '%s,%s,%s,%s,%s,%s,%s\n', "Osoba", "Ene", "Ene+ZCR", "spec16", "fbank26", "mfcc12", "mfcc24");
     for jj = 1 : n_persons
-        fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f\n', ...
+        fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n', ...
             persons_unique(jj), ...
             results_ene(jj), ...
             results_ene_zcr(jj), ...
             results_spectrum(jj), ...
             results_fbank(jj), ...
-            results_cepstrum(jj));
+            results_cepstrum(jj), ...
+            results_cepstrum_delta(jj));
     end
-    fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f\n', "PRUMER", ...
+    fprintf( fid, '%s,%.2f,%.2f,%.2f,%.2f,%.2f,%.2f\n', "PRUMER", ...
         mean(results_ene), ...
         mean(results_ene_zcr), ...
         mean(results_spectrum), ...
         mean(results_fbank), ...
-        mean(results_cepstrum));
+        mean(results_cepstrum), ...
+        mean(results_cepstrum_delta));
     fclose( fid );
 end
 

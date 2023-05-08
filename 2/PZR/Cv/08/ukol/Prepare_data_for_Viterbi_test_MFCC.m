@@ -24,10 +24,11 @@ num_classes = 10;
 num_samples_in_record = 32000;
 num_samples_in_frame = 400;
 frame_shift =  160;
-num_frames_in_record = floor((num_samples_in_record - num_samples_in_frame)/frame_shift);
+% num_frames_in_record = floor((num_samples_in_record - num_samples_in_frame)/frame_shift);
+num_frames_in_record = floor((num_samples_in_record + num_samples_in_frame)/frame_shift);
 
 % nastavitelne parametry a prepinace 
-endp_thresh_rate = 0.40;  % nastaveni prahu pro endpoint
+endp_thresh_rate = 0.5;  % nastaveni prahu pro endpoint
 endp_shift = 10;   % nastaveni posunu zacatku a konce vuci nalezenym hodnotam
 train_set_limit = 3;  % cislo nejvyssi sady pouzite v tren. souboru (u SD max. 3, u SI max. 5)
 num_HMM_states = 10;
@@ -77,11 +78,6 @@ for n = 1:num_records
         [cep_coeff, mel_fbank] = ComputeFramesMFCC(cutout_frames, 26, 12, Fs);
         word_features (n,1:num_frames,1:num_features) = cep_coeff';
     end
-    % 
-    % for f = 1:num_frames
-    %     first_sample = (f-1)*frame_shift+1;
-    %     frame = cut (first_sample:first_sample + num_samples_in_frame - 1);
-    % end
 
     
 end
@@ -100,9 +96,9 @@ already_trained = 0;
 for sp = 1:1 % v tomto pripade pouze jedna osoba
     %%% vytvoreni testovaci a trenovaci sady 
     if (type_speaker_dep == 'SD')
-       % [train_set, test_set, num_test, num_train] = makeTrainTestSetsSD (num_records, speaker_set, sp, train_set_limit);
-       load("word_features-MFCC.mat");
-       num_train = length(train_set);
+       [train_set, test_set, num_test, num_train] = makeTrainTestSetsSD (num_records, speaker_set, sp, train_set_limit);
+       % load("word_features-MFCC.mat");
+       % num_train = length(train_set);
        
        %%% trenovani 
         display ("Now training");
@@ -116,7 +112,7 @@ for sp = 1:1 % v tomto pripade pouze jedna osoba
     display ("Now recognizing");
     num_correct = 0;
     j = 0;
-    num_test = length(test_set);
+    % num_test = length(test_set);
     for te = 1:num_test
         tested = test_set (te);
         word_features_tested = reshape (word_features (tested,:,:),[num_frames_in_record,num_features]);
