@@ -5,6 +5,7 @@ load("Tones.mat")
 samples = noteFlute;
 % select instrument -------------------------------------------------------
 
+% load defined melody
 load("Greensleeves.mat")
 
 % whole note duration in samples
