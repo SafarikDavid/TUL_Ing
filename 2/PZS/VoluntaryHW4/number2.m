@@ -27,10 +27,8 @@ legend("LP10", "LP20", "LP40", "LP80", "LP160", "LP320")
 clc; clear all; close all;
 
 Ls = [10 20 40 80 160 320];
-w_s = 0.3*pi;
-w_p = 0.2*pi;
 
-w_c = (w_s+w_p)/2;
+w_c = 0.25*pi;
 
 figure; hold on;
 
