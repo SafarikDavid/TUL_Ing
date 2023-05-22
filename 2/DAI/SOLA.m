@@ -2,16 +2,16 @@ clc; clear all; close all;
 
 % SOLA
 
-alfa = 1.2;
+alfa = 1.3;
 % delka okna
-L = 1024;
+L = 128;
 % posun pri segmentaci
-Sa = 512;
+Sa = 32;
 % pousn pri systeze
 Ss = floor(alfa*Sa);
 % vyreseni nabehu a poklesu
 
-[x, fs] = audioread('zpěv dívka.wav');
+[x, fs] = audioread('acoustic guitar.wav');
 
 x = x(:,1);
 
