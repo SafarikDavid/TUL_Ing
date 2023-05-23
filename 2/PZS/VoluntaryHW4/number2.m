@@ -35,7 +35,7 @@ figure; hold on;
 for i = 1 : length(Ls)
     L = Ls(i);
 
-    win = hamming(L)';
+    win = rectwin(L)';
     
     N = L - 1;
     n = 0:N;
