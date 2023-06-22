@@ -1,0 +1,19 @@
+nula
+jedna
+dva
+tri
+ctyri
+pet
+sest
+sedm
+osm
+devet
+plus
+minus
+krat
+deleno
+tecka
+rovna se
+smazat
+zpatky
+---

@@ -1,3 +1,5 @@
+import os
+from fnmatch import fnmatch
 from time import sleep, time
 
 import numpy
@@ -11,6 +13,9 @@ import numpy as np
 from sklearn import preprocessing
 import python_speech_features as psf
 import matplotlib.pyplot as plt
+import librosa
+import soundfile as sf
+from tslearn.metrics import dtw
 
 
 Fs = 16000
@@ -28,8 +33,52 @@ k_extremas = 10
 boundary_percentage = 0.5
 boundary_shift = 10
 
+classes_dict = {0: "zero",
+                1: "one",
+                2: "two",
+                3: "three",
+                4: "four",
+                5: "five",
+                6: "six",
+                7: "seven",
+                8: "eight",
+                9: "nine",
+                10: "plus",
+                11: "minus",
+                12: "multiply",
+                13: "divide",
+                14: "dot",
+                15: "equal",
+                16: "clear",
+                17: "back",
+                18: "unknown"}
+
+train_data_root = "train"
+train_data_end = ".wav"
+train_features = []
+train_classes = []
+
+distance_threshold = 50.
+sleep_after_recognition = 0.5
+
+def load_train_data():
+    for path, _, files in os.walk(train_data_root):
+        for file in files:
+            if file.endswith(train_data_end):
+                file_path = os.path.join(path, file)
+                data, sr = sf.read(file_path)
+                if sr != Fs:
+                    raise Exception("Unsupported sampling rate.")
+                train_features.append(extract_features(data))
+                train_classes.append(int(file[0:2]))
+
 
 def extract_features(audio):
+    """
+    Method for MFCC39 feature extraction from speech signal
+    :param audio:
+    :return:
+    """
     cutout = cutout_active_voice(audio)
     mfcc_feature = psf.mfcc(cutout, Fs, winlen=winlen_millis, winstep=winstep_millis, numcep=numcep, nfft=nfft, appendEnergy=False, winfunc=numpy.hamming)
     mfcc_feature = preprocessing.scale(mfcc_feature)
@@ -40,6 +89,11 @@ def extract_features(audio):
 
 
 def cutout_active_voice(audio):
+    """
+    Method to cut out active part of speech signal
+    :param audio:
+    :return:
+    """
     audio_norm = audio - np.mean(audio)
 
     windows = np.array([audio_norm[i*winstep:i*winstep+winlen] for i in range(0, n_windows)])
@@ -66,8 +120,23 @@ def cutout_active_voice(audio):
     return audio[word_start*winstep:word_end*winstep+winlen]
 
 
+def recognize_command(feature_mat):
+    min_distance = sys.float_info.max
+    min_idx = -1
+    for idx, train_feat in enumerate(train_features):
+        distance = dtw(feature_mat, train_feat)
+        if distance < min_distance:
+            min_distance = distance
+            min_idx = idx
+    if min_distance > distance_threshold:
+        return 18
+    else:
+        return train_classes[min_idx]
+
+
 class AudioWorker(QObject):
     progress = pyqtSignal(int)
+    command = pyqtSignal(str)
 
     def run(self):
         while True:
@@ -85,7 +154,10 @@ class AudioWorker(QObject):
                     break
                 sleep(.01)
             sd.wait()
-            features = extract_features(sig)
+
+            self.command.emit(classes_dict[recognize_command(extract_features(sig))])
+
+            sleep(sleep_after_recognition)
 
 
 class Calculator(QMainWindow):
@@ -111,13 +183,14 @@ class Calculator(QMainWindow):
 
         self.text = QLineEdit()
         self.text.setReadOnly(True)
+        self.text.setAlignment(Qt.AlignRight)
         vbox.addWidget(self.text)
 
         grid_layout = QGridLayout()
 
         buttons = [
-            ('←', self.B_BackButtonPushed),
-            ('CE', self.B_ClearButtonPushed),
+            ('ZPATKY', self.B_BackButtonPushed),
+            ('SMAZAT', self.B_ClearButtonPushed),
             ('-', self.B_MinusButtonPushed),
             ('+', self.B_PlusButtonPushed),
             ('7', self.B7ButtonPushed),
@@ -147,13 +220,79 @@ class Calculator(QMainWindow):
 
         vbox.addLayout(grid_layout)
 
-    def runLongTask(self):
+    def run_audio_worker(self):
+        """
+        Runs AudioWorker
+        :return:
+        """
         self.thread = QThread()
         self.worker = AudioWorker()
         self.worker.moveToThread(self.thread)
         self.thread.started.connect(self.worker.run)
         self.worker.progress.connect(self.acceptProgress)
+        self.worker.command.connect(self.accept_command)
         self.thread.start()
+
+    def accept_command(self, command):
+        """
+        Evaluates command
+        :param command:
+        :return:
+        """
+        if command == classes_dict[0]:
+            self.B0ButtonPushed()
+            return
+        if command == classes_dict[1]:
+            self.B1ButtonPushed()
+            return
+        if command == classes_dict[2]:
+            self.B2ButtonPushed()
+            return
+        if command == classes_dict[3]:
+            self.B3ButtonPushed()
+            return
+        if command == classes_dict[4]:
+            self.B4ButtonPushed()
+            return
+        if command == classes_dict[5]:
+            self.B5ButtonPushed()
+            return
+        if command == classes_dict[6]:
+            self.B6ButtonPushed()
+            return
+        if command == classes_dict[7]:
+            self.B7ButtonPushed()
+            return
+        if command == classes_dict[8]:
+            self.B8ButtonPushed()
+            return
+        if command == classes_dict[9]:
+            self.B9ButtonPushed()
+            return
+        if command == classes_dict[10]:
+            self.B_PlusButtonPushed()
+            return
+        if command == classes_dict[11]:
+            self.B_MinusButtonPushed()
+            return
+        if command == classes_dict[12]:
+            self.B_MultiplyButtonPushed()
+            return
+        if command == classes_dict[13]:
+            self.B_DivideButtonPushed()
+            return
+        if command == classes_dict[14]:
+            self.B_DotButtonPushed()
+            return
+        if command == classes_dict[15]:
+            self.B_EqualButtonPushed()
+            return
+        if command == classes_dict[16]:
+            self.B_ClearButtonPushed()
+            return
+        if command == classes_dict[17]:
+            self.B_BackButtonPushed()
+            return
 
     def acceptProgress(self, progress):
         self.progressBar.reset()
@@ -235,23 +374,13 @@ class Calculator(QMainWindow):
             self.text.setText('Error')
 
 
-class CalculatorCommandsRecognizer:
-
-    def __init__(self):
-        self.acc = 0
-
-    def __str__(self):
-        return str(self.acc)
-
-    # def load_train_data(self):
-
-
-
 if __name__ == '__main__':
     import sys
+
+    load_train_data()
 
     app = QApplication(sys.argv)
     ex = Calculator()
     ex.show()
-    ex.runLongTask()
+    ex.run_audio_worker()
     sys.exit(app.exec_())
