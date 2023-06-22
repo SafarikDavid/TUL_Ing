@@ -58,7 +58,7 @@ train_data_end = ".wav"
 train_features = []
 train_classes = []
 
-distance_threshold = 50.
+distance_threshold = 40.
 sleep_after_recognition = 0.5
 
 def load_train_data():
@@ -128,6 +128,7 @@ def recognize_command(feature_mat):
         if distance < min_distance:
             min_distance = distance
             min_idx = idx
+    print(f"{classes_dict[train_classes[min_idx]]} | dist: {min_distance}")
     if min_distance > distance_threshold:
         return 18
     else:
