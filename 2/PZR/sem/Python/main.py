@@ -1,5 +1,4 @@
 import os
-from fnmatch import fnmatch
 from time import sleep, time
 
 import numpy
@@ -12,8 +11,6 @@ import sounddevice as sd
 import numpy as np
 from sklearn import preprocessing
 import python_speech_features as psf
-import matplotlib.pyplot as plt
-import librosa
 import soundfile as sf
 from tslearn.metrics import dtw
 
@@ -60,6 +57,7 @@ train_classes = []
 
 distance_threshold = 40.
 sleep_after_recognition = 0.5
+
 
 def load_train_data():
     for path, _, files in os.walk(train_data_root):
