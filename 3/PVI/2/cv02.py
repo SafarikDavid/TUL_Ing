@@ -8,9 +8,13 @@ if __name__ == "__main__":
     # font
     font = cv2.FONT_HERSHEY_SIMPLEX
     # fontScale
-    fontScale = 1
+    font_scale = 1
     # color
-    colT = (0, 0, 0)
+    color_text = (0, 0, 0)
+    # offset
+    text_offset_x = -80
+    # text thickness
+    text_thickness = 2
 
     color_ranges_dic = {
         "red": {"min": np.array([0, 0, 0], np.uint8), "max": np.array([5, 50, 50], np.uint8)},
@@ -26,21 +30,22 @@ if __name__ == "__main__":
     hsv = cv2.cvtColor(bgr, cv2.COLOR_BGR2HSV)
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
 
+    image = bgr.copy()
+
     y, x, _ = np.shape(bgr)
 
     for yy in range(100, y, 200):
         for xx in range(100, x, 200):
             # org
-            org = (20, 100)
-
-            im = cv2.putText(im, 'Text', org, font,
-                             fontScale, colT, thickness, cv2.LINE_AA)
+            text_origin = (xx + text_offset_x, yy)
 
             if gray[yy, xx] == 255:
-                print("white")
+                image = cv2.putText(image, "white", text_origin, font,
+                                    font_scale, color_text, 1, cv2.LINE_AA)
                 continue
             if gray[yy, xx] == 0:
-                print("black")
+                image = cv2.putText(image, "black", text_origin, font,
+                                    font_scale, (255, 255, 255), text_thickness, cv2.LINE_AA)
                 continue
 
             for key in color_ranges_dic.keys():
@@ -48,5 +53,9 @@ if __name__ == "__main__":
                 range_max = color_ranges_dic[key]["max"]
                 pixel_threshed = cv2.inRange(hsv[yy, xx], range_min, range_max)
                 if pixel_threshed[0] == 255:
-                    print(key)
+                    image = cv2.putText(image, key, text_origin, font,
+                                        font_scale, color_text, 1, cv2.LINE_AA)
                     break
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    plt.imshow(image)
+    plt.show()
