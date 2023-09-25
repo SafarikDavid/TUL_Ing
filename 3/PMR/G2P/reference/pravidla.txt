@@ -1,0 +1,51 @@
+﻿Q:b,d,g,v,z
+W:f,k,p,s,t,q
+J:j,l,m,n,r
+E:a,e,i,o,u
+A:sh-ž,b-p,d-t,f-v,g-k,k-g,p-b,s-z,t-d,z-s,v-f,q-g
+W => O / _<v, Wv, -v, -Wv, W-v>
+W => O / _<Q,W>-<Q,W>W
+W => A / _<Q,W>-<Q,W>Q
+W => O / _<Q,W>-W
+W => A / _<Q,W>-Q
+W => O / _-<Q,W>W
+W => A / _-<Q,W>Q
+W => O / _-W
+W => A / _-Q
+W => A / _<Q,W>Q
+W => O / _<Q,W>W
+W => O / _Q-
+W => A / _Q
+Q => A / _<Q,W>Wv
+Q => A / _Wv
+Q => O / _-<Q,W>Q
+Q => A / _-<Q,W>W
+Q => O / _-Q
+Q => A / _-W
+Q => O / _-<J,E>
+Q => O / _-<Q,W>Q
+Q => O / _<Q,W>Q-<Q,W>Q
+Q => O / _<Q,W>-<Q,W>Q
+Q => O / _<Q,W>Q-Q
+Q => O / _<Q,W>-<Q,W>Q
+Q => A / _<Q,W>Q-
+Q => O / _<Q,W>-Q
+Q => A / _Q-
+Q => O / _<Q,W>Q
+Q => A / _<Q,W>W
+Q => A / _W
+Q => A / _-
+ch => X / _
+ů => ú / _
+w => v / _
+q => kv / _
+y => i / _
+ý => í / _
+ě => je / <b,p,f,v>_
+dě => ďe / _
+tě => ťe / _
+ně => ňe / _
+ě => ňe / m_
+d => ď / _<i,í>
+t => ť / _<i,í>
+n => ň / _<i,í>
