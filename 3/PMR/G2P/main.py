@@ -86,7 +86,7 @@ def main():
 
     transcription = []
     text_arr = []
-    with open('text.txt', 'r', encoding='utf-8') as file:
+    with open('text.txt', 'r', encoding='cp1250') as file:
         while line := file.readline():
             text_arr.append(line)
     sentence_idx = 1
@@ -111,7 +111,7 @@ def main():
         text = '-' + text + '-'
         transcription.append(text)
         print(text)
-    with open('transcription.txt', 'w', encoding='utf-8') as file:
+    with open('transcription.txt', 'w', encoding='cp1250') as file:
         for line in transcription:
             file.write(line)
             file.write('\n')
