@@ -17,7 +17,7 @@ def main():
         text_out = []
         with open(phn_file_path, 'r', encoding='cp1250') as file:
             text = file.readline()
-        text = re.sub("[-_\n]", '', text)
+        text = re.sub("[_\n]", '', text)
         lab_file_path = re.sub('.phn', '.lab', phn_file_path)
         with open(lab_file_path, 'w', encoding='cp1250') as file:
             for char in text:
