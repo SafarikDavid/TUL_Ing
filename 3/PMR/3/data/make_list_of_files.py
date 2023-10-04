@@ -4,11 +4,11 @@ import re
 
 
 def main():
-    path = "test_SI/**/*.wav"
+    path = "train_all/**/*.wav"
     with open('file_list', 'w') as file:
         for filename in glob.glob(path, recursive=True):
-            fullpath_lab = os.path.abspath(filename)
-            file.write(fullpath_lab + "\n")
+            fullpath_wav = os.path.abspath(filename)
+            file.write(fullpath_wav + "\n")
 
 
 if __name__ == "__main__":

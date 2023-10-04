@@ -1,0 +1,1 @@
+Termovizní technologie funguje tak, že vizualizuje obraz s rùznými barvami podle úrovní tepla daného objektu.

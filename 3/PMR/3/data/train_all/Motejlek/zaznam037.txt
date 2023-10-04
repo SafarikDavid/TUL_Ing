@@ -1,0 +1,1 @@
+Vısledná aplikace je ovládána z rozhraní v pøíkazové øádce a její vıstup má formu archivu.

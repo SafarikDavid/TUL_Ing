@@ -4,11 +4,12 @@ import re
 
 
 def main():
-    path = "test_SI/**/*.lab"
+    path = "train_all/**/*.lab"
     with open('data.mlf', 'w') as file_mlf:
         file_mlf.write("#!MLF!#\n")
         for filename in glob.glob(path, recursive=True):
             fullpath_lab = os.path.abspath(filename)
+            print(fullpath_lab)
             with open(fullpath_lab, 'r', encoding='cp1250') as file_lab:
                 lab_text = file_lab.readlines()
             file_mlf.write('"' + fullpath_lab + '"' + '\n')

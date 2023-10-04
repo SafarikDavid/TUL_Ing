@@ -1,0 +1,1 @@
+Zranitelnost je zpùsobená nesprávnou prací s pamìtí v optimalizaèní funkcionalitì.

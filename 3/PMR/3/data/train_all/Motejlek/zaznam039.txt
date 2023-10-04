@@ -1,0 +1,1 @@
+Pokud by byly replikovány celé disky, nemohl by pøi selhání disku být paralelizován pøesun dat.

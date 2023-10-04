@@ -1,0 +1,1 @@
+Dále byla v rámci práce vyvinuta aplikace, která ze systému stáhne diagnostická data.

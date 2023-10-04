@@ -1,0 +1,1 @@
+Kromì obecného seznámení se schopnostmi protokolu se vìnuje i jeho implementacím na vybraných platformách.
