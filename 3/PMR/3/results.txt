@@ -1,0 +1,5 @@
+My Data SD = 90.00%
+My Data SI = 23.60%
+
+All Data SD = 100.00%
+All Data SI = 64.10%

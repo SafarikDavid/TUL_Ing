@@ -12,7 +12,7 @@ def main():
         split = split.strip().split(" ")
         conversion_table[split[1]] = split[2]
 
-    phn_files_paths = glob.glob('Svarovsky/*.phn')
+    phn_files_paths = glob.glob('Fejgl/*.phn')
     for phn_file_path in phn_files_paths:
         text_out = []
         with open(phn_file_path, 'r', encoding='cp1250') as file:
