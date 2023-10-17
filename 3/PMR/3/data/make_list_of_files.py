@@ -4,7 +4,7 @@ import re
 
 
 def main():
-    path = "train_all/**/*.wav"
+    path = "test_SI/**/*.wav"
     with open('file_list', 'w') as file:
         for filename in glob.glob(path, recursive=True):
             fullpath_wav = os.path.abspath(filename)

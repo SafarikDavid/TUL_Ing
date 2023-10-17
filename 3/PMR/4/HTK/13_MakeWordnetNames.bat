@@ -1,0 +1,1 @@
+HParse grammarNames wordnetNames

@@ -4,7 +4,7 @@ import re
 
 
 def main():
-    path = "train_all/**/*.lab"
+    path = "test_SI/**/*.lab"
     with open('data.mlf', 'w') as file_mlf:
         file_mlf.write("#!MLF!#\n")
         for filename in glob.glob(path, recursive=True):
