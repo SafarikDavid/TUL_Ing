@@ -72,32 +72,42 @@ def my_median(image):
 
 def main():
     bgr = cv2.imread('pvi_cv04.png')
-    rgb = cv2.cvtColor(bgr, cv2.COLOR_BGR2RGB)
     gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
 
-    medIm = cv2.medianBlur(gray, 5)
-    plot_im_hi_sp(gray, 'gray', medIm, "cv2 median")
+    median_image = cv2.medianBlur(gray, 5)
+    plot_im_hi_sp(gray, 'gray', median_image, "cv2 median")
 
-    averIm = cv2.blur(gray, (3, 3))
-    plot_im_hi_sp(gray, 'gray', averIm, "cv2 average")
+    average_image = cv2.blur(gray, (3, 3))
+    plot_im_hi_sp(gray, 'gray', average_image, "cv2 average")
 
-    myMedIm = my_median(gray)
-    plot_im_hi_sp(gray, 'gray', myMedIm, "my median")
+    my_median_image = my_median(gray)
+    plot_im_hi_sp(gray, 'gray', my_median_image, "my median")
 
-    plot_im_hi_sp(medIm, 'cv2 median', myMedIm, 'my median')
+    plot_im_hi_sp(median_image, 'cv2 median', my_median_image, 'my median')
 
     list_image = create_image_list("images")
     list_gray = []
     for idx, image in enumerate(list_image):
         gray_temp = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         list_gray.append(gray_temp)
-        imC = cv2.Canny(gray_temp, 100, 256)
+        image_canny = cv2.Canny(gray_temp, 100, 256)
+
+        gray_binary = gray_temp.copy()
+        gray_binary[gray_binary > 0] = 1
+        gray_pixel_count = np.sum(np.sum(gray_binary))
+
+        image_canny_binary = image_canny.copy()
+        image_canny_binary[image_canny_binary > 0] = 1
+        image_canny_pixel_count = np.sum(np.sum(image_canny_binary))
+
         plt.subplot(2, 6, idx+1)
-        plt.imshow(gray_temp, cmap='jet')
+        plt.imshow(gray_binary, cmap='jet')
         plt.colorbar()
+        plt.title("count: " + str(gray_pixel_count))
         plt.subplot(2, 6, idx + 7)
-        plt.imshow(imC, cmap='jet')
+        plt.imshow(image_canny_binary, cmap='jet')
         plt.colorbar()
+        plt.title("count: " + str(image_canny_pixel_count))
     plt.show()
 
 
