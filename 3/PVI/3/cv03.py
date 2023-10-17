@@ -118,6 +118,8 @@ def main():
             plt.imshow(temp_image_list[img_idx])
     fig_dct.show()
 
+    plt.show()
+
 
 if __name__ == "__main__":
     main()
