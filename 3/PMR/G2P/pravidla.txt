@@ -8,11 +8,6 @@ x -> ks / _<NPS, - >
 x -> ks / -_<SA>
 x -> ks / <SA>_<SA>
 ex -> egz / -_<SA>
-NPS -> A / _<ZPS>
-NPS -> A / _-<ZPS,ř>
-ZPS -> A / _<-,NPS>
-ZPS -> A / _<NPS>-
-ZPS -> A / _-<NPS,SA,JS>
 z -> z / -_-<ZPS,JS>
 v -> v / -_-<ZPS,JS>
 k -> k / -_-<JS,v>
@@ -49,3 +44,8 @@ y -> i / _
 i -> ij / _<SA>
 n -> N / _<k,g>
 m -> M / _<v,f>
+NPS -> A / _<ZPS>
+NPS -> A / _-<ZPS,ř>
+ZPS -> A / _<-,NPS>
+ZPS -> A / _<NPS>-
+ZPS -> A / _-<NPS,SA,JS>

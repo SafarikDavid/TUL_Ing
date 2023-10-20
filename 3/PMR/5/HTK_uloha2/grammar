@@ -1,0 +1,8 @@
+$sentence_start = SPOJTE MI | CHTEL BYCH | PROSIM | DEJTE MI;
+$name = BOZENU CERNOU |
+        EVU DVORAKOVOU |
+        ADAMA NOVAKA |
+        PETRA SVOBODU |
+        JIRIHO MALEHO |
+        VERU POKORNOU;
+( SENT-START ($sentence_start $name) SENT-END )
