@@ -30,6 +30,7 @@ def calculate_amplitude_spectrum(image):
 
 
 def plot_im_hi_sp(image1, title1, image2, title2, super_title=None):
+    plt.figure()
     spectrum1 = calculate_amplitude_spectrum(image1)
     hist1 = cv2.calcHist([image1], [0], None, [256], [0, 256])
     plt.subplot(2, 3, 1)
@@ -58,7 +59,7 @@ def plot_im_hi_sp(image1, title1, image2, title2, super_title=None):
 
     if super_title is not None:
         plt.suptitle(super_title)
-    plt.show()
+    plt.show(block=False)
 
 
 def my_median(image):
@@ -85,6 +86,7 @@ def main():
 
     plot_im_hi_sp(median_image, 'cv2 median', my_median_image, 'my median')
 
+    plt.figure()
     list_image = create_image_list("images")
     list_gray = []
     for idx, image in enumerate(list_image):
@@ -108,6 +110,7 @@ def main():
         plt.imshow(image_canny_binary, cmap='jet')
         plt.colorbar()
         plt.title("count: " + str(image_canny_pixel_count))
+    plt.show(block=False)
     plt.show()
 
 
