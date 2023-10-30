@@ -11,8 +11,8 @@ def kernel_construction(n):
 
 def granulometry(data, sizes=None):
     if sizes is None:
-        sizes = range(3, 64)
-    granulo = [cv2.morphologyEx(data, cv2.MORPH_OPEN, kernel_construction(n), iterations=1).sum() for n in sizes]
+        sizes = range(3, 64+1)
+    granulo = [cv2.morphologyEx(data, cv2.MORPH_OPEN, kernel_construction(n), iterations=1) for n in sizes]
     return granulo
 
 
@@ -126,6 +126,12 @@ def main():
     plt.colorbar()
     plt.title("Result - Binary Image")
 
+    plt.show()
+
+    granulo_sizes = range(40, 65)
+    granulo = granulometry(segmented_hue, granulo_sizes)
+    # plt.plot(granulo_sizes, granulo)
+    plt.imshow(granulo[0], cmap='jet')
     plt.show()
 
 
