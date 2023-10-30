@@ -19,6 +19,8 @@ def main():
     binary_hue = np.zeros_like(hue)
     binary_hue[hue < 50] = 1
 
+    binary_hue = np.ones_like(binary_hue) - binary_hue
+
     plt.subplot(2, 3, 1)
     plt.imshow(gray, cmap='gray')
     plt.title("Gray Image")
