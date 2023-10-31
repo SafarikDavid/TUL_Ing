@@ -10,10 +10,12 @@ def kernel_construction(n):
 
 
 def granulometry(data, sizes=None):
+    out = np.zeros_like(data, dtype=np.uint8)
     if sizes is None:
-        sizes = range(3, 64+1)
-    granulo = [cv2.morphologyEx(data, cv2.MORPH_OPEN, kernel_construction(n), iterations=1) for n in sizes]
-    return granulo
+        sizes = range(3, 64 + 1)
+    for n in sizes:
+        out += cv2.morphologyEx(data, cv2.MORPH_OPEN, kernel_construction(n), iterations=1)
+    return out
 
 
 def main():
@@ -128,10 +130,27 @@ def main():
 
     plt.show()
 
-    granulo_sizes = range(40, 65)
+    granulo_sizes = range(3, 65)
     granulo = granulometry(segmented_hue, granulo_sizes)
-    # plt.plot(granulo_sizes, granulo)
-    plt.imshow(granulo[0], cmap='jet')
+
+    x_axis = range(40, 65)
+    granulo_histogram = cv2.calcHist([granulo], [0], None, [25], [40, 65])
+
+    for i in x_axis:
+        object_count = len(granulo[granulo == i])/i**2
+        if object_count < 0.9:
+            continue
+        object_count = int(np.floor(object_count))
+        print("No. objects: ", object_count, " size: ", i, " x ", i)
+
+    plt.subplot(1, 2, 1)
+    plt.imshow(granulo, cmap='jet')
+    plt.title("Result - Granulometry")
+    plt.colorbar()
+
+    plt.subplot(1, 2, 2)
+    plt.plot(x_axis, granulo_histogram)
+    plt.title("Granul. Image Histogram")
     plt.show()
 
 
