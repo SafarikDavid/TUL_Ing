@@ -1,0 +1,3 @@
+$keyword = KOMENTATOR | PREZIDENT;
+$filler = FILLER | SILENCE;
+( < $filler | $keyword > )

@@ -1,0 +1,22 @@
+VERSION=1.0
+N=7    L=13   
+I=0    W=PREZIDENT           
+I=1    W=!NULL               
+I=2    W=KOMENTATOR          
+I=3    W=SILENCE             
+I=4    W=FILLER              
+I=5    W=!NULL               
+I=6    W=!NULL               
+J=0     S=1    E=0    
+J=1     S=6    E=0    
+J=2     S=0    E=1    
+J=3     S=2    E=1    
+J=4     S=3    E=1    
+J=5     S=4    E=1    
+J=6     S=1    E=2    
+J=7     S=6    E=2    
+J=8     S=1    E=3    
+J=9     S=6    E=3    
+J=10    S=1    E=4    
+J=11    S=6    E=4    
+J=12    S=1    E=5    
