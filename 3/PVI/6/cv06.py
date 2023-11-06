@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 from scipy.ndimage import label
-from scipy.ndimage import binary_opening
 
 
 def kernel_construction(n):
