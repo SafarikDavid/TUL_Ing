@@ -59,7 +59,6 @@ def main():
         centers.append([xx_center, yy_center])
     centers = np.array(centers)
 
-    print(centers)
     rotation_radians = np.arctan((centers[0, 1] - centers[2, 1]) / (centers[0, 0] - centers[2, 0]))
     rotation_degrees = np.rad2deg(rotation_radians)
 
