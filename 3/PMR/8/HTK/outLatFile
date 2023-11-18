@@ -1,0 +1,5775 @@
+VERSION=1.0
+N=1266 L=4507 
+I=0    W=!NULL               
+I=1    W=!EXIT               
+I=2    W=!ENTER              
+I=3    W=a                   
+I=4    W=aby                 
+I=5    W=advokaty            
+I=6    W=akce                
+I=7    W=ale                 
+I=8    W=ales                
+I=9    W=alois               
+I=10   W=americka            
+I=11   W=americti            
+I=12   W=ani                 
+I=13   W=ansamblu            
+I=14   W=apartmany           
+I=15   W=apple               
+I=16   W=archa               
+I=17   W=argument            
+I=18   W=arktidou            
+I=19   W=at                  
+I=20   W=aukce               
+I=21   W=auta                
+I=22   W=az                  
+I=23   W=bafunari            
+I=24   W=baleni              
+I=25   W=baliku              
+I=26   W=bank                
+I=27   W=banky               
+I=28   W=behem               
+I=29   W=benzin              
+I=30   W=bez                 
+I=31   W=beznadejne          
+I=32   W=bezne               
+I=33   W=bezpecny            
+I=34   W=bezpilotni          
+I=35   W=bezplatne           
+I=36   W=beztize             
+I=37   W=blizkosti           
+I=38   W=bochori             
+I=39   W=bodu                
+I=40   W=bojovat             
+I=41   W=brezna              
+I=42   W=bricha              
+I=43   W=brigady             
+I=44   W=brnenskem           
+I=45   W=brnu                
+I=46   W=bruslari            
+I=47   W=bude                
+I=48   W=budou               
+I=49   W=budouci             
+I=50   W=budoucna            
+I=51   W=bunkru              
+I=52   W=burze               
+I=53   W=by                  
+I=54   W=bych                
+I=55   W=bydleni             
+I=56   W=byl                 
+I=57   W=byla                
+I=58   W=bylo                
+I=59   W=byly                
+I=60   W=byste               
+I=61   W=byt                 
+I=62   W=byvalou             
+I=63   W=byvaly              
+I=64   W=casovem             
+I=65   W=cast                
+I=66   W=casu                
+I=67   W=cele                
+I=68   W=celkem              
+I=69   W=celou               
+I=70   W=cenou               
+I=71   W=centra              
+I=72   W=cenu                
+I=73   W=cerpacich           
+I=74   W=ceske               
+I=75   W=ceskou              
+I=76   W=cesku               
+I=77   W=cesky               
+I=78   W=cesta               
+I=79   W=cestou              
+I=80   W=cesty               
+I=81   W=cetl                
+I=82   W=chemii              
+I=83   W=chleba              
+I=84   W=chlebicky           
+I=85   W=chovanec            
+I=86   W=chteji              
+I=87   W=chtel               
+I=88   W=chvilemi            
+I=89   W=chybejici           
+I=90   W=ci                  
+I=91   W=cigaret             
+I=92   W=cina                
+I=93   W=cini                
+I=94   W=clenskych           
+I=95   W=clenskymi           
+I=96   W=clovek              
+I=97   W=co                  
+I=98   W=ctvrtek             
+I=99   W=ctyricet            
+I=100  W=cviceni             
+I=101  W=cykliste            
+I=102  W=cyklostezce         
+I=103  W=czechpointech       
+I=104  W=dale                
+I=105  W=dalkove             
+I=106  W=dalnici             
+I=107  W=dalsim              
+I=108  W=dari                
+I=109  W=darit               
+I=110  W=dechu               
+I=111  W=deficitu            
+I=112  W=dela                
+I=113  W=delenim             
+I=114  W=delostrelectvo      
+I=115  W=demonstrujicim      
+I=116  W=den                 
+I=117  W=desateho            
+I=118  W=deset               
+I=119  W=detektivni          
+I=120  W=devate              
+I=121  W=dila                
+I=122  W=dira                
+I=123  W=distribuce          
+I=124  W=dite                
+I=125  W=divadel             
+I=126  W=divadle             
+I=127  W=dlazdicich          
+I=128  W=dlouho              
+I=129  W=dluh                
+I=130  W=dluhopis            
+I=131  W=dluhopisy           
+I=132  W=dluhu               
+I=133  W=dna                 
+I=134  W=dnes                
+I=135  W=do                  
+I=136  W=dobe                
+I=137  W=dobes               
+I=138  W=dobovych            
+I=139  W=dobu                
+I=140  W=dojmem              
+I=141  W=dolu                
+I=142  W=domacnost           
+I=143  W=domacnosti          
+I=144  W=domek               
+I=145  W=domov               
+I=146  W=dopravni            
+I=147  W=dopravnimi          
+I=148  W=doprovazela         
+I=149  W=dosavadnim          
+I=150  W=doslova             
+I=151  W=dostane             
+I=152  W=drinku              
+I=153  W=drive               
+I=154  W=druhem              
+I=155  W=druhovych           
+I=156  W=druhy               
+I=157  W=drzel               
+I=158  W=duely               
+I=159  W=dukle               
+I=160  W=dulezite            
+I=161  W=duvodu              
+I=162  W=dva                 
+I=163  W=dvacet              
+I=164  W=dvaceti             
+I=165  W=dvacetitisicovou    
+I=166  W=dvakrat             
+I=167  W=dvanact             
+I=168  W=dve                 
+I=169  W=dvojice             
+I=170  W=dvou                
+I=171  W=dzeko               
+I=172  W=egyptskych          
+I=173  W=ekologickou         
+I=174  W=ekonomii            
+I=175  W=ekonomove           
+I=176  W=emise               
+I=177  W=emisi               
+I=178  W=eurozona            
+I=179  W=eurozony            
+I=180  W=evropa              
+I=181  W=evropska            
+I=182  W=evropske            
+I=183  W=evropskych          
+I=184  W=evropy              
+I=185  W=extralize           
+I=186  W=fajn                
+I=187  W=fakt                
+I=188  W=farmaceuticke       
+I=189  W=farmaceutickych     
+I=190  W=favoritum           
+I=191  W=faze                
+I=192  W=fazich              
+I=193  W=financi             
+I=194  W=financni            
+I=195  W=financovalo         
+I=196  W=firmach             
+I=197  W=firmu               
+I=198  W=firmy               
+I=199  W=fiskalni            
+I=200  W=fotbaliste          
+I=201  W=fotbalistu          
+I=202  W=francouzsti         
+I=203  W=fyzicku             
+I=204  W=fyziky              
+I=205  W=generickych         
+I=206  W=genia               
+I=207  W=golmana             
+I=208  W=grant               
+I=209  W=grantovych          
+I=210  W=guverner            
+I=211  W=herec               
+I=212  W=historickych        
+I=213  W=historii            
+I=214  W=hlavne              
+I=215  W=hlavni              
+I=216  W=hlavniho            
+I=217  W=hlavnim             
+I=218  W=hledat              
+I=219  W=hlidaly             
+I=220  W=hlidky              
+I=221  W=hlukem              
+I=222  W=hnuti               
+I=223  W=ho                  
+I=224  W=hodinou             
+I=225  W=hodkovic            
+I=226  W=hokejku             
+I=227  W=hollywoodsky        
+I=228  W=hospodareni         
+I=229  W=hotelovy            
+I=230  W=hraci               
+I=231  W=hradily             
+I=232  W=hradu               
+I=233  W=hraje               
+I=234  W=hral                
+I=235  W=hranici             
+I=236  W=hrazeni             
+I=237  W=hudebniho           
+I=238  W=i                   
+I=239  W=indickem            
+I=240  W=individualnim       
+I=241  W=informace           
+I=242  W=informaci           
+I=243  W=insolvencnim        
+I=244  W=inspektori          
+I=245  W=instituce           
+I=246  W=instrument          
+I=247  W=internetove         
+I=248  W=internetoveho       
+I=249  W=investici           
+I=250  W=italii              
+I=251  W=italskou            
+I=252  W=izraelec            
+I=253  W=ja                  
+I=254  W=jadernych           
+I=255  W=jak                 
+I=256  W=jako                
+I=257  W=jan                 
+I=258  W=japonske            
+I=259  W=japonskem           
+I=260  W=japonsko            
+I=261  W=jare                
+I=262  W=jaroslav            
+I=263  W=je                  
+I=264  W=jeden               
+I=265  W=jedna               
+I=266  W=jednani             
+I=267  W=jednoduche          
+I=268  W=jednoduchy          
+I=269  W=jednom              
+I=270  W=jednotlivych        
+I=271  W=jeho                
+I=272  W=jehoz               
+I=273  W=jej                 
+I=274  W=jeji                
+I=275  W=jen                 
+I=276  W=jenz                
+I=277  W=jestli              
+I=278  W=jezdi               
+I=279  W=ji                  
+I=280  W=jihoceskeho         
+I=281  W=jihokorejsky        
+I=282  W=jihovychodne        
+I=283  W=jinak               
+I=284  W=jine                
+I=285  W=jiny                
+I=286  W=jinych              
+I=287  W=jit                 
+I=288  W=jiz                 
+I=289  W=jizni               
+I=290  W=jobse               
+I=291  W=josef               
+I=292  W=josefovskych        
+I=293  W=jozef               
+I=294  W=jsem                
+I=295  W=jsme                
+I=296  W=jsou                
+I=297  W=jste                
+I=298  W=julii               
+I=299  W=k                   
+I=300  W=kalifornsky         
+I=301  W=kalna               
+I=302  W=kalouska            
+I=303  W=karlovarske         
+I=304  W=karlovarsky         
+I=305  W=kasaren             
+I=306  W=katastrofu          
+I=307  W=kavarnach           
+I=308  W=kazdem              
+I=309  W=kazdorocniho        
+I=310  W=kde                 
+I=311  W=kdekdo              
+I=312  W=kdo                 
+I=313  W=kdy                 
+I=314  W=kdyz                
+I=315  W=ke                  
+I=316  W=ker                 
+I=317  W=kldr                
+I=318  W=kluby               
+I=319  W=kohoutku            
+I=320  W=kojenecky           
+I=321  W=kola                
+I=322  W=kolektivne          
+I=323  W=komedii             
+I=324  W=komise              
+I=325  W=komplikacemi        
+I=326  W=komplikovane        
+I=327  W=komunalnich         
+I=328  W=konce               
+I=329  W=konkurencni         
+I=330  W=konstatoval         
+I=331  W=kontejnery          
+I=332  W=kontrolou           
+I=333  W=kontroly            
+I=334  W=konzervativni       
+I=335  W=koordinovane        
+I=336  W=korea               
+I=337  W=korejskem           
+I=338  W=korun               
+I=339  W=kosmu               
+I=340  W=kotovane            
+I=341  W=koupaliste          
+I=342  W=koupit              
+I=343  W=krachujicimu        
+I=344  W=kradez              
+I=345  W=kraj                
+I=346  W=kraje               
+I=347  W=kraji               
+I=348  W=kresta              
+I=349  W=kriminalce          
+I=350  W=kritizovat          
+I=351  W=krokem              
+I=352  W=ktere               
+I=353  W=kteremu             
+I=354  W=kterou              
+I=355  W=ktery               
+I=356  W=kulturista          
+I=357  W=kvalitni            
+I=358  W=kvalitu             
+I=359  W=kvetiny             
+I=360  W=kvuli               
+I=361  W=kyjevsky            
+I=362  W=ladislav            
+I=363  W=laiky               
+I=364  W=led                 
+I=365  W=lekari              
+I=366  W=leku                
+I=367  W=leky                
+I=368  W=lepsi               
+I=369  W=let                 
+I=370  W=letadla             
+I=371  W=leti                
+I=372  W=letiste             
+I=373  W=letnich             
+I=374  W=letos               
+I=375  W=letosni             
+I=376  W=letosnim            
+I=377  W=letu                
+I=378  W=lety                
+I=379  W=lezi                
+I=380  W=licence             
+I=381  W=lide                
+I=382  W=lidem               
+I=383  W=lidi                
+I=384  W=ligu                
+I=385  W=ligy                
+I=386  W=limitu              
+I=387  W=lipence             
+I=388  W=lipencich           
+I=389  W=listopadu           
+I=390  W=lize                
+I=391  W=lod                 
+I=392  W=loni                
+I=393  W=lonsku              
+I=394  W=ma                  
+I=395  W=mafianskych         
+I=396  W=majetku             
+I=397  W=maji                
+I=398  W=majitel             
+I=399  W=mame                
+I=400  W=manazer             
+I=401  W=manevry             
+I=402  W=mdz                 
+I=403  W=mec                 
+I=404  W=mela                
+I=405  W=melo                
+I=406  W=mene                
+I=407  W=mesicni             
+I=408  W=mesta               
+I=409  W=mestem              
+I=410  W=mesto               
+I=411  W=mestskeho           
+I=412  W=mezinarodni         
+I=413  W=mezitim             
+I=414  W=michalek            
+I=415  W=michate             
+I=416  W=miliard             
+I=417  W=miliardy            
+I=418  W=milionu             
+I=419  W=miliony             
+I=420  W=mimo                
+I=421  W=ministerstvo        
+I=422  W=ministr             
+I=423  W=ministruv           
+I=424  W=minulem             
+I=425  W=minulosti           
+I=426  W=minuly              
+I=427  W=minulymi            
+I=428  W=minus               
+I=429  W=minut               
+I=430  W=minutami            
+I=431  W=miroslav            
+I=432  W=miroslava           
+I=433  W=miste               
+I=434  W=mistni              
+I=435  W=misto               
+I=436  W=mistr               
+I=437  W=mistrem             
+I=438  W=mit                 
+I=439  W=mladeho             
+I=440  W=mladici             
+I=441  W=mnohem              
+I=442  W=mnohokrat           
+I=443  W=mnozstvi            
+I=444  W=mobilni             
+I=445  W=mobily              
+I=446  W=moc                 
+I=447  W=moci                
+I=448  W=moderator           
+I=449  W=modul               
+I=450  W=mohelkou            
+I=451  W=mohl                
+I=452  W=mohou               
+I=453  W=moje                
+I=454  W=motivovat           
+I=455  W=mozne               
+I=456  W=moznost             
+I=457  W=moznosti            
+I=458  W=mrzi                
+I=459  W=mu                  
+I=460  W=muj                 
+I=461  W=mumie               
+I=462  W=museji              
+I=463  W=musely              
+I=464  W=musi                
+I=465  W=musite              
+I=466  W=muze                
+I=467  W=muzea               
+I=468  W=muzi                
+I=469  W=muzu                
+I=470  W=mysli               
+I=471  W=myslim              
+I=472  W=na                  
+I=473  W=nabidku             
+I=474  W=nabizet             
+I=475  W=nad                 
+I=476  W=nadeji              
+I=477  W=nadrizeny           
+I=478  W=naformulovat        
+I=479  W=nafta               
+I=480  W=nahradi             
+I=481  W=nahradila           
+I=482  W=nahradnich          
+I=483  W=najem               
+I=484  W=nakupniho           
+I=485  W=nam                 
+I=486  W=namestek            
+I=487  W=namornich           
+I=488  W=naopak              
+I=489  W=napadl              
+I=490  W=napeti              
+I=491  W=naplanovali         
+I=492  W=napovi              
+I=493  W=napric              
+I=494  W=narocnejsi          
+I=495  W=narodilo            
+I=496  W=narozenych          
+I=497  W=nas                 
+I=498  W=nasi                
+I=499  W=nastoupi            
+I=500  W=nato                
+I=501  W=navic               
+I=502  W=navstevnici         
+I=503  W=navstevniky         
+I=504  W=nazor               
+I=505  W=nazvane             
+I=506  W=nazvem              
+I=507  W=ne                  
+I=508  W=nebel               
+I=509  W=nebo                
+I=510  W=neboli              
+I=511  W=nebude              
+I=512  W=nebyl               
+I=513  W=necitim             
+I=514  W=nedavno             
+I=515  W=nedavnym            
+I=516  W=nedeli              
+I=517  W=nedelni             
+I=518  W=nedokazou           
+I=519  W=neexistuje          
+I=520  W=nehodu              
+I=521  W=nehral              
+I=522  W=nej                 
+I=523  W=nejhorsi            
+I=524  W=nejjednodussi       
+I=525  W=nejlepsi            
+I=526  W=nejmene             
+I=527  W=nejmenovane         
+I=528  W=nejmin              
+I=529  W=nejpouzivanejsi     
+I=530  W=nejsikovnejsi       
+I=531  W=nejvetsi            
+I=532  W=nejvetsich          
+I=533  W=nejvice             
+I=534  W=nekolik             
+I=535  W=nekolika            
+I=536  W=nekonci             
+I=537  W=nekoupim            
+I=538  W=nektera             
+I=539  W=nektere             
+I=540  W=nektereho           
+I=541  W=nekterych           
+I=542  W=nekterym            
+I=543  W=nema                
+I=544  W=nemate              
+I=545  W=nemec               
+I=546  W=nemeckych           
+I=547  W=nemely              
+I=548  W=nemocnici           
+I=549  W=neni                
+I=550  W=neodeslal           
+I=551  W=neohlasene          
+I=552  W=nepatrily           
+I=553  W=nepatrne            
+I=554  W=nepoznali           
+I=555  W=nesplni             
+I=556  W=nestacilo           
+I=557  W=neumoznuje          
+I=558  W=neustale            
+I=559  W=neverili            
+I=560  W=nevidely            
+I=561  W=nevydelavali        
+I=562  W=nevyuzil            
+I=563  W=nez                 
+I=564  W=nezavisle           
+I=565  W=nezavisli           
+I=566  W=ni                  
+I=567  W=nich                
+I=568  W=nikdo               
+I=569  W=nikdy               
+I=570  W=nikoli              
+I=571  W=nizke               
+I=572  W=nobelovu            
+I=573  W=nohy                
+I=574  W=nosorozcu           
+I=575  W=nova                
+I=576  W=nove                
+I=577  W=novinari            
+I=578  W=novinkami           
+I=579  W=novorozence         
+I=580  W=novou               
+I=581  W=novy                
+I=582  W=nutne               
+I=583  W=nyni                
+I=584  W=o                   
+I=585  W=obchodniku          
+I=586  W=obchody             
+I=587  W=obci                
+I=588  W=obe                 
+I=589  W=obesli              
+I=590  W=obhajoby            
+I=591  W=objemu              
+I=592  W=objevili            
+I=593  W=obligacemi          
+I=594  W=obnove              
+I=595  W=obrazovka           
+I=596  W=obri                
+I=597  W=obvodu              
+I=598  W=oceanu              
+I=599  W=ocekavame           
+I=600  W=ocich               
+I=601  W=od                  
+I=602  W=ode                 
+I=603  W=odedavna            
+I=604  W=odesel              
+I=605  W=odlisit             
+I=606  W=odpadkove           
+I=607  W=odpoledne           
+I=608  W=odpoved             
+I=609  W=odstavovani         
+I=610  W=odvete              
+I=611  W=odvolani            
+I=612  W=ohledne             
+I=613  W=ohradila            
+I=614  W=okamziku            
+I=615  W=okraji              
+I=616  W=on                  
+I=617  W=opacny              
+I=618  W=opadane             
+I=619  W=opata               
+I=620  W=operaci             
+I=621  W=orbitalni           
+I=622  W=organizaci          
+I=623  W=organizacim         
+I=624  W=originalnich        
+I=625  W=oslav               
+I=626  W=oslovilo            
+I=627  W=osm                 
+I=628  W=osobne              
+I=629  W=ostatni             
+I=630  W=ostraha             
+I=631  W=ostravsti           
+I=632  W=ostrov              
+I=633  W=ostry               
+I=634  W=osvedci             
+I=635  W=otazka              
+I=636  W=otazku              
+I=637  W=otazky              
+I=638  W=otestoval           
+I=639  W=otevrit             
+I=640  W=ovsem               
+I=641  W=ozbrojenych         
+I=642  W=oznacenim           
+I=643  W=oznacil             
+I=644  W=oznamil             
+I=645  W=ozonova             
+I=646  W=pacientky           
+I=647  W=padu                
+I=648  W=parametry           
+I=649  W=pardubicich         
+I=650  W=paroubek            
+I=651  W=partu               
+I=652  W=patecnim            
+I=653  W=patek               
+I=654  W=patnact             
+I=655  W=patnacteho          
+I=656  W=pavilonu            
+I=657  W=pece                
+I=658  W=penize              
+I=659  W=pet                 
+I=660  W=peti                
+I=661  W=petice              
+I=662  W=peveckym            
+I=663  W=pilotni             
+I=664  W=piratu              
+I=665  W=pisku               
+I=666  W=pisne               
+I=667  W=plan                
+I=668  W=planete             
+I=669  W=platy               
+I=670  W=pletou              
+I=671  W=plne                
+I=672  W=plochu              
+I=673  W=plzen               
+I=674  W=pneumatik           
+I=675  W=po                  
+I=676  W=pobouril            
+I=677  W=pocatku             
+I=678  W=pocitacovy          
+I=679  W=pocitat             
+I=680  W=poctu               
+I=681  W=pod                 
+I=682  W=podezriva           
+I=683  W=podiu               
+I=684  W=podivame            
+I=685  W=podivat             
+I=686  W=podle               
+I=687  W=podnikovych         
+I=688  W=podobne             
+I=689  W=podpory             
+I=690  W=podzimnim           
+I=691  W=poharu              
+I=692  W=pohlednic           
+I=693  W=pohrbila            
+I=694  W=pohromou            
+I=695  W=pojistovna          
+I=696  W=pokazde             
+I=697  W=pokracoval          
+I=698  W=pokraji             
+I=699  W=pokud               
+I=700  W=pokuseni            
+I=701  W=policii             
+I=702  W=policiste           
+I=703  W=polocas             
+I=704  W=poloostrove         
+I=705  W=polovine            
+I=706  W=poloviny            
+I=707  W=polozek             
+I=708  W=pomniku             
+I=709  W=pomoci              
+I=710  W=pondeli             
+I=711  W=poplatcich          
+I=712  W=popularni           
+I=713  W=porad               
+I=714  W=poradatele          
+I=715  W=poradatelu          
+I=716  W=poradne             
+I=717  W=poradu              
+I=718  W=porcelan            
+I=719  W=porci               
+I=720  W=posilila            
+I=721  W=poskytl             
+I=722  W=poskytovani         
+I=723  W=poskytovatelu       
+I=724  W=poslal              
+I=725  W=poslednich          
+I=726  W=posledniho          
+I=727  W=poslednim           
+I=728  W=posoudi             
+I=729  W=posoudit            
+I=730  W=postovne            
+I=731  W=postup              
+I=732  W=pote                
+I=733  W=potom               
+I=734  W=potreti             
+I=735  W=potrva              
+I=736  W=pouze               
+I=737  W=pouzitelnost        
+I=738  W=pouzivani           
+I=739  W=povazuji            
+I=740  W=povedou             
+I=741  W=povinna             
+I=742  W=povinnem            
+I=743  W=pozadovanou         
+I=744  W=pozdeji             
+I=745  W=pozornost           
+I=746  W=pracovni            
+I=747  W=praha               
+I=748  W=prahy               
+I=749  W=praktik             
+I=750  W=prava               
+I=751  W=pravda              
+I=752  W=prave               
+I=753  W=pravniku            
+I=754  W=pravou              
+I=755  W=praze               
+I=756  W=prazskem            
+I=757  W=pred                
+I=758  W=predbezne           
+I=759  W=predchozi           
+I=760  W=predevsim           
+I=761  W=predseda            
+I=762  W=prekvapen           
+I=763  W=prekvapi            
+I=764  W=premierku           
+I=765  W=prepadeni           
+I=766  W=pres                
+I=767  W=presneji            
+I=768  W=prestupni           
+I=769  W=prevalcoval         
+I=770  W=prezident           
+I=771  W=pri                 
+I=772  W=pribehy             
+I=773  W=pribyla             
+I=774  W=pricinou            
+I=775  W=pricky              
+I=776  W=prijdou             
+I=777  W=prilezitost         
+I=778  W=primu               
+I=779  W=pripade             
+I=780  W=pripojeni           
+I=781  W=pripravovaly        
+I=782  W=priradi             
+I=783  W=prisel              
+I=784  W=prisly              
+I=785  W=pristi              
+I=786  W=pristupovat         
+I=787  W=pritahuji           
+I=788  W=pritizilo           
+I=789  W=pritom              
+I=790  W=pro                 
+I=791  W=probiha             
+I=792  W=problematikou       
+I=793  W=problemy            
+I=794  W=procent             
+I=795  W=prochazka           
+I=796  W=prodeje             
+I=797  W=programu            
+I=798  W=programy            
+I=799  W=prohlaseni          
+I=800  W=prohledaval         
+I=801  W=projde              
+I=802  W=propousteni         
+I=803  W=prosince            
+I=804  W=proti               
+I=805  W=protoze             
+I=806  W=provedla            
+I=807  W=provedli            
+I=808  W=provozovat          
+I=809  W=provozovnach        
+I=810  W=prumerne            
+I=811  W=prvni               
+I=812  W=prvniho             
+I=813  W=prvnim              
+I=814  W=pusobi              
+I=815  W=putovaly            
+I=816  W=puvodnim            
+I=817  W=rad                 
+I=818  W=rade                
+I=819  W=radi                
+I=820  W=radnice             
+I=821  W=radu                
+I=822  W=rakousky            
+I=823  W=ramci               
+I=824  W=rana                
+I=825  W=rano                
+I=826  W=razie               
+I=827  W=recko               
+I=828  W=recku               
+I=829  W=reditele            
+I=830  W=rekapitalizaci      
+I=831  W=rekl                
+I=832  W=rekonstruuji        
+I=833  W=rekordni            
+I=834  W=remesel             
+I=835  W=republiky           
+I=836  W=reseni              
+I=837  W=resi                
+I=838  W=resort              
+I=839  W=restauracich        
+I=840  W=retro               
+I=841  W=rezervace           
+I=842  W=ridici              
+I=843  W=rizeni              
+I=844  W=roce                
+I=845  W=rocniku             
+I=846  W=rodin               
+I=847  W=rodina              
+I=848  W=rodinny             
+I=849  W=rohy                
+I=850  W=rok                 
+I=851  W=roku                
+I=852  W=rotaci              
+I=853  W=rousal              
+I=854  W=rovnou              
+I=855  W=rozdavali           
+I=856  W=rozhlasovy          
+I=857  W=rozhodne            
+I=858  W=rozhoduji           
+I=859  W=rozpocet            
+I=860  W=rozpoctoveho        
+I=861  W=rozpoctu            
+I=862  W=rozsiri             
+I=863  W=ruceni              
+I=864  W=rusno               
+I=865  W=s                   
+I=866  W=samy                
+I=867  W=schoval             
+I=868  W=se                  
+I=869  W=sedesat             
+I=870  W=sedm                
+I=871  W=sedmi               
+I=872  W=sefoval             
+I=873  W=segregace           
+I=874  W=segregaci           
+I=875  W=sel                 
+I=876  W=selze               
+I=877  W=selzou              
+I=878  W=senatnich           
+I=879  W=sesadit             
+I=880  W=seskupuje           
+I=881  W=sest                
+I=882  W=setkani             
+I=883  W=severni             
+I=884  W=seznami             
+I=885  W=sezony              
+I=886  W=sharp               
+I=887  W=shoduje             
+I=888  W=si                  
+I=889  W=sikovne             
+I=890  W=sil                 
+I=891  W=sily                
+I=892  W=situace             
+I=893  W=situaci             
+I=894  W=skoda               
+I=895  W=skodu               
+I=896  W=skola               
+I=897  W=skolaku             
+I=898  W=skolstvi            
+I=899  W=skupina             
+I=900  W=skupine             
+I=901  W=slavi               
+I=902  W=sletavat            
+I=903  W=slevou              
+I=904  W=slo                 
+I=905  W=slovenska           
+I=906  W=slovensko           
+I=907  W=slunecny            
+I=908  W=slysel              
+I=909  W=smejte              
+I=910  W=smerujici           
+I=911  W=smoulove            
+I=912  W=snad                
+I=913  W=snizovani           
+I=914  W=sobe                
+I=915  W=sobotu              
+I=916  W=sokolovskeho        
+I=917  W=somalska            
+I=918  W=somalskych          
+I=919  W=souboje             
+I=920  W=soubory             
+I=921  W=soucasne            
+I=922  W=soucasti            
+I=923  W=soud                
+I=924  W=soudni              
+I=925  W=soudu               
+I=926  W=soupis              
+I=927  W=soutezili           
+I=928  W=spachal             
+I=929  W=spachtli            
+I=930  W=spartaku            
+I=931  W=spartanskych        
+I=932  W=specialni           
+I=933  W=spicka              
+I=934  W=splnovala           
+I=935  W=spojene             
+I=936  W=spojeni             
+I=937  W=spokojeny           
+I=938  W=spolecenskeho       
+I=939  W=spolecne            
+I=940  W=spoluzakladatele    
+I=941  W=sporici             
+I=942  W=sporum              
+I=943  W=spravne             
+I=944  W=srovnani            
+I=945  W=srpna               
+I=946  W=staci               
+I=947  W=stal                
+I=948  W=stala               
+I=949  W=stanic              
+I=950  W=stanici             
+I=951  W=stanovat            
+I=952  W=stanul              
+I=953  W=starostove          
+I=954  W=start               
+I=955  W=stat                
+I=956  W=statni              
+I=957  W=statniho            
+I=958  W=staty               
+I=959  W=stav                
+I=960  W=ste                 
+I=961  W=stejnou             
+I=962  W=stejnych            
+I=963  W=sterilizaci         
+I=964  W=stesti              
+I=965  W=steva               
+I=966  W=sto                 
+I=967  W=stovka              
+I=968  W=stredu              
+I=969  W=stribre             
+I=970  W=student             
+I=971  W=studenti            
+I=972  W=svacek              
+I=973  W=svatek              
+I=974  W=svazek              
+I=975  W=sve                 
+I=976  W=svedci              
+I=977  W=svedky              
+I=978  W=sveho               
+I=979  W=svou                
+I=980  W=svym                
+I=981  W=syrsky              
+I=982  W=system              
+I=983  W=ta                  
+I=984  W=tabakove            
+I=985  W=tabulky             
+I=986  W=tachovsku           
+I=987  W=tady                
+I=988  W=tahanice            
+I=989  W=tajemnosti          
+I=990  W=tak                 
+I=991  W=take                
+I=992  W=takove              
+I=993  W=tam                 
+I=994  W=te                  
+I=995  W=techniku            
+I=996  W=techto              
+I=997  W=ted                 
+I=998  W=tedy                
+I=999  W=tehdy               
+I=1000 W=tekla               
+I=1001 W=tele                
+I=1002 W=telefony            
+I=1003 W=televize            
+I=1004 W=televizni           
+I=1005 W=televizor           
+I=1006 W=temata              
+I=1007 W=temelina            
+I=1008 W=temer               
+I=1009 W=temto               
+I=1010 W=ten                 
+I=1011 W=tento               
+I=1012 W=teprve              
+I=1013 W=tesnejsi            
+I=1014 W=test                
+I=1015 W=testu               
+I=1016 W=text                
+I=1017 W=tezko               
+I=1018 W=tichosti            
+I=1019 W=tim                 
+I=1020 W=tisic               
+I=1021 W=tisice              
+I=1022 W=titul               
+I=1023 W=to                  
+I=1024 W=toho                
+I=1025 W=tohoto              
+I=1026 W=tolik               
+I=1027 W=tom                 
+I=1028 W=tomu                
+I=1029 W=totiz               
+I=1030 W=tramvaji            
+I=1031 W=treba               
+I=1032 W=trener              
+I=1033 W=trenovat            
+I=1034 W=trestany            
+I=1035 W=treti               
+I=1036 W=trh                 
+I=1037 W=tri                 
+I=1038 W=tricateho           
+I=1039 W=trimilionovy        
+I=1040 W=trofejim            
+I=1041 W=trva                
+I=1042 W=tuto                
+I=1043 W=tuzemskych          
+I=1044 W=tvrde               
+I=1045 W=tvrdi               
+I=1046 W=ty                  
+I=1047 W=tyden               
+I=1048 W=tydne               
+I=1049 W=tydnu               
+I=1050 W=tymosenkovou        
+I=1051 W=tyto                
+I=1052 W=u                   
+I=1053 W=ubytek              
+I=1054 W=ubytovatele         
+I=1055 W=ucastnila           
+I=1056 W=ucime               
+I=1057 W=ucitelu             
+I=1058 W=uefa                
+I=1059 W=uhlidat             
+I=1060 W=ukazkou             
+I=1061 W=ukrajinskou         
+I=1062 W=umelecka            
+I=1063 W=umrti               
+I=1064 W=unesla              
+I=1065 W=unie                
+I=1066 W=unii                
+I=1067 W=unikatni            
+I=1068 W=univerzita          
+I=1069 W=unoru               
+I=1070 W=upadku              
+I=1071 W=uplne               
+I=1072 W=upozornuji          
+I=1073 W=urcite              
+I=1074 W=urcitych            
+I=1075 W=usa                 
+I=1076 W=uspechu             
+I=1077 W=uspechy             
+I=1078 W=uspesne             
+I=1079 W=uspesny             
+I=1080 W=ustav               
+I=1081 W=ustavu              
+I=1082 W=uterni              
+I=1083 W=utery               
+I=1084 W=utka                
+I=1085 W=utokem              
+I=1086 W=uvedla              
+I=1087 W=uveritelne          
+I=1088 W=uveru               
+I=1089 W=uvidel              
+I=1090 W=uz                  
+I=1091 W=uzivali             
+I=1092 W=v                   
+I=1093 W=valentyna           
+I=1094 W=vam                 
+I=1095 W=ve                  
+I=1096 W=vecer               
+I=1097 W=vedci               
+I=1098 W=vedeni              
+I=1099 W=vedu                
+I=1100 W=vedy                
+I=1101 W=velke               
+I=1102 W=velkeho             
+I=1103 W=velkem              
+I=1104 W=verejnosti          
+I=1105 W=vesnici             
+I=1106 W=vetsi               
+I=1107 W=vezeni              
+I=1108 W=vic                 
+I=1109 W=vice                
+I=1110 W=vidi                
+I=1111 W=vikendu             
+I=1112 W=vinika              
+I=1113 W=vinu                
+I=1114 W=vir                 
+I=1115 W=viru                
+I=1116 W=virus               
+I=1117 W=vlada               
+I=1118 W=vlivneho            
+I=1119 W=vloni               
+I=1120 W=voda                
+I=1121 W=vode                
+I=1122 W=vojenske            
+I=1123 W=volbach             
+I=1124 W=volbu               
+I=1125 W=voleb               
+I=1126 W=volneho             
+I=1127 W=vraceni             
+I=1128 W=vracet              
+I=1129 W=vrahem              
+I=1130 W=vratit              
+I=1131 W=vrazdu              
+I=1132 W=vsak                
+I=1133 W=vsechny             
+I=1134 W=vseobecna           
+I=1135 W=vstup               
+I=1136 W=vubec               
+I=1137 W=vyberove            
+I=1138 W=vybirani            
+I=1139 W=vyborne             
+I=1140 W=vychazeji           
+I=1141 W=vychazel            
+I=1142 W=vycislena           
+I=1143 W=vycislil            
+I=1144 W=vyda                
+I=1145 W=vydaje              
+I=1146 W=vydavat             
+I=1147 W=vydelala            
+I=1148 W=vyhlasi             
+I=1149 W=vyhodnocena         
+I=1150 W=vyhody              
+I=1151 W=vyhovel             
+I=1152 W=vyhovovala          
+I=1153 W=vyjimecny           
+I=1154 W=vykladu             
+I=1155 W=vymena              
+I=1156 W=vyostril            
+I=1157 W=vypadky             
+I=1158 W=vyplatil            
+I=1159 W=vyprodej            
+I=1160 W=vyprseni            
+I=1161 W=vyrabet             
+I=1162 W=vyrabi              
+I=1163 W=vyrazne             
+I=1164 W=vyraznou            
+I=1165 W=vyresil             
+I=1166 W=vyrobcum            
+I=1167 W=vyroci              
+I=1168 W=vyrovnane           
+I=1169 W=vyrovnat            
+I=1170 W=vysetrovani         
+I=1171 W=vysetruji           
+I=1172 W=vyslala             
+I=1173 W=vystavisti          
+I=1174 W=vystavy             
+I=1175 W=vystoupenim         
+I=1176 W=vystoupi            
+I=1177 W=vystoupil           
+I=1178 W=vytvorit            
+I=1179 W=vyvoj               
+I=1180 W=vyzkum              
+I=1181 W=vyzkumu             
+I=1182 W=vyznam              
+I=1183 W=vzaly               
+I=1184 W=vzp                 
+I=1185 W=z                   
+I=1186 W=za                  
+I=1187 W=zacal               
+I=1188 W=zachranneho         
+I=1189 W=zacina              
+I=1190 W=zacinal             
+I=1191 W=zacit               
+I=1192 W=zacne               
+I=1193 W=zacnou              
+I=1194 W=zadane              
+I=1195 W=zahajili            
+I=1196 W=zahnivajici         
+I=1197 W=zahranici           
+I=1198 W=zahranicni          
+I=1199 W=zajem               
+I=1200 W=zajemcu             
+I=1201 W=zakazniku           
+I=1202 W=zakaznikum          
+I=1203 W=zakazu              
+I=1204 W=zaklade             
+I=1205 W=zakona              
+I=1206 W=zakony              
+I=1207 W=zalobe              
+I=1208 W=zamirily            
+I=1209 W=zapas               
+I=1210 W=zapasem             
+I=1211 W=zapasu              
+I=1212 W=zapojeni            
+I=1213 W=zapomenutou         
+I=1214 W=zar                 
+I=1215 W=zaradit             
+I=1216 W=zari                
+I=1217 W=zasah               
+I=1218 W=zaslouzili          
+I=1219 W=zastava             
+I=1220 W=zastizeni           
+I=1221 W=zatim               
+I=1222 W=zatimco             
+I=1223 W=zatizenych          
+I=1224 W=zaujala             
+I=1225 W=zaveru              
+I=1226 W=zazije              
+I=1227 W=zaziva              
+I=1228 W=zaznamu             
+I=1229 W=zbozi               
+I=1230 W=zda                 
+I=1231 W=zdrave              
+I=1232 W=zdravotni           
+I=1233 W=zdroju              
+I=1234 W=zdrzovaly           
+I=1235 W=zduraznuje          
+I=1236 W=zdvojnasobi         
+I=1237 W=ze                  
+I=1238 W=zeland              
+I=1239 W=zeme                
+I=1240 W=zememi              
+I=1241 W=zemi                
+I=1242 W=zemich              
+I=1243 W=zemrelych           
+I=1244 W=zen                 
+I=1245 W=zeny                
+I=1246 W=ziskal              
+I=1247 W=ziskali             
+I=1248 W=zkusebni            
+I=1249 W=zlinskem            
+I=1250 W=zlomeniny           
+I=1251 W=zmena               
+I=1252 W=znamenaji           
+I=1253 W=zorganizovaly       
+I=1254 W=zotavoval           
+I=1255 W=zpravam             
+I=1256 W=zpravu              
+I=1257 W=zraneni             
+I=1258 W=zrejme              
+I=1259 W=zrusi               
+I=1260 W=ztraty              
+I=1261 W=zvadle              
+I=1262 W=zvane               
+I=1263 W=zvirata             
+I=1264 W=zvysil              
+I=1265 W=zvysuje             
+J=0     S=2    E=0    l=-227.96  
+J=1     S=3    E=0    l=-227.96  
+J=2     S=4    E=0    l=-227.96  
+J=3     S=5    E=0    l=-227.96  
+J=4     S=6    E=0    l=-227.96  
+J=5     S=7    E=0    l=-227.96  
+J=6     S=8    E=0    l=-227.96  
+J=7     S=9    E=0    l=-227.96  
+J=8     S=10   E=0    l=-227.96  
+J=9     S=11   E=0    l=-227.96  
+J=10    S=12   E=0    l=-227.96  
+J=11    S=13   E=0    l=-227.96  
+J=12    S=14   E=0    l=-227.96  
+J=13    S=15   E=0    l=-227.96  
+J=14    S=16   E=0    l=-227.96  
+J=15    S=17   E=0    l=-227.96  
+J=16    S=18   E=0    l=-227.96  
+J=17    S=19   E=0    l=-227.96  
+J=18    S=20   E=0    l=-227.96  
+J=19    S=21   E=0    l=-227.96  
+J=20    S=22   E=0    l=-227.96  
+J=21    S=23   E=0    l=-227.96  
+J=22    S=24   E=0    l=-227.96  
+J=23    S=25   E=0    l=-227.96  
+J=24    S=26   E=0    l=-227.96  
+J=25    S=27   E=0    l=-227.96  
+J=26    S=28   E=0    l=-227.96  
+J=27    S=29   E=0    l=-227.96  
+J=28    S=30   E=0    l=-227.96  
+J=29    S=31   E=0    l=-227.96  
+J=30    S=32   E=0    l=-227.96  
+J=31    S=33   E=0    l=-227.96  
+J=32    S=34   E=0    l=-227.96  
+J=33    S=35   E=0    l=-227.96  
+J=34    S=36   E=0    l=-227.96  
+J=35    S=37   E=0    l=-227.96  
+J=36    S=38   E=0    l=-227.96  
+J=37    S=39   E=0    l=-227.96  
+J=38    S=40   E=0    l=-227.96  
+J=39    S=41   E=0    l=-227.96  
+J=40    S=42   E=0    l=-227.96  
+J=41    S=43   E=0    l=-227.96  
+J=42    S=44   E=0    l=-227.96  
+J=43    S=45   E=0    l=-227.96  
+J=44    S=46   E=0    l=-227.96  
+J=45    S=47   E=0    l=-227.96  
+J=46    S=48   E=0    l=-227.96  
+J=47    S=49   E=0    l=-227.96  
+J=48    S=50   E=0    l=-227.96  
+J=49    S=51   E=0    l=-227.96  
+J=50    S=52   E=0    l=-227.96  
+J=51    S=53   E=0    l=-227.96  
+J=52    S=54   E=0    l=-227.96  
+J=53    S=55   E=0    l=-227.96  
+J=54    S=56   E=0    l=-227.96  
+J=55    S=57   E=0    l=-227.96  
+J=56    S=58   E=0    l=-227.96  
+J=57    S=59   E=0    l=-227.96  
+J=58    S=60   E=0    l=-227.96  
+J=59    S=61   E=0    l=-227.96  
+J=60    S=62   E=0    l=-227.96  
+J=61    S=63   E=0    l=-227.96  
+J=62    S=64   E=0    l=-227.96  
+J=63    S=65   E=0    l=-227.96  
+J=64    S=66   E=0    l=-227.96  
+J=65    S=67   E=0    l=-227.96  
+J=66    S=68   E=0    l=-227.96  
+J=67    S=69   E=0    l=-227.96  
+J=68    S=70   E=0    l=-227.96  
+J=69    S=71   E=0    l=-227.96  
+J=70    S=72   E=0    l=-227.96  
+J=71    S=73   E=0    l=-227.96  
+J=72    S=74   E=0    l=-227.96  
+J=73    S=75   E=0    l=-227.96  
+J=74    S=76   E=0    l=-227.96  
+J=75    S=77   E=0    l=-227.96  
+J=76    S=78   E=0    l=-227.96  
+J=77    S=79   E=0    l=-227.96  
+J=78    S=80   E=0    l=-227.96  
+J=79    S=81   E=0    l=-227.96  
+J=80    S=82   E=0    l=-227.96  
+J=81    S=83   E=0    l=-227.96  
+J=82    S=84   E=0    l=-227.96  
+J=83    S=85   E=0    l=-227.96  
+J=84    S=86   E=0    l=-227.96  
+J=85    S=87   E=0    l=-227.96  
+J=86    S=88   E=0    l=-227.96  
+J=87    S=89   E=0    l=-227.96  
+J=88    S=90   E=0    l=-227.96  
+J=89    S=91   E=0    l=-227.96  
+J=90    S=92   E=0    l=-227.96  
+J=91    S=93   E=0    l=-227.96  
+J=92    S=94   E=0    l=-227.96  
+J=93    S=95   E=0    l=-227.96  
+J=94    S=96   E=0    l=-227.96  
+J=95    S=97   E=0    l=-227.96  
+J=96    S=98   E=0    l=-227.96  
+J=97    S=99   E=0    l=-227.96  
+J=98    S=100  E=0    l=-227.96  
+J=99    S=101  E=0    l=-227.96  
+J=100   S=102  E=0    l=-227.96  
+J=101   S=103  E=0    l=-227.96  
+J=102   S=104  E=0    l=-227.96  
+J=103   S=105  E=0    l=-227.96  
+J=104   S=106  E=0    l=-227.96  
+J=105   S=107  E=0    l=-227.96  
+J=106   S=108  E=0    l=-227.96  
+J=107   S=109  E=0    l=-227.96  
+J=108   S=110  E=0    l=-227.96  
+J=109   S=111  E=0    l=-227.96  
+J=110   S=112  E=0    l=-227.96  
+J=111   S=113  E=0    l=-227.96  
+J=112   S=114  E=0    l=-227.96  
+J=113   S=115  E=0    l=-227.96  
+J=114   S=116  E=0    l=-227.96  
+J=115   S=117  E=0    l=-227.96  
+J=116   S=118  E=0    l=-227.96  
+J=117   S=119  E=0    l=-227.96  
+J=118   S=120  E=0    l=-227.96  
+J=119   S=121  E=0    l=-227.96  
+J=120   S=122  E=0    l=-227.96  
+J=121   S=123  E=0    l=-227.96  
+J=122   S=124  E=0    l=-227.96  
+J=123   S=125  E=0    l=-227.96  
+J=124   S=126  E=0    l=-227.96  
+J=125   S=127  E=0    l=-227.96  
+J=126   S=128  E=0    l=-227.96  
+J=127   S=129  E=0    l=-227.96  
+J=128   S=130  E=0    l=-227.96  
+J=129   S=131  E=0    l=-227.96  
+J=130   S=132  E=0    l=-227.96  
+J=131   S=133  E=0    l=-227.96  
+J=132   S=134  E=0    l=-227.96  
+J=133   S=135  E=0    l=-227.96  
+J=134   S=136  E=0    l=-227.96  
+J=135   S=137  E=0    l=-227.96  
+J=136   S=138  E=0    l=-227.96  
+J=137   S=139  E=0    l=-227.96  
+J=138   S=140  E=0    l=-227.96  
+J=139   S=141  E=0    l=-227.96  
+J=140   S=142  E=0    l=-227.96  
+J=141   S=143  E=0    l=-227.96  
+J=142   S=144  E=0    l=-227.96  
+J=143   S=145  E=0    l=-227.96  
+J=144   S=146  E=0    l=-227.96  
+J=145   S=147  E=0    l=-227.96  
+J=146   S=148  E=0    l=-227.96  
+J=147   S=149  E=0    l=-227.96  
+J=148   S=150  E=0    l=-227.96  
+J=149   S=151  E=0    l=-227.96  
+J=150   S=152  E=0    l=-227.96  
+J=151   S=153  E=0    l=-227.96  
+J=152   S=154  E=0    l=-227.96  
+J=153   S=155  E=0    l=-227.96  
+J=154   S=156  E=0    l=-227.96  
+J=155   S=157  E=0    l=-227.96  
+J=156   S=158  E=0    l=-227.96  
+J=157   S=159  E=0    l=-227.96  
+J=158   S=160  E=0    l=-227.96  
+J=159   S=161  E=0    l=-227.96  
+J=160   S=162  E=0    l=-227.96  
+J=161   S=163  E=0    l=-227.96  
+J=162   S=164  E=0    l=-227.96  
+J=163   S=165  E=0    l=-227.96  
+J=164   S=166  E=0    l=-227.96  
+J=165   S=167  E=0    l=-227.96  
+J=166   S=168  E=0    l=-227.96  
+J=167   S=169  E=0    l=-227.96  
+J=168   S=170  E=0    l=-227.96  
+J=169   S=171  E=0    l=-227.96  
+J=170   S=172  E=0    l=-227.96  
+J=171   S=173  E=0    l=-227.96  
+J=172   S=174  E=0    l=-227.96  
+J=173   S=175  E=0    l=-227.96  
+J=174   S=176  E=0    l=-227.96  
+J=175   S=177  E=0    l=-227.96  
+J=176   S=178  E=0    l=-227.96  
+J=177   S=179  E=0    l=-227.96  
+J=178   S=180  E=0    l=-227.96  
+J=179   S=181  E=0    l=-227.96  
+J=180   S=182  E=0    l=-227.96  
+J=181   S=183  E=0    l=-227.96  
+J=182   S=184  E=0    l=-227.96  
+J=183   S=185  E=0    l=-227.96  
+J=184   S=186  E=0    l=-227.96  
+J=185   S=187  E=0    l=-227.96  
+J=186   S=188  E=0    l=-227.96  
+J=187   S=189  E=0    l=-227.96  
+J=188   S=190  E=0    l=-227.96  
+J=189   S=191  E=0    l=-227.96  
+J=190   S=192  E=0    l=-227.96  
+J=191   S=193  E=0    l=-227.96  
+J=192   S=194  E=0    l=-227.96  
+J=193   S=195  E=0    l=-227.96  
+J=194   S=196  E=0    l=-227.96  
+J=195   S=197  E=0    l=-227.96  
+J=196   S=198  E=0    l=-227.96  
+J=197   S=199  E=0    l=-227.96  
+J=198   S=200  E=0    l=-227.96  
+J=199   S=201  E=0    l=-227.96  
+J=200   S=202  E=0    l=-227.96  
+J=201   S=203  E=0    l=-227.96  
+J=202   S=204  E=0    l=-227.96  
+J=203   S=205  E=0    l=-227.96  
+J=204   S=206  E=0    l=-227.96  
+J=205   S=207  E=0    l=-227.96  
+J=206   S=208  E=0    l=-227.96  
+J=207   S=209  E=0    l=-227.96  
+J=208   S=210  E=0    l=-227.96  
+J=209   S=211  E=0    l=-227.96  
+J=210   S=212  E=0    l=-227.96  
+J=211   S=213  E=0    l=-227.96  
+J=212   S=214  E=0    l=-227.96  
+J=213   S=215  E=0    l=-227.96  
+J=214   S=216  E=0    l=-227.96  
+J=215   S=217  E=0    l=-227.96  
+J=216   S=218  E=0    l=-227.96  
+J=217   S=219  E=0    l=-227.96  
+J=218   S=220  E=0    l=-227.96  
+J=219   S=221  E=0    l=-227.96  
+J=220   S=222  E=0    l=-227.96  
+J=221   S=223  E=0    l=-227.96  
+J=222   S=224  E=0    l=-227.96  
+J=223   S=225  E=0    l=-227.96  
+J=224   S=226  E=0    l=-227.96  
+J=225   S=227  E=0    l=-227.96  
+J=226   S=228  E=0    l=-227.96  
+J=227   S=229  E=0    l=-227.96  
+J=228   S=230  E=0    l=-227.96  
+J=229   S=231  E=0    l=-227.96  
+J=230   S=232  E=0    l=-227.96  
+J=231   S=233  E=0    l=-227.96  
+J=232   S=234  E=0    l=-227.96  
+J=233   S=235  E=0    l=-227.96  
+J=234   S=236  E=0    l=-227.96  
+J=235   S=237  E=0    l=-227.96  
+J=236   S=238  E=0    l=-227.96  
+J=237   S=239  E=0    l=-227.96  
+J=238   S=240  E=0    l=-227.96  
+J=239   S=241  E=0    l=-227.96  
+J=240   S=242  E=0    l=-227.96  
+J=241   S=243  E=0    l=-227.96  
+J=242   S=244  E=0    l=-227.96  
+J=243   S=245  E=0    l=-227.96  
+J=244   S=246  E=0    l=-227.96  
+J=245   S=247  E=0    l=-227.96  
+J=246   S=248  E=0    l=-227.96  
+J=247   S=249  E=0    l=-227.96  
+J=248   S=250  E=0    l=-227.96  
+J=249   S=251  E=0    l=-227.96  
+J=250   S=252  E=0    l=-227.96  
+J=251   S=253  E=0    l=-227.96  
+J=252   S=254  E=0    l=-227.96  
+J=253   S=255  E=0    l=-227.96  
+J=254   S=256  E=0    l=-227.96  
+J=255   S=257  E=0    l=-227.96  
+J=256   S=258  E=0    l=-227.96  
+J=257   S=259  E=0    l=-227.96  
+J=258   S=260  E=0    l=-227.96  
+J=259   S=261  E=0    l=-227.96  
+J=260   S=262  E=0    l=-227.96  
+J=261   S=263  E=0    l=-227.96  
+J=262   S=264  E=0    l=-227.96  
+J=263   S=265  E=0    l=-227.96  
+J=264   S=266  E=0    l=-227.96  
+J=265   S=267  E=0    l=-227.96  
+J=266   S=268  E=0    l=-227.96  
+J=267   S=269  E=0    l=-227.96  
+J=268   S=270  E=0    l=-227.96  
+J=269   S=271  E=0    l=-227.96  
+J=270   S=272  E=0    l=-227.96  
+J=271   S=273  E=0    l=-227.96  
+J=272   S=274  E=0    l=-227.96  
+J=273   S=275  E=0    l=-227.96  
+J=274   S=276  E=0    l=-227.96  
+J=275   S=277  E=0    l=-227.96  
+J=276   S=278  E=0    l=-227.96  
+J=277   S=279  E=0    l=-227.96  
+J=278   S=280  E=0    l=-227.96  
+J=279   S=281  E=0    l=-227.96  
+J=280   S=282  E=0    l=-227.96  
+J=281   S=283  E=0    l=-227.96  
+J=282   S=284  E=0    l=-227.96  
+J=283   S=285  E=0    l=-227.96  
+J=284   S=286  E=0    l=-227.96  
+J=285   S=287  E=0    l=-227.96  
+J=286   S=288  E=0    l=-227.96  
+J=287   S=289  E=0    l=-227.96  
+J=288   S=290  E=0    l=-227.96  
+J=289   S=291  E=0    l=-227.96  
+J=290   S=292  E=0    l=-227.96  
+J=291   S=293  E=0    l=-227.96  
+J=292   S=294  E=0    l=-227.96  
+J=293   S=295  E=0    l=-227.96  
+J=294   S=296  E=0    l=-227.96  
+J=295   S=297  E=0    l=-227.96  
+J=296   S=298  E=0    l=-227.96  
+J=297   S=299  E=0    l=-227.96  
+J=298   S=300  E=0    l=-227.96  
+J=299   S=301  E=0    l=-227.96  
+J=300   S=302  E=0    l=-227.96  
+J=301   S=303  E=0    l=-227.96  
+J=302   S=304  E=0    l=-227.96  
+J=303   S=305  E=0    l=-227.96  
+J=304   S=306  E=0    l=-227.96  
+J=305   S=307  E=0    l=-227.96  
+J=306   S=308  E=0    l=-227.96  
+J=307   S=309  E=0    l=-227.96  
+J=308   S=310  E=0    l=-227.96  
+J=309   S=311  E=0    l=-227.96  
+J=310   S=312  E=0    l=-227.96  
+J=311   S=313  E=0    l=-227.96  
+J=312   S=314  E=0    l=-227.96  
+J=313   S=315  E=0    l=-227.96  
+J=314   S=316  E=0    l=-227.96  
+J=315   S=317  E=0    l=-227.96  
+J=316   S=318  E=0    l=-227.96  
+J=317   S=319  E=0    l=-227.96  
+J=318   S=320  E=0    l=-227.96  
+J=319   S=321  E=0    l=-227.96  
+J=320   S=322  E=0    l=-227.96  
+J=321   S=323  E=0    l=-227.96  
+J=322   S=324  E=0    l=-227.96  
+J=323   S=325  E=0    l=-227.96  
+J=324   S=326  E=0    l=-227.96  
+J=325   S=327  E=0    l=-227.96  
+J=326   S=328  E=0    l=-227.96  
+J=327   S=329  E=0    l=-227.96  
+J=328   S=330  E=0    l=-227.96  
+J=329   S=331  E=0    l=-227.96  
+J=330   S=332  E=0    l=-227.96  
+J=331   S=333  E=0    l=-227.96  
+J=332   S=334  E=0    l=-227.96  
+J=333   S=335  E=0    l=-227.96  
+J=334   S=336  E=0    l=-227.96  
+J=335   S=337  E=0    l=-227.96  
+J=336   S=338  E=0    l=-227.96  
+J=337   S=339  E=0    l=-227.96  
+J=338   S=340  E=0    l=-227.96  
+J=339   S=341  E=0    l=-227.96  
+J=340   S=342  E=0    l=-227.96  
+J=341   S=343  E=0    l=-227.96  
+J=342   S=344  E=0    l=-227.96  
+J=343   S=345  E=0    l=-227.96  
+J=344   S=346  E=0    l=-227.96  
+J=345   S=347  E=0    l=-227.96  
+J=346   S=348  E=0    l=-227.96  
+J=347   S=349  E=0    l=-227.96  
+J=348   S=350  E=0    l=-227.96  
+J=349   S=351  E=0    l=-227.96  
+J=350   S=352  E=0    l=-227.96  
+J=351   S=353  E=0    l=-227.96  
+J=352   S=354  E=0    l=-227.96  
+J=353   S=355  E=0    l=-227.96  
+J=354   S=356  E=0    l=-227.96  
+J=355   S=357  E=0    l=-227.96  
+J=356   S=358  E=0    l=-227.96  
+J=357   S=359  E=0    l=-227.96  
+J=358   S=360  E=0    l=-227.96  
+J=359   S=361  E=0    l=-227.96  
+J=360   S=362  E=0    l=-227.96  
+J=361   S=363  E=0    l=-227.96  
+J=362   S=364  E=0    l=-227.96  
+J=363   S=365  E=0    l=-227.96  
+J=364   S=366  E=0    l=-227.96  
+J=365   S=367  E=0    l=-227.96  
+J=366   S=368  E=0    l=-227.96  
+J=367   S=369  E=0    l=-227.96  
+J=368   S=370  E=0    l=-227.96  
+J=369   S=371  E=0    l=-227.96  
+J=370   S=372  E=0    l=-227.96  
+J=371   S=373  E=0    l=-227.96  
+J=372   S=374  E=0    l=-227.96  
+J=373   S=375  E=0    l=-227.96  
+J=374   S=376  E=0    l=-227.96  
+J=375   S=377  E=0    l=-227.96  
+J=376   S=378  E=0    l=-227.96  
+J=377   S=379  E=0    l=-227.96  
+J=378   S=380  E=0    l=-227.96  
+J=379   S=381  E=0    l=-227.96  
+J=380   S=382  E=0    l=-227.96  
+J=381   S=383  E=0    l=-227.96  
+J=382   S=384  E=0    l=-227.96  
+J=383   S=385  E=0    l=-227.96  
+J=384   S=386  E=0    l=-227.96  
+J=385   S=387  E=0    l=-227.96  
+J=386   S=388  E=0    l=-227.96  
+J=387   S=389  E=0    l=-227.96  
+J=388   S=390  E=0    l=-227.96  
+J=389   S=391  E=0    l=-227.96  
+J=390   S=392  E=0    l=-227.96  
+J=391   S=393  E=0    l=-227.96  
+J=392   S=394  E=0    l=-227.96  
+J=393   S=395  E=0    l=-227.96  
+J=394   S=396  E=0    l=-227.96  
+J=395   S=397  E=0    l=-227.96  
+J=396   S=398  E=0    l=-227.96  
+J=397   S=399  E=0    l=-227.96  
+J=398   S=400  E=0    l=-227.96  
+J=399   S=401  E=0    l=-227.96  
+J=400   S=402  E=0    l=-227.96  
+J=401   S=403  E=0    l=-227.96  
+J=402   S=404  E=0    l=-227.96  
+J=403   S=405  E=0    l=-227.96  
+J=404   S=406  E=0    l=-227.96  
+J=405   S=407  E=0    l=-227.96  
+J=406   S=408  E=0    l=-227.96  
+J=407   S=409  E=0    l=-227.96  
+J=408   S=410  E=0    l=-227.96  
+J=409   S=411  E=0    l=-227.96  
+J=410   S=412  E=0    l=-227.96  
+J=411   S=413  E=0    l=-227.96  
+J=412   S=414  E=0    l=-227.96  
+J=413   S=415  E=0    l=-227.96  
+J=414   S=416  E=0    l=-227.96  
+J=415   S=417  E=0    l=-227.96  
+J=416   S=418  E=0    l=-227.96  
+J=417   S=419  E=0    l=-227.96  
+J=418   S=420  E=0    l=-227.96  
+J=419   S=421  E=0    l=-227.96  
+J=420   S=422  E=0    l=-227.96  
+J=421   S=423  E=0    l=-227.96  
+J=422   S=424  E=0    l=-227.96  
+J=423   S=425  E=0    l=-227.96  
+J=424   S=426  E=0    l=-227.96  
+J=425   S=427  E=0    l=-227.96  
+J=426   S=428  E=0    l=-227.96  
+J=427   S=429  E=0    l=-227.96  
+J=428   S=430  E=0    l=-227.96  
+J=429   S=431  E=0    l=-227.96  
+J=430   S=432  E=0    l=-227.96  
+J=431   S=433  E=0    l=-227.96  
+J=432   S=434  E=0    l=-227.96  
+J=433   S=435  E=0    l=-227.96  
+J=434   S=436  E=0    l=-227.96  
+J=435   S=437  E=0    l=-227.96  
+J=436   S=438  E=0    l=-227.96  
+J=437   S=439  E=0    l=-227.96  
+J=438   S=440  E=0    l=-227.96  
+J=439   S=441  E=0    l=-227.96  
+J=440   S=442  E=0    l=-227.96  
+J=441   S=443  E=0    l=-227.96  
+J=442   S=444  E=0    l=-227.96  
+J=443   S=445  E=0    l=-227.96  
+J=444   S=446  E=0    l=-227.96  
+J=445   S=447  E=0    l=-227.96  
+J=446   S=448  E=0    l=-227.96  
+J=447   S=449  E=0    l=-227.96  
+J=448   S=450  E=0    l=-227.96  
+J=449   S=451  E=0    l=-227.96  
+J=450   S=452  E=0    l=-227.96  
+J=451   S=453  E=0    l=-227.96  
+J=452   S=454  E=0    l=-227.96  
+J=453   S=455  E=0    l=-227.96  
+J=454   S=456  E=0    l=-227.96  
+J=455   S=457  E=0    l=-227.96  
+J=456   S=458  E=0    l=-227.96  
+J=457   S=459  E=0    l=-227.96  
+J=458   S=460  E=0    l=-227.96  
+J=459   S=461  E=0    l=-227.96  
+J=460   S=462  E=0    l=-227.96  
+J=461   S=463  E=0    l=-227.96  
+J=462   S=464  E=0    l=-227.96  
+J=463   S=465  E=0    l=-227.96  
+J=464   S=466  E=0    l=-227.96  
+J=465   S=467  E=0    l=-227.96  
+J=466   S=468  E=0    l=-227.96  
+J=467   S=469  E=0    l=-227.96  
+J=468   S=470  E=0    l=-227.96  
+J=469   S=471  E=0    l=-227.96  
+J=470   S=472  E=0    l=-227.96  
+J=471   S=473  E=0    l=-227.96  
+J=472   S=474  E=0    l=-227.96  
+J=473   S=475  E=0    l=-227.96  
+J=474   S=476  E=0    l=-227.96  
+J=475   S=477  E=0    l=-227.96  
+J=476   S=478  E=0    l=-227.96  
+J=477   S=479  E=0    l=-227.96  
+J=478   S=480  E=0    l=-227.96  
+J=479   S=481  E=0    l=-227.96  
+J=480   S=482  E=0    l=-227.96  
+J=481   S=483  E=0    l=-227.96  
+J=482   S=484  E=0    l=-227.96  
+J=483   S=485  E=0    l=-227.96  
+J=484   S=486  E=0    l=-227.96  
+J=485   S=487  E=0    l=-227.96  
+J=486   S=488  E=0    l=-227.96  
+J=487   S=489  E=0    l=-227.96  
+J=488   S=490  E=0    l=-227.96  
+J=489   S=491  E=0    l=-227.96  
+J=490   S=492  E=0    l=-227.96  
+J=491   S=493  E=0    l=-227.96  
+J=492   S=494  E=0    l=-227.96  
+J=493   S=495  E=0    l=-227.96  
+J=494   S=496  E=0    l=-227.96  
+J=495   S=497  E=0    l=-227.96  
+J=496   S=498  E=0    l=-227.96  
+J=497   S=499  E=0    l=-227.96  
+J=498   S=500  E=0    l=-227.96  
+J=499   S=501  E=0    l=-227.96  
+J=500   S=502  E=0    l=-227.96  
+J=501   S=503  E=0    l=-227.96  
+J=502   S=504  E=0    l=-227.96  
+J=503   S=505  E=0    l=-227.96  
+J=504   S=506  E=0    l=-227.96  
+J=505   S=507  E=0    l=-227.96  
+J=506   S=508  E=0    l=-227.96  
+J=507   S=509  E=0    l=-227.96  
+J=508   S=510  E=0    l=-227.96  
+J=509   S=511  E=0    l=-227.96  
+J=510   S=512  E=0    l=-227.96  
+J=511   S=513  E=0    l=-227.96  
+J=512   S=514  E=0    l=-227.96  
+J=513   S=515  E=0    l=-227.96  
+J=514   S=516  E=0    l=-227.96  
+J=515   S=517  E=0    l=-227.96  
+J=516   S=518  E=0    l=-227.96  
+J=517   S=519  E=0    l=-227.96  
+J=518   S=520  E=0    l=-227.96  
+J=519   S=521  E=0    l=-227.96  
+J=520   S=522  E=0    l=-227.96  
+J=521   S=523  E=0    l=-227.96  
+J=522   S=524  E=0    l=-227.96  
+J=523   S=525  E=0    l=-227.96  
+J=524   S=526  E=0    l=-227.96  
+J=525   S=527  E=0    l=-227.96  
+J=526   S=528  E=0    l=-227.96  
+J=527   S=529  E=0    l=-227.96  
+J=528   S=530  E=0    l=-227.96  
+J=529   S=531  E=0    l=-227.96  
+J=530   S=532  E=0    l=-227.96  
+J=531   S=533  E=0    l=-227.96  
+J=532   S=534  E=0    l=-227.96  
+J=533   S=535  E=0    l=-227.96  
+J=534   S=536  E=0    l=-227.96  
+J=535   S=537  E=0    l=-227.96  
+J=536   S=538  E=0    l=-227.96  
+J=537   S=539  E=0    l=-227.96  
+J=538   S=540  E=0    l=-227.96  
+J=539   S=541  E=0    l=-227.96  
+J=540   S=542  E=0    l=-227.96  
+J=541   S=543  E=0    l=-227.96  
+J=542   S=544  E=0    l=-227.96  
+J=543   S=545  E=0    l=-227.96  
+J=544   S=546  E=0    l=-227.96  
+J=545   S=547  E=0    l=-227.96  
+J=546   S=548  E=0    l=-227.96  
+J=547   S=549  E=0    l=-227.96  
+J=548   S=550  E=0    l=-227.96  
+J=549   S=551  E=0    l=-227.96  
+J=550   S=552  E=0    l=-227.96  
+J=551   S=553  E=0    l=-227.96  
+J=552   S=554  E=0    l=-227.96  
+J=553   S=555  E=0    l=-227.96  
+J=554   S=556  E=0    l=-227.96  
+J=555   S=557  E=0    l=-227.96  
+J=556   S=558  E=0    l=-227.96  
+J=557   S=559  E=0    l=-227.96  
+J=558   S=560  E=0    l=-227.96  
+J=559   S=561  E=0    l=-227.96  
+J=560   S=562  E=0    l=-227.96  
+J=561   S=563  E=0    l=-227.96  
+J=562   S=564  E=0    l=-227.96  
+J=563   S=565  E=0    l=-227.96  
+J=564   S=566  E=0    l=-227.96  
+J=565   S=567  E=0    l=-227.96  
+J=566   S=568  E=0    l=-227.96  
+J=567   S=569  E=0    l=-227.96  
+J=568   S=570  E=0    l=-227.96  
+J=569   S=571  E=0    l=-227.96  
+J=570   S=572  E=0    l=-227.96  
+J=571   S=573  E=0    l=-227.96  
+J=572   S=574  E=0    l=-227.96  
+J=573   S=575  E=0    l=-227.96  
+J=574   S=576  E=0    l=-227.96  
+J=575   S=577  E=0    l=-227.96  
+J=576   S=578  E=0    l=-227.96  
+J=577   S=579  E=0    l=-227.96  
+J=578   S=580  E=0    l=-227.96  
+J=579   S=581  E=0    l=-227.96  
+J=580   S=582  E=0    l=-227.96  
+J=581   S=583  E=0    l=-227.96  
+J=582   S=584  E=0    l=-227.96  
+J=583   S=585  E=0    l=-227.96  
+J=584   S=586  E=0    l=-227.96  
+J=585   S=587  E=0    l=-227.96  
+J=586   S=588  E=0    l=-227.96  
+J=587   S=589  E=0    l=-227.96  
+J=588   S=590  E=0    l=-227.96  
+J=589   S=591  E=0    l=-227.96  
+J=590   S=592  E=0    l=-227.96  
+J=591   S=593  E=0    l=-227.96  
+J=592   S=594  E=0    l=-227.96  
+J=593   S=595  E=0    l=-227.96  
+J=594   S=596  E=0    l=-227.96  
+J=595   S=597  E=0    l=-227.96  
+J=596   S=598  E=0    l=-227.96  
+J=597   S=599  E=0    l=-227.96  
+J=598   S=600  E=0    l=-227.96  
+J=599   S=601  E=0    l=-227.96  
+J=600   S=602  E=0    l=-227.96  
+J=601   S=603  E=0    l=-227.96  
+J=602   S=604  E=0    l=-227.96  
+J=603   S=605  E=0    l=-227.96  
+J=604   S=606  E=0    l=-227.96  
+J=605   S=607  E=0    l=-227.96  
+J=606   S=608  E=0    l=-227.96  
+J=607   S=609  E=0    l=-227.96  
+J=608   S=610  E=0    l=-227.96  
+J=609   S=611  E=0    l=-227.96  
+J=610   S=612  E=0    l=-227.96  
+J=611   S=613  E=0    l=-227.96  
+J=612   S=614  E=0    l=-227.96  
+J=613   S=615  E=0    l=-227.96  
+J=614   S=616  E=0    l=-227.96  
+J=615   S=617  E=0    l=-227.96  
+J=616   S=618  E=0    l=-227.96  
+J=617   S=619  E=0    l=-227.96  
+J=618   S=620  E=0    l=-227.96  
+J=619   S=621  E=0    l=-227.96  
+J=620   S=622  E=0    l=-227.96  
+J=621   S=623  E=0    l=-227.96  
+J=622   S=624  E=0    l=-227.96  
+J=623   S=625  E=0    l=-227.96  
+J=624   S=626  E=0    l=-227.96  
+J=625   S=627  E=0    l=-227.96  
+J=626   S=628  E=0    l=-227.96  
+J=627   S=629  E=0    l=-227.96  
+J=628   S=630  E=0    l=-227.96  
+J=629   S=631  E=0    l=-227.96  
+J=630   S=632  E=0    l=-227.96  
+J=631   S=633  E=0    l=-227.96  
+J=632   S=634  E=0    l=-227.96  
+J=633   S=635  E=0    l=-227.96  
+J=634   S=636  E=0    l=-227.96  
+J=635   S=637  E=0    l=-227.96  
+J=636   S=638  E=0    l=-227.96  
+J=637   S=639  E=0    l=-227.96  
+J=638   S=640  E=0    l=-227.96  
+J=639   S=641  E=0    l=-227.96  
+J=640   S=642  E=0    l=-227.96  
+J=641   S=643  E=0    l=-227.96  
+J=642   S=644  E=0    l=-227.96  
+J=643   S=645  E=0    l=-227.96  
+J=644   S=646  E=0    l=-227.96  
+J=645   S=647  E=0    l=-227.96  
+J=646   S=648  E=0    l=-227.96  
+J=647   S=649  E=0    l=-227.96  
+J=648   S=650  E=0    l=-227.96  
+J=649   S=651  E=0    l=-227.96  
+J=650   S=652  E=0    l=-227.96  
+J=651   S=653  E=0    l=-227.96  
+J=652   S=654  E=0    l=-227.96  
+J=653   S=655  E=0    l=-227.96  
+J=654   S=656  E=0    l=-227.96  
+J=655   S=657  E=0    l=-227.96  
+J=656   S=658  E=0    l=-227.96  
+J=657   S=659  E=0    l=-227.96  
+J=658   S=660  E=0    l=-227.96  
+J=659   S=661  E=0    l=-227.96  
+J=660   S=662  E=0    l=-227.96  
+J=661   S=663  E=0    l=-227.96  
+J=662   S=664  E=0    l=-227.96  
+J=663   S=665  E=0    l=-227.96  
+J=664   S=666  E=0    l=-227.96  
+J=665   S=667  E=0    l=-227.96  
+J=666   S=668  E=0    l=-227.96  
+J=667   S=669  E=0    l=-227.96  
+J=668   S=670  E=0    l=-227.96  
+J=669   S=671  E=0    l=-227.96  
+J=670   S=672  E=0    l=-227.96  
+J=671   S=673  E=0    l=-227.96  
+J=672   S=674  E=0    l=-227.96  
+J=673   S=675  E=0    l=-227.96  
+J=674   S=676  E=0    l=-227.96  
+J=675   S=677  E=0    l=-227.96  
+J=676   S=678  E=0    l=-227.96  
+J=677   S=679  E=0    l=-227.96  
+J=678   S=680  E=0    l=-227.96  
+J=679   S=681  E=0    l=-227.96  
+J=680   S=682  E=0    l=-227.96  
+J=681   S=683  E=0    l=-227.96  
+J=682   S=684  E=0    l=-227.96  
+J=683   S=685  E=0    l=-227.96  
+J=684   S=686  E=0    l=-227.96  
+J=685   S=687  E=0    l=-227.96  
+J=686   S=688  E=0    l=-227.96  
+J=687   S=689  E=0    l=-227.96  
+J=688   S=690  E=0    l=-227.96  
+J=689   S=691  E=0    l=-227.96  
+J=690   S=692  E=0    l=-227.96  
+J=691   S=693  E=0    l=-227.96  
+J=692   S=694  E=0    l=-227.96  
+J=693   S=695  E=0    l=-227.96  
+J=694   S=696  E=0    l=-227.96  
+J=695   S=697  E=0    l=-227.96  
+J=696   S=698  E=0    l=-227.96  
+J=697   S=699  E=0    l=-227.96  
+J=698   S=700  E=0    l=-227.96  
+J=699   S=701  E=0    l=-227.96  
+J=700   S=702  E=0    l=-227.96  
+J=701   S=703  E=0    l=-227.96  
+J=702   S=704  E=0    l=-227.96  
+J=703   S=705  E=0    l=-227.96  
+J=704   S=706  E=0    l=-227.96  
+J=705   S=707  E=0    l=-227.96  
+J=706   S=708  E=0    l=-227.96  
+J=707   S=709  E=0    l=-227.96  
+J=708   S=710  E=0    l=-227.96  
+J=709   S=711  E=0    l=-227.96  
+J=710   S=712  E=0    l=-227.96  
+J=711   S=713  E=0    l=-227.96  
+J=712   S=714  E=0    l=-227.96  
+J=713   S=715  E=0    l=-227.96  
+J=714   S=716  E=0    l=-227.96  
+J=715   S=717  E=0    l=-227.96  
+J=716   S=718  E=0    l=-227.96  
+J=717   S=719  E=0    l=-227.96  
+J=718   S=720  E=0    l=-227.96  
+J=719   S=721  E=0    l=-227.96  
+J=720   S=722  E=0    l=-227.96  
+J=721   S=723  E=0    l=-227.96  
+J=722   S=724  E=0    l=-227.96  
+J=723   S=725  E=0    l=-227.96  
+J=724   S=726  E=0    l=-227.96  
+J=725   S=727  E=0    l=-227.96  
+J=726   S=728  E=0    l=-227.96  
+J=727   S=729  E=0    l=-227.96  
+J=728   S=730  E=0    l=-227.96  
+J=729   S=731  E=0    l=-227.96  
+J=730   S=732  E=0    l=-227.96  
+J=731   S=733  E=0    l=-227.96  
+J=732   S=734  E=0    l=-227.96  
+J=733   S=735  E=0    l=-227.96  
+J=734   S=736  E=0    l=-227.96  
+J=735   S=737  E=0    l=-227.96  
+J=736   S=738  E=0    l=-227.96  
+J=737   S=739  E=0    l=-227.96  
+J=738   S=740  E=0    l=-227.96  
+J=739   S=741  E=0    l=-227.96  
+J=740   S=742  E=0    l=-227.96  
+J=741   S=743  E=0    l=-227.96  
+J=742   S=744  E=0    l=-227.96  
+J=743   S=745  E=0    l=-227.96  
+J=744   S=746  E=0    l=-227.96  
+J=745   S=747  E=0    l=-227.96  
+J=746   S=748  E=0    l=-227.96  
+J=747   S=749  E=0    l=-227.96  
+J=748   S=750  E=0    l=-227.96  
+J=749   S=751  E=0    l=-227.96  
+J=750   S=752  E=0    l=-227.96  
+J=751   S=753  E=0    l=-227.96  
+J=752   S=754  E=0    l=-227.96  
+J=753   S=755  E=0    l=-227.96  
+J=754   S=756  E=0    l=-227.96  
+J=755   S=757  E=0    l=-227.96  
+J=756   S=758  E=0    l=-227.96  
+J=757   S=759  E=0    l=-227.96  
+J=758   S=760  E=0    l=-227.96  
+J=759   S=761  E=0    l=-227.96  
+J=760   S=762  E=0    l=-227.96  
+J=761   S=763  E=0    l=-227.96  
+J=762   S=764  E=0    l=-227.96  
+J=763   S=765  E=0    l=-227.96  
+J=764   S=766  E=0    l=-227.96  
+J=765   S=767  E=0    l=-227.96  
+J=766   S=768  E=0    l=-227.96  
+J=767   S=769  E=0    l=-227.96  
+J=768   S=770  E=0    l=-227.96  
+J=769   S=771  E=0    l=-227.96  
+J=770   S=772  E=0    l=-227.96  
+J=771   S=773  E=0    l=-227.96  
+J=772   S=774  E=0    l=-227.96  
+J=773   S=775  E=0    l=-227.96  
+J=774   S=776  E=0    l=-227.96  
+J=775   S=777  E=0    l=-227.96  
+J=776   S=778  E=0    l=-227.96  
+J=777   S=779  E=0    l=-227.96  
+J=778   S=780  E=0    l=-227.96  
+J=779   S=781  E=0    l=-227.96  
+J=780   S=782  E=0    l=-227.96  
+J=781   S=783  E=0    l=-227.96  
+J=782   S=784  E=0    l=-227.96  
+J=783   S=785  E=0    l=-227.96  
+J=784   S=786  E=0    l=-227.96  
+J=785   S=787  E=0    l=-227.96  
+J=786   S=788  E=0    l=-227.96  
+J=787   S=789  E=0    l=-227.96  
+J=788   S=790  E=0    l=-227.96  
+J=789   S=791  E=0    l=-227.96  
+J=790   S=792  E=0    l=-227.96  
+J=791   S=793  E=0    l=-227.96  
+J=792   S=794  E=0    l=-227.96  
+J=793   S=795  E=0    l=-227.96  
+J=794   S=796  E=0    l=-227.96  
+J=795   S=797  E=0    l=-227.96  
+J=796   S=798  E=0    l=-227.96  
+J=797   S=799  E=0    l=-227.96  
+J=798   S=800  E=0    l=-227.96  
+J=799   S=801  E=0    l=-227.96  
+J=800   S=802  E=0    l=-227.96  
+J=801   S=803  E=0    l=-227.96  
+J=802   S=804  E=0    l=-227.96  
+J=803   S=805  E=0    l=-227.96  
+J=804   S=806  E=0    l=-227.96  
+J=805   S=807  E=0    l=-227.96  
+J=806   S=808  E=0    l=-227.96  
+J=807   S=809  E=0    l=-227.96  
+J=808   S=810  E=0    l=-227.96  
+J=809   S=811  E=0    l=-227.96  
+J=810   S=812  E=0    l=-227.96  
+J=811   S=813  E=0    l=-227.96  
+J=812   S=814  E=0    l=-227.96  
+J=813   S=815  E=0    l=-227.96  
+J=814   S=816  E=0    l=-227.96  
+J=815   S=817  E=0    l=-227.96  
+J=816   S=818  E=0    l=-227.96  
+J=817   S=819  E=0    l=-227.96  
+J=818   S=820  E=0    l=-227.96  
+J=819   S=821  E=0    l=-227.96  
+J=820   S=822  E=0    l=-227.96  
+J=821   S=823  E=0    l=-227.96  
+J=822   S=824  E=0    l=-227.96  
+J=823   S=825  E=0    l=-227.96  
+J=824   S=826  E=0    l=-227.96  
+J=825   S=827  E=0    l=-227.96  
+J=826   S=828  E=0    l=-227.96  
+J=827   S=829  E=0    l=-227.96  
+J=828   S=830  E=0    l=-227.96  
+J=829   S=831  E=0    l=-227.96  
+J=830   S=832  E=0    l=-227.96  
+J=831   S=833  E=0    l=-227.96  
+J=832   S=834  E=0    l=-227.96  
+J=833   S=835  E=0    l=-227.96  
+J=834   S=836  E=0    l=-227.96  
+J=835   S=837  E=0    l=-227.96  
+J=836   S=838  E=0    l=-227.96  
+J=837   S=839  E=0    l=-227.96  
+J=838   S=840  E=0    l=-227.96  
+J=839   S=841  E=0    l=-227.96  
+J=840   S=842  E=0    l=-227.96  
+J=841   S=843  E=0    l=-227.96  
+J=842   S=844  E=0    l=-227.96  
+J=843   S=845  E=0    l=-227.96  
+J=844   S=846  E=0    l=-227.96  
+J=845   S=847  E=0    l=-227.96  
+J=846   S=848  E=0    l=-227.96  
+J=847   S=849  E=0    l=-227.96  
+J=848   S=850  E=0    l=-227.96  
+J=849   S=851  E=0    l=-227.96  
+J=850   S=852  E=0    l=-227.96  
+J=851   S=853  E=0    l=-227.96  
+J=852   S=854  E=0    l=-227.96  
+J=853   S=855  E=0    l=-227.96  
+J=854   S=856  E=0    l=-227.96  
+J=855   S=857  E=0    l=-227.96  
+J=856   S=858  E=0    l=-227.96  
+J=857   S=859  E=0    l=-227.96  
+J=858   S=860  E=0    l=-227.96  
+J=859   S=861  E=0    l=-227.96  
+J=860   S=862  E=0    l=-227.96  
+J=861   S=863  E=0    l=-227.96  
+J=862   S=864  E=0    l=-227.96  
+J=863   S=865  E=0    l=-227.96  
+J=864   S=866  E=0    l=-227.96  
+J=865   S=867  E=0    l=-227.96  
+J=866   S=868  E=0    l=-227.96  
+J=867   S=869  E=0    l=-227.96  
+J=868   S=870  E=0    l=-227.96  
+J=869   S=871  E=0    l=-227.96  
+J=870   S=872  E=0    l=-227.96  
+J=871   S=873  E=0    l=-227.96  
+J=872   S=874  E=0    l=-227.96  
+J=873   S=875  E=0    l=-227.96  
+J=874   S=876  E=0    l=-227.96  
+J=875   S=877  E=0    l=-227.96  
+J=876   S=878  E=0    l=-227.96  
+J=877   S=879  E=0    l=-227.96  
+J=878   S=880  E=0    l=-227.96  
+J=879   S=881  E=0    l=-227.96  
+J=880   S=882  E=0    l=-227.96  
+J=881   S=883  E=0    l=-227.96  
+J=882   S=884  E=0    l=-227.96  
+J=883   S=885  E=0    l=-227.96  
+J=884   S=886  E=0    l=-227.96  
+J=885   S=887  E=0    l=-227.96  
+J=886   S=888  E=0    l=-227.96  
+J=887   S=889  E=0    l=-227.96  
+J=888   S=890  E=0    l=-227.96  
+J=889   S=891  E=0    l=-227.96  
+J=890   S=892  E=0    l=-227.96  
+J=891   S=893  E=0    l=-227.96  
+J=892   S=894  E=0    l=-227.96  
+J=893   S=895  E=0    l=-227.96  
+J=894   S=896  E=0    l=-227.96  
+J=895   S=897  E=0    l=-227.96  
+J=896   S=898  E=0    l=-227.96  
+J=897   S=899  E=0    l=-227.96  
+J=898   S=900  E=0    l=-227.96  
+J=899   S=901  E=0    l=-227.96  
+J=900   S=902  E=0    l=-227.96  
+J=901   S=903  E=0    l=-227.96  
+J=902   S=904  E=0    l=-227.96  
+J=903   S=905  E=0    l=-227.96  
+J=904   S=906  E=0    l=-227.96  
+J=905   S=907  E=0    l=-227.96  
+J=906   S=908  E=0    l=-227.96  
+J=907   S=909  E=0    l=-227.96  
+J=908   S=910  E=0    l=-227.96  
+J=909   S=911  E=0    l=-227.96  
+J=910   S=912  E=0    l=-227.96  
+J=911   S=913  E=0    l=-227.96  
+J=912   S=914  E=0    l=-227.96  
+J=913   S=915  E=0    l=-227.96  
+J=914   S=916  E=0    l=-227.96  
+J=915   S=917  E=0    l=-227.96  
+J=916   S=918  E=0    l=-227.96  
+J=917   S=919  E=0    l=-227.96  
+J=918   S=920  E=0    l=-227.96  
+J=919   S=921  E=0    l=-227.96  
+J=920   S=922  E=0    l=-227.96  
+J=921   S=923  E=0    l=-227.96  
+J=922   S=924  E=0    l=-227.96  
+J=923   S=925  E=0    l=-227.96  
+J=924   S=926  E=0    l=-227.96  
+J=925   S=927  E=0    l=-227.96  
+J=926   S=928  E=0    l=-227.96  
+J=927   S=929  E=0    l=-227.96  
+J=928   S=930  E=0    l=-227.96  
+J=929   S=931  E=0    l=-227.96  
+J=930   S=932  E=0    l=-227.96  
+J=931   S=933  E=0    l=-227.96  
+J=932   S=934  E=0    l=-227.96  
+J=933   S=935  E=0    l=-227.96  
+J=934   S=936  E=0    l=-227.96  
+J=935   S=937  E=0    l=-227.96  
+J=936   S=938  E=0    l=-227.96  
+J=937   S=939  E=0    l=-227.96  
+J=938   S=940  E=0    l=-227.96  
+J=939   S=941  E=0    l=-227.96  
+J=940   S=942  E=0    l=-227.96  
+J=941   S=943  E=0    l=-227.96  
+J=942   S=944  E=0    l=-227.96  
+J=943   S=945  E=0    l=-227.96  
+J=944   S=946  E=0    l=-227.96  
+J=945   S=947  E=0    l=-227.96  
+J=946   S=948  E=0    l=-227.96  
+J=947   S=949  E=0    l=-227.96  
+J=948   S=950  E=0    l=-227.96  
+J=949   S=951  E=0    l=-227.96  
+J=950   S=952  E=0    l=-227.96  
+J=951   S=953  E=0    l=-227.96  
+J=952   S=954  E=0    l=-227.96  
+J=953   S=955  E=0    l=-227.96  
+J=954   S=956  E=0    l=-227.96  
+J=955   S=957  E=0    l=-227.96  
+J=956   S=958  E=0    l=-227.96  
+J=957   S=959  E=0    l=-227.96  
+J=958   S=960  E=0    l=-227.96  
+J=959   S=961  E=0    l=-227.96  
+J=960   S=962  E=0    l=-227.96  
+J=961   S=963  E=0    l=-227.96  
+J=962   S=964  E=0    l=-227.96  
+J=963   S=965  E=0    l=-227.96  
+J=964   S=966  E=0    l=-227.96  
+J=965   S=967  E=0    l=-227.96  
+J=966   S=968  E=0    l=-227.96  
+J=967   S=969  E=0    l=-227.96  
+J=968   S=970  E=0    l=-227.96  
+J=969   S=971  E=0    l=-227.96  
+J=970   S=972  E=0    l=-227.96  
+J=971   S=973  E=0    l=-227.96  
+J=972   S=974  E=0    l=-227.96  
+J=973   S=975  E=0    l=-227.96  
+J=974   S=976  E=0    l=-227.96  
+J=975   S=977  E=0    l=-227.96  
+J=976   S=978  E=0    l=-227.96  
+J=977   S=979  E=0    l=-227.96  
+J=978   S=980  E=0    l=-227.96  
+J=979   S=981  E=0    l=-227.96  
+J=980   S=982  E=0    l=-227.96  
+J=981   S=983  E=0    l=-227.96  
+J=982   S=984  E=0    l=-227.96  
+J=983   S=985  E=0    l=-227.96  
+J=984   S=986  E=0    l=-227.96  
+J=985   S=987  E=0    l=-227.96  
+J=986   S=988  E=0    l=-227.96  
+J=987   S=989  E=0    l=-227.96  
+J=988   S=990  E=0    l=-227.96  
+J=989   S=991  E=0    l=-227.96  
+J=990   S=992  E=0    l=-227.96  
+J=991   S=993  E=0    l=-227.96  
+J=992   S=994  E=0    l=-227.96  
+J=993   S=995  E=0    l=-227.96  
+J=994   S=996  E=0    l=-227.96  
+J=995   S=997  E=0    l=-227.96  
+J=996   S=998  E=0    l=-227.96  
+J=997   S=999  E=0    l=-227.96  
+J=998   S=1000 E=0    l=-227.96  
+J=999   S=1001 E=0    l=-227.96  
+J=1000  S=1002 E=0    l=-227.96  
+J=1001  S=1003 E=0    l=-227.96  
+J=1002  S=1004 E=0    l=-227.96  
+J=1003  S=1005 E=0    l=-227.96  
+J=1004  S=1006 E=0    l=-227.96  
+J=1005  S=1007 E=0    l=-227.96  
+J=1006  S=1008 E=0    l=-227.96  
+J=1007  S=1009 E=0    l=-227.96  
+J=1008  S=1010 E=0    l=-227.96  
+J=1009  S=1011 E=0    l=-227.96  
+J=1010  S=1012 E=0    l=-227.96  
+J=1011  S=1013 E=0    l=-227.96  
+J=1012  S=1014 E=0    l=-227.96  
+J=1013  S=1015 E=0    l=-227.96  
+J=1014  S=1016 E=0    l=-227.96  
+J=1015  S=1017 E=0    l=-227.96  
+J=1016  S=1018 E=0    l=-227.96  
+J=1017  S=1019 E=0    l=-227.96  
+J=1018  S=1020 E=0    l=-227.96  
+J=1019  S=1021 E=0    l=-227.96  
+J=1020  S=1022 E=0    l=-227.96  
+J=1021  S=1023 E=0    l=-227.96  
+J=1022  S=1024 E=0    l=-227.96  
+J=1023  S=1025 E=0    l=-227.96  
+J=1024  S=1026 E=0    l=-227.96  
+J=1025  S=1027 E=0    l=-227.96  
+J=1026  S=1028 E=0    l=-227.96  
+J=1027  S=1029 E=0    l=-227.96  
+J=1028  S=1030 E=0    l=-227.96  
+J=1029  S=1031 E=0    l=-227.96  
+J=1030  S=1032 E=0    l=-227.96  
+J=1031  S=1033 E=0    l=-227.96  
+J=1032  S=1034 E=0    l=-227.96  
+J=1033  S=1035 E=0    l=-227.96  
+J=1034  S=1036 E=0    l=-227.96  
+J=1035  S=1037 E=0    l=-227.96  
+J=1036  S=1038 E=0    l=-227.96  
+J=1037  S=1039 E=0    l=-227.96  
+J=1038  S=1040 E=0    l=-227.96  
+J=1039  S=1041 E=0    l=-227.96  
+J=1040  S=1042 E=0    l=-227.96  
+J=1041  S=1043 E=0    l=-227.96  
+J=1042  S=1044 E=0    l=-227.96  
+J=1043  S=1045 E=0    l=-227.96  
+J=1044  S=1046 E=0    l=-227.96  
+J=1045  S=1047 E=0    l=-227.96  
+J=1046  S=1048 E=0    l=-227.96  
+J=1047  S=1049 E=0    l=-227.96  
+J=1048  S=1050 E=0    l=-227.96  
+J=1049  S=1051 E=0    l=-227.96  
+J=1050  S=1052 E=0    l=-227.96  
+J=1051  S=1053 E=0    l=-227.96  
+J=1052  S=1054 E=0    l=-227.96  
+J=1053  S=1055 E=0    l=-227.96  
+J=1054  S=1056 E=0    l=-227.96  
+J=1055  S=1057 E=0    l=-227.96  
+J=1056  S=1058 E=0    l=-227.96  
+J=1057  S=1059 E=0    l=-227.96  
+J=1058  S=1060 E=0    l=-227.96  
+J=1059  S=1061 E=0    l=-227.96  
+J=1060  S=1062 E=0    l=-227.96  
+J=1061  S=1063 E=0    l=-227.96  
+J=1062  S=1064 E=0    l=-227.96  
+J=1063  S=1065 E=0    l=-227.96  
+J=1064  S=1066 E=0    l=-227.96  
+J=1065  S=1067 E=0    l=-227.96  
+J=1066  S=1068 E=0    l=-227.96  
+J=1067  S=1069 E=0    l=-227.96  
+J=1068  S=1070 E=0    l=-227.96  
+J=1069  S=1071 E=0    l=-227.96  
+J=1070  S=1072 E=0    l=-227.96  
+J=1071  S=1073 E=0    l=-227.96  
+J=1072  S=1074 E=0    l=-227.96  
+J=1073  S=1075 E=0    l=-227.96  
+J=1074  S=1076 E=0    l=-227.96  
+J=1075  S=1077 E=0    l=-227.96  
+J=1076  S=1078 E=0    l=-227.96  
+J=1077  S=1079 E=0    l=-227.96  
+J=1078  S=1080 E=0    l=-227.96  
+J=1079  S=1081 E=0    l=-227.96  
+J=1080  S=1082 E=0    l=-227.96  
+J=1081  S=1083 E=0    l=-227.96  
+J=1082  S=1084 E=0    l=-227.96  
+J=1083  S=1085 E=0    l=-227.96  
+J=1084  S=1086 E=0    l=-227.96  
+J=1085  S=1087 E=0    l=-227.96  
+J=1086  S=1088 E=0    l=-227.96  
+J=1087  S=1089 E=0    l=-227.96  
+J=1088  S=1090 E=0    l=-227.96  
+J=1089  S=1091 E=0    l=-227.96  
+J=1090  S=1092 E=0    l=-227.96  
+J=1091  S=1093 E=0    l=-227.96  
+J=1092  S=1094 E=0    l=-227.96  
+J=1093  S=1095 E=0    l=-227.96  
+J=1094  S=1096 E=0    l=-227.96  
+J=1095  S=1097 E=0    l=-227.96  
+J=1096  S=1098 E=0    l=-227.96  
+J=1097  S=1099 E=0    l=-227.96  
+J=1098  S=1100 E=0    l=-227.96  
+J=1099  S=1101 E=0    l=-227.96  
+J=1100  S=1102 E=0    l=-227.96  
+J=1101  S=1103 E=0    l=-227.96  
+J=1102  S=1104 E=0    l=-227.96  
+J=1103  S=1105 E=0    l=-227.96  
+J=1104  S=1106 E=0    l=-227.96  
+J=1105  S=1107 E=0    l=-227.96  
+J=1106  S=1108 E=0    l=-227.96  
+J=1107  S=1109 E=0    l=-227.96  
+J=1108  S=1110 E=0    l=-227.96  
+J=1109  S=1111 E=0    l=-227.96  
+J=1110  S=1112 E=0    l=-227.96  
+J=1111  S=1113 E=0    l=-227.96  
+J=1112  S=1114 E=0    l=-227.96  
+J=1113  S=1115 E=0    l=-227.96  
+J=1114  S=1116 E=0    l=-227.96  
+J=1115  S=1117 E=0    l=-227.96  
+J=1116  S=1118 E=0    l=-227.96  
+J=1117  S=1119 E=0    l=-227.96  
+J=1118  S=1120 E=0    l=-227.96  
+J=1119  S=1121 E=0    l=-227.96  
+J=1120  S=1122 E=0    l=-227.96  
+J=1121  S=1123 E=0    l=-227.96  
+J=1122  S=1124 E=0    l=-227.96  
+J=1123  S=1125 E=0    l=-227.96  
+J=1124  S=1126 E=0    l=-227.96  
+J=1125  S=1127 E=0    l=-227.96  
+J=1126  S=1128 E=0    l=-227.96  
+J=1127  S=1129 E=0    l=-227.96  
+J=1128  S=1130 E=0    l=-227.96  
+J=1129  S=1131 E=0    l=-227.96  
+J=1130  S=1132 E=0    l=-227.96  
+J=1131  S=1133 E=0    l=-227.96  
+J=1132  S=1134 E=0    l=-227.96  
+J=1133  S=1135 E=0    l=-227.96  
+J=1134  S=1136 E=0    l=-227.96  
+J=1135  S=1137 E=0    l=-227.96  
+J=1136  S=1138 E=0    l=-227.96  
+J=1137  S=1139 E=0    l=-227.96  
+J=1138  S=1140 E=0    l=-227.96  
+J=1139  S=1141 E=0    l=-227.96  
+J=1140  S=1142 E=0    l=-227.96  
+J=1141  S=1143 E=0    l=-227.96  
+J=1142  S=1144 E=0    l=-227.96  
+J=1143  S=1145 E=0    l=-227.96  
+J=1144  S=1146 E=0    l=-227.96  
+J=1145  S=1147 E=0    l=-227.96  
+J=1146  S=1148 E=0    l=-227.96  
+J=1147  S=1149 E=0    l=-227.96  
+J=1148  S=1150 E=0    l=-227.96  
+J=1149  S=1151 E=0    l=-227.96  
+J=1150  S=1152 E=0    l=-227.96  
+J=1151  S=1153 E=0    l=-227.96  
+J=1152  S=1154 E=0    l=-227.96  
+J=1153  S=1155 E=0    l=-227.96  
+J=1154  S=1156 E=0    l=-227.96  
+J=1155  S=1157 E=0    l=-227.96  
+J=1156  S=1158 E=0    l=-227.96  
+J=1157  S=1159 E=0    l=-227.96  
+J=1158  S=1160 E=0    l=-227.96  
+J=1159  S=1161 E=0    l=-227.96  
+J=1160  S=1162 E=0    l=-227.96  
+J=1161  S=1163 E=0    l=-227.96  
+J=1162  S=1164 E=0    l=-227.96  
+J=1163  S=1165 E=0    l=-227.96  
+J=1164  S=1166 E=0    l=-227.96  
+J=1165  S=1167 E=0    l=-227.96  
+J=1166  S=1168 E=0    l=-227.96  
+J=1167  S=1169 E=0    l=-227.96  
+J=1168  S=1170 E=0    l=-227.96  
+J=1169  S=1171 E=0    l=-227.96  
+J=1170  S=1172 E=0    l=-227.96  
+J=1171  S=1173 E=0    l=-227.96  
+J=1172  S=1174 E=0    l=-227.96  
+J=1173  S=1175 E=0    l=-227.96  
+J=1174  S=1176 E=0    l=-227.96  
+J=1175  S=1177 E=0    l=-227.96  
+J=1176  S=1178 E=0    l=-227.96  
+J=1177  S=1179 E=0    l=-227.96  
+J=1178  S=1180 E=0    l=-227.96  
+J=1179  S=1181 E=0    l=-227.96  
+J=1180  S=1182 E=0    l=-227.96  
+J=1181  S=1183 E=0    l=-227.96  
+J=1182  S=1184 E=0    l=-227.96  
+J=1183  S=1185 E=0    l=-227.96  
+J=1184  S=1186 E=0    l=-227.96  
+J=1185  S=1187 E=0    l=-227.96  
+J=1186  S=1188 E=0    l=-227.96  
+J=1187  S=1189 E=0    l=-227.96  
+J=1188  S=1190 E=0    l=-227.96  
+J=1189  S=1191 E=0    l=-227.96  
+J=1190  S=1192 E=0    l=-227.96  
+J=1191  S=1193 E=0    l=-227.96  
+J=1192  S=1194 E=0    l=-227.96  
+J=1193  S=1195 E=0    l=-227.96  
+J=1194  S=1196 E=0    l=-227.96  
+J=1195  S=1197 E=0    l=-227.96  
+J=1196  S=1198 E=0    l=-227.96  
+J=1197  S=1199 E=0    l=-227.96  
+J=1198  S=1200 E=0    l=-227.96  
+J=1199  S=1201 E=0    l=-227.96  
+J=1200  S=1202 E=0    l=-227.96  
+J=1201  S=1203 E=0    l=-227.96  
+J=1202  S=1204 E=0    l=-227.96  
+J=1203  S=1205 E=0    l=-227.96  
+J=1204  S=1206 E=0    l=-227.96  
+J=1205  S=1207 E=0    l=-227.96  
+J=1206  S=1208 E=0    l=-227.96  
+J=1207  S=1209 E=0    l=-227.96  
+J=1208  S=1210 E=0    l=-227.96  
+J=1209  S=1211 E=0    l=-227.96  
+J=1210  S=1212 E=0    l=-227.96  
+J=1211  S=1213 E=0    l=-227.96  
+J=1212  S=1214 E=0    l=-227.96  
+J=1213  S=1215 E=0    l=-227.96  
+J=1214  S=1216 E=0    l=-227.96  
+J=1215  S=1217 E=0    l=-227.96  
+J=1216  S=1218 E=0    l=-227.96  
+J=1217  S=1219 E=0    l=-227.96  
+J=1218  S=1220 E=0    l=-227.96  
+J=1219  S=1221 E=0    l=-227.96  
+J=1220  S=1222 E=0    l=-227.96  
+J=1221  S=1223 E=0    l=-227.96  
+J=1222  S=1224 E=0    l=-227.96  
+J=1223  S=1225 E=0    l=-227.96  
+J=1224  S=1226 E=0    l=-227.96  
+J=1225  S=1227 E=0    l=-227.96  
+J=1226  S=1228 E=0    l=-227.96  
+J=1227  S=1229 E=0    l=-227.96  
+J=1228  S=1230 E=0    l=-227.96  
+J=1229  S=1231 E=0    l=-227.96  
+J=1230  S=1232 E=0    l=-227.96  
+J=1231  S=1233 E=0    l=-227.96  
+J=1232  S=1234 E=0    l=-227.96  
+J=1233  S=1235 E=0    l=-227.96  
+J=1234  S=1236 E=0    l=-227.96  
+J=1235  S=1237 E=0    l=-227.96  
+J=1236  S=1238 E=0    l=-227.96  
+J=1237  S=1239 E=0    l=-227.96  
+J=1238  S=1240 E=0    l=-227.96  
+J=1239  S=1241 E=0    l=-227.96  
+J=1240  S=1242 E=0    l=-227.96  
+J=1241  S=1243 E=0    l=-227.96  
+J=1242  S=1244 E=0    l=-227.96  
+J=1243  S=1245 E=0    l=-227.96  
+J=1244  S=1246 E=0    l=-227.96  
+J=1245  S=1247 E=0    l=-227.96  
+J=1246  S=1248 E=0    l=-227.96  
+J=1247  S=1249 E=0    l=-227.96  
+J=1248  S=1250 E=0    l=-227.96  
+J=1249  S=1251 E=0    l=-227.96  
+J=1250  S=1252 E=0    l=-227.96  
+J=1251  S=1253 E=0    l=-227.96  
+J=1252  S=1254 E=0    l=-227.96  
+J=1253  S=1255 E=0    l=-227.96  
+J=1254  S=1256 E=0    l=-227.96  
+J=1255  S=1257 E=0    l=-227.96  
+J=1256  S=1258 E=0    l=-227.96  
+J=1257  S=1259 E=0    l=-227.96  
+J=1258  S=1260 E=0    l=-227.96  
+J=1259  S=1261 E=0    l=-227.96  
+J=1260  S=1262 E=0    l=-227.96  
+J=1261  S=1263 E=0    l=-227.96  
+J=1262  S=1264 E=0    l=-227.96  
+J=1263  S=1265 E=0    l=-227.96  
+J=1264  S=0    E=1    l=-2.48    
+J=1265  S=16   E=1    l=0.00     
+J=1266  S=20   E=1    l=0.00     
+J=1267  S=21   E=1    l=0.00     
+J=1268  S=36   E=1    l=0.00     
+J=1269  S=40   E=1    l=0.00     
+J=1270  S=45   E=1    l=0.00     
+J=1271  S=51   E=1    l=0.00     
+J=1272  S=66   E=1    l=0.00     
+J=1273  S=71   E=1    l=0.00     
+J=1274  S=76   E=1    l=-1.10    
+J=1275  S=79   E=1    l=0.00     
+J=1276  S=84   E=1    l=0.00     
+J=1277  S=103  E=1    l=0.00     
+J=1278  S=110  E=1    l=0.00     
+J=1279  S=115  E=1    l=0.00     
+J=1280  S=125  E=1    l=0.00     
+J=1281  S=131  E=1    l=-1.61    
+J=1282  S=136  E=1    l=0.00     
+J=1283  S=141  E=1    l=0.00     
+J=1284  S=151  E=1    l=0.00     
+J=1285  S=161  E=1    l=0.00     
+J=1286  S=167  E=1    l=-0.69    
+J=1287  S=175  E=1    l=0.00     
+J=1288  S=184  E=1    l=-0.69    
+J=1289  S=198  E=1    l=-1.79    
+J=1290  S=204  E=1    l=0.00     
+J=1291  S=207  E=1    l=0.00     
+J=1292  S=210  E=1    l=0.00     
+J=1293  S=242  E=1    l=0.00     
+J=1294  S=246  E=1    l=0.00     
+J=1295  S=267  E=1    l=0.00     
+J=1296  S=285  E=1    l=0.00     
+J=1297  S=301  E=1    l=0.00     
+J=1298  S=305  E=1    l=0.00     
+J=1299  S=307  E=1    l=0.00     
+J=1300  S=316  E=1    l=0.00     
+J=1301  S=322  E=1    l=0.00     
+J=1302  S=331  E=1    l=0.00     
+J=1303  S=332  E=1    l=0.00     
+J=1304  S=338  E=1    l=-0.15    
+J=1305  S=344  E=1    l=0.00     
+J=1306  S=345  E=1    l=-0.69    
+J=1307  S=346  E=1    l=-0.69    
+J=1308  S=347  E=1    l=0.00     
+J=1309  S=349  E=1    l=0.00     
+J=1310  S=369  E=1    l=-1.10    
+J=1311  S=370  E=1    l=0.00     
+J=1312  S=371  E=1    l=0.00     
+J=1313  S=391  E=1    l=0.00     
+J=1314  S=392  E=1    l=-0.69    
+J=1315  S=410  E=1    l=0.00     
+J=1316  S=417  E=1    l=0.00     
+J=1317  S=429  E=1    l=0.00     
+J=1318  S=430  E=1    l=0.00     
+J=1319  S=442  E=1    l=0.00     
+J=1320  S=457  E=1    l=-0.69    
+J=1321  S=467  E=1    l=0.00     
+J=1322  S=504  E=1    l=0.00     
+J=1323  S=511  E=1    l=0.00     
+J=1324  S=513  E=1    l=0.00     
+J=1325  S=520  E=1    l=0.00     
+J=1326  S=521  E=1    l=0.00     
+J=1327  S=536  E=1    l=0.00     
+J=1328  S=548  E=1    l=0.00     
+J=1329  S=555  E=1    l=0.00     
+J=1330  S=559  E=1    l=0.00     
+J=1331  S=560  E=1    l=0.00     
+J=1332  S=573  E=1    l=0.00     
+J=1333  S=574  E=1    l=0.00     
+J=1334  S=577  E=1    l=0.00     
+J=1335  S=597  E=1    l=0.00     
+J=1336  S=603  E=1    l=0.00     
+J=1337  S=605  E=1    l=0.00     
+J=1338  S=622  E=1    l=0.00     
+J=1339  S=629  E=1    l=0.00     
+J=1340  S=648  E=1    l=0.00     
+J=1341  S=657  E=1    l=0.00     
+J=1342  S=665  E=1    l=0.00     
+J=1343  S=669  E=1    l=0.00     
+J=1344  S=673  E=1    l=0.00     
+J=1345  S=701  E=1    l=0.00     
+J=1346  S=704  E=1    l=0.00     
+J=1347  S=711  E=1    l=0.00     
+J=1348  S=717  E=1    l=0.00     
+J=1349  S=718  E=1    l=-1.10    
+J=1350  S=730  E=1    l=0.00     
+J=1351  S=748  E=1    l=-0.69    
+J=1352  S=749  E=1    l=0.00     
+J=1353  S=755  E=1    l=-0.69    
+J=1354  S=772  E=1    l=0.00     
+J=1355  S=775  E=1    l=0.00     
+J=1356  S=778  E=1    l=0.00     
+J=1357  S=791  E=1    l=0.00     
+J=1358  S=794  E=1    l=-0.69    
+J=1359  S=798  E=1    l=0.00     
+J=1360  S=828  E=1    l=0.00     
+J=1361  S=833  E=1    l=-0.69    
+J=1362  S=835  E=1    l=-0.69    
+J=1363  S=836  E=1    l=0.00     
+J=1364  S=843  E=1    l=-0.69    
+J=1365  S=845  E=1    l=0.00     
+J=1366  S=846  E=1    l=0.00     
+J=1367  S=847  E=1    l=0.00     
+J=1368  S=851  E=1    l=-1.39    
+J=1369  S=857  E=1    l=0.00     
+J=1370  S=858  E=1    l=0.00     
+J=1371  S=863  E=1    l=0.00     
+J=1372  S=864  E=1    l=0.00     
+J=1373  S=877  E=1    l=0.00     
+J=1374  S=885  E=1    l=0.00     
+J=1375  S=886  E=1    l=0.00     
+J=1376  S=889  E=1    l=0.00     
+J=1377  S=897  E=1    l=0.00     
+J=1378  S=903  E=1    l=0.00     
+J=1379  S=906  E=1    l=0.00     
+J=1380  S=917  E=1    l=0.00     
+J=1381  S=930  E=1    l=0.00     
+J=1382  S=937  E=1    l=0.00     
+J=1383  S=945  E=1    l=0.00     
+J=1384  S=946  E=1    l=-0.69    
+J=1385  S=950  E=1    l=-0.69    
+J=1386  S=951  E=1    l=0.00     
+J=1387  S=954  E=1    l=0.00     
+J=1388  S=968  E=1    l=-0.69    
+J=1389  S=971  E=1    l=-0.69    
+J=1390  S=972  E=1    l=0.00     
+J=1391  S=985  E=1    l=0.00     
+J=1392  S=995  E=1    l=0.00     
+J=1393  S=1006 E=1    l=0.00     
+J=1394  S=1007 E=1    l=0.00     
+J=1395  S=1013 E=1    l=0.00     
+J=1396  S=1030 E=1    l=0.00     
+J=1397  S=1036 E=1    l=0.00     
+J=1398  S=1045 E=1    l=0.00     
+J=1399  S=1056 E=1    l=0.00     
+J=1400  S=1065 E=1    l=0.00     
+J=1401  S=1066 E=1    l=0.00     
+J=1402  S=1076 E=1    l=0.00     
+J=1403  S=1077 E=1    l=0.00     
+J=1404  S=1087 E=1    l=0.00     
+J=1405  S=1093 E=1    l=0.00     
+J=1406  S=1107 E=1    l=0.00     
+J=1407  S=1109 E=1    l=-1.39    
+J=1408  S=1114 E=1    l=0.00     
+J=1409  S=1121 E=1    l=0.00     
+J=1410  S=1130 E=1    l=0.00     
+J=1411  S=1158 E=1    l=0.00     
+J=1412  S=1165 E=1    l=0.00     
+J=1413  S=1169 E=1    l=0.00     
+J=1414  S=1174 E=1    l=-0.69    
+J=1415  S=1197 E=1    l=0.00     
+J=1416  S=1200 E=1    l=0.00     
+J=1417  S=1205 E=1    l=0.00     
+J=1418  S=1207 E=1    l=0.00     
+J=1419  S=1228 E=1    l=0.00     
+J=1420  S=1231 E=1    l=0.00     
+J=1421  S=1235 E=1    l=0.00     
+J=1422  S=1236 E=1    l=0.00     
+J=1423  S=1238 E=1    l=0.00     
+J=1424  S=1241 E=1    l=-1.10    
+J=1425  S=1244 E=1    l=0.00     
+J=1426  S=1253 E=1    l=0.00     
+J=1427  S=1255 E=1    l=0.00     
+J=1428  S=1264 E=1    l=0.00     
+J=1429  S=0    E=3    l=-4.07    
+J=1430  S=2    E=3    l=-4.46    
+J=1431  S=52   E=3    l=0.00     
+J=1432  S=55   E=3    l=-0.69    
+J=1433  S=106  E=3    l=0.00     
+J=1434  S=128  E=3    l=0.00     
+J=1435  S=143  E=3    l=-1.10    
+J=1436  S=211  E=3    l=0.00     
+J=1437  S=260  E=3    l=0.00     
+J=1438  S=268  E=3    l=0.00     
+J=1439  S=294  E=3    l=-1.95    
+J=1440  S=358  E=3    l=0.00     
+J=1441  S=368  E=3    l=0.00     
+J=1442  S=460  E=3    l=0.00     
+J=1443  S=470  E=3    l=0.00     
+J=1444  S=496  E=3    l=0.00     
+J=1445  S=516  E=3    l=0.00     
+J=1446  S=611  E=3    l=0.00     
+J=1447  S=634  E=3    l=0.00     
+J=1448  S=656  E=3    l=0.00     
+J=1449  S=692  E=3    l=0.00     
+J=1450  S=753  E=3    l=0.00     
+J=1451  S=763  E=3    l=0.00     
+J=1452  S=783  E=3    l=-0.69    
+J=1453  S=803  E=3    l=0.00     
+J=1454  S=839  E=3    l=0.00     
+J=1455  S=992  E=3    l=0.00     
+J=1456  S=1033 E=3    l=0.00     
+J=1457  S=1034 E=3    l=0.00     
+J=1458  S=1099 E=3    l=0.00     
+J=1459  S=1100 E=3    l=0.00     
+J=1460  S=1110 E=3    l=0.00     
+J=1461  S=1190 E=3    l=0.00     
+J=1462  S=1220 E=3    l=0.00     
+J=1463  S=1225 E=3    l=0.00     
+J=1464  S=0    E=4    l=-6.24    
+J=1465  S=87   E=4    l=0.00     
+J=1466  S=160  E=4    l=0.00     
+J=1467  S=1023 E=4    l=-2.77    
+J=1468  S=1028 E=4    l=0.00     
+J=1469  S=0    E=5    l=-7.63    
+J=1470  S=2    E=5    l=-5.15    
+J=1471  S=0    E=6    l=-6.94    
+J=1472  S=2    E=6    l=-4.46    
+J=1473  S=0    E=7    l=-6.53    
+J=1474  S=2    E=7    l=-4.46    
+J=1475  S=278  E=7    l=0.00     
+J=1476  S=0    E=8    l=-7.63    
+J=1477  S=477  E=8    l=0.00     
+J=1478  S=0    E=9    l=-7.63    
+J=1479  S=12   E=9    l=-1.61    
+J=1480  S=0    E=10   l=-7.63    
+J=1481  S=489  E=10   l=0.00     
+J=1482  S=0    E=11   l=-7.63    
+J=1483  S=1247 E=11   l=0.00     
+J=1484  S=0    E=12   l=-6.02    
+J=1485  S=2    E=12   l=-5.15    
+J=1486  S=93   E=12   l=0.00     
+J=1487  S=522  E=12   l=-0.69    
+J=1488  S=608  E=12   l=0.00     
+J=1489  S=911  E=12   l=0.00     
+J=1490  S=0    E=13   l=-7.63    
+J=1491  S=804  E=13   l=-2.08    
+J=1492  S=0    E=14   l=-7.63    
+J=1493  S=760  E=14   l=-1.10    
+J=1494  S=0    E=15   l=-7.63    
+J=1495  S=198  E=15   l=-1.79    
+J=1496  S=0    E=16   l=-7.63    
+J=1497  S=126  E=16   l=0.00     
+J=1498  S=0    E=17   l=-7.63    
+J=1499  S=215  E=17   l=0.00     
+J=1500  S=0    E=18   l=-7.63    
+J=1501  S=475  E=18   l=-0.69    
+J=1502  S=0    E=19   l=-7.63    
+J=1503  S=1234 E=19   l=-0.69    
+J=1504  S=0    E=20   l=-7.63    
+J=1505  S=975  E=20   l=-1.10    
+J=1506  S=0    E=21   l=-7.63    
+J=1507  S=238  E=21   l=-2.20    
+J=1508  S=0    E=22   l=-6.94    
+J=1509  S=195  E=22   l=0.00     
+J=1510  S=219  E=22   l=0.00     
+J=1511  S=0    E=23   l=-7.63    
+J=1512  S=2    E=23   l=-5.15    
+J=1513  S=0    E=24   l=-7.63    
+J=1514  S=816  E=24   l=0.00     
+J=1515  S=0    E=25   l=-7.63    
+J=1516  S=689  E=25   l=0.00     
+J=1517  S=0    E=26   l=-7.63    
+J=1518  S=183  E=26   l=0.00     
+J=1519  S=0    E=27   l=-6.94    
+J=1520  S=474  E=27   l=0.00     
+J=1521  S=1133 E=27   l=-0.69    
+J=1522  S=0    E=28   l=-7.63    
+J=1523  S=2    E=28   l=-5.15    
+J=1524  S=0    E=29   l=-7.63    
+J=1525  S=2    E=29   l=-5.15    
+J=1526  S=0    E=30   l=-7.63    
+J=1527  S=589  E=30   l=0.00     
+J=1528  S=0    E=31   l=-7.63    
+J=1529  S=116  E=31   l=-1.10    
+J=1530  S=0    E=32   l=-7.63    
+J=1531  S=1023 E=32   l=-2.77    
+J=1532  S=0    E=33   l=-7.63    
+J=1533  S=1023 E=33   l=-2.77    
+J=1534  S=0    E=34   l=-7.63    
+J=1535  S=10   E=34   l=0.00     
+J=1536  S=0    E=35   l=-7.63    
+J=1537  S=456  E=35   l=0.00     
+J=1538  S=0    E=36   l=-7.63    
+J=1539  S=959  E=36   l=-0.69    
+J=1540  S=0    E=37   l=-7.63    
+J=1541  S=1092 E=37   l=-4.17    
+J=1542  S=0    E=38   l=-7.63    
+J=1543  S=1092 E=38   l=-4.17    
+J=1544  S=0    E=39   l=-7.63    
+J=1545  S=1026 E=39   l=0.00     
+J=1546  S=0    E=40   l=-7.63    
+J=1547  S=24   E=40   l=0.00     
+J=1548  S=0    E=41   l=-7.63    
+J=1549  S=726  E=41   l=0.00     
+J=1550  S=0    E=42   l=-7.63    
+J=1551  S=620  E=42   l=0.00     
+J=1552  S=0    E=43   l=-7.63    
+J=1553  S=67   E=43   l=0.00     
+J=1554  S=0    E=44   l=-7.63    
+J=1555  S=472  E=44   l=-3.71    
+J=1556  S=0    E=45   l=-7.63    
+J=1557  S=804  E=45   l=-2.08    
+J=1558  S=0    E=46   l=-7.63    
+J=1559  S=670  E=46   l=0.00     
+J=1560  S=0    E=47   l=-6.53    
+J=1561  S=3    E=47   l=-3.56    
+J=1562  S=653  E=47   l=-0.69    
+J=1563  S=976  E=47   l=0.00     
+J=1564  S=0    E=48   l=-5.68    
+J=1565  S=3    E=48   l=-3.56    
+J=1566  S=143  E=48   l=-1.10    
+J=1567  S=232  E=48   l=0.00     
+J=1568  S=850  E=48   l=-0.69    
+J=1569  S=868  E=48   l=-3.43    
+J=1570  S=888  E=48   l=-2.20    
+J=1571  S=1048 E=48   l=-0.69    
+J=1572  S=0    E=49   l=-7.63    
+J=1573  S=790  E=49   l=-2.48    
+J=1574  S=0    E=50   l=-7.63    
+J=1575  S=135  E=50   l=-2.64    
+J=1576  S=0    E=51   l=-7.63    
+J=1577  S=996  E=51   l=0.00     
+J=1578  S=0    E=52   l=-7.63    
+J=1579  S=472  E=52   l=-3.71    
+J=1580  S=0    E=53   l=-5.43    
+J=1581  S=178  E=53   l=0.00     
+J=1582  S=198  E=53   l=-1.79    
+J=1583  S=255  E=53   l=-1.61    
+J=1584  S=256  E=53   l=-0.69    
+J=1585  S=359  E=53   l=0.00     
+J=1586  S=366  E=53   l=-1.10    
+J=1587  S=820  E=53   l=0.00     
+J=1588  S=1152 E=53   l=-0.69    
+J=1589  S=1237 E=53   l=-3.04    
+J=1590  S=0    E=54   l=-7.63    
+J=1591  S=50   E=54   l=0.00     
+J=1592  S=0    E=55   l=-6.94    
+J=1593  S=2    E=55   l=-5.15    
+J=1594  S=898  E=55   l=0.00     
+J=1595  S=0    E=56   l=-6.02    
+J=1596  S=3    E=56   l=-3.56    
+J=1597  S=17   E=56   l=0.00     
+J=1598  S=312  E=56   l=-1.10    
+J=1599  S=497  E=56   l=0.00     
+J=1600  S=1090 E=56   l=-2.20    
+J=1601  S=0    E=57   l=-6.24    
+J=1602  S=6    E=57   l=-0.69    
+J=1603  S=290  E=57   l=-0.69    
+J=1604  S=409  E=57   l=0.00     
+J=1605  S=894  E=57   l=0.00     
+J=1606  S=0    E=58   l=-7.63    
+J=1607  S=222  E=58   l=0.00     
+J=1608  S=0    E=59   l=-7.63    
+J=1609  S=919  E=59   l=0.00     
+J=1610  S=0    E=60   l=-7.63    
+J=1611  S=283  E=60   l=0.00     
+J=1612  S=0    E=61   l=-6.24    
+J=1613  S=451  E=61   l=0.00     
+J=1614  S=464  E=61   l=-1.39    
+J=1615  S=466  E=61   l=-1.10    
+J=1616  S=547  E=61   l=0.00     
+J=1617  S=0    E=62   l=-7.63    
+J=1618  S=2    E=62   l=-5.15    
+J=1619  S=0    E=63   l=-7.63    
+J=1620  S=2    E=63   l=-5.15    
+J=1621  S=0    E=64   l=-7.63    
+J=1622  S=1092 E=64   l=-4.17    
+J=1623  S=0    E=65   l=-7.63    
+J=1624  S=580  E=65   l=0.00     
+J=1625  S=0    E=66   l=-7.63    
+J=1626  S=1126 E=66   l=0.00     
+J=1627  S=0    E=67   l=-7.63    
+J=1628  S=1092 E=67   l=-4.17    
+J=1629  S=0    E=68   l=-7.63    
+J=1630  S=2    E=68   l=-5.15    
+J=1631  S=0    E=69   l=-7.63    
+J=1632  S=675  E=69   l=-1.61    
+J=1633  S=0    E=70   l=-7.63    
+J=1634  S=865  E=70   l=-2.56    
+J=1635  S=0    E=71   l=-7.63    
+J=1636  S=484  E=71   l=0.00     
+J=1637  S=0    E=72   l=-6.94    
+J=1638  S=572  E=72   l=0.00     
+J=1639  S=0    E=73   l=-7.63    
+J=1640  S=1043 E=73   l=0.00     
+J=1641  S=0    E=74   l=-7.63    
+J=1642  S=129  E=74   l=0.00     
+J=1643  S=0    E=75   l=-7.63    
+J=1644  S=472  E=75   l=-3.71    
+J=1645  S=0    E=76   l=-6.53    
+J=1646  S=1092 E=76   l=-3.08    
+J=1647  S=0    E=77   l=-7.63    
+J=1648  S=2    E=77   l=-5.15    
+J=1649  S=0    E=78   l=-6.94    
+J=1650  S=2    E=78   l=-5.15    
+J=1651  S=524  E=78   l=0.00     
+J=1652  S=0    E=79   l=-7.63    
+J=1653  S=961  E=79   l=0.00     
+J=1654  S=0    E=80   l=-7.63    
+J=1655  S=576  E=80   l=-0.69    
+J=1656  S=0    E=81   l=-7.63    
+J=1657  S=294  E=81   l=-1.95    
+J=1658  S=0    E=82   l=-7.63    
+J=1659  S=1186 E=82   l=-2.48    
+J=1660  S=0    E=83   l=-7.63    
+J=1661  S=7    E=83   l=-1.10    
+J=1662  S=0    E=84   l=-7.63    
+J=1663  S=781  E=84   l=0.00     
+J=1664  S=0    E=85   l=-6.94    
+J=1665  S=293  E=85   l=0.00     
+J=1666  S=330  E=85   l=0.00     
+J=1667  S=0    E=86   l=-7.63    
+J=1668  S=198  E=86   l=-1.79    
+J=1669  S=0    E=87   l=-7.63    
+J=1670  S=54   E=87   l=0.00     
+J=1671  S=0    E=88   l=-7.63    
+J=1672  S=319  E=88   l=0.00     
+J=1673  S=0    E=89   l=-7.63    
+J=1674  S=346  E=89   l=-0.69    
+J=1675  S=0    E=90   l=-6.94    
+J=1676  S=505  E=90   l=0.00     
+J=1677  S=1109 E=90   l=-1.39    
+J=1678  S=0    E=91   l=-7.63    
+J=1679  S=796  E=91   l=0.00     
+J=1680  S=0    E=92   l=-7.63    
+J=1681  S=2    E=92   l=-5.15    
+J=1682  S=0    E=93   l=-7.63    
+J=1683  S=998  E=93   l=-0.69    
+J=1684  S=0    E=94   l=-7.63    
+J=1685  S=541  E=94   l=0.00     
+J=1686  S=0    E=95   l=-7.63    
+J=1687  S=493  E=95   l=0.00     
+J=1688  S=0    E=96   l=-7.63    
+J=1689  S=2    E=96   l=-5.15    
+J=1690  S=0    E=97   l=-7.63    
+J=1691  S=831  E=97   l=-0.69    
+J=1692  S=0    E=98   l=-7.63    
+J=1693  S=1095 E=98   l=-2.20    
+J=1694  S=0    E=99   l=-7.63    
+J=1695  S=1090 E=99   l=-2.20    
+J=1696  S=0    E=100  l=-7.63    
+J=1697  S=403  E=100  l=0.00     
+J=1698  S=0    E=101  l=-7.63    
+J=1699  S=46   E=101  l=0.00     
+J=1700  S=0    E=102  l=-7.63    
+J=1701  S=712  E=102  l=0.00     
+J=1702  S=0    E=103  l=-7.63    
+J=1703  S=3    E=103  l=-3.56    
+J=1704  S=0    E=104  l=-7.63    
+J=1705  S=3    E=104  l=-3.56    
+J=1706  S=0    E=105  l=-7.63    
+J=1707  S=975  E=105  l=-1.10    
+J=1708  S=0    E=106  l=-7.63    
+J=1709  S=89   E=106  l=0.00     
+J=1710  S=0    E=107  l=-6.94    
+J=1711  S=1070 E=107  l=0.00     
+J=1712  S=1092 E=107  l=-4.17    
+J=1713  S=0    E=108  l=-7.63    
+J=1714  S=1132 E=108  l=0.00     
+J=1715  S=0    E=109  l=-7.63    
+J=1716  S=485  E=109  l=-0.69    
+J=1717  S=0    E=110  l=-7.63    
+J=1718  S=1219 E=110  l=0.00     
+J=1719  S=0    E=111  l=-7.63    
+J=1720  S=860  E=111  l=0.00     
+J=1721  S=0    E=112  l=-7.63    
+J=1722  S=1023 E=112  l=-2.77    
+J=1723  S=0    E=113  l=-7.63    
+J=1724  S=801  E=113  l=0.00     
+J=1725  S=0    E=114  l=-7.63    
+J=1726  S=105  E=114  l=0.00     
+J=1727  S=0    E=115  l=-7.63    
+J=1728  S=804  E=115  l=-2.08    
+J=1729  S=0    E=116  l=-6.53    
+J=1730  S=412  E=116  l=-0.69    
+J=1731  S=759  E=116  l=0.00     
+J=1732  S=1010 E=116  l=0.00     
+J=1733  S=0    E=117  l=-7.63    
+J=1734  S=135  E=117  l=-2.64    
+J=1735  S=0    E=118  l=-7.63    
+J=1736  S=591  E=118  l=0.00     
+J=1737  S=0    E=119  l=-7.63    
+J=1738  S=760  E=119  l=-1.10    
+J=1739  S=0    E=120  l=-7.63    
+J=1740  S=675  E=120  l=-1.61    
+J=1741  S=0    E=121  l=-7.63    
+J=1742  S=1062 E=121  l=0.00     
+J=1743  S=0    E=122  l=-7.63    
+J=1744  S=645  E=122  l=0.00     
+J=1745  S=0    E=123  l=-7.63    
+J=1746  S=868  E=123  l=-3.43    
+J=1747  S=0    E=124  l=-7.63    
+J=1748  S=2    E=124  l=-5.15    
+J=1749  S=0    E=125  l=-7.63    
+J=1750  S=170  E=125  l=-0.69    
+J=1751  S=0    E=126  l=-7.63    
+J=1752  S=756  E=126  l=0.00     
+J=1753  S=0    E=127  l=-7.63    
+J=1754  S=1092 E=127  l=-4.17    
+J=1755  S=0    E=128  l=-7.63    
+J=1756  S=1041 E=128  l=-0.69    
+J=1757  S=0    E=129  l=-7.63    
+J=1758  S=956  E=129  l=-1.10    
+J=1759  S=0    E=130  l=-7.63    
+J=1760  S=342  E=130  l=-0.69    
+J=1761  S=0    E=131  l=-6.02    
+J=1762  S=48   E=131  l=-1.95    
+J=1763  S=584  E=131  l=-2.40    
+J=1764  S=955  E=131  l=-1.10    
+J=1765  S=956  E=131  l=-0.41    
+J=1766  S=0    E=132  l=-7.63    
+J=1767  S=957  E=132  l=0.00     
+J=1768  S=0    E=133  l=-7.63    
+J=1769  S=602  E=133  l=0.00     
+J=1770  S=0    E=134  l=-7.63    
+J=1771  S=200  E=134  l=0.00     
+J=1772  S=0    E=135  l=-4.99    
+J=1773  S=2    E=135  l=-4.05    
+J=1774  S=22   E=135  l=-0.69    
+J=1775  S=369  E=135  l=-1.10    
+J=1776  S=735  E=135  l=0.00     
+J=1777  S=815  E=135  l=0.00     
+J=1778  S=851  E=135  l=-1.39    
+J=1779  S=875  E=135  l=0.00     
+J=1780  S=1104 E=135  l=0.00     
+J=1781  S=1172 E=135  l=0.00     
+J=1782  S=1193 E=135  l=0.00     
+J=1783  S=1215 E=135  l=0.00     
+J=1784  S=1237 E=135  l=-3.04    
+J=1785  S=0    E=136  l=-7.63    
+J=1786  S=1248 E=136  l=0.00     
+J=1787  S=0    E=137  l=-7.63    
+J=1788  S=291  E=137  l=0.00     
+J=1789  S=0    E=138  l=-7.63    
+J=1790  S=1185 E=138  l=-2.40    
+J=1791  S=0    E=139  l=-7.63    
+J=1792  S=69   E=139  l=0.00     
+J=1793  S=0    E=140  l=-7.63    
+J=1794  S=814  E=140  l=0.00     
+J=1795  S=0    E=141  l=-7.63    
+J=1796  S=553  E=141  l=0.00     
+J=1797  S=0    E=142  l=-7.63    
+J=1798  S=790  E=142  l=-2.48    
+J=1799  S=0    E=143  l=-6.53    
+J=1800  S=2    E=143  l=-5.15    
+J=1801  S=790  E=143  l=-1.79    
+J=1802  S=0    E=144  l=-7.63    
+J=1803  S=848  E=144  l=0.00     
+J=1804  S=0    E=145  l=-7.63    
+J=1805  S=310  E=145  l=0.00     
+J=1806  S=0    E=146  l=-7.63    
+J=1807  S=1171 E=146  l=0.00     
+J=1808  S=0    E=147  l=-7.63    
+J=1809  S=865  E=147  l=-2.56    
+J=1810  S=0    E=148  l=-7.63    
+J=1811  S=139  E=148  l=0.00     
+J=1812  S=0    E=149  l=-7.63    
+J=1813  S=980  E=149  l=0.00     
+J=1814  S=0    E=150  l=-7.63    
+J=1815  S=402  E=150  l=0.00     
+J=1816  S=0    E=151  l=-7.63    
+J=1817  S=1088 E=151  l=0.00     
+J=1818  S=0    E=152  l=-7.63    
+J=1819  S=719  E=152  l=0.00     
+J=1820  S=0    E=153  l=-7.63    
+J=1821  S=1090 E=153  l=-2.20    
+J=1822  S=0    E=154  l=-7.63    
+J=1823  S=1092 E=154  l=-4.17    
+J=1824  S=0    E=155  l=-6.94    
+J=1825  S=510  E=155  l=0.00     
+J=1826  S=1135 E=155  l=-0.69    
+J=1827  S=0    E=156  l=-7.63    
+J=1828  S=2    E=156  l=-5.15    
+J=1829  S=0    E=157  l=-7.63    
+J=1830  S=2    E=157  l=-5.15    
+J=1831  S=0    E=158  l=-7.63    
+J=1832  S=1168 E=158  l=0.00     
+J=1833  S=0    E=159  l=-7.63    
+J=1834  S=1092 E=159  l=-4.17    
+J=1835  S=0    E=160  l=-7.63    
+J=1836  S=263  E=160  l=-3.00    
+J=1837  S=0    E=161  l=-7.63    
+J=1838  S=170  E=161  l=-0.69    
+J=1839  S=0    E=162  l=-6.24    
+J=1840  S=2    E=162  l=-5.15    
+J=1841  S=844  E=162  l=-1.10    
+J=1842  S=851  E=162  l=-0.69    
+J=1843  S=0    E=163  l=-7.63    
+J=1844  S=766  E=163  l=0.00     
+J=1845  S=0    E=164  l=-7.63    
+J=1846  S=1052 E=164  l=-1.10    
+J=1847  S=0    E=165  l=-7.63    
+J=1848  S=1008 E=165  l=-0.69    
+J=1849  S=0    E=166  l=-7.63    
+J=1850  S=56   E=166  l=-1.61    
+J=1851  S=0    E=167  l=-6.94    
+J=1852  S=1021 E=167  l=-0.41    
+J=1853  S=0    E=168  l=-6.94    
+J=1854  S=472  E=168  l=-3.71    
+J=1855  S=948  E=168  l=0.00     
+J=1856  S=0    E=169  l=-7.63    
+J=1857  S=1046 E=169  l=0.00     
+J=1858  S=0    E=170  l=-6.94    
+J=1859  S=829  E=170  l=0.00     
+J=1860  S=1237 E=170  l=-3.04    
+J=1861  S=0    E=171  l=-7.63    
+J=1862  S=2    E=171  l=-5.15    
+J=1863  S=0    E=172  l=-7.63    
+J=1864  S=1217 E=172  l=0.00     
+J=1865  S=0    E=173  l=-7.63    
+J=1866  S=523  E=173  l=0.00     
+J=1867  S=0    E=174  l=-7.63    
+J=1868  S=1186 E=174  l=-2.48    
+J=1869  S=0    E=175  l=-7.63    
+J=1870  S=11   E=175  l=0.00     
+J=1871  S=0    E=176  l=-7.63    
+J=1872  S=663  E=176  l=-0.69    
+J=1873  S=0    E=177  l=-7.63    
+J=1874  S=663  E=177  l=-0.69    
+J=1875  S=0    E=178  l=-7.63    
+J=1876  S=2    E=178  l=-5.15    
+J=1877  S=0    E=179  l=-7.63    
+J=1878  S=709  E=179  l=0.00     
+J=1879  S=0    E=180  l=-7.63    
+J=1880  S=2    E=180  l=-5.15    
+J=1881  S=0    E=181  l=-7.63    
+J=1882  S=2    E=181  l=-5.15    
+J=1883  S=0    E=182  l=-6.94    
+J=1884  S=1092 E=182  l=-4.17    
+J=1885  S=1240 E=182  l=0.00     
+J=1886  S=0    E=183  l=-7.63    
+J=1887  S=830  E=183  l=0.00     
+J=1888  S=0    E=184  l=-6.94    
+J=1889  S=818  E=184  l=0.00     
+J=1890  S=1242 E=184  l=-0.69    
+J=1891  S=0    E=185  l=-7.63    
+J=1892  S=1092 E=185  l=-4.17    
+J=1893  S=0    E=186  l=-7.63    
+J=1894  S=987  E=186  l=-0.69    
+J=1895  S=0    E=187  l=-7.63    
+J=1896  S=472  E=187  l=-3.71    
+J=1897  S=0    E=188  l=-7.63    
+J=1898  S=1237 E=188  l=-3.04    
+J=1899  S=0    E=189  l=-7.63    
+J=1900  S=535  E=189  l=-0.69    
+J=1901  S=0    E=190  l=-7.63    
+J=1902  S=299  E=190  l=-1.79    
+J=1903  S=0    E=191  l=-7.63    
+J=1904  S=3    E=191  l=-3.56    
+J=1905  S=0    E=192  l=-7.63    
+J=1906  S=1074 E=192  l=0.00     
+J=1907  S=0    E=193  l=-7.63    
+J=1908  S=421  E=193  l=0.00     
+J=1909  S=0    E=194  l=-7.63    
+J=1910  S=25   E=194  l=0.00     
+J=1911  S=0    E=195  l=-7.63    
+J=1912  S=131  E=195  l=-1.61    
+J=1913  S=0    E=196  l=-7.63    
+J=1914  S=189  E=196  l=0.00     
+J=1915  S=0    E=197  l=-7.63    
+J=1916  S=790  E=197  l=-2.48    
+J=1917  S=0    E=198  l=-5.84    
+J=1918  S=188  E=198  l=0.00     
+J=1919  S=231  E=198  l=0.00     
+J=1920  S=527  E=198  l=0.00     
+J=1921  S=940  E=198  l=0.00     
+J=1922  S=984  E=198  l=0.00     
+J=1923  S=0    E=199  l=-7.63    
+J=1924  S=1178 E=199  l=0.00     
+J=1925  S=0    E=200  l=-7.63    
+J=1926  S=631  E=200  l=0.00     
+J=1927  S=0    E=201  l=-7.63    
+J=1928  S=931  E=201  l=0.00     
+J=1929  S=0    E=202  l=-7.63    
+J=1930  S=2    E=202  l=-5.15    
+J=1931  S=0    E=203  l=-7.63    
+J=1932  S=638  E=203  l=0.00     
+J=1933  S=0    E=204  l=-7.63    
+J=1934  S=224  E=204  l=0.00     
+J=1935  S=0    E=205  l=-7.63    
+J=1936  S=1135 E=205  l=-0.69    
+J=1937  S=0    E=206  l=-7.63    
+J=1938  S=439  E=206  l=0.00     
+J=1939  S=0    E=207  l=-7.63    
+J=1940  S=458  E=207  l=0.00     
+J=1941  S=0    E=208  l=-7.63    
+J=1942  S=1039 E=208  l=0.00     
+J=1943  S=0    E=209  l=-7.63    
+J=1944  S=135  E=209  l=-2.64    
+J=1945  S=0    E=210  l=-7.63    
+J=1946  S=300  E=210  l=0.00     
+J=1947  S=0    E=211  l=-7.63    
+J=1948  S=227  E=211  l=0.00     
+J=1949  S=0    E=212  l=-7.63    
+J=1950  S=3    E=212  l=-3.56    
+J=1951  S=0    E=213  l=-7.63    
+J=1952  S=584  E=213  l=-2.40    
+J=1953  S=0    E=214  l=-7.63    
+J=1954  S=1091 E=214  l=0.00     
+J=1955  S=0    E=215  l=-7.63    
+J=1956  S=2    E=215  l=-5.15    
+J=1957  S=0    E=216  l=-7.63    
+J=1958  S=1186 E=216  l=-2.48    
+J=1959  S=0    E=217  l=-7.63    
+J=1960  S=472  E=217  l=-3.71    
+J=1961  S=0    E=218  l=-7.63    
+J=1962  S=463  E=218  l=0.00     
+J=1963  S=0    E=219  l=-7.63    
+J=1964  S=868  E=219  l=-3.43    
+J=1965  S=0    E=220  l=-7.63    
+J=1966  S=2    E=220  l=-5.15    
+J=1967  S=0    E=221  l=-7.63    
+J=1968  S=1223 E=221  l=0.00     
+J=1969  S=0    E=222  l=-7.63    
+J=1970  S=2    E=222  l=-5.15    
+J=1971  S=0    E=223  l=-6.53    
+J=1972  S=294  E=223  l=-1.95    
+J=1973  S=480  E=223  l=0.00     
+J=1974  S=643  E=223  l=0.00     
+J=1975  S=0    E=224  l=-7.63    
+J=1976  S=238  E=224  l=-2.20    
+J=1977  S=0    E=225  l=-7.63    
+J=1978  S=1052 E=225  l=-1.10    
+J=1979  S=0    E=226  l=-7.63    
+J=1980  S=713  E=226  l=0.00     
+J=1981  S=0    E=227  l=-7.63    
+J=1982  S=1079 E=227  l=0.00     
+J=1983  S=0    E=228  l=-7.63    
+J=1984  S=938  E=228  l=0.00     
+J=1985  S=0    E=229  l=-7.63    
+J=1986  S=3    E=229  l=-3.56    
+J=1987  S=0    E=230  l=-7.63    
+J=1988  S=2    E=230  l=-5.15    
+J=1989  S=0    E=231  l=-7.63    
+J=1990  S=706  E=231  l=0.00     
+J=1991  S=0    E=232  l=-7.63    
+J=1992  S=1185 E=232  l=-2.40    
+J=1993  S=0    E=233  l=-7.63    
+J=1994  S=1237 E=233  l=-3.04    
+J=1995  S=0    E=234  l=-6.94    
+J=1996  S=640  E=234  l=0.00     
+J=1997  S=1257 E=234  l=0.00     
+J=1998  S=0    E=235  l=-7.63    
+J=1999  S=289  E=235  l=0.00     
+J=2000  S=0    E=236  l=-7.63    
+J=2001  S=472  E=236  l=-3.71    
+J=2002  S=0    E=237  l=-7.63    
+J=2003  S=1118 E=237  l=0.00     
+J=2004  S=0    E=238  l=-5.43    
+J=2005  S=29   E=238  l=0.00     
+J=2006  S=101  E=238  l=0.00     
+J=2007  S=203  E=238  l=0.00     
+J=2008  S=782  E=238  l=0.00     
+J=2009  S=862  E=238  l=0.00     
+J=2010  S=1090 E=238  l=-2.20    
+J=2011  S=1128 E=238  l=0.00     
+J=2012  S=1161 E=238  l=0.00     
+J=2013  S=1224 E=238  l=0.00     
+J=2014  S=0    E=239  l=-7.63    
+J=2015  S=1092 E=239  l=-4.17    
+J=2016  S=0    E=240  l=-7.63    
+J=2017  S=472  E=240  l=-3.71    
+J=2018  S=0    E=241  l=-7.63    
+J=2019  S=3    E=241  l=-3.56    
+J=2020  S=0    E=242  l=-7.63    
+J=2021  S=722  E=242  l=0.00     
+J=2022  S=0    E=243  l=-7.63    
+J=2023  S=1092 E=243  l=-4.17    
+J=2024  S=0    E=244  l=-7.63    
+J=2025  S=807  E=244  l=0.00     
+J=2026  S=0    E=245  l=-7.63    
+J=2027  S=472  E=245  l=-3.71    
+J=2028  S=0    E=246  l=-7.63    
+J=2029  S=334  E=246  l=0.00     
+J=2030  S=0    E=247  l=-7.63    
+J=2031  S=2    E=247  l=-5.15    
+J=2032  S=0    E=248  l=-7.63    
+J=2033  S=723  E=248  l=0.00     
+J=2034  S=0    E=249  l=-7.63    
+J=2035  S=1042 E=249  l=0.00     
+J=2036  S=0    E=250  l=-7.63    
+J=2037  S=1092 E=250  l=-4.17    
+J=2038  S=0    E=251  l=-6.94    
+J=2039  S=598  E=251  l=0.00     
+J=2040  S=1085 E=251  l=-0.69    
+J=2041  S=0    E=252  l=-7.63    
+J=2042  S=1246 E=252  l=-0.69    
+J=2043  S=0    E=253  l=-7.63    
+J=2044  S=2    E=253  l=-5.15    
+J=2045  S=0    E=254  l=-7.63    
+J=2046  S=546  E=254  l=0.00     
+J=2047  S=0    E=255  l=-6.02    
+J=2048  S=2    E=255  l=-5.15    
+J=2049  S=3    E=255  l=-3.56    
+J=2050  S=80   E=255  l=0.00     
+J=2051  S=132  E=255  l=0.00     
+J=2052  S=1027 E=255  l=0.00     
+J=2053  S=0    E=256  l=-6.94    
+J=2054  S=140  E=256  l=0.00     
+J=2055  S=1149 E=256  l=0.00     
+J=2056  S=0    E=257  l=-7.63    
+J=2057  S=755  E=257  l=-0.69    
+J=2058  S=0    E=258  l=-7.63    
+J=2059  S=162  E=258  l=-1.39    
+J=2060  S=0    E=259  l=-7.63    
+J=2061  S=865  E=259  l=-2.56    
+J=2062  S=0    E=260  l=-7.63    
+J=2063  S=2    E=260  l=-5.15    
+J=2064  S=0    E=261  l=-7.63    
+J=2065  S=472  E=261  l=-3.71    
+J=2066  S=0    E=262  l=-7.63    
+J=2067  S=884  E=262  l=0.00     
+J=2068  S=0    E=263  l=-4.63    
+J=2069  S=2    E=263  l=-4.05    
+J=2070  S=3    E=263  l=-2.86    
+J=2071  S=7    E=263  l=-1.10    
+J=2072  S=18   E=263  l=0.00     
+J=2073  S=53   E=263  l=-2.20    
+J=2074  S=90   E=263  l=-0.69    
+J=2075  S=197  E=263  l=0.00     
+J=2076  S=228  E=263  l=0.00     
+J=2077  S=255  E=263  l=-1.61    
+J=2078  S=348  E=263  l=0.00     
+J=2079  S=619  E=263  l=0.00     
+J=2080  S=644  E=263  l=-0.69    
+J=2081  S=936  E=263  l=0.00     
+J=2082  S=1053 E=263  l=0.00     
+J=2083  S=1117 E=263  l=0.00     
+J=2084  S=1237 E=263  l=-2.35    
+J=2085  S=0    E=264  l=-6.94    
+J=2086  S=2    E=264  l=-5.15    
+J=2087  S=699  E=264  l=-1.10    
+J=2088  S=0    E=265  l=-7.63    
+J=2089  S=256  E=265  l=-0.69    
+J=2090  S=0    E=266  l=-7.63    
+J=2091  S=299  E=266  l=-1.79    
+J=2092  S=0    E=267  l=-7.63    
+J=2093  S=1136 E=267  l=0.00     
+J=2094  S=0    E=268  l=-7.63    
+J=2095  S=446  E=268  l=0.00     
+J=2096  S=0    E=269  l=-7.63    
+J=2097  S=1092 E=269  l=-4.17    
+J=2098  S=0    E=270  l=-7.63    
+J=2099  S=383  E=270  l=-0.69    
+J=2100  S=0    E=271  l=-7.63    
+J=2101  S=3    E=271  l=-3.56    
+J=2102  S=0    E=272  l=-7.63    
+J=2103  S=396  E=272  l=0.00     
+J=2104  S=0    E=273  l=-7.63    
+J=2105  S=311  E=273  l=0.00     
+J=2106  S=0    E=274  l=-7.63    
+J=2107  S=1029 E=274  l=0.00     
+J=2108  S=0    E=275  l=-6.53    
+J=2109  S=108  E=275  l=0.00     
+J=2110  S=438  E=275  l=-1.39    
+J=2111  S=561  E=275  l=0.00     
+J=2112  S=0    E=276  l=-7.63    
+J=2113  S=632  E=276  l=0.00     
+J=2114  S=0    E=277  l=-7.63    
+J=2115  S=350  E=277  l=0.00     
+J=2116  S=0    E=278  l=-7.63    
+J=2117  S=457  E=278  l=-0.69    
+J=2118  S=0    E=279  l=-7.63    
+J=2119  S=53   E=279  l=-2.20    
+J=2120  S=0    E=280  l=-7.63    
+J=2121  S=601  E=280  l=-1.79    
+J=2122  S=0    E=281  l=-7.63    
+J=2123  S=472  E=281  l=-3.71    
+J=2124  S=0    E=282  l=-7.63    
+J=2125  S=1195 E=282  l=0.00     
+J=2126  S=0    E=283  l=-7.63    
+J=2127  S=2    E=283  l=-5.15    
+J=2128  S=0    E=284  l=-6.94    
+J=2129  S=3    E=284  l=-3.56    
+J=2130  S=420  E=284  l=0.00     
+J=2131  S=0    E=285  l=-7.63    
+J=2132  S=223  E=285  l=-1.10    
+J=2133  S=0    E=286  l=-6.94    
+J=2134  S=1092 E=286  l=-4.17    
+J=2135  S=1185 E=286  l=-2.40    
+J=2136  S=0    E=287  l=-7.63    
+J=2137  S=700  E=287  l=0.00     
+J=2138  S=0    E=288  l=-7.63    
+J=2139  S=1078 E=288  l=0.00     
+J=2140  S=0    E=289  l=-7.63    
+J=2141  S=472  E=289  l=-3.71    
+J=2142  S=0    E=290  l=-6.94    
+J=2143  S=2    E=290  l=-5.15    
+J=2144  S=965  E=290  l=0.00     
+J=2145  S=0    E=291  l=-7.63    
+J=2146  S=422  E=291  l=0.00     
+J=2147  S=0    E=292  l=-7.63    
+J=2148  S=213  E=292  l=0.00     
+J=2149  S=0    E=293  l=-7.63    
+J=2150  S=201  E=293  l=0.00     
+J=2151  S=0    E=294  l=-5.68    
+J=2152  S=3    E=294  l=-3.56    
+J=2153  S=157  E=294  l=0.00     
+J=2154  S=159  E=294  l=0.00     
+J=2155  S=314  E=294  l=0.00     
+J=2156  S=590  E=294  l=0.00     
+J=2157  S=990  E=294  l=-1.39    
+J=2158  S=1177 E=294  l=0.00     
+J=2159  S=0    E=295  l=-6.94    
+J=2160  S=900  E=295  l=0.00     
+J=2161  S=1218 E=295  l=0.00     
+J=2162  S=0    E=296  l=-6.94    
+J=2163  S=352  E=296  l=-0.69    
+J=2164  S=1237 E=296  l=-3.04    
+J=2165  S=0    E=297  l=-7.63    
+J=2166  S=425  E=297  l=0.00     
+J=2167  S=0    E=298  l=-7.63    
+J=2168  S=764  E=298  l=0.00     
+J=2169  S=0    E=299  l=-5.84    
+J=2170  S=78   E=299  l=-0.69    
+J=2171  S=295  E=299  l=-0.69    
+J=2172  S=454  E=299  l=0.00     
+J=2173  S=473  E=299  l=0.00     
+J=2174  S=512  E=299  l=-0.69    
+J=2175  S=786  E=299  l=0.00     
+J=2176  S=0    E=300  l=-7.63    
+J=2177  S=732  E=300  l=-0.69    
+J=2178  S=0    E=301  l=-7.63    
+J=2179  S=1071 E=301  l=-0.69    
+J=2180  S=0    E=302  l=-7.63    
+J=2181  S=432  E=302  l=0.00     
+J=2182  S=0    E=303  l=-7.63    
+J=2183  S=853  E=303  l=0.00     
+J=2184  S=0    E=304  l=-7.63    
+J=2185  S=2    E=304  l=-5.15    
+J=2186  S=0    E=305  l=-7.63    
+J=2187  S=292  E=305  l=0.00     
+J=2188  S=0    E=306  l=-7.63    
+J=2189  S=173  E=306  l=0.00     
+J=2190  S=0    E=307  l=-7.63    
+J=2191  S=3    E=307  l=-3.56    
+J=2192  S=0    E=308  l=-7.63    
+J=2193  S=472  E=308  l=-3.71    
+J=2194  S=0    E=309  l=-7.63    
+J=2195  S=1185 E=309  l=-2.40    
+J=2196  S=0    E=310  l=-7.63    
+J=2197  S=666  E=310  l=0.00     
+J=2198  S=0    E=311  l=-7.63    
+J=2199  S=2    E=311  l=-5.15    
+J=2200  S=0    E=312  l=-6.53    
+J=2201  S=2    E=312  l=-5.15    
+J=2202  S=616  E=312  l=0.00     
+J=2203  S=1023 E=312  l=-2.77    
+J=2204  S=0    E=313  l=-7.63    
+J=2205  S=354  E=313  l=-0.69    
+J=2206  S=0    E=314  l=-7.63    
+J=2207  S=2    E=314  l=-5.15    
+J=2208  S=0    E=315  l=-7.63    
+J=2209  S=2    E=315  l=-5.15    
+J=2210  S=0    E=316  l=-7.63    
+J=2211  S=1186 E=316  l=-2.48    
+J=2212  S=0    E=317  l=-7.63    
+J=2213  S=1085 E=317  l=-0.69    
+J=2214  S=0    E=318  l=-7.63    
+J=2215  S=539  E=318  l=0.00     
+J=2216  S=0    E=319  l=-7.63    
+J=2217  S=1185 E=319  l=-2.40    
+J=2218  S=0    E=320  l=-7.63    
+J=2219  S=947  E=320  l=0.00     
+J=2220  S=0    E=321  l=-7.63    
+J=2221  S=812  E=321  l=0.00     
+J=2222  S=0    E=322  l=-7.63    
+J=2223  S=570  E=322  l=0.00     
+J=2224  S=0    E=323  l=-7.63    
+J=2225  S=879  E=323  l=0.00     
+J=2226  S=0    E=324  l=-7.63    
+J=2227  S=181  E=324  l=0.00     
+J=2228  S=0    E=325  l=-7.63    
+J=2229  S=147  E=325  l=0.00     
+J=2230  S=0    E=326  l=-7.63    
+J=2231  S=1185 E=326  l=-2.40    
+J=2232  S=0    E=327  l=-7.63    
+J=2233  S=135  E=327  l=-2.64    
+J=2234  S=0    E=328  l=-7.63    
+J=2235  S=135  E=328  l=-2.64    
+J=2236  S=0    E=329  l=-7.63    
+J=2237  S=584  E=329  l=-2.40    
+J=2238  S=0    E=330  l=-7.63    
+J=2239  S=946  E=330  l=-0.69    
+J=2240  S=0    E=331  l=-7.63    
+J=2241  S=606  E=331  l=0.00     
+J=2242  S=0    E=332  l=-7.63    
+J=2243  S=681  E=332  l=0.00     
+J=2244  S=0    E=333  l=-7.63    
+J=2245  S=551  E=333  l=0.00     
+J=2246  S=0    E=334  l=-7.63    
+J=2247  S=33   E=334  l=0.00     
+J=2248  S=0    E=335  l=-7.63    
+J=2249  S=1090 E=335  l=-2.20    
+J=2250  S=0    E=336  l=-7.63    
+J=2251  S=883  E=336  l=0.00     
+J=2252  S=0    E=337  l=-7.63    
+J=2253  S=472  E=337  l=-3.71    
+J=2254  S=0    E=338  l=-5.68    
+J=2255  S=416  E=338  l=0.00     
+J=2256  S=418  E=338  l=-0.69    
+J=2257  S=419  E=338  l=0.00     
+J=2258  S=1020 E=338  l=-0.29    
+J=2259  S=0    E=339  l=-7.63    
+J=2260  S=135  E=339  l=-2.64    
+J=2261  S=0    E=340  l=-7.63    
+J=2262  S=245  E=340  l=0.00     
+J=2263  S=0    E=341  l=-7.63    
+J=2264  S=2    E=341  l=-5.15    
+J=2265  S=0    E=342  l=-6.94    
+J=2266  S=447  E=342  l=-0.69    
+J=2267  S=777  E=342  l=0.00     
+J=2268  S=0    E=343  l=-7.63    
+J=2269  S=179  E=343  l=0.00     
+J=2270  S=0    E=344  l=-7.63    
+J=2271  S=165  E=344  l=0.00     
+J=2272  S=0    E=345  l=-6.94    
+J=2273  S=68   E=345  l=0.00     
+J=2274  S=790  E=345  l=-2.48    
+J=2275  S=0    E=346  l=-6.94    
+J=2276  S=280  E=346  l=0.00     
+J=2277  S=428  E=346  l=0.00     
+J=2278  S=0    E=347  l=-7.63    
+J=2279  S=1092 E=347  l=-4.17    
+J=2280  S=0    E=348  l=-7.63    
+J=2281  S=1237 E=348  l=-3.04    
+J=2282  S=0    E=349  l=-7.63    
+J=2283  S=303  E=349  l=0.00     
+J=2284  S=0    E=350  l=-7.63    
+J=2285  S=466  E=350  l=-1.10    
+J=2286  S=0    E=351  l=-7.63    
+J=2287  S=107  E=351  l=-0.69    
+J=2288  S=0    E=352  l=-6.94    
+J=2289  S=14   E=352  l=0.00     
+J=2290  S=625  E=352  l=0.00     
+J=2291  S=0    E=353  l=-7.63    
+J=2292  S=252  E=353  l=0.00     
+J=2293  S=0    E=354  l=-6.94    
+J=2294  S=383  E=354  l=-0.69    
+J=2295  S=891  E=354  l=-0.69    
+J=2296  S=0    E=355  l=-6.94    
+J=2297  S=959  E=355  l=-0.69    
+J=2298  S=1129 E=355  l=0.00     
+J=2299  S=0    E=356  l=-7.63    
+J=2300  S=822  E=356  l=0.00     
+J=2301  S=0    E=357  l=-7.63    
+J=2302  S=2    E=357  l=-5.15    
+J=2303  S=0    E=358  l=-7.63    
+J=2304  S=729  E=358  l=0.00     
+J=2305  S=0    E=359  l=-7.63    
+J=2306  S=2    E=359  l=-5.15    
+J=2307  S=0    E=360  l=-7.63    
+J=2308  S=647  E=360  l=0.00     
+J=2309  S=0    E=361  l=-7.63    
+J=2310  S=1083 E=361  l=-1.10    
+J=2311  S=0    E=362  l=-7.63    
+J=2312  S=486  E=362  l=0.00     
+J=2313  S=0    E=363  l=-7.63    
+J=2314  S=790  E=363  l=-2.48    
+J=2315  S=0    E=364  l=-7.63    
+J=2316  S=531  E=364  l=-1.10    
+J=2317  S=0    E=365  l=-7.63    
+J=2318  S=2    E=365  l=-5.15    
+J=2319  S=0    E=366  l=-6.53    
+J=2320  S=155  E=366  l=0.00     
+J=2321  S=624  E=366  l=0.00     
+J=2322  S=0    E=367  l=-7.63    
+J=2323  S=975  E=367  l=-1.10    
+J=2324  S=0    E=368  l=-7.63    
+J=2325  S=56   E=368  l=-1.61    
+J=2326  S=0    E=369  l=-6.53    
+J=2327  S=534  E=369  l=-1.39    
+J=2328  S=627  E=369  l=0.00     
+J=2329  S=870  E=369  l=0.00     
+J=2330  S=0    E=370  l=-7.63    
+J=2331  S=34   E=370  l=0.00     
+J=2332  S=0    E=371  l=-7.63    
+J=2333  S=997  E=371  l=-0.69    
+J=2334  S=0    E=372  l=-7.63    
+J=2335  S=2    E=372  l=-5.15    
+J=2336  S=0    E=373  l=-7.63    
+J=2337  S=1159 E=373  l=0.00     
+J=2338  S=0    E=374  l=-6.94    
+J=2339  S=797  E=374  l=0.00     
+J=2340  S=868  E=374  l=-3.43    
+J=2341  S=0    E=375  l=-7.63    
+J=2342  S=2    E=375  l=-5.15    
+J=2343  S=0    E=376  l=-7.63    
+J=2344  S=1092 E=376  l=-4.17    
+J=2345  S=0    E=377  l=-7.63    
+J=2346  S=771  E=377  l=-1.61    
+J=2347  S=0    E=378  l=-7.63    
+J=2348  S=427  E=378  l=0.00     
+J=2349  S=0    E=379  l=-7.63    
+J=2350  S=583  E=379  l=0.00     
+J=2351  S=0    E=380  l=-7.63    
+J=2352  S=1160 E=380  l=0.00     
+J=2353  S=0    E=381  l=-6.94    
+J=2354  S=193  E=381  l=0.00     
+J=2355  S=868  E=381  l=-3.43    
+J=2356  S=0    E=382  l=-7.63    
+J=2357  S=855  E=382  l=0.00     
+J=2358  S=0    E=383  l=-6.94    
+J=2359  S=967  E=383  l=0.00     
+J=2360  S=1243 E=383  l=0.00     
+J=2361  S=0    E=384  l=-7.63    
+J=2362  S=1035 E=384  l=0.00     
+J=2363  S=0    E=385  l=-7.63    
+J=2364  S=933  E=385  l=0.00     
+J=2365  S=0    E=386  l=-7.63    
+J=2366  S=64   E=386  l=0.00     
+J=2367  S=0    E=387  l=-7.63    
+J=2368  S=2    E=387  l=-5.15    
+J=2369  S=0    E=388  l=-7.63    
+J=2370  S=1092 E=388  l=-4.17    
+J=2371  S=0    E=389  l=-7.63    
+J=2372  S=1038 E=389  l=0.00     
+J=2373  S=0    E=390  l=-7.63    
+J=2374  S=182  E=390  l=-0.69    
+J=2375  S=0    E=391  l=-6.94    
+J=2376  S=251  E=391  l=0.00     
+J=2377  S=0    E=392  l=-6.94    
+J=2378  S=904  E=392  l=0.00     
+J=2379  S=1012 E=392  l=0.00     
+J=2380  S=0    E=393  l=-7.63    
+J=2381  S=804  E=393  l=-2.08    
+J=2382  S=0    E=394  l=-7.63    
+J=2383  S=545  E=394  l=0.00     
+J=2384  S=0    E=395  l=-7.63    
+J=2385  S=1112 E=395  l=0.00     
+J=2386  S=0    E=396  l=-7.63    
+J=2387  S=113  E=396  l=0.00     
+J=2388  S=0    E=397  l=-6.53    
+J=2389  S=266  E=397  l=0.00     
+J=2390  S=302  E=397  l=0.00     
+J=2391  S=389  E=397  l=0.00     
+J=2392  S=0    E=398  l=-7.63    
+J=2393  S=2    E=398  l=-5.15    
+J=2394  S=0    E=399  l=-6.94    
+J=2395  S=2    E=399  l=-5.15    
+J=2396  S=1210 E=399  l=0.00     
+J=2397  S=0    E=400  l=-7.63    
+J=2398  S=61   E=400  l=-1.39    
+J=2399  S=0    E=401  l=-6.94    
+J=2400  S=1122 E=401  l=-0.41    
+J=2401  S=0    E=402  l=-7.63    
+J=2402  S=973  E=402  l=0.00     
+J=2403  S=0    E=403  l=-7.63    
+J=2404  S=633  E=403  l=0.00     
+J=2405  S=0    E=404  l=-7.63    
+J=2406  S=53   E=404  l=-2.20    
+J=2407  S=0    E=405  l=-6.94    
+J=2408  S=868  E=405  l=-3.43    
+J=2409  S=1023 E=405  l=-2.77    
+J=2410  S=0    E=406  l=-7.63    
+J=2411  S=90   E=406  l=-0.69    
+J=2412  S=0    E=407  l=-7.63    
+J=2413  S=2    E=407  l=-5.15    
+J=2414  S=0    E=408  l=-7.63    
+J=2415  S=1102 E=408  l=0.00     
+J=2416  S=0    E=409  l=-7.63    
+J=2417  S=78   E=409  l=-0.69    
+J=2418  S=0    E=410  l=-7.63    
+J=2419  S=1023 E=410  l=-2.77    
+J=2420  S=0    E=411  l=-7.63    
+J=2421  S=761  E=411  l=-0.69    
+J=2422  S=0    E=412  l=-6.94    
+J=2423  S=2    E=412  l=-5.15    
+J=2424  S=901  E=412  l=0.00     
+J=2425  S=0    E=413  l=-7.63    
+J=2426  S=336  E=413  l=0.00     
+J=2427  S=0    E=414  l=-7.63    
+J=2428  S=262  E=414  l=0.00     
+J=2429  S=0    E=415  l=-7.63    
+J=2430  S=2    E=415  l=-5.15    
+J=2431  S=0    E=416  l=-6.94    
+J=2432  S=118  E=416  l=0.00     
+J=2433  S=869  E=416  l=0.00     
+J=2434  S=0    E=417  l=-7.63    
+J=2435  S=168  E=417  l=-0.69    
+J=2436  S=0    E=418  l=-6.94    
+J=2437  S=659  E=418  l=-0.69    
+J=2438  S=966  E=418  l=-0.69    
+J=2439  S=0    E=419  l=-7.63    
+J=2440  S=1037 E=419  l=0.00     
+J=2441  S=0    E=420  l=-7.63    
+J=2442  S=85   E=420  l=-0.69    
+J=2443  S=0    E=421  l=-7.63    
+J=2444  S=1144 E=421  l=0.00     
+J=2445  S=0    E=422  l=-7.63    
+J=2446  S=2    E=422  l=-5.15    
+J=2447  S=0    E=423  l=-7.63    
+J=2448  S=2    E=423  l=-5.15    
+J=2449  S=0    E=424  l=-7.63    
+J=2450  S=1092 E=424  l=-4.17    
+J=2451  S=0    E=425  l=-7.63    
+J=2452  S=1092 E=425  l=-4.17    
+J=2453  S=0    E=426  l=-7.63    
+J=2454  S=949  E=426  l=0.00     
+J=2455  S=0    E=427  l=-7.63    
+J=2456  S=865  E=427  l=-2.56    
+J=2457  S=0    E=428  l=-7.63    
+J=2458  S=531  E=428  l=-1.10    
+J=2459  S=0    E=429  l=-7.63    
+J=2460  S=871  E=429  l=0.00     
+J=2461  S=0    E=430  l=-7.63    
+J=2462  S=535  E=430  l=-0.69    
+J=2463  S=0    E=431  l=-7.63    
+J=2464  S=872  E=431  l=0.00     
+J=2465  S=0    E=432  l=-7.63    
+J=2466  S=686  E=432  l=-1.39    
+J=2467  S=0    E=433  l=-7.63    
+J=2468  S=472  E=433  l=-3.71    
+J=2469  S=0    E=434  l=-7.63    
+J=2470  S=800  E=434  l=0.00     
+J=2471  S=0    E=435  l=-7.63    
+J=2472  S=472  E=435  l=-3.71    
+J=2473  S=0    E=436  l=-7.63    
+J=2474  S=53   E=436  l=-2.20    
+J=2475  S=0    E=437  l=-7.63    
+J=2476  S=734  E=437  l=0.00     
+J=2477  S=0    E=438  l=-6.24    
+J=2478  S=48   E=438  l=-1.25    
+J=2479  S=464  E=438  l=-1.39    
+J=2480  S=556  E=438  l=0.00     
+J=2481  S=0    E=439  l=-7.63    
+J=2482  S=1022 E=439  l=-0.69    
+J=2483  S=0    E=440  l=-7.63    
+J=2484  S=888  E=440  l=-2.20    
+J=2485  S=0    E=441  l=-7.63    
+J=2486  S=263  E=441  l=-3.00    
+J=2487  S=0    E=442  l=-7.63    
+J=2488  S=1090 E=442  l=-2.20    
+J=2489  S=0    E=443  l=-7.63    
+J=2490  S=2    E=443  l=-5.15    
+J=2491  S=0    E=444  l=-7.63    
+J=2492  S=1186 E=444  l=-2.48    
+J=2493  S=0    E=445  l=-7.63    
+J=2494  S=790  E=445  l=-2.48    
+J=2495  S=0    E=446  l=-7.63    
+J=2496  S=512  E=446  l=-0.69    
+J=2497  S=0    E=447  l=-6.94    
+J=2498  S=48   E=447  l=-1.95    
+J=2499  S=502  E=447  l=-0.69    
+J=2500  S=0    E=448  l=-7.63    
+J=2501  S=856  E=448  l=0.00     
+J=2502  S=0    E=449  l=-7.63    
+J=2503  S=811  E=449  l=-1.39    
+J=2504  S=0    E=450  l=-7.63    
+J=2505  S=475  E=450  l=-0.69    
+J=2506  S=0    E=451  l=-7.63    
+J=2507  S=250  E=451  l=0.00     
+J=2508  S=0    E=452  l=-6.24    
+J=2509  S=2    E=452  l=-5.15    
+J=2510  S=121  E=452  l=0.00     
+J=2511  S=263  E=452  l=-3.00    
+J=2512  S=501  E=452  l=-0.69    
+J=2513  S=0    E=453  l=-7.63    
+J=2514  S=472  E=453  l=-3.71    
+J=2515  S=0    E=454  l=-7.63    
+J=2516  S=405  E=454  l=-0.69    
+J=2517  S=0    E=455  l=-7.63    
+J=2518  S=263  E=455  l=-3.00    
+J=2519  S=0    E=456  l=-7.63    
+J=2520  S=501  E=456  l=-0.69    
+J=2521  S=0    E=457  l=-6.94    
+J=2522  S=823  E=457  l=0.00     
+J=2523  S=943  E=457  l=0.00     
+J=2524  S=0    E=458  l=-7.63    
+J=2525  S=537  E=458  l=0.00     
+J=2526  S=0    E=459  l=-6.94    
+J=2527  S=488  E=459  l=0.00     
+J=2528  S=868  E=459  l=-3.43    
+J=2529  S=0    E=460  l=-7.63    
+J=2530  S=145  E=460  l=0.00     
+J=2531  S=0    E=461  l=-7.63    
+J=2532  S=2    E=461  l=-5.15    
+J=2533  S=0    E=462  l=-7.63    
+J=2534  S=325  E=462  l=0.00     
+J=2535  S=0    E=463  l=-7.63    
+J=2536  S=53   E=463  l=-2.20    
+J=2537  S=0    E=464  l=-6.24    
+J=2538  S=96   E=464  l=0.00     
+J=2539  S=180  E=464  l=0.00     
+J=2540  S=586  E=464  l=0.00     
+J=2541  S=852  E=464  l=0.00     
+J=2542  S=0    E=465  l=-7.63    
+J=2543  S=779  E=465  l=0.00     
+J=2544  S=0    E=466  l=-6.53    
+J=2545  S=273  E=466  l=0.00     
+J=2546  S=312  E=466  l=-1.10    
+J=2547  S=390  E=466  l=0.00     
+J=2548  S=0    E=467  l=-7.63    
+J=2549  S=916  E=467  l=0.00     
+J=2550  S=0    E=468  l=-6.94    
+J=2551  S=214  E=468  l=0.00     
+J=2552  S=323  E=468  l=0.00     
+J=2553  S=0    E=469  l=-7.63    
+J=2554  S=997  E=469  l=-0.69    
+J=2555  S=0    E=470  l=-7.63    
+J=2556  S=893  E=470  l=0.00     
+J=2557  S=0    E=471  l=-7.63    
+J=2558  S=888  E=471  l=-2.20    
+J=2559  S=0    E=472  l=-3.91    
+J=2560  S=2    E=472  l=-3.54    
+J=2561  S=3    E=472  l=-3.56    
+J=2562  S=26   E=472  l=0.00     
+J=2563  S=55   E=472  l=-0.69    
+J=2564  S=226  E=472  l=0.00     
+J=2565  S=238  E=472  l=-2.20    
+J=2566  S=263  E=472  l=-3.00    
+J=2567  S=275  E=472  l=-1.10    
+J=2568  S=284  E=472  l=-0.69    
+J=2569  S=312  E=472  l=-1.10    
+J=2570  S=317  E=472  l=0.00     
+J=2571  S=340  E=472  l=0.00     
+J=2572  S=366  E=472  l=-0.41    
+J=2573  S=388  E=472  l=0.00     
+J=2574  S=490  E=472  l=0.00     
+J=2575  S=522  E=472  l=-0.69    
+J=2576  S=564  E=472  l=0.00     
+J=2577  S=587  E=472  l=0.00     
+J=2578  S=658  E=472  l=-1.10    
+J=2579  S=684  E=472  l=0.00     
+J=2580  S=685  E=472  l=0.00     
+J=2581  S=714  E=472  l=0.00     
+J=2582  S=720  E=472  l=0.00     
+J=2583  S=750  E=472  l=0.00     
+J=2584  S=783  E=472  l=-0.69    
+J=2585  S=843  E=472  l=-0.69    
+J=2586  S=859  E=472  l=0.00     
+J=2587  S=895  E=472  l=0.00     
+J=2588  S=910  E=472  l=0.00     
+J=2589  S=923  E=472  l=0.00     
+J=2590  S=969  E=472  l=0.00     
+J=2591  S=1005 E=472  l=0.00     
+J=2592  S=1023 E=472  l=-2.77    
+J=2593  S=1072 E=472  l=0.00     
+J=2594  S=1142 E=472  l=0.00     
+J=2595  S=1150 E=472  l=-0.69    
+J=2596  S=0    E=473  l=-7.63    
+J=2597  S=2    E=473  l=-5.15    
+J=2598  S=0    E=474  l=-7.63    
+J=2599  S=131  E=474  l=-1.61    
+J=2600  S=0    E=475  l=-6.94    
+J=2601  S=2    E=475  l=-5.15    
+J=2602  S=225  E=475  l=0.00     
+J=2603  S=0    E=476  l=-7.63    
+J=2604  S=1092 E=476  l=-4.17    
+J=2605  S=0    E=477  l=-7.63    
+J=2606  S=271  E=477  l=0.00     
+J=2607  S=0    E=478  l=-7.63    
+J=2608  S=637  E=478  l=0.00     
+J=2609  S=0    E=479  l=-7.63    
+J=2610  S=238  E=479  l=-2.20    
+J=2611  S=0    E=480  l=-7.63    
+J=2612  S=876  E=480  l=0.00     
+J=2613  S=0    E=481  l=-7.63    
+J=2614  S=672  E=481  l=0.00     
+J=2615  S=0    E=482  l=-7.63    
+J=2616  S=135  E=482  l=-2.64    
+J=2617  S=0    E=483  l=-7.63    
+J=2618  S=407  E=483  l=0.00     
+J=2619  S=0    E=484  l=-7.63    
+J=2620  S=630  E=484  l=0.00     
+J=2621  S=0    E=485  l=-6.94    
+J=2622  S=804  E=485  l=-2.08    
+J=2623  S=1237 E=485  l=-3.04    
+J=2624  S=0    E=486  l=-7.63    
+J=2625  S=423  E=486  l=0.00     
+J=2626  S=0    E=487  l=-7.63    
+J=2627  S=661  E=487  l=0.00     
+J=2628  S=0    E=488  l=-7.63    
+J=2629  S=2    E=488  l=-5.15    
+J=2630  S=0    E=489  l=-7.63    
+J=2631  S=1116 E=489  l=0.00     
+J=2632  S=0    E=490  l=-7.63    
+J=2633  S=1156 E=490  l=0.00     
+J=2634  S=0    E=491  l=-7.63    
+J=2635  S=259  E=491  l=0.00     
+J=2636  S=0    E=492  l=-7.63    
+J=2637  S=185  E=492  l=0.00     
+J=2638  S=0    E=493  l=-7.63    
+J=2639  S=196  E=493  l=0.00     
+J=2640  S=0    E=494  l=-7.63    
+J=2641  S=441  E=494  l=0.00     
+J=2642  S=0    E=495  l=-7.63    
+J=2643  S=868  E=495  l=-3.43    
+J=2644  S=0    E=496  l=-7.63    
+J=2645  S=680  E=496  l=0.00     
+J=2646  S=0    E=497  l=-7.63    
+J=2647  S=601  E=497  l=-1.79    
+J=2648  S=0    E=498  l=-7.63    
+J=2649  S=787  E=498  l=0.00     
+J=2650  S=0    E=499  l=-7.63    
+J=2651  S=134  E=499  l=0.00     
+J=2652  S=0    E=500  l=-7.63    
+J=2653  S=891  E=500  l=-0.69    
+J=2654  S=0    E=501  l=-6.94    
+J=2655  S=381  E=501  l=-0.69    
+J=2656  S=502  E=501  l=-0.69    
+J=2657  S=0    E=502  l=-6.94    
+J=2658  S=48   E=502  l=-1.95    
+J=2659  S=438  E=502  l=-1.39    
+J=2660  S=0    E=503  l=-7.63    
+J=2661  S=2    E=503  l=-5.15    
+J=2662  S=0    E=504  l=-7.63    
+J=2663  S=617  E=504  l=0.00     
+J=2664  S=0    E=505  l=-7.63    
+J=2665  S=1174 E=505  l=-0.69    
+J=2666  S=0    E=506  l=-7.63    
+J=2667  S=865  E=506  l=-2.56    
+J=2668  S=0    E=507  l=-7.63    
+J=2669  S=12   E=507  l=-1.61    
+J=2670  S=0    E=508  l=-7.63    
+J=2671  S=9    E=508  l=0.00     
+J=2672  S=0    E=509  l=-6.53    
+J=2673  S=81   E=509  l=0.00     
+J=2674  S=335  E=509  l=0.00     
+J=2675  S=1261 E=509  l=0.00     
+J=2676  S=0    E=510  l=-7.63    
+J=2677  S=205  E=510  l=0.00     
+J=2678  S=0    E=511  l=-7.63    
+J=2679  S=109  E=511  l=0.00     
+J=2680  S=0    E=512  l=-6.94    
+J=2681  S=795  E=512  l=0.00     
+J=2682  S=1014 E=512  l=0.00     
+J=2683  S=0    E=513  l=-7.63    
+J=2684  S=1113 E=513  l=0.00     
+J=2685  S=0    E=514  l=-7.63    
+J=2686  S=57   E=514  l=-1.39    
+J=2687  S=0    E=515  l=-7.63    
+J=2688  S=757  E=515  l=-1.10    
+J=2689  S=0    E=516  l=-7.63    
+J=2690  S=1092 E=516  l=-4.17    
+J=2691  S=0    E=517  l=-6.94    
+J=2692  S=2    E=517  l=-5.15    
+J=2693  S=492  E=517  l=0.00     
+J=2694  S=0    E=518  l=-7.63    
+J=2695  S=508  E=518  l=0.00     
+J=2696  S=0    E=519  l=-7.63    
+J=2697  S=793  E=519  l=0.00     
+J=2698  S=0    E=520  l=-7.63    
+J=2699  S=146  E=520  l=0.00     
+J=2700  S=0    E=521  l=-7.63    
+J=2701  S=568  E=521  l=0.00     
+J=2702  S=0    E=522  l=-6.94    
+J=2703  S=686  E=522  l=-0.69    
+J=2704  S=0    E=523  l=-7.63    
+J=2705  S=2    E=523  l=-5.15    
+J=2706  S=0    E=524  l=-7.63    
+J=2707  S=1073 E=524  l=-0.69    
+J=2708  S=0    E=525  l=-7.63    
+J=2709  S=2    E=525  l=-5.15    
+J=2710  S=0    E=526  l=-7.63    
+J=2711  S=1186 E=526  l=-2.48    
+J=2712  S=0    E=527  l=-7.63    
+J=2713  S=2    E=527  l=-5.15    
+J=2714  S=0    E=528  l=-7.63    
+J=2715  S=888  E=528  l=-2.20    
+J=2716  S=0    E=529  l=-7.63    
+J=2717  S=880  E=529  l=0.00     
+J=2718  S=0    E=530  l=-7.63    
+J=2719  S=2    E=530  l=-5.15    
+J=2720  S=0    E=531  l=-6.53    
+J=2721  S=2    E=531  l=-5.15    
+J=2722  S=263  E=531  l=-3.00    
+J=2723  S=1186 E=531  l=-2.48    
+J=2724  S=0    E=532  l=-7.63    
+J=2725  S=1185 E=532  l=-2.40    
+J=2726  S=0    E=533  l=-7.63    
+J=2727  S=1185 E=533  l=-2.40    
+J=2728  S=0    E=534  l=-6.24    
+J=2729  S=2    E=534  l=-5.15    
+J=2730  S=401  E=534  l=-0.69    
+J=2731  S=584  E=534  l=-2.40    
+J=2732  S=1081 E=534  l=0.00     
+J=2733  S=0    E=535  l=-6.94    
+J=2734  S=757  E=535  l=-1.10    
+J=2735  S=1092 E=535  l=-4.17    
+J=2736  S=0    E=536  l=-7.63    
+J=2737  S=42   E=536  l=0.00     
+J=2738  S=0    E=537  l=-7.63    
+J=2739  S=993  E=537  l=-0.69    
+J=2740  S=0    E=538  l=-7.63    
+J=2741  S=378  E=538  l=0.00     
+J=2742  S=0    E=539  l=-7.63    
+J=2743  S=696  E=539  l=0.00     
+J=2744  S=0    E=540  l=-7.63    
+J=2745  S=1251 E=540  l=0.00     
+J=2746  S=0    E=541  l=-7.63    
+J=2747  S=1092 E=541  l=-4.17    
+J=2748  S=0    E=542  l=-6.94    
+J=2749  S=2    E=542  l=-5.15    
+J=2750  S=804  E=542  l=-2.08    
+J=2751  S=0    E=543  l=-7.63    
+J=2752  S=2    E=543  l=-5.15    
+J=2753  S=0    E=544  l=-7.63    
+J=2754  S=1237 E=544  l=-3.04    
+J=2755  S=0    E=545  l=-7.63    
+J=2756  S=362  E=545  l=0.00     
+J=2757  S=0    E=546  l=-7.63    
+J=2758  S=609  E=546  l=0.00     
+J=2759  S=0    E=547  l=-7.63    
+J=2760  S=569  E=547  l=0.00     
+J=2761  S=0    E=548  l=-7.63    
+J=2762  S=1092 E=548  l=-4.17    
+J=2763  S=0    E=549  l=-7.63    
+J=2764  S=363  E=549  l=0.00     
+J=2765  S=0    E=550  l=-7.63    
+J=2766  S=12   E=550  l=-1.61    
+J=2767  S=0    E=551  l=-7.63    
+J=2768  S=2    E=551  l=-5.15    
+J=2769  S=0    E=552  l=-7.63    
+J=2770  S=190  E=552  l=0.00     
+J=2771  S=0    E=553  l=-7.63    
+J=2772  S=1047 E=553  l=-1.39    
+J=2773  S=0    E=554  l=-7.63    
+J=2774  S=1211 E=554  l=0.00     
+J=2775  S=0    E=555  l=-7.63    
+J=2776  S=844  E=555  l=-1.10    
+J=2777  S=0    E=556  l=-7.63    
+J=2778  S=3    E=556  l=-3.56    
+J=2779  S=0    E=557  l=-7.63    
+J=2780  S=1170 E=557  l=0.00     
+J=2781  S=0    E=558  l=-7.63    
+J=2782  S=61   E=558  l=-1.39    
+J=2783  S=0    E=559  l=-7.63    
+J=2784  S=353  E=559  l=0.00     
+J=2785  S=0    E=560  l=-7.63    
+J=2786  S=1263 E=560  l=0.00     
+J=2787  S=0    E=561  l=-7.63    
+J=2788  S=4    E=561  l=-1.39    
+J=2789  S=0    E=562  l=-7.63    
+J=2790  S=999  E=562  l=0.00     
+J=2791  S=0    E=563  l=-6.53    
+J=2792  S=494  E=563  l=0.00     
+J=2793  S=1109 E=563  l=-0.69    
+J=2794  S=0    E=564  l=-7.63    
+J=2795  S=509  E=564  l=-1.10    
+J=2796  S=0    E=565  l=-7.63    
+J=2797  S=238  E=565  l=-2.20    
+J=2798  S=0    E=566  l=-7.63    
+J=2799  S=472  E=566  l=-3.71    
+J=2800  S=0    E=567  l=-7.63    
+J=2801  S=1092 E=567  l=-4.17    
+J=2802  S=0    E=568  l=-7.63    
+J=2803  S=120  E=568  l=0.00     
+J=2804  S=0    E=569  l=-7.63    
+J=2805  S=53   E=569  l=-2.20    
+J=2806  S=0    E=570  l=-7.63    
+J=2807  S=1204 E=570  l=0.00     
+J=2808  S=0    E=571  l=-7.63    
+J=2809  S=3    E=571  l=-3.56    
+J=2810  S=0    E=572  l=-6.94    
+J=2811  S=2    E=572  l=-5.15    
+J=2812  S=375  E=572  l=0.00     
+J=2813  S=0    E=573  l=-7.63    
+J=2814  S=1250 E=573  l=0.00     
+J=2815  S=0    E=574  l=-7.63    
+J=2816  S=849  E=574  l=0.00     
+J=2817  S=0    E=575  l=-7.63    
+J=2818  S=538  E=575  l=0.00     
+J=2819  S=0    E=576  l=-6.94    
+J=2820  S=1071 E=576  l=-0.69    
+J=2821  S=1229 E=576  l=0.00     
+J=2822  S=0    E=577  l=-7.63    
+J=2823  S=865  E=577  l=-2.56    
+J=2824  S=0    E=578  l=-7.63    
+J=2825  S=2    E=578  l=-5.15    
+J=2826  S=0    E=579  l=-7.63    
+J=2827  S=790  E=579  l=-2.48    
+J=2828  S=0    E=580  l=-7.63    
+J=2829  S=1258 E=580  l=-0.69    
+J=2830  S=0    E=581  l=-7.63    
+J=2831  S=1047 E=581  l=-1.39    
+J=2832  S=0    E=582  l=-7.63    
+J=2833  S=263  E=582  l=-3.00    
+J=2834  S=0    E=583  l=-7.63    
+J=2835  S=355  E=583  l=-0.69    
+J=2836  S=0    E=584  l=-5.23    
+J=2837  S=2    E=584  l=-5.15    
+J=2838  S=47   E=584  l=-1.10    
+J=2839  S=176  E=584  l=0.00     
+J=2840  S=241  E=584  l=0.00     
+J=2841  S=397  E=584  l=-1.10    
+J=2842  S=478  E=584  l=0.00     
+J=2843  S=776  E=584  l=0.00     
+J=2844  S=888  E=584  l=-2.20    
+J=2845  S=988  E=584  l=0.00     
+J=2846  S=1147 E=584  l=0.00     
+J=2847  S=1256 E=584  l=0.00     
+J=2848  S=0    E=585  l=-7.63    
+J=2849  S=899  E=585  l=-0.69    
+J=2850  S=0    E=586  l=-7.63    
+J=2851  S=247  E=586  l=0.00     
+J=2852  S=0    E=587  l=-7.63    
+J=2853  S=974  E=587  l=0.00     
+J=2854  S=0    E=588  l=-7.63    
+J=2855  S=313  E=588  l=0.00     
+J=2856  S=0    E=589  l=-7.63    
+J=2857  S=993  E=589  l=-0.69    
+J=2858  S=0    E=590  l=-7.63    
+J=2859  S=688  E=590  l=0.00     
+J=2860  S=0    E=591  l=-7.63    
+J=2861  S=1092 E=591  l=-4.17    
+J=2862  S=0    E=592  l=-7.63    
+J=2863  S=1097 E=592  l=0.00     
+J=2864  S=0    E=593  l=-7.63    
+J=2865  S=868  E=593  l=-3.43    
+J=2866  S=0    E=594  l=-7.63    
+J=2867  S=771  E=594  l=-1.61    
+J=2868  S=0    E=595  l=-7.63    
+J=2869  S=481  E=595  l=0.00     
+J=2870  S=0    E=596  l=-7.63    
+J=2871  S=592  E=596  l=0.00     
+J=2872  S=0    E=597  l=-7.63    
+J=2873  S=1249 E=597  l=0.00     
+J=2874  S=0    E=598  l=-7.63    
+J=2875  S=239  E=598  l=0.00     
+J=2876  S=0    E=599  l=-7.63    
+J=2877  S=2    E=599  l=-5.15    
+J=2878  S=0    E=600  l=-7.63    
+J=2879  S=1092 E=600  l=-4.17    
+J=2880  S=0    E=601  l=-5.84    
+J=2881  S=2    E=601  l=-5.15    
+J=2882  S=208  E=601  l=0.00     
+J=2883  S=703  E=601  l=0.00     
+J=2884  S=868  E=601  l=-3.43    
+J=2885  S=1103 E=601  l=0.00     
+J=2886  S=1199 E=601  l=-0.69    
+J=2887  S=0    E=602  l=-7.63    
+J=2888  S=13   E=602  l=0.00     
+J=2889  S=0    E=603  l=-7.63    
+J=2890  S=989  E=603  l=0.00     
+J=2891  S=0    E=604  l=-7.63    
+J=2892  S=436  E=604  l=0.00     
+J=2893  S=0    E=605  l=-7.63    
+J=2894  S=1201 E=605  l=0.00     
+J=2895  S=0    E=606  l=-7.63    
+J=2896  S=434  E=606  l=0.00     
+J=2897  S=0    E=607  l=-7.63    
+J=2898  S=1082 E=607  l=0.00     
+J=2899  S=0    E=608  l=-7.63    
+J=2900  S=519  E=608  l=0.00     
+J=2901  S=0    E=609  l=-7.63    
+J=2902  S=2    E=609  l=-5.15    
+J=2903  S=0    E=610  l=-7.63    
+J=2904  S=1092 E=610  l=-4.17    
+J=2905  S=0    E=611  l=-7.63    
+J=2906  S=472  E=611  l=-3.71    
+J=2907  S=0    E=612  l=-7.63    
+J=2908  S=942  E=612  l=0.00     
+J=2909  S=0    E=613  l=-7.63    
+J=2910  S=1083 E=613  l=-1.10    
+J=2911  S=0    E=614  l=-7.63    
+J=2912  S=28   E=614  l=0.00     
+J=2913  S=0    E=615  l=-7.63    
+J=2914  S=472  E=615  l=-3.71    
+J=2915  S=0    E=616  l=-7.63    
+J=2916  S=752  E=616  l=0.00     
+J=2917  S=0    E=617  l=-7.63    
+J=2918  S=394  E=617  l=0.00     
+J=2919  S=0    E=618  l=-7.63    
+J=2920  S=509  E=618  l=-1.10    
+J=2921  S=0    E=619  l=-7.63    
+J=2922  S=8    E=619  l=0.00     
+J=2923  S=0    E=620  l=-7.63    
+J=2924  S=771  E=620  l=-1.61    
+J=2925  S=0    E=621  l=-7.63    
+J=2926  S=49   E=621  l=0.00     
+J=2927  S=0    E=622  l=-7.63    
+J=2928  S=534  E=622  l=-1.39    
+J=2929  S=0    E=623  l=-7.63    
+J=2930  S=1009 E=623  l=0.00     
+J=2931  S=0    E=624  l=-7.63    
+J=2932  S=1166 E=624  l=0.00     
+J=2933  S=0    E=625  l=-7.63    
+J=2934  S=687  E=625  l=0.00     
+J=2935  S=0    E=626  l=-7.63    
+J=2936  S=844  E=626  l=-1.10    
+J=2937  S=0    E=627  l=-7.63    
+J=2938  S=99   E=627  l=0.00     
+J=2939  S=0    E=628  l=-6.94    
+J=2940  S=2    E=628  l=-5.15    
+J=2941  S=253  E=628  l=0.00     
+J=2942  S=0    E=629  l=-7.63    
+J=2943  S=238  E=629  l=-2.20    
+J=2944  S=0    E=630  l=-7.63    
+J=2945  S=148  E=630  l=0.00     
+J=2946  S=0    E=631  l=-7.63    
+J=2947  S=2    E=631  l=-5.15    
+J=2948  S=0    E=632  l=-7.63    
+J=2949  S=281  E=632  l=0.00     
+J=2950  S=0    E=633  l=-7.63    
+J=2951  S=1262 E=633  l=0.00     
+J=2952  S=0    E=634  l=-7.63    
+J=2953  S=982  E=634  l=0.00     
+J=2954  S=0    E=635  l=-7.63    
+J=2955  S=983  E=635  l=0.00     
+J=2956  S=0    E=636  l=-7.63    
+J=2957  S=760  E=636  l=-1.10    
+J=2958  S=0    E=637  l=-7.63    
+J=2959  S=465  E=637  l=0.00     
+J=2960  S=0    E=638  l=-7.63    
+J=2961  S=1214 E=638  l=0.00     
+J=2962  S=0    E=639  l=-7.63    
+J=2963  S=405  E=639  l=-0.69    
+J=2964  S=0    E=640  l=-7.63    
+J=2965  S=261  E=640  l=0.00     
+J=2966  S=0    E=641  l=-7.63    
+J=2967  S=172  E=641  l=0.00     
+J=2968  S=0    E=642  l=-7.63    
+J=2969  S=865  E=642  l=-2.56    
+J=2970  S=0    E=643  l=-7.63    
+J=2971  S=2    E=643  l=-5.15    
+J=2972  S=0    E=644  l=-6.94    
+J=2973  S=3    E=644  l=-3.56    
+J=2974  S=915  E=644  l=0.00     
+J=2975  S=0    E=645  l=-7.63    
+J=2976  S=263  E=645  l=-3.00    
+J=2977  S=0    E=646  l=-7.63    
+J=2978  S=1001 E=646  l=0.00     
+J=2979  S=0    E=647  l=-7.63    
+J=2980  S=698  E=647  l=0.00     
+J=2981  S=0    E=648  l=-7.63    
+J=2982  S=1073 E=648  l=-0.69    
+J=2983  S=0    E=649  l=-7.63    
+J=2984  S=1092 E=649  l=-4.17    
+J=2985  S=0    E=650  l=-7.63    
+J=2986  S=761  E=650  l=-0.69    
+J=2987  S=0    E=651  l=-7.63    
+J=2988  S=186  E=651  l=0.00     
+J=2989  S=0    E=652  l=-7.63    
+J=2990  S=472  E=652  l=-3.71    
+J=2991  S=0    E=653  l=-6.94    
+J=2992  S=1092 E=653  l=-3.48    
+J=2993  S=0    E=654  l=-7.63    
+J=2994  S=22   E=654  l=-0.69    
+J=2995  S=0    E=655  l=-7.63    
+J=2996  S=653  E=655  l=-0.69    
+J=2997  S=0    E=656  l=-7.63    
+J=2998  S=1092 E=656  l=-4.17    
+J=2999  S=0    E=657  l=-7.63    
+J=3000  S=1232 E=657  l=-0.69    
+J=3001  S=0    E=658  l=-6.53    
+J=3002  S=238  E=658  l=-2.20    
+J=3003  S=543  E=658  l=0.00     
+J=3004  S=854  E=658  l=0.00     
+J=3005  S=0    E=659  l=-6.94    
+J=3006  S=415  E=659  l=0.00     
+J=3007  S=623  E=659  l=0.00     
+J=3008  S=0    E=660  l=-7.63    
+J=3009  S=899  E=660  l=-0.69    
+J=3010  S=0    E=661  l=-7.63    
+J=3011  S=1064 E=661  l=-0.69    
+J=3012  S=0    E=662  l=-7.63    
+J=3013  S=149  E=662  l=0.00     
+J=3014  S=0    E=663  l=-6.94    
+J=3015  S=2    E=663  l=-5.15    
+J=3016  S=868  E=663  l=-3.43    
+J=3017  S=0    E=664  l=-6.94    
+J=3018  S=487  E=664  l=0.00     
+J=3019  S=918  E=664  l=0.00     
+J=3020  S=0    E=665  l=-7.63    
+J=3021  S=1092 E=665  l=-4.17    
+J=3022  S=0    E=666  l=-7.63    
+J=3023  S=1016 E=666  l=0.00     
+J=3024  S=0    E=667  l=-7.63    
+J=3025  S=2    E=667  l=-5.15    
+J=3026  S=0    E=668  l=-7.63    
+J=3027  S=472  E=668  l=-3.71    
+J=3028  S=0    E=669  l=-7.63    
+J=3029  S=810  E=669  l=0.00     
+J=3030  S=0    E=670  l=-7.63    
+J=3031  S=868  E=670  l=-3.43    
+J=3032  S=0    E=671  l=-7.63    
+J=3033  S=990  E=671  l=-1.39    
+J=3034  S=0    E=672  l=-7.63    
+J=3035  S=746  E=672  l=0.00     
+J=3036  S=0    E=673  l=-7.63    
+J=3037  S=790  E=673  l=-2.48    
+J=3038  S=0    E=674  l=-7.63    
+J=3039  S=373  E=674  l=0.00     
+J=3040  S=0    E=675  l=-6.02    
+J=3041  S=354  E=675  l=-0.69    
+J=3042  S=805  E=675  l=-0.69    
+J=3043  S=1090 E=675  l=-1.50    
+J=3044  S=1096 E=675  l=-0.69    
+J=3045  S=0    E=676  l=-7.63    
+J=3046  S=5    E=676  l=0.00     
+J=3047  S=0    E=677  l=-7.63    
+J=3048  S=601  E=677  l=-1.79    
+J=3049  S=0    E=678  l=-7.63    
+J=3050  S=2    E=678  l=-5.15    
+J=3051  S=0    E=679  l=-7.63    
+J=3052  S=607  E=679  l=0.00     
+J=3053  S=0    E=680  l=-7.63    
+J=3054  S=309  E=680  l=0.00     
+J=3055  S=0    E=681  l=-7.63    
+J=3056  S=1002 E=681  l=0.00     
+J=3057  S=0    E=682  l=-7.63    
+J=3058  S=198  E=682  l=-1.79    
+J=3059  S=0    E=683  l=-7.63    
+J=3060  S=217  E=683  l=0.00     
+J=3061  S=0    E=684  l=-7.63    
+J=3062  S=868  E=684  l=-3.43    
+J=3063  S=0    E=685  l=-7.63    
+J=3064  S=447  E=685  l=-0.69    
+J=3065  S=0    E=686  l=-6.24    
+J=3066  S=2    E=686  l=-5.15    
+J=3067  S=137  E=686  l=0.00     
+J=3068  S=220  E=686  l=0.00     
+J=3069  S=868  E=686  l=-3.43    
+J=3070  S=0    E=687  l=-7.63    
+J=3071  S=30   E=687  l=0.00     
+J=3072  S=0    E=688  l=-7.63    
+J=3073  S=3    E=688  l=-3.56    
+J=3074  S=0    E=689  l=-7.63    
+J=3075  S=612  E=689  l=0.00     
+J=3076  S=0    E=690  l=-7.63    
+J=3077  S=865  E=690  l=-2.56    
+J=3078  S=0    E=691  l=-7.63    
+J=3079  S=321  E=691  l=0.00     
+J=3080  S=0    E=692  l=-7.63    
+J=3081  S=138  E=692  l=0.00     
+J=3082  S=0    E=693  l=-7.63    
+J=3083  S=1018 E=693  l=0.00     
+J=3084  S=0    E=694  l=-7.63    
+J=3085  S=1054 E=694  l=0.00     
+J=3086  S=0    E=695  l=-7.63    
+J=3087  S=1232 E=695  l=-0.69    
+J=3088  S=0    E=696  l=-7.63    
+J=3089  S=2    E=696  l=-5.15    
+J=3090  S=0    E=697  l=-7.63    
+J=3091  S=104  E=697  l=0.00     
+J=3092  S=0    E=698  l=-7.63    
+J=3093  S=472  E=698  l=-3.71    
+J=3094  S=0    E=699  l=-6.53    
+J=3095  S=2    E=699  l=-4.46    
+J=3096  S=27   E=699  l=-0.69    
+J=3097  S=0    E=700  l=-7.63    
+J=3098  S=1092 E=700  l=-4.17    
+J=3099  S=0    E=701  l=-7.63    
+J=3100  S=263  E=701  l=-3.00    
+J=3101  S=0    E=702  l=-7.63    
+J=3102  S=2    E=702  l=-5.15    
+J=3103  S=0    E=703  l=-7.63    
+J=3104  S=156  E=703  l=0.00     
+J=3105  S=0    E=704  l=-7.63    
+J=3106  S=337  E=704  l=0.00     
+J=3107  S=0    E=705  l=-7.63    
+J=3108  S=1092 E=705  l=-4.17    
+J=3109  S=0    E=706  l=-7.63    
+J=3110  S=1185 E=706  l=-2.40    
+J=3111  S=0    E=707  l=-7.63    
+J=3112  S=737  E=707  l=0.00     
+J=3113  S=0    E=708  l=-7.63    
+J=3114  S=594  E=708  l=0.00     
+J=3115  S=0    E=709  l=-7.63    
+J=3116  S=194  E=709  l=0.00     
+J=3117  S=0    E=710  l=-6.94    
+J=3118  S=1092 E=710  l=-3.48    
+J=3119  S=0    E=711  l=-7.63    
+J=3120  S=472  E=711  l=-3.71    
+J=3121  S=0    E=712  l=-7.63    
+J=3122  S=472  E=712  l=-3.71    
+J=3123  S=0    E=713  l=-7.63    
+J=3124  S=438  E=713  l=-1.39    
+J=3125  S=0    E=714  l=-7.63    
+J=3126  S=2    E=714  l=-5.15    
+J=3127  S=0    E=715  l=-7.63    
+J=3128  S=686  E=715  l=-1.39    
+J=3129  S=0    E=716  l=-7.63    
+J=3130  S=1258 E=716  l=-0.69    
+J=3131  S=0    E=717  l=-7.63    
+J=3132  S=237  E=717  l=0.00     
+J=3133  S=0    E=718  l=-6.53    
+J=3134  S=229  E=718  l=0.00     
+J=3135  S=304  E=718  l=0.00     
+J=3136  S=1162 E=718  l=-0.69    
+J=3137  S=0    E=719  l=-7.63    
+J=3138  S=962  E=719  l=0.00     
+J=3139  S=0    E=720  l=-7.63    
+J=3140  S=413  E=720  l=0.00     
+J=3141  S=0    E=721  l=-7.63    
+J=3142  S=861  E=721  l=0.00     
+J=3143  S=0    E=722  l=-7.63    
+J=3144  S=557  E=722  l=0.00     
+J=3145  S=0    E=723  l=-7.63    
+J=3146  S=532  E=723  l=0.00     
+J=3147  S=0    E=724  l=-7.63    
+J=3148  S=1050 E=724  l=0.00     
+J=3149  S=0    E=725  l=-7.63    
+J=3150  S=1092 E=725  l=-4.17    
+J=3151  S=0    E=726  l=-7.63    
+J=3152  S=56   E=726  l=-1.61    
+J=3153  S=0    E=727  l=-7.63    
+J=3154  S=757  E=727  l=-1.10    
+J=3155  S=0    E=728  l=-7.63    
+J=3156  S=365  E=728  l=0.00     
+J=3157  S=0    E=729  l=-7.63    
+J=3158  S=455  E=729  l=0.00     
+J=3159  S=0    E=730  l=-7.63    
+J=3160  S=1186 E=730  l=-2.48    
+J=3161  S=0    E=731  l=-7.63    
+J=3162  S=472  E=731  l=-3.71    
+J=3163  S=0    E=732  l=-6.94    
+J=3164  S=3    E=732  l=-3.56    
+J=3165  S=1047 E=732  l=-1.39    
+J=3166  S=0    E=733  l=-7.63    
+J=3167  S=1080 E=733  l=0.00     
+J=3168  S=0    E=734  l=-7.63    
+J=3169  S=263  E=734  l=-3.00    
+J=3170  S=0    E=735  l=-7.63    
+J=3171  S=100  E=735  l=0.00     
+J=3172  S=0    E=736  l=-6.94    
+J=3173  S=2    E=736  l=-5.15    
+J=3174  S=234  E=736  l=-0.69    
+J=3175  S=0    E=737  l=-7.63    
+J=3176  S=998  E=737  l=-0.69    
+J=3177  S=0    E=738  l=-7.63    
+J=3178  S=274  E=738  l=0.00     
+J=3179  S=0    E=739  l=-7.63    
+J=3180  S=628  E=739  l=-0.69    
+J=3181  S=0    E=740  l=-7.63    
+J=3182  S=440  E=740  l=0.00     
+J=3183  S=0    E=741  l=-7.63    
+J=3184  S=2    E=741  l=-5.15    
+J=3185  S=0    E=742  l=-7.63    
+J=3186  S=269  E=742  l=0.00     
+J=3187  S=0    E=743  l=-7.63    
+J=3188  S=184  E=743  l=-0.69    
+J=3189  S=0    E=744  l=-7.63    
+J=3190  S=356  E=744  l=0.00     
+J=3191  S=0    E=745  l=-7.63    
+J=3192  S=498  E=745  l=0.00     
+J=3193  S=0    E=746  l=-7.63    
+J=3194  S=2    E=746  l=-5.15    
+J=3195  S=0    E=747  l=-7.63    
+J=3196  S=2    E=747  l=-5.15    
+J=3197  S=0    E=748  l=-6.94    
+J=3198  S=135  E=748  l=-2.64    
+J=3199  S=615  E=748  l=0.00     
+J=3200  S=0    E=749  l=-7.63    
+J=3201  S=395  E=749  l=0.00     
+J=3202  S=0    E=750  l=-7.63    
+J=3203  S=562  E=750  l=0.00     
+J=3204  S=0    E=751  l=-7.63    
+J=3205  S=991  E=751  l=0.00     
+J=3206  S=0    E=752  l=-7.63    
+J=3207  S=1023 E=752  l=-2.77    
+J=3208  S=0    E=753  l=-7.63    
+J=3209  S=1154 E=753  l=0.00     
+J=3210  S=0    E=754  l=-7.63    
+J=3211  S=1186 E=754  l=-2.48    
+J=3212  S=0    E=755  l=-6.94    
+J=3213  S=1092 E=755  l=-3.48    
+J=3214  S=0    E=756  l=-7.63    
+J=3215  S=1092 E=756  l=-4.17    
+J=3216  S=0    E=757  l=-6.53    
+J=3217  S=604  E=757  l=0.00     
+J=3218  S=789  E=757  l=-0.69    
+J=3219  S=1049 E=757  l=0.00     
+J=3220  S=0    E=758  l=-7.63    
+J=3221  S=57   E=758  l=-1.39    
+J=3222  S=0    E=759  l=-7.63    
+J=3223  S=1092 E=759  l=-4.17    
+J=3224  S=0    E=760  l=-6.53    
+J=3225  S=48   E=760  l=-1.95    
+J=3226  S=837  E=760  l=-0.69    
+J=3227  S=1023 E=760  l=-2.77    
+J=3228  S=0    E=761  l=-6.94    
+J=3229  S=2    E=761  l=-5.15    
+J=3230  S=676  E=761  l=0.00     
+J=3231  S=0    E=762  l=-7.63    
+J=3232  S=61   E=762  l=-1.39    
+J=3233  S=0    E=763  l=-7.63    
+J=3234  S=318  E=763  l=0.00     
+J=3235  S=0    E=764  l=-7.63    
+J=3236  S=1061 E=764  l=0.00     
+J=3237  S=0    E=765  l=-7.63    
+J=3238  S=977  E=765  l=0.00     
+J=3239  S=0    E=766  l=-7.63    
+J=3240  S=1084 E=766  l=0.00     
+J=3241  S=0    E=767  l=-7.63    
+J=3242  S=821  E=767  l=0.00     
+J=3243  S=0    E=768  l=-7.63    
+J=3244  S=2    E=768  l=-5.15    
+J=3245  S=0    E=769  l=-7.63    
+J=3246  S=150  E=769  l=0.00     
+J=3247  S=0    E=770  l=-7.63    
+J=3248  S=981  E=770  l=0.00     
+J=3249  S=0    E=771  l=-6.02    
+J=3250  S=2    E=771  l=-5.15    
+J=3251  S=264  E=771  l=-0.69    
+J=3252  S=464  E=771  l=-1.39    
+J=3253  S=646  E=771  l=0.00     
+J=3254  S=964  E=771  l=0.00     
+J=3255  S=0    E=772  l=-7.63    
+J=3256  S=119  E=772  l=0.00     
+J=3257  S=0    E=773  l=-7.63    
+J=3258  S=374  E=773  l=-0.69    
+J=3259  S=0    E=774  l=-7.63    
+J=3260  S=2    E=774  l=-5.15    
+J=3261  S=0    E=775  l=-7.63    
+J=3262  S=811  E=775  l=-1.39    
+J=3263  S=0    E=776  l=-7.63    
+J=3264  S=380  E=776  l=0.00     
+J=3265  S=0    E=777  l=-7.63    
+J=3266  S=811  E=777  l=-1.39    
+J=3267  S=0    E=778  l=-7.63    
+J=3268  S=790  E=778  l=-2.48    
+J=3269  S=0    E=779  l=-7.63    
+J=3270  S=154  E=779  l=0.00     
+J=3271  S=0    E=780  l=-7.63    
+J=3272  S=248  E=780  l=0.00     
+J=3273  S=0    E=781  l=-7.63    
+J=3274  S=1245 E=781  l=0.00     
+J=3275  S=0    E=782  l=-7.63    
+J=3276  S=1040 E=782  l=0.00     
+J=3277  S=0    E=783  l=-6.94    
+J=3278  S=990  E=783  l=-1.39    
+J=3279  S=1069 E=783  l=0.00     
+J=3280  S=0    E=784  l=-7.63    
+J=3281  S=3    E=784  l=-3.56    
+J=3282  S=0    E=785  l=-6.53    
+J=3283  S=2    E=785  l=-5.15    
+J=3284  S=438  E=785  l=-1.39    
+J=3285  S=705  E=785  l=0.00     
+J=3286  S=0    E=786  l=-7.63    
+J=3287  S=404  E=786  l=0.00     
+J=3288  S=0    E=787  l=-7.63    
+J=3289  S=461  E=787  l=0.00     
+J=3290  S=0    E=788  l=-7.63    
+J=3291  S=459  E=788  l=-0.69    
+J=3292  S=0    E=789  l=-6.94    
+J=3293  S=2    E=789  l=-5.15    
+J=3294  S=552  E=789  l=0.00     
+J=3295  S=0    E=790  l=-5.14    
+J=3296  S=2    E=790  l=-4.46    
+J=3297  S=131  E=790  l=-1.61    
+J=3298  S=296  E=790  l=-0.69    
+J=3299  S=449  E=790  l=0.00     
+J=3300  S=718  E=790  l=-1.10    
+J=3301  S=780  E=790  l=0.00     
+J=3302  S=950  E=790  l=-0.69    
+J=3303  S=953  E=790  l=0.00     
+J=3304  S=1047 E=790  l=-1.39    
+J=3305  S=1115 E=790  l=0.00     
+J=3306  S=1124 E=790  l=0.00     
+J=3307  S=0    E=791  l=-7.63    
+J=3308  S=1090 E=791  l=-2.20    
+J=3309  S=0    E=792  l=-7.63    
+J=3310  S=865  E=792  l=-2.56    
+J=3311  S=0    E=793  l=-7.63    
+J=3312  S=453  E=793  l=0.00     
+J=3313  S=0    E=794  l=-6.94    
+J=3314  S=164  E=794  l=0.00     
+J=3315  S=654  E=794  l=0.00     
+J=3316  S=0    E=795  l=-7.63    
+J=3317  S=2    E=795  l=-5.15    
+J=3318  S=0    E=796  l=-7.63    
+J=3319  S=1203 E=796  l=0.00     
+J=3320  S=0    E=797  l=-7.63    
+J=3321  S=209  E=797  l=0.00     
+J=3322  S=0    E=798  l=-7.63    
+J=3323  S=529  E=798  l=0.00     
+J=3324  S=0    E=799  l=-7.63    
+J=3325  S=263  E=799  l=-3.00    
+J=3326  S=0    E=800  l=-7.63    
+J=3327  S=2    E=800  l=-5.15    
+J=3328  S=0    E=801  l=-7.63    
+J=3329  S=38   E=801  l=0.00     
+J=3330  S=0    E=802  l=-7.63    
+J=3331  S=1237 E=802  l=-3.04    
+J=3332  S=0    E=803  l=-7.63    
+J=3333  S=117  E=803  l=0.00     
+J=3334  S=0    E=804  l=-5.55    
+J=3335  S=86   E=804  l=0.00     
+J=3336  S=374  E=804  l=-0.69    
+J=3337  S=385  E=804  l=0.00     
+J=3338  S=459  E=804  l=-0.69    
+J=3339  S=613  E=804  l=0.00     
+J=3340  S=890  E=804  l=0.00     
+J=3341  S=1058 E=804  l=0.00     
+J=3342  S=1209 E=804  l=0.00     
+J=3343  S=0    E=805  l=-6.94    
+J=3344  S=384  E=805  l=0.00     
+J=3345  S=1152 E=805  l=-0.69    
+J=3346  S=0    E=806  l=-7.63    
+J=3347  S=324  E=806  l=0.00     
+J=3348  S=0    E=807  l=-7.63    
+J=3349  S=809  E=807  l=0.00     
+J=3350  S=0    E=808  l=-7.63    
+J=3351  S=1092 E=808  l=-4.17    
+J=3352  S=0    E=809  l=-7.63    
+J=3353  S=808  E=809  l=0.00     
+J=3354  S=0    E=810  l=-7.63    
+J=3355  S=571  E=810  l=0.00     
+J=3356  S=0    E=811  l=-6.24    
+J=3357  S=339  E=811  l=0.00     
+J=3358  S=784  E=811  l=0.00     
+J=3359  S=850  E=811  l=-0.69    
+J=3360  S=1185 E=811  l=-2.40    
+J=3361  S=0    E=812  l=-7.63    
+J=3362  S=610  E=812  l=0.00     
+J=3363  S=0    E=813  l=-7.63    
+J=3364  S=1092 E=813  l=-4.17    
+J=3365  S=0    E=814  l=-7.63    
+J=3366  S=2    E=814  l=-5.15    
+J=3367  S=0    E=815  l=-7.63    
+J=3368  S=733  E=815  l=0.00     
+J=3369  S=0    E=816  l=-7.63    
+J=3370  S=1092 E=816  l=-4.17    
+J=3371  S=0    E=817  l=-7.63    
+J=3372  S=294  E=817  l=-1.95    
+J=3373  S=0    E=818  l=-7.63    
+J=3374  S=550  E=818  l=0.00     
+J=3375  S=0    E=819  l=-6.94    
+J=3376  S=1057 E=819  l=0.00     
+J=3377  S=1108 E=819  l=0.00     
+J=3378  S=0    E=820  l=-7.63    
+J=3379  S=2    E=820  l=-5.15    
+J=3380  S=0    E=821  l=-7.63    
+J=3381  S=534  E=821  l=-1.39    
+J=3382  S=0    E=822  l=-7.63    
+J=3383  S=63   E=822  l=0.00     
+J=3384  S=0    E=823  l=-7.63    
+J=3385  S=1092 E=823  l=-4.17    
+J=3386  S=0    E=824  l=-7.63    
+J=3387  S=601  E=824  l=-1.79    
+J=3388  S=0    E=825  l=-7.63    
+J=3389  S=710  E=825  l=-0.69    
+J=3390  S=0    E=826  l=-7.63    
+J=3391  S=806  E=826  l=0.00     
+J=3392  S=0    E=827  l=-7.63    
+J=3393  S=2    E=827  l=-5.15    
+J=3394  S=0    E=828  l=-7.63    
+J=3395  S=343  E=828  l=0.00     
+J=3396  S=0    E=829  l=-7.63    
+J=3397  S=472  E=829  l=-3.71    
+J=3398  S=0    E=830  l=-7.63    
+J=3399  S=299  E=830  l=-1.79    
+J=3400  S=0    E=831  l=-6.94    
+J=3401  S=153  E=831  l=0.00     
+J=3402  S=650  E=831  l=0.00     
+J=3403  S=0    E=832  l=-7.63    
+J=3404  S=387  E=832  l=0.00     
+J=3405  S=0    E=833  l=-6.94    
+J=3406  S=2    E=833  l=-5.15    
+J=3407  S=263  E=833  l=-3.00    
+J=3408  S=0    E=834  l=-7.63    
+J=3409  S=971  E=834  l=-0.69    
+J=3410  S=0    E=835  l=-6.94    
+J=3411  S=74   E=835  l=0.00     
+J=3412  S=437  E=835  l=0.00     
+J=3413  S=0    E=836  l=-7.63    
+J=3414  S=12   E=836  l=-1.61    
+J=3415  S=0    E=837  l=-6.94    
+J=3416  S=76   E=837  l=-1.10    
+J=3417  S=255  E=837  l=-1.61    
+J=3418  S=0    E=838  l=-7.63    
+J=3419  S=563  E=838  l=-1.10    
+J=3420  S=0    E=839  l=-7.63    
+J=3421  S=1092 E=839  l=-4.17    
+J=3422  S=0    E=840  l=-7.63    
+J=3423  S=107  E=840  l=-0.69    
+J=3424  S=0    E=841  l=-7.63    
+J=3425  S=1194 E=841  l=0.00     
+J=3426  S=0    E=842  l=-7.63    
+J=3427  S=679  E=842  l=0.00     
+J=3428  S=0    E=843  l=-6.94    
+J=3429  S=243  E=843  l=0.00     
+J=3430  S=1137 E=843  l=0.00     
+J=3431  S=0    E=844  l=-6.53    
+J=3432  S=376  E=844  l=0.00     
+J=3433  S=424  E=844  l=0.00     
+J=3434  S=1092 E=844  l=-4.17    
+J=3435  S=0    E=845  l=-7.63    
+J=3436  S=270  E=845  l=0.00     
+J=3437  S=0    E=846  l=-7.63    
+J=3438  S=482  E=846  l=0.00     
+J=3439  S=0    E=847  l=-7.63    
+J=3440  S=693  E=847  l=0.00     
+J=3441  S=0    E=848  l=-7.63    
+J=3442  S=832  E=848  l=0.00     
+J=3443  S=0    E=849  l=-7.63    
+J=3444  S=865  E=849  l=-2.56    
+J=3445  S=0    E=850  l=-6.94    
+J=3446  S=785  E=850  l=-0.41    
+J=3447  S=0    E=851  l=-6.24    
+J=3448  S=448  E=851  l=0.00     
+J=3449  S=601  E=851  l=-1.10    
+J=3450  S=677  E=851  l=0.00     
+J=3451  S=0    E=852  l=-7.63    
+J=3452  S=1092 E=852  l=-4.17    
+J=3453  S=0    E=853  l=-7.63    
+J=3454  S=431  E=853  l=0.00     
+J=3455  S=0    E=854  l=-7.63    
+J=3456  S=3    E=854  l=-3.56    
+J=3457  S=0    E=855  l=-7.63    
+J=3458  S=433  E=855  l=0.00     
+J=3459  S=0    E=856  l=-7.63    
+J=3460  S=1022 E=856  l=-0.69    
+J=3461  S=0    E=857  l=-7.63    
+J=3462  S=1032 E=857  l=0.00     
+J=3463  S=0    E=858  l=-7.63    
+J=3464  S=158  E=858  l=0.00     
+J=3465  S=0    E=859  l=-7.63    
+J=3466  S=833  E=859  l=-0.69    
+J=3467  S=0    E=860  l=-7.63    
+J=3468  S=913  E=860  l=0.00     
+J=3469  S=0    E=861  l=-7.63    
+J=3470  S=978  E=861  l=0.00     
+J=3471  S=0    E=862  l=-7.63    
+J=3472  S=123  E=862  l=0.00     
+J=3473  S=0    E=863  l=-7.63    
+J=3474  S=742  E=863  l=0.00     
+J=3475  S=0    E=864  l=-7.63    
+J=3476  S=716  E=864  l=0.00     
+J=3477  S=0    E=865  l=-5.06    
+J=3478  S=2    E=865  l=-4.46    
+J=3479  S=503  E=865  l=0.00     
+J=3480  S=585  E=865  l=0.00     
+J=3481  S=593  E=865  l=0.00     
+J=3482  S=595  E=865  l=0.00     
+J=3483  S=674  E=865  l=0.00     
+J=3484  S=868  E=865  l=-3.43    
+J=3485  S=882  E=865  l=0.00     
+J=3486  S=939  E=865  l=0.00     
+J=3487  S=944  E=865  l=0.00     
+J=3488  S=1003 E=865  l=0.00     
+J=3489  S=1208 E=865  l=0.00     
+J=3490  S=0    E=866  l=-7.63    
+J=3491  S=7    E=866  l=-1.10    
+J=3492  S=0    E=867  l=-7.63    
+J=3493  S=868  E=867  l=-3.43    
+J=3494  S=0    E=868  l=-4.19    
+J=3495  S=4    E=868  l=-1.39    
+J=3496  S=6    E=868  l=-0.69    
+J=3497  S=124  E=868  l=0.00     
+J=3498  S=167  E=868  l=-0.69    
+J=3499  S=169  E=868  l=0.00     
+J=3500  S=206  E=868  l=0.00     
+J=3501  S=230  E=868  l=0.00     
+J=3502  S=255  E=868  l=-1.61    
+J=3503  S=294  E=868  l=-1.25    
+J=3504  S=341  E=868  l=0.00     
+J=3505  S=445  E=868  l=0.00     
+J=3506  S=450  E=868  l=0.00     
+J=3507  S=567  E=868  l=0.00     
+J=3508  S=579  E=868  l=0.00     
+J=3509  S=699  E=868  l=-0.41    
+J=3510  S=732  E=868  l=-0.69    
+J=3511  S=736  E=868  l=-0.69    
+J=3512  S=805  E=868  l=-0.69    
+J=3513  S=824  E=868  l=0.00     
+J=3514  S=835  E=868  l=-0.69    
+J=3515  S=887  E=868  l=0.00     
+J=3516  S=909  E=868  l=0.00     
+J=3517  S=912  E=868  l=0.00     
+J=3518  S=960  E=868  l=0.00     
+J=3519  S=1111 E=868  l=0.00     
+J=3520  S=1184 E=868  l=0.00     
+J=3521  S=1221 E=868  l=0.00     
+J=3522  S=1230 E=868  l=0.00     
+J=3523  S=1237 E=868  l=-3.04    
+J=3524  S=0    E=869  l=-7.63    
+J=3525  S=1008 E=869  l=-0.69    
+J=3526  S=0    E=870  l=-7.63    
+J=3527  S=472  E=870  l=-3.71    
+J=3528  S=0    E=871  l=-7.63    
+J=3529  S=386  E=871  l=0.00     
+J=3530  S=0    E=872  l=-7.63    
+J=3531  S=369  E=872  l=-1.10    
+J=3532  S=0    E=873  l=-7.63    
+J=3533  S=636  E=873  l=0.00     
+J=3534  S=0    E=874  l=-7.63    
+J=3535  S=837  E=874  l=-0.69    
+J=3536  S=0    E=875  l=-7.63    
+J=3537  S=297  E=875  l=0.00     
+J=3538  S=0    E=876  l=-7.63    
+J=3539  S=377  E=876  l=0.00     
+J=3540  S=0    E=877  l=-7.63    
+J=3541  S=284  E=877  l=-0.69    
+J=3542  S=0    E=878  l=-7.63    
+J=3543  S=725  E=878  l=0.00     
+J=3544  S=0    E=879  l=-7.63    
+J=3545  S=518  E=879  l=0.00     
+J=3546  S=0    E=880  l=-7.63    
+J=3547  S=127  E=880  l=0.00     
+J=3548  S=0    E=881  l=-6.94    
+J=3549  S=507  E=881  l=0.00     
+J=3550  S=1021 E=881  l=-1.10    
+J=3551  S=0    E=882  l=-7.63    
+J=3552  S=652  E=882  l=0.00     
+J=3553  S=0    E=883  l=-7.63    
+J=3554  S=2    E=883  l=-5.15    
+J=3555  S=0    E=884  l=-7.63    
+J=3556  S=792  E=884  l=0.00     
+J=3557  S=0    E=885  l=-7.63    
+J=3558  S=785  E=885  l=-1.10    
+J=3559  S=0    E=886  l=-7.63    
+J=3560  S=1162 E=886  l=-0.69    
+J=3561  S=0    E=887  l=-7.63    
+J=3562  S=2    E=887  l=-5.15    
+J=3563  S=0    E=888  l=-5.43    
+J=3564  S=83   E=888  l=0.00     
+J=3565  S=97   E=888  l=0.00     
+J=3566  S=255  E=888  l=-1.61    
+J=3567  S=295  E=888  l=-0.69    
+J=3568  S=342  E=888  l=-0.69    
+J=3569  S=352  E=888  l=-0.69    
+J=3570  S=381  E=888  l=-0.69    
+J=3571  S=614  E=888  l=0.00     
+J=3572  S=628  E=888  l=-0.69    
+J=3573  S=0    E=889  l=-7.63    
+J=3574  S=406  E=889  l=0.00     
+J=3575  S=0    E=890  l=-7.63    
+J=3576  S=641  E=890  l=0.00     
+J=3577  S=0    E=891  l=-6.94    
+J=3578  S=932  E=891  l=0.00     
+J=3579  S=1122 E=891  l=-1.10    
+J=3580  S=0    E=892  l=-7.63    
+J=3581  S=53   E=892  l=-2.20    
+J=3582  S=0    E=893  l=-7.63    
+J=3583  S=994  E=893  l=0.00     
+J=3584  S=0    E=894  l=-7.63    
+J=3585  S=2    E=894  l=-5.15    
+J=3586  S=0    E=895  l=-7.63    
+J=3587  S=1143 E=895  l=0.00     
+J=3588  S=0    E=896  l=-7.63    
+J=3589  S=525  E=896  l=0.00     
+J=3590  S=0    E=897  l=-7.63    
+J=3591  S=874  E=897  l=0.00     
+J=3592  S=0    E=898  l=-7.63    
+J=3593  S=1095 E=898  l=-2.20    
+J=3594  S=0    E=899  l=-6.94    
+J=3595  S=2    E=899  l=-5.15    
+J=3596  S=412  E=899  l=-0.69    
+J=3597  S=0    E=900  l=-7.63    
+J=3598  S=1095 E=900  l=-2.20    
+J=3599  S=0    E=901  l=-7.63    
+J=3600  S=868  E=901  l=-3.43    
+J=3601  S=0    E=902  l=-7.63    
+J=3602  S=748  E=902  l=-0.69    
+J=3603  S=0    E=903  l=-7.63    
+J=3604  S=1164 E=903  l=0.00     
+J=3605  S=0    E=904  l=-7.63    
+J=3606  S=1181 E=904  l=0.00     
+J=3607  S=0    E=905  l=-7.63    
+J=3608  S=2    E=905  l=-5.15    
+J=3609  S=0    E=906  l=-7.63    
+J=3610  S=472  E=906  l=-3.71    
+J=3611  S=0    E=907  l=-7.63    
+J=3612  S=2    E=907  l=-5.15    
+J=3613  S=0    E=908  l=-7.63    
+J=3614  S=509  E=908  l=-1.10    
+J=3615  S=0    E=909  l=-7.63    
+J=3616  S=2    E=909  l=-5.15    
+J=3617  S=0    E=910  l=-7.63    
+J=3618  S=842  E=910  l=0.00     
+J=3619  S=0    E=911  l=-7.63    
+J=3620  S=12   E=911  l=-1.61    
+J=3621  S=0    E=912  l=-7.63    
+J=3622  S=234  E=912  l=-0.69    
+J=3623  S=0    E=913  l=-7.63    
+J=3624  S=667  E=913  l=0.00     
+J=3625  S=0    E=914  l=-7.63    
+J=3626  S=472  E=914  l=-3.71    
+J=3627  S=0    E=915  l=-7.63    
+J=3628  S=1092 E=915  l=-4.17    
+J=3629  S=0    E=916  l=-7.63    
+J=3630  S=1237 E=916  l=-3.04    
+J=3631  S=0    E=917  l=-7.63    
+J=3632  S=1237 E=917  l=-3.04    
+J=3633  S=0    E=918  l=-7.63    
+J=3634  S=660  E=918  l=0.00     
+J=3635  S=0    E=919  l=-7.63    
+J=3636  S=3    E=919  l=-3.56    
+J=3637  S=0    E=920  l=-7.63    
+J=3638  S=258  E=920  l=0.00     
+J=3639  S=0    E=921  l=-7.63    
+J=3640  S=1237 E=921  l=-3.04    
+J=3641  S=0    E=922  l=-7.63    
+J=3642  S=57   E=922  l=-1.39    
+J=3643  S=0    E=923  l=-7.63    
+J=3644  S=361  E=923  l=0.00     
+J=3645  S=0    E=924  l=-7.63    
+J=3646  S=2    E=924  l=-5.15    
+J=3647  S=0    E=925  l=-7.63    
+J=3648  S=411  E=925  l=0.00     
+J=3649  S=0    E=926  l=-7.63    
+J=3650  S=272  E=926  l=0.00     
+J=3651  S=0    E=927  l=-7.63    
+J=3652  S=834  E=927  l=0.00     
+J=3653  S=0    E=928  l=-7.63    
+J=3654  S=1131 E=928  l=0.00     
+J=3655  S=0    E=929  l=-7.63    
+J=3656  S=1213 E=929  l=0.00     
+J=3657  S=0    E=930  l=-7.63    
+J=3658  S=804  E=930  l=-2.08    
+J=3659  S=0    E=931  l=-7.63    
+J=3660  S=400  E=931  l=0.00     
+J=3661  S=0    E=932  l=-7.63    
+J=3662  S=2    E=932  l=-5.15    
+J=3663  S=0    E=933  l=-7.63    
+J=3664  S=233  E=933  l=0.00     
+J=3665  S=0    E=934  l=-7.63    
+J=3666  S=635  E=934  l=0.00     
+J=3667  S=0    E=935  l=-7.63    
+J=3668  S=114  E=935  l=0.00     
+J=3669  S=0    E=936  l=-7.63    
+J=3670  S=1023 E=936  l=-2.77    
+J=3671  S=0    E=937  l=-7.63    
+J=3672  S=85   E=937  l=-0.69    
+J=3673  S=0    E=938  l=-7.63    
+J=3674  S=135  E=938  l=-2.64    
+J=3675  S=0    E=939  l=-7.63    
+J=3676  S=958  E=939  l=0.00     
+J=3677  S=0    E=940  l=-7.63    
+J=3678  S=1063 E=940  l=0.00     
+J=3679  S=0    E=941  l=-7.63    
+J=3680  S=642  E=941  l=0.00     
+J=3681  S=0    E=942  l=-7.63    
+J=3682  S=360  E=942  l=0.00     
+J=3683  S=0    E=943  l=-7.63    
+J=3684  S=1138 E=943  l=0.00     
+J=3685  S=0    E=944  l=-7.63    
+J=3686  S=1095 E=944  l=-2.20    
+J=3687  S=0    E=945  l=-7.63    
+J=3688  S=655  E=945  l=0.00     
+J=3689  S=0    E=946  l=-6.94    
+J=3690  S=731  E=946  l=0.00     
+J=3691  S=1206 E=946  l=0.00     
+J=3692  S=0    E=947  l=-7.63    
+J=3693  S=868  E=947  l=-3.43    
+J=3694  S=0    E=948  l=-7.63    
+J=3695  S=1155 E=948  l=0.00     
+J=3696  S=0    E=949  l=-7.63    
+J=3697  S=73   E=949  l=0.00     
+J=3698  S=0    E=950  l=-6.94    
+J=3699  S=621  E=950  l=0.00     
+J=3700  S=768  E=950  l=0.00     
+J=3701  S=0    E=951  l=-7.63    
+J=3702  S=35   E=951  l=0.00     
+J=3703  S=0    E=952  l=-7.63    
+J=3704  S=43   E=952  l=0.00     
+J=3705  S=0    E=953  l=-7.63    
+J=3706  S=565  E=953  l=0.00     
+J=3707  S=0    E=954  l=-7.63    
+J=3708  S=506  E=954  l=0.00     
+J=3709  S=0    E=955  l=-6.53    
+J=3710  S=2    E=955  l=-5.15    
+J=3711  S=47   E=955  l=-1.10    
+J=3712  S=452  E=955  l=-1.39    
+J=3713  S=0    E=956  l=-6.53    
+J=3714  S=2    E=956  l=-5.15    
+J=3715  S=888  E=956  l=-2.20    
+J=3716  S=941  E=956  l=0.00     
+J=3717  S=0    E=957  l=-7.63    
+J=3718  S=794  E=957  l=-0.69    
+J=3719  S=0    E=958  l=-7.63    
+J=3720  S=935  E=958  l=0.00     
+J=3721  S=0    E=959  l=-6.94    
+J=3722  S=1153 E=959  l=0.00     
+J=3723  S=1226 E=959  l=0.00     
+J=3724  S=0    E=960  l=-7.63    
+J=3725  S=675  E=960  l=-1.61    
+J=3726  S=0    E=961  l=-7.63    
+J=3727  S=287  E=961  l=0.00     
+J=3728  S=0    E=962  l=-7.63    
+J=3729  S=659  E=962  l=-0.69    
+J=3730  S=0    E=963  l=-7.63    
+J=3731  S=3    E=963  l=-3.56    
+J=3732  S=0    E=964  l=-7.63    
+J=3733  S=275  E=964  l=-1.10    
+J=3734  S=0    E=965  l=-7.63    
+J=3735  S=15   E=965  l=0.00     
+J=3736  S=0    E=966  l=-6.94    
+J=3737  S=563  E=966  l=-1.10    
+J=3738  S=584  E=966  l=-2.40    
+J=3739  S=0    E=967  l=-7.63    
+J=3740  S=563  E=967  l=-1.10    
+J=3741  S=0    E=968  l=-6.94    
+J=3742  S=1095 E=968  l=-1.50    
+J=3743  S=0    E=969  l=-7.63    
+J=3744  S=1095 E=969  l=-2.20    
+J=3745  S=0    E=970  l=-7.63    
+J=3746  S=77   E=970  l=0.00     
+J=3747  S=0    E=971  l=-6.94    
+J=3748  S=530  E=971  l=0.00     
+J=3749  S=1198 E=971  l=0.00     
+J=3750  S=0    E=972  l=-7.63    
+J=3751  S=257  E=972  l=0.00     
+J=3752  S=0    E=973  l=-7.63    
+J=3753  S=1119 E=973  l=0.00     
+J=3754  S=0    E=974  l=-7.63    
+J=3755  S=2    E=974  l=-5.15    
+J=3756  S=0    E=975  l=-6.53    
+J=3757  S=135  E=975  l=-2.64    
+J=3758  S=235  E=975  l=0.00     
+J=3759  S=472  E=975  l=-3.71    
+J=3760  S=0    E=976  l=-7.63    
+J=3761  S=584  E=976  l=-2.40    
+J=3762  S=0    E=977  l=-7.63    
+J=3763  S=955  E=977  l=-1.10    
+J=3764  S=0    E=978  l=-7.63    
+J=3765  S=1237 E=978  l=-3.04    
+J=3766  S=0    E=979  l=-7.63    
+J=3767  S=745  E=979  l=0.00     
+J=3768  S=0    E=980  l=-7.63    
+J=3769  S=315  E=980  l=0.00     
+J=3770  S=0    E=981  l=-7.63    
+J=3771  S=2    E=981  l=-5.15    
+J=3772  S=0    E=982  l=-7.63    
+J=3773  S=868  E=982  l=-3.43    
+J=3774  S=0    E=983  l=-7.63    
+J=3775  S=4    E=983  l=-1.39    
+J=3776  S=0    E=984  l=-6.94    
+J=3777  S=2    E=984  l=-4.46    
+J=3778  S=0    E=985  l=-7.63    
+J=3779  S=133  E=985  l=0.00     
+J=3780  S=0    E=986  l=-7.63    
+J=3781  S=472  E=986  l=-3.71    
+J=3782  S=0    E=987  l=-6.94    
+J=3783  S=399  E=987  l=-0.69    
+J=3784  S=819  E=987  l=-0.69    
+J=3785  S=0    E=988  l=-7.63    
+J=3786  S=924  E=988  l=0.00     
+J=3787  S=0    E=989  l=-7.63    
+J=3788  S=979  E=989  l=0.00     
+J=3789  S=0    E=990  l=-6.24    
+J=3790  S=599  E=990  l=0.00     
+J=3791  S=888  E=990  l=-2.20    
+J=3792  S=1089 E=990  l=0.00     
+J=3793  S=1151 E=990  l=0.00     
+J=3794  S=0    E=991  l=-7.63    
+J=3795  S=263  E=991  l=-3.00    
+J=3796  S=0    E=992  l=-7.63    
+J=3797  S=2    E=992  l=-5.15    
+J=3798  S=0    E=993  l=-6.94    
+J=3799  S=868  E=993  l=-3.43    
+J=3800  S=888  E=993  l=-2.20    
+J=3801  S=0    E=994  l=-7.63    
+J=3802  S=584  E=994  l=-2.40    
+J=3803  S=0    E=995  l=-7.63    
+J=3804  S=238  E=995  l=-2.20    
+J=3805  S=0    E=996  l=-7.63    
+J=3806  S=765  E=996  l=0.00     
+J=3807  S=0    E=997  l=-6.94    
+J=3808  S=408  E=997  l=0.00     
+J=3809  S=868  E=997  l=-3.43    
+J=3810  S=0    E=998  l=-6.94    
+J=3811  S=3    E=998  l=-3.56    
+J=3812  S=483  E=998  l=0.00     
+J=3813  S=0    E=999  l=-7.63    
+J=3814  S=955  E=999  l=-1.10    
+J=3815  S=0    E=1000 l=-7.63    
+J=3816  S=542  E=1000 l=-0.69    
+J=3817  S=0    E=1001 l=-7.63    
+J=3818  S=1092 E=1001 l=-4.17    
+J=3819  S=0    E=1002 l=-7.63    
+J=3820  S=444  E=1002 l=0.00     
+J=3821  S=0    E=1003 l=-7.63    
+J=3822  S=1023 E=1003 l=-2.77    
+J=3823  S=0    E=1004 l=-7.63    
+J=3824  S=1187 E=1004 l=-0.69    
+J=3825  S=0    E=1005 l=-7.63    
+J=3826  S=364  E=1005 l=0.00     
+J=3827  S=0    E=1006 l=-7.63    
+J=3828  S=575  E=1006 l=0.00     
+J=3829  S=0    E=1007 l=-7.63    
+J=3830  S=1182 E=1007 l=0.00     
+J=3831  S=0    E=1008 l=-6.94    
+J=3832  S=76   E=1008 l=-1.10    
+J=3833  S=472  E=1008 l=-3.71    
+J=3834  S=0    E=1009 l=-7.63    
+J=3835  S=721  E=1009 l=0.00     
+J=3836  S=0    E=1010 l=-7.63    
+J=3837  S=296  E=1010 l=-0.69    
+J=3838  S=0    E=1011 l=-7.63    
+J=3839  S=1227 E=1011 l=0.00     
+J=3840  S=0    E=1012 l=-7.63    
+J=3841  S=952  E=1012 l=0.00     
+J=3842  S=0    E=1013 l=-7.63    
+J=3843  S=59   E=1013 l=0.00     
+J=3844  S=0    E=1014 l=-7.63    
+J=3845  S=4    E=1014 l=-1.39    
+J=3846  S=0    E=1015 l=-7.63    
+J=3847  S=1179 E=1015 l=0.00     
+J=3848  S=0    E=1016 l=-7.63    
+J=3849  S=382  E=1016 l=0.00     
+J=3850  S=0    E=1017 l=-7.63    
+J=3851  S=263  E=1017 l=-3.00    
+J=3852  S=0    E=1018 l=-7.63    
+J=3853  S=1092 E=1018 l=-4.17    
+J=3854  S=0    E=1019 l=-6.94    
+J=3855  S=367  E=1019 l=0.00     
+J=3856  S=865  E=1019 l=-2.56    
+J=3857  S=0    E=1020 l=-6.24    
+J=3858  S=163  E=1020 l=0.00     
+J=3859  S=526  E=1020 l=0.00     
+J=3860  S=881  E=1020 l=-0.69    
+J=3861  S=966  E=1020 l=-0.69    
+J=3862  S=0    E=1021 l=-6.53    
+J=3863  S=162  E=1021 l=-0.29    
+J=3864  S=0    E=1022 l=-6.94    
+J=3865  S=238  E=1022 l=-2.20    
+J=3866  S=584  E=1022 l=-2.40    
+J=3867  S=0    E=1023 l=-4.86    
+J=3868  S=2    E=1023 l=-5.15    
+J=3869  S=56   E=1023 l=-1.61    
+J=3870  S=263  E=1023 l=-1.39    
+J=3871  S=277  E=1023 l=0.00     
+J=3872  S=485  E=1023 l=-0.69    
+J=3873  S=584  E=1023 l=-2.40    
+J=3874  S=868  E=1023 l=-3.43    
+J=3875  S=1031 E=1023 l=-0.69    
+J=3876  S=1086 E=1023 l=0.00     
+J=3877  S=1186 E=1023 l=-1.79    
+J=3878  S=1241 E=1023 l=-1.10    
+J=3879  S=0    E=1024 l=-7.63    
+J=3880  S=1185 E=1024 l=-2.40    
+J=3881  S=0    E=1025 l=-7.63    
+J=3882  S=578  E=1025 l=0.00     
+J=3883  S=0    E=1026 l=-7.63    
+J=3884  S=399  E=1026 l=-0.69    
+J=3885  S=0    E=1027 l=-7.63    
+J=3886  S=584  E=1027 l=-2.40    
+J=3887  S=0    E=1028 l=-7.63    
+J=3888  S=299  E=1028 l=-1.79    
+J=3889  S=0    E=1029 l=-7.63    
+J=3890  S=549  E=1029 l=0.00     
+J=3891  S=0    E=1030 l=-7.63    
+J=3892  S=697  E=1030 l=0.00     
+J=3893  S=0    E=1031 l=-6.94    
+J=3894  S=1059 E=1031 l=0.00     
+J=3895  S=1237 E=1031 l=-3.04    
+J=3896  S=0    E=1032 l=-7.63    
+J=3897  S=728  E=1032 l=0.00     
+J=3898  S=0    E=1033 l=-7.63    
+J=3899  S=1044 E=1033 l=0.00     
+J=3900  S=0    E=1034 l=-7.63    
+J=3901  S=166  E=1034 l=0.00     
+J=3902  S=0    E=1035 l=-7.63    
+J=3903  S=736  E=1035 l=-0.69    
+J=3904  S=0    E=1036 l=-6.94    
+J=3905  S=472  E=1036 l=-3.02    
+J=3906  S=0    E=1037 l=-7.63    
+J=3907  S=472  E=1037 l=-3.71    
+J=3908  S=0    E=1038 l=-7.63    
+J=3909  S=244  E=1038 l=0.00     
+J=3910  S=0    E=1039 l=-7.63    
+J=3911  S=1246 E=1039 l=-0.69    
+J=3912  S=0    E=1040 l=-7.63    
+J=3913  S=662  E=1040 l=0.00     
+J=3914  S=0    E=1041 l=-6.94    
+J=3915  S=1015 E=1041 l=0.00     
+J=3916  S=1241 E=1041 l=-1.10    
+J=3917  S=0    E=1042 l=-7.63    
+J=3918  S=584  E=1042 l=-2.40    
+J=3919  S=0    E=1043 l=-7.63    
+J=3920  S=1052 E=1043 l=-1.10    
+J=3921  S=0    E=1044 l=-7.63    
+J=3922  S=1187 E=1044 l=-0.69    
+J=3923  S=0    E=1045 l=-6.94    
+J=3924  S=707  E=1045 l=0.00     
+J=3925  S=838  E=1045 l=0.00     
+J=3926  S=0    E=1046 l=-7.63    
+J=3927  S=2    E=1046 l=-5.15    
+J=3928  S=0    E=1047 l=-6.24    
+J=3929  S=2    E=1047 l=-5.15    
+J=3930  S=426  E=1047 l=0.00     
+J=3931  S=1004 E=1047 l=0.00     
+J=3932  S=1011 E=1047 l=0.00     
+J=3933  S=0    E=1048 l=-6.94    
+J=3934  S=135  E=1048 l=-2.64    
+J=3935  S=1025 E=1048 l=0.00     
+J=3936  S=0    E=1049 l=-7.63    
+J=3937  S=534  E=1049 l=-1.39    
+J=3938  S=0    E=1050 l=-7.63    
+J=3939  S=298  E=1050 l=0.00     
+J=3940  S=0    E=1051 l=-7.63    
+J=3941  S=2    E=1051 l=-5.15    
+J=3942  S=0    E=1052 l=-6.53    
+J=3943  S=70   E=1052 l=0.00     
+J=3944  S=102  E=1052 l=0.00     
+J=3945  S=275  E=1052 l=-1.10    
+J=3946  S=0    E=1053 l=-7.63    
+J=3947  S=122  E=1053 l=0.00     
+J=3948  S=0    E=1054 l=-7.63    
+J=3949  S=790  E=1054 l=-2.48    
+J=3950  S=0    E=1055 l=-7.63    
+J=3951  S=715  E=1055 l=0.00     
+J=3952  S=0    E=1056 l=-7.63    
+J=3953  S=987  E=1056 l=-0.69    
+J=3954  S=0    E=1057 l=-7.63    
+J=3955  S=651  E=1057 l=0.00     
+J=3956  S=0    E=1058 l=-7.63    
+J=3957  S=691  E=1058 l=0.00     
+J=3958  S=0    E=1059 l=-7.63    
+J=3959  S=582  E=1059 l=0.00     
+J=3960  S=0    E=1060 l=-7.63    
+J=3961  S=531  E=1060 l=-1.10    
+J=3962  S=0    E=1061 l=-7.63    
+J=3963  S=62   E=1061 l=0.00     
+J=3964  S=0    E=1062 l=-7.63    
+J=3965  S=357  E=1062 l=0.00     
+J=3966  S=0    E=1063 l=-7.63    
+J=3967  S=774  E=1063 l=0.00     
+J=3968  S=0    E=1064 l=-6.94    
+J=3969  S=116  E=1064 l=-1.10    
+J=3970  S=825  E=1064 l=0.00     
+J=3971  S=0    E=1065 l=-7.63    
+J=3972  S=182  E=1065 l=-0.69    
+J=3973  S=0    E=1066 l=-7.63    
+J=3974  S=199  E=1066 l=0.00     
+J=3975  S=0    E=1067 l=-7.63    
+J=3976  S=168  E=1067 l=-0.69    
+J=3977  S=0    E=1068 l=-7.63    
+J=3978  S=1189 E=1068 l=0.00     
+J=3979  S=0    E=1069 l=-7.63    
+J=3980  S=1092 E=1069 l=-4.17    
+J=3981  S=0    E=1070 l=-7.63    
+J=3982  S=799  E=1070 l=0.00     
+J=3983  S=0    E=1071 l=-6.94    
+J=3984  S=218  E=1071 l=0.00     
+J=3985  S=1120 E=1071 l=0.00     
+J=3986  S=0    E=1072 l=-7.63    
+J=3987  S=2    E=1072 l=-5.15    
+J=3988  S=0    E=1073 l=-6.94    
+J=3989  S=934  E=1073 l=0.00     
+J=3990  S=1023 E=1073 l=-2.77    
+J=3991  S=0    E=1074 l=-7.63    
+J=3992  S=1092 E=1074 l=-4.17    
+J=3993  S=0    E=1075 l=-7.63    
+J=3994  S=3    E=1075 l=-3.56    
+J=3995  S=0    E=1076 l=-7.63    
+J=3996  S=299  E=1076 l=-1.79    
+J=3997  S=0    E=1077 l=-7.63    
+J=3998  S=811  E=1077 l=-1.39    
+J=3999  S=0    E=1078 l=-7.63    
+J=4000  S=58   E=1078 l=0.00     
+J=4001  S=0    E=1079 l=-7.63    
+J=4002  S=744  E=1079 l=0.00     
+J=4003  S=0    E=1080 l=-7.63    
+J=4004  S=320  E=1080 l=0.00     
+J=4005  S=0    E=1081 l=-7.63    
+J=4006  S=1098 E=1081 l=0.00     
+J=4007  S=0    E=1082 l=-7.63    
+J=4008  S=1092 E=1082 l=-4.17    
+J=4009  S=0    E=1083 l=-6.53    
+J=4010  S=1092 E=1083 l=-3.08    
+J=4011  S=0    E=1084 l=-7.63    
+J=4012  S=868  E=1084 l=-3.43    
+J=4013  S=0    E=1085 l=-6.94    
+J=4014  S=515  E=1085 l=0.00     
+J=4015  S=1083 E=1085 l=-1.10    
+J=4016  S=0    E=1086 l=-7.63    
+J=4017  S=2    E=1086 l=-5.15    
+J=4018  S=0    E=1087 l=-7.63    
+J=4019  S=1017 E=1087 l=0.00     
+J=4020  S=0    E=1088 l=-7.63    
+J=4021  S=1188 E=1088 l=0.00     
+J=4022  S=0    E=1089 l=-7.63    
+J=4023  S=223  E=1089 l=-1.10    
+J=4024  S=0    E=1090 l=-5.43    
+J=4025  S=2    E=1090 l=-5.15    
+J=4026  S=19   E=1090 l=0.00     
+J=4027  S=27   E=1090 l=-0.69    
+J=4028  S=171  E=1090 l=0.00     
+J=4029  S=397  E=1090 l=-1.10    
+J=4030  S=908  E=1090 l=0.00     
+J=4031  S=926  E=1090 l=0.00     
+J=4032  S=1041 E=1090 l=-0.69    
+J=4033  S=1237 E=1090 l=-3.04    
+J=4034  S=0    E=1091 l=-7.63    
+J=4035  S=888  E=1091 l=-2.20    
+J=4036  S=0    E=1092 l=-3.45    
+J=4037  S=2    E=1092 l=-2.76    
+J=4038  S=3    E=1092 l=-3.56    
+J=4039  S=32   E=1092 l=0.00     
+J=4040  S=41   E=1092 l=0.00     
+J=4041  S=47   E=1092 l=-1.10    
+J=4042  S=48   E=1092 l=-1.95    
+J=4043  S=60   E=1092 l=0.00     
+J=4044  S=91   E=1092 l=0.00     
+J=4045  S=111  E=1092 l=0.00     
+J=4046  S=143  E=1092 l=-1.10    
+J=4047  S=144  E=1092 l=0.00     
+J=4048  S=152  E=1092 l=0.00     
+J=4049  S=177  E=1092 l=0.00     
+J=4050  S=198  E=1092 l=-1.79    
+J=4051  S=221  E=1092 l=0.00     
+J=4052  S=263  E=1092 l=-3.00    
+J=4053  S=288  E=1092 l=0.00     
+J=4054  S=290  E=1092 l=-0.69    
+J=4055  S=333  E=1092 l=0.00     
+J=4056  S=351  E=1092 l=0.00     
+J=4057  S=355  E=1092 l=-0.69    
+J=4058  S=372  E=1092 l=0.00     
+J=4059  S=379  E=1092 l=0.00     
+J=4060  S=392  E=1092 l=-0.69    
+J=4061  S=435  E=1092 l=0.00     
+J=4062  S=462  E=1092 l=0.00     
+J=4063  S=468  E=1092 l=-0.69    
+J=4064  S=499  E=1092 l=0.00     
+J=4065  S=558  E=1092 l=0.00     
+J=4066  S=618  E=1092 l=0.00     
+J=4067  S=639  E=1092 l=0.00     
+J=4068  S=664  E=1092 l=-0.69    
+J=4069  S=710  E=1092 l=-0.69    
+J=4070  S=724  E=1092 l=0.00     
+J=4071  S=740  E=1092 l=0.00     
+J=4072  S=770  E=1092 l=0.00     
+J=4073  S=789  E=1092 l=-0.69    
+J=4074  S=826  E=1092 l=0.00     
+J=4075  S=841  E=1092 l=0.00     
+J=4076  S=868  E=1092 l=-2.74    
+J=4077  S=881  E=1092 l=-0.69    
+J=4078  S=902  E=1092 l=0.00     
+J=4079  S=925  E=1092 l=0.00     
+J=4080  S=927  E=1092 l=0.00     
+J=4081  S=929  E=1092 l=0.00     
+J=4082  S=1064 E=1092 l=-0.69    
+J=4083  S=1105 E=1092 l=0.00     
+J=4084  S=1123 E=1092 l=0.00     
+J=4085  S=1150 E=1092 l=-0.69    
+J=4086  S=1175 E=1092 l=0.00     
+J=4087  S=1176 E=1092 l=0.00     
+J=4088  S=1183 E=1092 l=0.00     
+J=4089  S=1192 E=1092 l=-0.69    
+J=4090  S=1260 E=1092 l=0.00     
+J=4091  S=0    E=1093 l=-7.63    
+J=4092  S=769  E=1093 l=0.00     
+J=4093  S=0    E=1094 l=-6.94    
+J=4094  S=53   E=1094 l=-2.20    
+J=4095  S=868  E=1094 l=-3.43    
+J=4096  S=0    E=1095 l=-5.43    
+J=4097  S=2    E=1095 l=-4.46    
+J=4098  S=702  E=1095 l=0.00     
+J=4099  S=747  E=1095 l=0.00     
+J=4100  S=773  E=1095 l=0.00     
+J=4101  S=873  E=1095 l=0.00     
+J=4102  S=928  E=1095 l=0.00     
+J=4103  S=1146 E=1095 l=0.00     
+J=4104  S=1192 E=1095 l=-0.69    
+J=4105  S=0    E=1096 l=-6.94    
+J=4106  S=98   E=1096 l=0.00     
+J=4107  S=683  E=1096 l=0.00     
+J=4108  S=0    E=1097 l=-7.63    
+J=4109  S=202  E=1097 l=0.00     
+J=4110  S=0    E=1098 l=-7.63    
+J=4111  S=626  E=1098 l=0.00     
+J=4112  S=0    E=1099 l=-7.63    
+J=4113  S=75   E=1099 l=0.00     
+J=4114  S=0    E=1100 l=-7.63    
+J=4115  S=135  E=1100 l=-2.64    
+J=4116  S=0    E=1101 l=-7.63    
+J=4117  S=472  E=1101 l=-3.71    
+J=4118  S=0    E=1102 l=-7.63    
+J=4119  S=37   E=1102 l=0.00     
+J=4120  S=0    E=1103 l=-7.63    
+J=4121  S=1095 E=1103 l=-2.20    
+J=4122  S=0    E=1104 l=-7.63    
+J=4123  S=1212 E=1104 l=0.00     
+J=4124  S=0    E=1105 l=-7.63    
+J=4125  S=472  E=1105 l=-3.71    
+J=4126  S=0    E=1106 l=-7.63    
+J=4127  S=990  E=1106 l=-1.39    
+J=4128  S=0    E=1107 l=-7.63    
+J=4129  S=135  E=1107 l=-2.64    
+J=4130  S=0    E=1108 l=-7.63    
+J=4131  S=868  E=1108 l=-3.43    
+J=4132  S=0    E=1109 l=-6.24    
+J=4133  S=112  E=1109 l=0.00     
+J=4134  S=418  E=1109 l=-0.69    
+J=4135  S=472  E=1109 l=-3.71    
+J=4136  S=1055 E=1109 l=0.00     
+J=4137  S=0    E=1110 l=-7.63    
+J=4138  S=1023 E=1110 l=-2.77    
+J=4139  S=0    E=1111 l=-7.63    
+J=4140  S=840  E=1111 l=0.00     
+J=4141  S=0    E=1112 l=-7.63    
+J=4142  S=216  E=1112 l=0.00     
+J=4143  S=0    E=1113 l=-7.63    
+J=4144  S=3    E=1113 l=-3.56    
+J=4145  S=0    E=1114 l=-7.63    
+J=4146  S=596  E=1114 l=0.00     
+J=4147  S=0    E=1115 l=-7.63    
+J=4148  S=443  E=1115 l=0.00     
+J=4149  S=0    E=1116 l=-7.63    
+J=4150  S=678  E=1116 l=0.00     
+J=4151  S=0    E=1117 l=-7.63    
+J=4152  S=905  E=1117 l=0.00     
+J=4153  S=0    E=1118 l=-7.63    
+J=4154  S=1167 E=1118 l=0.00     
+J=4155  S=0    E=1119 l=-7.63    
+J=4156  S=1031 E=1119 l=-0.69    
+J=4157  S=0    E=1120 l=-7.63    
+J=4158  S=88   E=1120 l=0.00     
+J=4159  S=0    E=1121 l=-7.63    
+J=4160  S=1196 E=1121 l=0.00     
+J=4161  S=0    E=1122 l=-6.53    
+J=4162  S=282  E=1122 l=0.00     
+J=4163  S=491  E=1122 l=0.00     
+J=4164  S=1060 E=1122 l=0.00     
+J=4165  S=0    E=1123 l=-7.63    
+J=4166  S=878  E=1123 l=0.00     
+J=4167  S=0    E=1124 l=-7.63    
+J=4168  S=754  E=1124 l=0.00     
+J=4169  S=0    E=1125 l=-7.63    
+J=4170  S=327  E=1125 l=0.00     
+J=4171  S=0    E=1126 l=-7.63    
+J=4172  S=1068 E=1126 l=0.00     
+J=4173  S=0    E=1127 l=-7.63    
+J=4174  S=771  E=1127 l=-1.61    
+J=4175  S=0    E=1128 l=-7.63    
+J=4176  S=1202 E=1128 l=0.00     
+J=4177  S=0    E=1129 l=-7.63    
+J=4178  S=865  E=1129 l=-2.56    
+J=4179  S=0    E=1130 l=-7.63    
+J=4180  S=469  E=1130 l=0.00     
+J=4181  S=0    E=1131 l=-7.63    
+J=4182  S=3    E=1131 l=-3.56    
+J=4183  S=0    E=1132 l=-7.63    
+J=4184  S=1023 E=1132 l=-2.77    
+J=4185  S=0    E=1133 l=-6.94    
+J=4186  S=2    E=1133 l=-5.15    
+J=4187  S=1199 E=1133 l=-0.69    
+J=4188  S=0    E=1134 l=-7.63    
+J=4189  S=2    E=1134 l=-5.15    
+J=4190  S=0    E=1135 l=-6.94    
+J=4191  S=914  E=1135 l=0.00     
+J=4192  S=1234 E=1135 l=-0.69    
+J=4193  S=0    E=1136 l=-7.63    
+J=4194  S=738  E=1136 l=0.00     
+J=4195  S=0    E=1137 l=-7.63    
+J=4196  S=1148 E=1137 l=0.00     
+J=4197  S=0    E=1138 l=-7.63    
+J=4198  S=771  E=1138 l=-1.61    
+J=4199  S=0    E=1139 l=-7.63    
+J=4200  S=2    E=1139 l=-5.15    
+J=4201  S=0    E=1140 l=-7.63    
+J=4202  S=2    E=1140 l=-5.15    
+J=4203  S=0    E=1141 l=-7.63    
+J=4204  S=708  E=1141 l=0.00     
+J=4205  S=0    E=1142 l=-7.63    
+J=4206  S=758  E=1142 l=0.00     
+J=4207  S=0    E=1143 l=-7.63    
+J=4208  S=398  E=1143 l=0.00     
+J=4209  S=0    E=1144 l=-7.63    
+J=4210  S=338  E=1144 l=-1.95    
+J=4211  S=0    E=1145 l=-7.63    
+J=4212  S=544  E=1145 l=0.00     
+J=4213  S=0    E=1146 l=-7.63    
+J=4214  S=131  E=1146 l=-1.61    
+J=4215  S=0    E=1147 l=-7.63    
+J=4216  S=53   E=1147 l=-2.20    
+J=4217  S=0    E=1148 l=-7.63    
+J=4218  S=968  E=1148 l=-0.69    
+J=4219  S=0    E=1149 l=-7.63    
+J=4220  S=514  E=1149 l=0.00     
+J=4221  S=0    E=1150 l=-6.94    
+J=4222  S=329  E=1150 l=0.00     
+J=4223  S=1133 E=1150 l=-0.69    
+J=4224  S=0    E=1151 l=-7.63    
+J=4225  S=2    E=1151 l=-5.15    
+J=4226  S=0    E=1152 l=-6.94    
+J=4227  S=2    E=1152 l=-5.15    
+J=4228  S=892  E=1152 l=0.00     
+J=4229  S=0    E=1153 l=-7.63    
+J=4230  S=1259 E=1153 l=0.00     
+J=4231  S=0    E=1154 l=-7.63    
+J=4232  S=868  E=1154 l=-3.43    
+J=4233  S=0    E=1155 l=-7.63    
+J=4234  S=741  E=1155 l=0.00     
+J=4235  S=0    E=1156 l=-7.63    
+J=4236  S=1163 E=1156 l=0.00     
+J=4237  S=0    E=1157 l=-7.63    
+J=4238  S=1051 E=1157 l=0.00     
+J=4239  S=0    E=1158 l=-7.63    
+J=4240  S=658  E=1158 l=-1.10    
+J=4241  S=0    E=1159 l=-7.63    
+J=4242  S=2    E=1159 l=-5.15    
+J=4243  S=0    E=1160 l=-7.63    
+J=4244  S=675  E=1160 l=-1.61    
+J=4245  S=0    E=1161 l=-7.63    
+J=4246  S=1191 E=1161 l=0.00     
+J=4247  S=0    E=1162 l=-6.94    
+J=4248  S=668  E=1162 l=0.00     
+J=4249  S=718  E=1162 l=-1.10    
+J=4250  S=0    E=1163 l=-7.63    
+J=4251  S=276  E=1163 l=0.00     
+J=4252  S=0    E=1164 l=-7.63    
+J=4253  S=865  E=1164 l=-2.56    
+J=4254  S=0    E=1165 l=-7.63    
+J=4255  S=279  E=1165 l=0.00     
+J=4256  S=0    E=1166 l=-7.63    
+J=4257  S=2    E=1166 l=-5.15    
+J=4258  S=0    E=1167 l=-7.63    
+J=4259  S=472  E=1167 l=-3.71    
+J=4260  S=0    E=1168 l=-7.63    
+J=4261  S=868  E=1168 l=-3.43    
+J=4262  S=0    E=1169 l=-7.63    
+J=4263  S=528  E=1169 l=0.00     
+J=4264  S=0    E=1170 l=-7.63    
+J=4265  S=191  E=1170 l=0.00     
+J=4266  S=0    E=1171 l=-7.63    
+J=4267  S=986  E=1171 l=0.00     
+J=4268  S=0    E=1172 l=-7.63    
+J=4269  S=92   E=1172 l=0.00     
+J=4270  S=0    E=1173 l=-7.63    
+J=4271  S=44   E=1173 l=0.00     
+J=4272  S=0    E=1174 l=-6.94    
+J=4273  S=922  E=1174 l=0.00     
+J=4274  S=1067 E=1174 l=0.00     
+J=4275  S=0    E=1175 l=-7.63    
+J=4276  S=690  E=1175 l=0.00     
+J=4277  S=0    E=1176 l=-7.63    
+J=4278  S=920  E=1176 l=0.00     
+J=4279  S=0    E=1177 l=-7.63    
+J=4280  S=2    E=1177 l=-5.15    
+J=4281  S=0    E=1178 l=-7.63    
+J=4282  S=464  E=1178 l=-1.39    
+J=4283  S=0    E=1179 l=-7.63    
+J=4284  S=1237 E=1179 l=-3.04    
+J=4285  S=0    E=1180 l=-7.63    
+J=4286  S=3    E=1180 l=-3.56    
+J=4287  S=0    E=1181 l=-7.63    
+J=4288  S=3    E=1181 l=-3.56    
+J=4289  S=0    E=1182 l=-7.63    
+J=4290  S=1265 E=1182 l=0.00     
+J=4291  S=0    E=1183 l=-7.63    
+J=4292  S=500  E=1183 l=0.00     
+J=4293  S=0    E=1184 l=-7.63    
+J=4294  S=695  E=1184 l=0.00     
+J=4295  S=0    E=1185 l=-5.23    
+J=4296  S=23   E=1185 l=0.00     
+J=4297  S=264  E=1185 l=-0.69    
+J=4298  S=265  E=1185 l=0.00     
+J=4299  S=308  E=1185 l=0.00     
+J=4300  S=476  E=1185 l=0.00     
+J=4301  S=682  E=1185 l=0.00     
+J=4302  S=1000 E=1185 l=0.00     
+J=4303  S=1140 E=1185 l=0.00     
+J=4304  S=1141 E=1185 l=0.00     
+J=4305  S=1180 E=1185 l=0.00     
+J=4306  S=1254 E=1185 l=0.00     
+J=4307  S=0    E=1186 l=-5.14    
+J=4308  S=72   E=1186 l=0.00     
+J=4309  S=130  E=1186 l=0.00     
+J=4310  S=223  E=1186 l=-1.10    
+J=4311  S=397  E=1186 l=-1.10    
+J=4312  S=452  E=1186 l=-1.39    
+J=4313  S=466  E=1186 l=-1.10    
+J=4314  S=658  E=1186 l=-1.10    
+J=4315  S=739  E=1186 l=0.00     
+J=4316  S=867  E=1186 l=0.00     
+J=4317  S=1125 E=1186 l=0.00     
+J=4318  S=1145 E=1186 l=0.00     
+J=4319  S=0    E=1187 l=-6.94    
+J=4320  S=2    E=1187 l=-5.15    
+J=4321  S=1139 E=1187 l=0.00     
+J=4322  S=0    E=1188 l=-7.63    
+J=4323  S=65   E=1188 l=0.00     
+J=4324  S=0    E=1189 l=-7.63    
+J=4325  S=649  E=1189 l=0.00     
+J=4326  S=0    E=1190 l=-7.63    
+J=4327  S=294  E=1190 l=-1.95    
+J=4328  S=0    E=1191 l=-7.63    
+J=4329  S=452  E=1191 l=-1.39    
+J=4330  S=0    E=1192 l=-6.94    
+J=4331  S=802  E=1192 l=0.00     
+J=4332  S=1096 E=1192 l=-0.69    
+J=4333  S=0    E=1193 l=-7.63    
+J=4334  S=868  E=1193 l=-3.43    
+J=4335  S=0    E=1194 l=-7.63    
+J=4336  S=31   E=1194 l=0.00     
+J=4337  S=0    E=1195 l=-7.63    
+J=4338  S=1075 E=1195 l=0.00     
+J=4339  S=0    E=1196 l=-7.63    
+J=4340  S=1092 E=1196 l=-4.17    
+J=4341  S=0    E=1197 l=-7.63    
+J=4342  S=1092 E=1197 l=-4.17    
+J=4343  S=0    E=1198 l=-7.63    
+J=4344  S=819  E=1198 l=-0.69    
+J=4345  S=0    E=1199 l=-6.94    
+J=4346  S=142  E=1199 l=0.00     
+J=4347  S=249  E=1199 l=0.00     
+J=4348  S=0    E=1200 l=-7.63    
+J=4349  S=1020 E=1200 l=-1.39    
+J=4350  S=0    E=1201 l=-7.63    
+J=4351  S=600  E=1201 l=0.00     
+J=4352  S=0    E=1202 l=-7.63    
+J=4353  S=576  E=1202 l=-0.69    
+J=4354  S=0    E=1203 l=-7.63    
+J=4355  S=804  E=1203 l=-2.08    
+J=4356  S=0    E=1204 l=-7.63    
+J=4357  S=240  E=1204 l=0.00     
+J=4358  S=0    E=1205 l=-7.63    
+J=4359  S=540  E=1205 l=0.00     
+J=4360  S=0    E=1206 l=-7.63    
+J=4361  S=921  E=1206 l=0.00     
+J=4362  S=0    E=1207 l=-7.63    
+J=4363  S=671  E=1207 l=0.00     
+J=4364  S=0    E=1208 l=-7.63    
+J=4365  S=479  E=1208 l=0.00     
+J=4366  S=0    E=1209 l=-7.63    
+J=4367  S=517  E=1209 l=-0.69    
+J=4368  S=0    E=1210 l=-7.63    
+J=4369  S=727  E=1210 l=0.00     
+J=4370  S=0    E=1211 l=-7.63    
+J=4371  S=192  E=1211 l=0.00     
+J=4372  S=0    E=1212 l=-7.63    
+J=4373  S=1106 E=1212 l=0.00     
+J=4374  S=0    E=1213 l=-7.63    
+J=4375  S=1186 E=1213 l=-2.48    
+J=4376  S=0    E=1214 l=-7.63    
+J=4377  S=907  E=1214 l=0.00     
+J=4378  S=0    E=1215 l=-7.63    
+J=4379  S=452  E=1215 l=-1.39    
+J=4380  S=0    E=1216 l=-7.63    
+J=4381  S=328  E=1216 l=0.00     
+J=4382  S=0    E=1217 l=-7.63    
+J=4383  S=517  E=1217 l=-0.69    
+J=4384  S=0    E=1218 l=-7.63    
+J=4385  S=3    E=1218 l=-3.56    
+J=4386  S=0    E=1219 l=-7.63    
+J=4387  S=57   E=1219 l=-1.39    
+J=4388  S=0    E=1220 l=-7.63    
+J=4389  S=299  E=1220 l=-1.79    
+J=4390  S=0    E=1221 l=-7.63    
+J=4391  S=2    E=1221 l=-5.15    
+J=4392  S=0    E=1222 l=-7.63    
+J=4393  S=468  E=1222 l=-0.69    
+J=4394  S=0    E=1223 l=-7.63    
+J=4395  S=533  E=1223 l=0.00     
+J=4396  S=0    E=1224 l=-7.63    
+J=4397  S=896  E=1224 l=0.00     
+J=4398  S=0    E=1225 l=-7.63    
+J=4399  S=135  E=1225 l=-2.64    
+J=4400  S=0    E=1226 l=-7.63    
+J=4401  S=970  E=1226 l=0.00     
+J=4402  S=0    E=1227 l=-7.63    
+J=4403  S=306  E=1227 l=0.00     
+J=4404  S=0    E=1228 l=-7.63    
+J=4405  S=212  E=1228 l=0.00     
+J=4406  S=0    E=1229 l=-7.63    
+J=4407  S=1127 E=1229 l=0.00     
+J=4408  S=0    E=1230 l=-7.63    
+J=4409  S=2    E=1230 l=-5.15    
+J=4410  S=0    E=1231 l=-7.63    
+J=4411  S=495  E=1231 l=0.00     
+J=4412  S=0    E=1232 l=-6.94    
+J=4413  S=236  E=1232 l=0.00     
+J=4414  S=1134 E=1232 l=0.00     
+J=4415  S=0    E=1233 l=-7.63    
+J=4416  S=254  E=1233 l=0.00     
+J=4417  S=0    E=1234 l=-6.94    
+J=4418  S=1237 E=1234 l=-3.04    
+J=4419  S=1242 E=1234 l=-0.69    
+J=4420  S=0    E=1235 l=-7.63    
+J=4421  S=767  E=1235 l=0.00     
+J=4422  S=0    E=1236 l=-7.63    
+J=4423  S=393  E=1236 l=0.00     
+J=4424  S=0    E=1237 l=-4.58    
+J=4425  S=39   E=1237 l=0.00     
+J=4426  S=56   E=1237 l=-1.61    
+J=4427  S=187  E=1237 l=0.00     
+J=4428  S=345  E=1237 l=-0.69    
+J=4429  S=414  E=1237 l=0.00     
+J=4430  S=471  E=1237 l=0.00     
+J=4431  S=554  E=1237 l=0.00     
+J=4432  S=644  E=1237 l=-0.69    
+J=4433  S=664  E=1237 l=-0.69    
+J=4434  S=694  E=1237 l=0.00     
+J=4435  S=751  E=1237 l=0.00     
+J=4436  S=762  E=1237 l=0.00     
+J=4437  S=788  E=1237 l=0.00     
+J=4438  S=817  E=1237 l=0.00     
+J=4439  S=831  E=1237 l=-0.69    
+J=4440  S=1019 E=1237 l=0.00     
+J=4441  S=1023 E=1237 l=-2.77    
+J=4442  S=1024 E=1237 l=0.00     
+J=4443  S=1094 E=1237 l=-0.69    
+J=4444  S=1252 E=1237 l=0.00     
+J=4445  S=0    E=1238 l=-7.63    
+J=4446  S=581  E=1238 l=0.00     
+J=4447  S=0    E=1239 l=-7.63    
+J=4448  S=588  E=1239 l=0.00     
+J=4449  S=0    E=1240 l=-7.63    
+J=4450  S=95   E=1240 l=0.00     
+J=4451  S=0    E=1241 l=-6.53    
+J=4452  S=286  E=1241 l=-0.69    
+J=4453  S=472  E=1241 l=-3.71    
+J=4454  S=1092 E=1241 l=-4.17    
+J=4455  S=0    E=1242 l=-6.94    
+J=4456  S=94   E=1242 l=0.00     
+J=4457  S=286  E=1242 l=-0.69    
+J=4458  S=0    E=1243 l=-7.63    
+J=4459  S=3    E=1243 l=-3.56    
+J=4460  S=0    E=1244 l=-6.94    
+J=4461  S=116  E=1244 l=-1.10    
+J=4462  S=963  E=1244 l=0.00     
+J=4463  S=0    E=1245 l=-7.63    
+J=4464  S=1222 E=1245 l=0.00     
+J=4465  S=0    E=1246 l=-6.94    
+J=4466  S=82   E=1246 l=0.00     
+J=4467  S=566  E=1246 l=0.00     
+J=4468  S=0    E=1247 l=-7.63    
+J=4469  S=174  E=1247 l=0.00     
+J=4470  S=0    E=1248 l=-7.63    
+J=4471  S=1095 E=1248 l=-2.20    
+J=4472  S=0    E=1249 l=-7.63    
+J=4473  S=813  E=1249 l=0.00     
+J=4474  S=0    E=1250 l=-7.63    
+J=4475  S=326  E=1250 l=0.00     
+J=4476  S=0    E=1251 l=-7.63    
+J=4477  S=1094 E=1251 l=-0.69    
+J=4478  S=0    E=1252 l=-7.63    
+J=4479  S=1157 E=1252 l=0.00     
+J=4480  S=0    E=1253 l=-7.63    
+J=4481  S=1239 E=1253 l=0.00     
+J=4482  S=0    E=1254 l=-7.63    
+J=4483  S=868  E=1254 l=-3.43    
+J=4484  S=0    E=1255 l=-7.63    
+J=4485  S=542  E=1255 l=-0.69    
+J=4486  S=0    E=1256 l=-7.63    
+J=4487  S=743  E=1256 l=0.00     
+J=4488  S=0    E=1257 l=-7.63    
+J=4489  S=675  E=1257 l=-1.61    
+J=4490  S=0    E=1258 l=-6.94    
+J=4491  S=827  E=1258 l=0.00     
+J=4492  S=1173 E=1258 l=0.00     
+J=4493  S=0    E=1259 l=-7.63    
+J=4494  S=1048 E=1259 l=-0.69    
+J=4495  S=0    E=1260 l=-7.63    
+J=4496  S=1101 E=1260 l=0.00     
+J=4497  S=0    E=1261 l=-7.63    
+J=4498  S=61   E=1261 l=-1.39    
+J=4499  S=0    E=1262 l=-7.63    
+J=4500  S=401  E=1262 l=-0.69    
+J=4501  S=0    E=1263 l=-7.63    
+J=4502  S=866  E=1263 l=0.00     
+J=4503  S=0    E=1264 l=-7.63    
+J=4504  S=1216 E=1264 l=0.00     
+J=4505  S=0    E=1265 l=-7.63    
+J=4506  S=1233 E=1265 l=0.00     
