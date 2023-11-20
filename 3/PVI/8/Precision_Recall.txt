@@ -1,0 +1,1 @@
+Když detekuju IoU, tak by si ty nejbližší měly zablokovat anotovaný čtverce. Aby se nestalo to, že více mejch čtverců se hitne do jednoho anotovanýho. (třeba odstraňovat ty použitý). Ještě pak když počítám true positives a false positives, tak bych taky měl jenom jednou každej, abych nemohl mít 200% precision.

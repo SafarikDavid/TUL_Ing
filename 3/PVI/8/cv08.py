@@ -187,26 +187,28 @@ def sunflower_detector_task(sunflower_path, b_boxes_path, entropy_thresh=1.8,
     print(f"Precision: {true_positives}/({true_positives}+{false_positives}) = {precision}")
     print(f"Recall: {true_positives}/({true_positives}+{false_negatives}) = {recall}")
 
-    # show template
-    plt.subplot(1, 2, 1)
-    plt.imshow(template_rgb)
-    plt.subplot(1, 2, 2)
-    plt.plot(hist_template)
-    plt.grid()
-    plt.show()
-
+    # # show template
+    # plt.subplot(1, 2, 1)
+    # plt.imshow(template_rgb)
+    # plt.subplot(1, 2, 2)
+    # plt.plot(hist_template)
+    # plt.grid()
+    # plt.show()
+    #
     # show blobs
+    plt.figure()
     plt.imshow(sunflower_rgb_blobs)
-    plt.show()
+    plt.show(block=False)
 
     # show detected and annotated
+    plt.figure()
     plt.subplot(1, 2, 1)
     plt.imshow(sunflower_rgb_detected_flowers)
     plt.title("Detected Flowers")
     plt.subplot(1, 2, 2)
     plt.imshow(sunflower_rgb_annotated_flowers)
     plt.title("Annotated Flowers")
-    plt.show()
+    plt.show(block=False)
 
 
 def main():
@@ -247,6 +249,8 @@ def main():
     sunflower_detector_task(sunflower_path, b_boxes_path, entropy_thresh=entropy_thresh, min_sigma=min_sigma,
                             max_sigma=max_sigma, num_sigma=num_sigma, threshold=threshold, overlap=overlap)
     print()
+
+    plt.show()
 
 
 if __name__ == "__main__":
