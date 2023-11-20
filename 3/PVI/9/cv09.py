@@ -1,14 +1,18 @@
 import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
-from skimage import data
 from skimage import transform
+import easyocr
 
 
 def main():
+    reader = easyocr.Reader(['cs'])
+
     MIN_MATCH_COUNT = 10
-    img1 = cv.imread('data/obcansky_prukaz_cr_sablona_2012_2014.png', cv.IMREAD_GRAYSCALE)  # queryImage
-    img2 = cv.imread('data/TS10_01.jpg', cv.IMREAD_GRAYSCALE)  # trainImage
+    img1 = cv.imread('data/obcansky_prukaz_cr_sablona_2012_2014.png')  # queryImage
+    img1 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY)
+    img2 = cv.imread('data/TS10_01.jpg')  # trainImage
+    img2 = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)
     img2_copy = img2.copy()
 
     # Initiate SIFT detector
@@ -66,6 +70,22 @@ def main():
     warped = transform.warp(img2_copy, tform3, output_shape=(420, 669))
 
     plt.imshow(warped, 'gray')
+    plt.show()
+
+    surname_cutout = warped[85:106, 155:327]
+    first_name_cutout = warped[106:127, 155:327]
+    face_cutout = warped[136:402, 17:233]
+
+    surname_text = reader.readtext()
+    print(surname_text)
+
+    plt.subplot(3, 1, 1)
+    plt.imshow(surname_cutout, 'gray')
+    plt.subplot(3, 1, 2)
+    plt.imshow(first_name_cutout, 'gray')
+    plt.subplot(3, 1, 3)
+    plt.imshow(face_cutout, 'gray')
+
     plt.show()
 
 
