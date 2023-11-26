@@ -72,12 +72,15 @@ def main():
     plt.imshow(warped, 'gray')
     plt.show()
 
-    surname_cutout = warped[85:106, 155:327]
-    first_name_cutout = warped[106:127, 155:327]
-    face_cutout = warped[136:402, 17:233]
+    kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
 
-    surname_text = reader.readtext()
-    print(surname_text)
+    surname_cutout = warped[78:110, 150:327].astype(np.float32)
+    first_name_cutout = warped[105:135, 150:327].astype(np.float32)
+    face_cutout = warped[136:402, 17:233].astype(np.float32)
+
+    surname_text = reader.readtext(surname_cutout)
+    first_name_text = reader.readtext(first_name_cutout)
+    print()
 
     plt.subplot(3, 1, 1)
     plt.imshow(surname_cutout, 'gray')
