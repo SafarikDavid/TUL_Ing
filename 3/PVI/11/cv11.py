@@ -24,6 +24,8 @@ def main():
         fft_dic[class_id].append(np.fft.fft2(gray).flatten())
 
     H = []
+    res_arr = []
+    res_class_arr = []
     for reff_dic_key in fft_dic.keys():
         X = fft_dic[reff_dic_key]
         X = np.array(X).transpose()
@@ -40,13 +42,27 @@ def main():
 
         R = vec_unknown * H_temp
         M = R.reshape(64, 64)
-        A = np.abs(np.fft.ifft2(M))
-        A = np.flip(A, axis=0)
-        A = np.flip(A, axis=1)
-        O = A[22:42, 22:42]
-        V = A[27:37, 27:37]
+        A_ori = np.abs(np.fft.ifft2(M))
+        A = np.zeros_like(A_ori)
+        A[0:32, 0:32] = A_ori[32:64, 32:64]
+        A[32:64, 32:64] = A_ori[0:32, 0:32]
+        A[0:32, 32:64] = A_ori[32:64, 0:32]
+        A[32:64, 0:32] = A_ori[0:32, 32:64]
+        O = A[22:42, 22:42].copy()
+        O[5:15, 5:15] = 0
+        O = O.flatten()
+        O = np.delete(O, np.where(O == 0))
+        V = A[27:37, 27:37].copy()
+        V = V.flatten()
 
-    print()
+        res_i = (np.max(V) - np.mean(O))/np.std(O)
+        # plt.imshow(A, cmap='jet')
+        # plt.colorbar()
+        # plt.show()
+        res_arr.append(res_i)
+        res_class_arr.append(reff_dic_key)
+    max_res_idx = np.argmax(res_arr)
+    print(f"best class is {res_class_arr[max_res_idx]}")
 
 
 if __name__ == "__main__":
