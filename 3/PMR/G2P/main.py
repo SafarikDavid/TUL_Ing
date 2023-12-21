@@ -108,9 +108,9 @@ def main():
         text = re.sub(' ', '_', text)
         text = text.strip()
         text = text.strip('_')
-        text = '-' + text + '-'
+        # text = '-' + text + '-'
         transcription.append(text)
-        print(text)
+        # print(text)
     with open('transcription.txt', 'w', encoding='cp1250') as file:
         for line in transcription:
             file.write(line)
