@@ -1,6 +1,16 @@
 import re
 
 
+def remove_non_czech_diacritic(text):
+    diacritic_dic = {
+        'ü': 'u', 'Ü': 'U', 'ä': 'a', 'Ä': 'A', 'ö': 'o',
+        'Ö': 'O', 'ß': 'ss', 'ł': 'l', 'ń': 'n', 'ę': 'e',
+        'ś': 's', 'ć': 'c', 'ź': 'z', 'ż': 'z', 'ą': 'a',
+    }
+    text_without_diacritics = ''.join(diacritic_dic.get(char, char) for char in text)
+    return text_without_diacritics
+
+
 def main():
     text = ""
     word_rates = {}
@@ -12,6 +22,7 @@ def main():
             line = re.sub("=", "rovná se", line)
             if len(line) < 1:
                 continue
+            line = remove_non_czech_diacritic(line)
             split = line.split(" ")
             text += line
             for word in split:
