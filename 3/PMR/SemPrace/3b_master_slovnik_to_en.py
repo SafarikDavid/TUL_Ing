@@ -12,6 +12,7 @@ def remove_diacritic(text):
         'ü': 'u', 'Ü': 'U', 'ä': 'a', 'Ä': 'A', 'ö': 'o',
         'Ö': 'O', 'ß': 'ss', 'ł': 'l', 'ń': 'n', 'ę': 'e',
         'ś': 's', 'ć': 'c', 'ź': 'z', 'ż': 'z', 'ą': 'a',
+        '&': 'a', 'ľ': 'l', ';': '', 'ç': 's',
     }
     text_without_diacritics = ''.join(diacritic_dic.get(char, char) for char in text)
     return text_without_diacritics

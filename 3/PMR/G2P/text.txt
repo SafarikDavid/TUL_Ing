@@ -3502,6 +3502,7 @@ kus
 prochází
 považuji
 ministerstvem
+tìhle
 neøíkám
 zpìtnì
 armády
@@ -3780,7 +3781,6 @@ zemanovi
 dopravou
 trenér
 lidu
-tìhle
 níž
 kuba
 reklama
@@ -5642,6 +5642,7 @@ nastal
 zpravodajem
 blízkém
 obrátil
+lubomír
 miloši
 pøedstavitel
 standardy
@@ -6896,6 +6897,7 @@ vedly
 zvyklosti
 zabývají
 ochranou
+lubomíra
 chvílích
 mírové
 potaz
@@ -8107,7 +8109,6 @@ odvíjí
 bodu
 tendru
 nìmcové
-lubomír
 partnerù
 volnou
 zásady
@@ -8157,7 +8158,6 @@ poøádá
 regionù
 bezprostøední
 pøedèasným
-lubomíra
 mìøí
 jednoznaèná
 uzavírat
@@ -12687,7 +12687,7 @@ køesla
 drakem
 hamburku
 køesel
-g&t
+gat
 zmínìný
 zatýkání
 probíhal
@@ -12972,6 +12972,7 @@ dnešku
 pøekladu
 zákazù
 výkonný
+serióznì
 jedinec
 urèena
 comeback
@@ -15237,7 +15238,6 @@ magnet
 nalákat
 lesního
 cyklobar
-¾ubomír
 lipno
 èernobílé
 nevyøízené
@@ -20478,7 +20478,6 @@ konfrontována
 privátní
 takovýmito
 civilizované
-serióznì
 nepøíjemnou
 soudním
 perthu
@@ -27778,7 +27777,6 @@ vystihuje
 slovenštinu
 pravdivý
 doporuèím
-¾ubomíra
 smatany
 podezøívají
 znepokojení
@@ -29917,7 +29915,6 @@ pitomost
 endokrinologové
 perinatologové
 dìtští
-serió;znì
 obojího
 právech
 žádána
@@ -32834,7 +32831,6 @@ drogistùm
 srovnali
 fordky
 laurin
-&
 jezdily
 vyrábìli
 specifickej
@@ -41990,7 +41986,7 @@ euraktiv
 eurofederalista
 klidem
 hashimem
-thaçim
+thasim
 nepodal
 postìhujete
 svìte
@@ -48222,7 +48218,6 @@ elektroniky
 zamìøena
 nevydržej
 tìsnìní
-tehlì
 dání
 lepších
 pacifik
