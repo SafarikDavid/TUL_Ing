@@ -2,7 +2,7 @@ def main():
     end_of_file = "SILENCE si\nSILENCE1 n1\nSILENCE2 n2\nSILENCE3 n3\nSILENCE4 n4\nSILENCE5 n5\n!ENTER si\n!EXIT si\n"
 
     words_used = []
-    max_words = 10000
+    max_words = 50000
     words_count = 0
     with open('master_slovnik_en', 'r', encoding='cp1250') as master_slovnik, open('word_list_N', 'w', encoding='cp1250') as word_list, open('dict', 'w', encoding='cp1250') as dict_f:
         word_list.write("!ENTER\n!EXIT\n")
