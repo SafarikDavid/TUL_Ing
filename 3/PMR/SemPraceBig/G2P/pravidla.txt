@@ -1,0 +1,51 @@
+SA:a,á,e,é,i,í,o,ó,u,ú
+ZPS:b,d,ď,g,z,ž,v,h,C,Č
+NPS:p,t,ť,k,s,š,f,X,c,č
+JS:m,n,ň,l,j,r,ř
+A:b-p,p-b,d-t,t-d,ď-ť,g-k,k-g,v-f,f-v,z-s,s-z,ž-š,š-ž,h-ch,C-c,Č-č,q-g
+x -> gz / _<ZPS, JS>
+x -> ks / _<NPS, - >
+x -> ks / -_<SA>
+x -> ks / <SA>_<SA>
+ex -> egz / -_<SA>
+z -> z / -_-<ZPS,JS>
+v -> v / -_-<ZPS,JS>
+k -> k / -_-<JS,v>
+v -> f / _<NPS>
+s -> z / _h
+h -> X / s_
+ř -> Ř / _<-,NPS>
+ř -> Ř / _<ZPS>-
+ř -> Ř / <NPS>_
+n -> ň / _<ť,ď>
+d -> ď / _ň
+t -> ť / _ň
+ts -> c / _
+tš -> č / _
+ds -> c / _
+dš -> č / _
+dz -> C / _
+dž -> Č / _
+ch -> X / _
+ů -> ú / _
+w -> v / _
+q -> kv / _
+x -> ks / _
+ě -> je / <b,p,f,v>_
+dě -> ďe / _
+tě -> ťe / _
+ně -> ňe / _
+ě -> ňe / m_
+d -> ď / _<i,í>
+t -> ť / _<i,í>
+n -> ň / _<i,í>
+y -> i / _
+ý -> í / _
+i -> ij / _<SA>
+n -> N / _<k,g>
+m -> M / _<v,f>
+NPS -> A / _<ZPS>
+NPS -> A / _-<ZPS,ř>
+ZPS -> A / _<-,NPS>
+ZPS -> A / _<NPS>-
+ZPS -> A / _-<NPS,SA,JS>
