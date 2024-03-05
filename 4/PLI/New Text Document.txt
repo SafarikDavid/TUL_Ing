@@ -1,0 +1,6 @@
+eval $(resize)
+- aby se neprepisoval radek
+
+Muzu pouzivat home - scratch je ulozenej na stroji primo, takze data nemusi tahat po siti
+
+mamba activate /storage/brno2/home/david_safarik/envs/PLI2
