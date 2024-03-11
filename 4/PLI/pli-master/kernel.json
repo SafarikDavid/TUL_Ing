@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "/storage/brno2/home/david_safarik/.local/share/jupyter/kernels/pli/start_kernel.sh",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "pli",
+ "language": "python"
+}
