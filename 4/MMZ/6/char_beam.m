@@ -8,13 +8,14 @@
 
 clc; clear all; close all;
 
-c = 320;
+c = 320; % rychlost sireni rovinne vlny
 d = 0.1; % vzájemná vzdálenost mikrofonů v metrech
 fs = 16000;
 
+N = 5; % Počet mikrofonů
 % xyz coordinates
-p = [[-0.2; 0; 0], [-0.1; 0; 0], [0; 0; 0], [0.1; 0; 0], [0.2; 0; 0]]; % vzd pro kazdy mikrofon
-N = size(p, 2); % Počet mikrofonů
+% vzd pro kazdy mikrofon
+p = [(-(N-1)/2:(N-1)/2)*d; zeros(2, N)];
 
 % Frekvence
 f = 1000;
