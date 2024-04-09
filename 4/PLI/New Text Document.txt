@@ -6,3 +6,6 @@ Muzu pouzivat home - scratch je ulozenej na stroji primo, takze data nemusi taha
 mamba activate /storage/brno2/home/david_safarik/envs/PLI2
 
 mamba activate /storage/brno2/home/david_safarik/envs/pli
+
+
+Zkouska bude 10 prikladu, vzit kalkulacku. Ruzny veci co jsme programovali, tak budeme pocitat.
