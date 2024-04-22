@@ -1,0 +1,4 @@
+grafový signál? data ze sociální sítě, finanční trh, ...
+lineární grafový filtr: z^-1 je předchozí vzorek = posun o jeden vzorek
+
+zk ustni - ne vzorecky nazpamet. Pochopeni jadra veci.
